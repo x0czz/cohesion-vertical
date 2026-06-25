@@ -1,0 +1,276 @@
+```{r tabla_descriptivos_chunk}
+library(tidyverse)
+library(dplyr)
+library(ggplot2)
+library(tibble)
+library(ggdist)
+library(lme4)
+library(gtsummary)
+
+output_tables_dir <- file.path("output", "tables")
+output_graphs_dir <- file.path("output", "graphs")
+dir.create(output_tables_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(output_graphs_dir, recursive = TRUE, showWarnings = FALSE)
+output_graphs_dir <- file.path("output", "graphs")
+dir.create(output_tables_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(output_graphs_dir, recursive = TRUE, showWarnings = FALSE)
+
+data_f <- readRDS("input/data_f_regresion.rds")
+data_centrada <- readRDS("input/data_centrada_regresion.rds")
+
+data_centrada %>% 
+  select(idencuesta, ola, m0_edad, m0_edad_within, m0_edad_grand, c05_total) %>% 
+  head(10)
+
+
+# 13) Modelos centrados para separar efecto entre personas y dentro de persona
+model_0_cent <- lmer(c05_total ~  (1 | idencuesta), data = data_centrada)
+model_temp_cent <- lmer(c05_total ~ ola + (1 | idencuesta), data = data_centrada)
+model_1_cent <- lmer(c05_total ~ c38_grand + m0_edad_grand + trato_digno_grand + c15_grand + (1 | idencuesta), data = data_centrada)
+model_2_cent <- lmer(c05_total ~ Generacion + egp7 + (1 | idencuesta), data = data_centrada)
+model_3_cent <- lmer(c05_total ~ c38_grand + m0_edad_grand + egp7 + trato_digno_grand + c15_grand + Generacion + ola + (1 | idencuesta), data = data_centrada)
+model_3b_cent <- lmer(c05_total ~ c38_grand + m0_edad_grand + egp7 + trato_digno_grand + c15_grand + Generacion + ola + (1 | idencuesta), data = data_centrada)
+# 14) Modelos centrados con efectos aleatorios.
+model_4_cent <- lmer(c05_total ~ c38_grand + m0_edad_within + egp7 + trato_digno_grand + c15_grand + Generacion + ola + (1 + m0_edad_within | idencuesta), data = data_centrada)
+model_5_cent <- lmer(c05_total ~ c38_within + m0_edad_grand + egp7 + trato_digno_grand + c15_grand + Generacion + ola + (1 + c38_within | idencuesta), data = data_centrada)
+model_6_cent <- lmer(c05_total ~ c38_grand + m0_edad_grand + egp7 + trato_digno_within + c15_within + Generacion + ola + (1 + c15_within | idencuesta), data = data_centrada)
+
+
+
+label_map <- c(
+  "(Intercept)"        = "Intercept",
+  
+  # Corruption perception
+  "c38"                = "Corruption perception",
+  "c38_grand"          = "Corruption perception (BE)",
+  "c38_within"         = "Corruption perception (WE)",
+  
+  # Age
+  "m0_edad"            = "Age",
+  "m0_edad_grand"      = "Age (BE)",
+  "m0_edad_within"     = "Age (WE)",
+  
+  # Dignified treatment
+  "trato_digno"        = "Dignified treatment",
+  "trato_digno_grand"  = "Dignified treatment (BE)",
+  "trato_digno_within" = "Dignified treatment (WE)",
+  
+  # Political self-identification
+  "indigena"           = "Indigenous self-identification",
+  "c15"                = "Political self-identification",
+  "c15_grand"          = "Political self-identification (BE)",
+  "c15_within"         = "Political self-identification (WE)",
+  
+  # Generation (ref. = Silent)
+  "Generacionboom"     = "Generation: Boom",
+  "GeneracionX"        = "Generation: X",
+  "GeneracionY"        = "Generation: Y",
+  "GeneracionZ"        = "Generation: Z",
+  
+  # Social class EGP-7 (ref. = Service class I)
+  "egp7'II  Service class II'"                            = "Service class II",
+  "egp7'III Routine non-manual'"                           = "Routine non-manual",
+  "egp7'IIIa: Routine Nonmanual'"                          = "Routine non-manual (a)",
+  "egp7'V   Manual supervisors/Lower grade technicians'"   = "Manual supervisors",
+  "egp7'VI  Skilled workers'"                              = "Skilled workers",
+  "egp7'VII Unskilled workers/Farm labours'"               = "Unskilled workers",
+  
+  # Wave (ref. = 2016 / Ola 1)
+  "olaOla 2"           = "Wave 2017",
+  "olaOla 3"           = "Wave 2018",
+  "olaOla 4"           = "Wave 2019",
+  "olaOla 5"           = "Wave 2021",
+  "olaOla 6"           = "Wave 2022",
+  "olaOla 7"           = "Wave 2023",
+  
+  # DV
+  "c05_total"          = "Vertical social cohesion (DV)"
+)
+```
+
+La cohesión social vertical refiere al vínculo de confianza y legitimidad que existe entre los ciudadanos y las instituciones, autoridades o el sistema político en su conjunto. En la literatura, esta dimensión se asocia estrechamente con la eficacia política externa, definida como la percepción de que el sistema y sus representantes son receptivos a las demandas de la ciudadanía. Cuando este vínculo se debilita, surge una sensación de exclusión política, donde los individuos sienten que las élites "no escuchan a la gente de su clase", lo que erosiona la integración entre la base social y la estructura institucional.
+
+La relación entre la cohesión vertical y la clase social es crítica, ya que la posición estructural condiciona cómo los sujetos perciben la respuesta del poder a sus intereses. Las personas en posiciones de clase subordinadas, como los trabajadores no gerenciales o sectores precarizados, tienden a reportar niveles más bajos de cohesión vertical al experimentar una mayor sordera institucional por parte de los políticos. Esta ubicación en la estructura de clases no solo influye en la percepción de injusticia, sino que moldea el potencial de la acción colectiva para "resocializar" al individuo; por ejemplo, la participación en protestas tiende a politizar y generar nuevas formas de eficacia principalmente en la clase trabajadora, sugiriendo que la clase actúa como un filtro que define la fuerza del lazo entre el ciudadano y el orden social
+
+
+
+## Variables
+
+La cohesion social verticar fue operacionalizada a partir de un índice sumativo que contempla trece variables ordinales que tienen por objeto sintetizar el nivel de confianza ciudadana en el entramado institucional.
+
+El fraseo original aplicado a los encuestados para la recolección de esta información fue el siguiente: Utilizando una escala donde 1 representa "Nada" y 5 "Mucha", ¿podría decirme cuánto confía usted en cada una de las siguientes instituciones? (01: El Gobierno; 02: Los Partidos Políticos; 03: Carabineros; 04: Los Sindicatos; 05: El Poder Judicial; 06: Las Empresas Privadas; 07: El Congreso Nacional; 08: El Presidente/a de la República; 09: Fiscalía Nacional; 10: Fuerzas Armadas; 11: Bomberos; 12: Medios de comunicación tradicionales; 13: Su municipalidad).
+
+El indice sumativo cuenta con un alfa de Cronbach de 0.92, lo que indica una alta consistencia interna entre las variables que lo componen.
+
+la variable año fue incorporada a partir de la variable «ola» de la encuesta, distribuyendo secuencialmente las observaciones a lo largo de los años 2016, 2017, 2018, 2019, 2021, 2022 y 2023. Bajo este criterio de construcción, el registro temporal asocia directamente cada periodo evaluado, estableciendo de forma correlativa que la ola 1 corresponde al año 2016 y la ola 7 representa al año 2023.
+
+la variable Edad se obtuvo de forma directa a partir del registro m0_edad, la cual se presenta y analiza en el estudio como una variable de tipo numérico.
+
+Asimismo, con el propósito de incorporar una perspectiva de cohorte, se consideró el componente generacional mediante la creación de la variable generacion. Esta variable fue estructurada a partir del año de nacimiento de los encuestados, clasificando a los participantes de manera condicional en cinco categorías específicas: Silent (nacidos entre 1930 y 1948), boom (nacidos entre 1949 y 1968), X (nacidos entre 1969 y 1980), Y (nacidos entre 1981 y 1993) y Z (nacidos entre 1994 y 2010).
+
+la variable corrupción fue operacionalizada a partir del ítem «Extensión de corrupción política» (c38). El fraseo original utilizado para levantar esta información fue: «¿En qué medida cree usted que la corrupción en la política, tal como sobornos a políticos, malversación de fondos públicos o tráfico de influencias, está extendida en Chile?». Esta corresponde a una variable ordinal medida en una escala de 1 a 5, lo que permite capturar de forma gradual la percepción de los encuestados respecto a la magnitud de este fenómeno en el país.
+
+El trato digno fue operacionalizada a partir un índice ponderado que sintetiza las variables correspondientes a la sección de "Percepción Trato Justo". Este índice compuesto agrupa variables de naturaleza ordinal que evalúan la frecuencia percibida del trato respetuoso hacia la clase del encuestado en distintas esferas sociales y de atención. Específicamente, los componentes que integran esta ponderación quedan delimitados por los siguientes ítems secuenciales: (c35_01: Frecuencia de trato respetuoso en servicios de salud; c35_02: Frecuencia de trato respetuoso en el trabajo; c35_03: Frecuencia de trato respetuoso por Carabineros).
+
+Adicionalmente, se incorporó la variable de identificación política mediante el ítem «Autoubicación escala izquierda-derecha» (c15). El fraseo original utilizado para esta medición solicita la respuesta a través del siguiente enunciado: «Usando una escala de 0 a 10, donde 0 es ser de "izquierda"...». Cabe destacar que, de acuerdo con el diseño de la encuesta, este indicador es registrado originalmente como una variable ordinal.
+
+Por último, la variable clase social fue operacionalizada a partir del esquema de clasificación ocupacional EGP de 7 categorías (egp7), el cual agrupa a las personas estrictamente según su posición laboral y su relación con el trabajo; como su nivel de autonomía o supervisión, distanciándose de mediciones basadas en ingresos o nivel educativo. Para lograr esto, primero se tomó el código de ocupación de cada participante y, dado que las distintas olas de la encuesta utilizaron clasificaciones internacionales diferentes, los datos de las olas más recientes fueron traducidos y homologados al formato estándar de la primera ola (ISCO-88) para asegurar la comparación en el tiempo. Posteriormente, se limpiaron y corrigieron los errores de formato en los códigos, completando algunos datos faltantes a nivel interno de la encuesta mediante el copiado o imputacion de respuestas válidas anteriores o posteriores del mismo individuo. Con esta información depurada, se cruzaron variables para determinar el rol laboral diario del encuestado, identificando si se desempeñaba como empleador, trabajador por cuenta propia, supervisor o asalariado. Finalmente, un algoritmo especializado procesó de forma conjunta la ocupación estandarizada y la relación de empleo para asignar de manera automática a cada individuo dentro de una de las 7 clases sociales del esquema EGP.
+
+## Descriptivos.
+
+```{r resumen_clase_gen_chunk}
+tabla_descriptivos <- data_f %>% 
+  select(c05_total, c38, m0_edad, egp7, trato_digno, c15, Generacion, ola) %>% 
+  mutate(
+    c38      = as.numeric(haven::zap_labels(c38)),
+    c15      = as.numeric(haven::zap_labels(c15)),
+    egp7     = as.factor(egp7)
+  ) %>% 
+  tbl_summary(
+    statistic = list(all_continuous() ~ "{mean} ({sd}) [{min}; {max}]",
+                      all_categorical() ~ "{n} ({p}%)"),
+    label = list(
+      c05_total   ~ "Cohesión social vertical",
+      c38         ~ "Percepción de corrupción",
+      m0_edad     ~ "Edad",
+      egp7        ~ "Clase social (EGP-7)",
+      trato_digno ~ "Trato digno",
+      c15         ~ "Autoidentificación política",
+      Generacion  ~ "Generación",
+      ola         ~ "Ola"
+    ),
+    missing = "no"
+  ) %>% 
+  add_n() %>% 
+  bold_labels() %>% 
+  modify_caption("**Tabla 1. Estadísticos descriptivos (N obs = {N}, casos completos)**")
+
+tabla_descriptivos
+tabla_descriptivos_path <- file.path(output_tables_dir, "tabla_descriptivos.html")
+if (!file.exists(tabla_descriptivos_path)) {
+  gt::gtsave(gtsummary::as_gt(tabla_descriptivos), tabla_descriptivos_path)
+}
+```
+## Análisis bivariado
+
+```{r resumen_clase_gen_chunk}
+
+
+resumen_clase_gen <- data_f %>%
+  group_by(egp7, Generacion) %>%
+  summarise(
+    media = mean(c05_total, na.rm = TRUE),
+    se = sd(c05_total, na.rm = TRUE) / sqrt(n()),
+    n = n(),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    ci_low  = media - 1.96 * se,
+    ci_high = media + 1.96 * se
+  )
+```
+
+```{r grafico_clase_gen_chunk}
+grafico_clase_gen <- resumen_clase_gen %>%
+  ggplot(aes(x = Generacion, y = media, group = egp7)) +
+  geom_line(linewidth = 0.8, color = "#0571B0") +
+  geom_point(size = 2, color = "#0571B0") +
+  geom_errorbar(aes(ymin = ci_low, ymax = ci_high), width = 0.15, alpha = .5, color = "#0571B0") +
+  facet_wrap(~ egp7, ncol = 3) +
+  labs(
+    title = "Vertical social cohesion by social class and generation",
+    x = "Generation", y = "Vertical social cohesion (mean)"
+  ) +
+  theme_ggdist() +
+  theme(strip.text = element_text(size = 8))
+
+grafico_clase_gen
+grafico_clase_gen_path <- file.path(output_graphs_dir, "cohesion_clase_generacion.png")
+if (!file.exists(grafico_clase_gen_path)) {
+  ggplot2::ggsave(
+    filename = grafico_clase_gen_path,
+    plot = grafico_clase_gen,
+    width = 8,
+    height = 6,
+    dpi = 300
+  )
+}
+```
+
+
+### Modelos.
+
+
+```{r modelos_html_chunk, echo=FALSE, results='asis'}
+
+
+library(texreg)
+
+tabla_modelos_path <- file.path(output_tables_dir, "tabla_modelos.html")
+if (!file.exists(tabla_modelos_path)) {
+  htmlreg(list(model_0_cent, model_temp_cent, model_1_cent, model_3b_cent, model_4_cent),
+                 custom.model.names = c(paste0("Model ", seq(1:5))),
+                 caption.above = T,
+                 caption = NULL,
+                 stars = c(0.05, 0.01, 0.001),
+                 custom.coef.map = as.list(label_map),
+                 digits = 3,
+                 groups = list("Wave (Ref.= 2016)" = 1:6,
+                               "Social class (Ref. = Service class I)" = 17:22),
+                 custom.note = "Note: Cells contain regression coefficients with standard errors in parentheses. %stars.",
+                 leading.zero = T,
+                 include.loglik = FALSE,
+                 include.aic = FALSE,
+                 center = T,
+                 custom.gof.names = c("BIC", "Numb. obs.", "Num. groups: individuals",
+                                       "Var: individuals (Intercept)",
+                                       "Var: Residual",
+                                       "Var: individuals, age (within)",
+                                       "Cov: individuals (Intercept-age)"),
+                 file = tabla_modelos_path) 
+}
+```
+
+
+
+
+
+
+## Proceso de reproducción
+
+- Descripción detallada del proceso seguido para reproducir el resultado seleccionado, incluyendo los pasos realizados, las herramientas utilizadas, y cualquier ajuste necesario para lograr la reproducción. Incluye las siguientes sub secciones:
+
+### Procesamiento
+
+- Incluye el código utilizado para procesar los datos, junto con una explicación de cada paso. 
+
+- Los datos originales deben ser llamados desde input/data/original, el código de procesamiento se debe incluir en este mismo archivo (reporte-repro.qmd).
+
+### Reproducción
+
+- Generación de tabla o figura a reproducir.
+
+# Conclusiones
+
+Basándose en el análisis realizado, escriban una conclusión sobre el nivel de reproducibilidad del artículo seleccionado.
+
+# Recomendaciones
+
+Recomendaciones para mejorar la reproducibilidad del artículo, si es necesario.
+
+# Referencias
+
+::: {#refs}
+:::
+
+# Apéndice
+
+## Material suplementario
+
+- Incluyan aquí detalles metodológicos adicionales, en caso de ser necesario
+
+## Código
+
+- Incluir acá el código original, en caso de estar disponible.
+
+
