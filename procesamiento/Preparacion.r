@@ -9,11 +9,10 @@ library(lme4)
 library(DIGCLASS)
 options(scipen = 999)
 rm(list = ls())
-
 # ------------------------------------------------------------
 # 1.1) Lectura y limpieza inicial de códigos perdidos
 # ------------------------------------------------------------
-elsoc <- haven::read_dta("input\\ELSOC_Long_2016_2023.dta")
+elsoc <- readRDS("input/ELSOC_subset.rds")
 elsoc$tipo_atricion %>% table()
 
 data <- elsoc %>%
@@ -390,8 +389,3 @@ data %>%
     pct = round(100 * n_c32_01 / n_total, 1)
   )
 
-
-
-
-
- 
