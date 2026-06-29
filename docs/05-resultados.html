@@ -288,6 +288,7 @@ window.Quarto = {
    
   <ul>
   <li><a href="#analisis-descriptivo." id="toc-analisis-descriptivo." class="nav-link active" data-scroll-target="#analisis-descriptivo."><span class="header-section-number">6.0.1</span> Analisis descriptivo.</a></li>
+  <li><a href="#analisis-bivariado." id="toc-analisis-bivariado." class="nav-link" data-scroll-target="#analisis-bivariado."><span class="header-section-number">6.0.2</span> Analisis bivariado.</a></li>
   </ul>
 </nav>
     </div>
@@ -318,641 +319,207 @@ window.Quarto = {
 <div id="tbl-descriptivos" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap-location="top">
 <figure class="quarto-float quarto-float-tbl figure">
 <figcaption class="quarto-float-caption-top quarto-float-caption quarto-float-tbl" id="tbl-descriptivos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Lista de tablas&nbsp;6.1: Tabla 1. Estadísticos descriptivos (N= 7,982)
+Lista de tablas&nbsp;6.1: Tabla 1. Estadísticos descriptivos (N= )
 </figcaption>
 <div aria-describedby="tbl-descriptivos-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div id="qhaqrgpscj" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
-<style>#qhaqrgpscj table {
-  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+<!-- preamble start -->
 
-#qhaqrgpscj thead, #qhaqrgpscj tbody, #qhaqrgpscj tfoot, #qhaqrgpscj tr, #qhaqrgpscj td, #qhaqrgpscj th {
-  border-style: none;
-}
+    <script src="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.js"></script>
 
-#qhaqrgpscj p {
-  margin: 0;
-  padding: 0;
-}
+    <script>
+      // Create table-specific functions using external factory
+      const tableFns_p8i2x9tgog2j7rc4thcz = TinyTable.createTableFunctions("tinytable_p8i2x9tgog2j7rc4thcz");
+      // tinytable span after
+      window.addEventListener('load', function () {
+          var cellsToStyle = [
+            // tinytable style arrays after
+          { positions: [ { i: '22', j: 3 }, { i: '22', j: 4 } ], css_id: 'tinytable_css_2izzr6iv2h10frkmwiuc',}, 
+          { positions: [ { i: '6', j: 3 }, { i: '6', j: 4 } ], css_id: 'tinytable_css_dq6lwvsbievby04j2y98',}, 
+          { positions: [ { i: '1', j: 3 }, { i: '2', j: 3 }, { i: '3', j: 3 }, { i: '4', j: 3 }, { i: '5', j: 3 }, { i: '7', j: 3 }, { i: '8', j: 3 }, { i: '9', j: 3 }, { i: '10', j: 3 }, { i: '11', j: 3 }, { i: '12', j: 3 }, { i: '13', j: 3 }, { i: '14', j: 3 }, { i: '15', j: 3 }, { i: '16', j: 3 }, { i: '17', j: 3 }, { i: '18', j: 3 }, { i: '19', j: 3 }, { i: '20', j: 3 }, { i: '21', j: 3 }, { i: '1', j: 4 }, { i: '2', j: 4 }, { i: '3', j: 4 }, { i: '4', j: 4 }, { i: '5', j: 4 }, { i: '7', j: 4 }, { i: '8', j: 4 }, { i: '9', j: 4 }, { i: '10', j: 4 }, { i: '11', j: 4 }, { i: '12', j: 4 }, { i: '13', j: 4 }, { i: '14', j: 4 }, { i: '15', j: 4 }, { i: '16', j: 4 }, { i: '17', j: 4 }, { i: '18', j: 4 }, { i: '19', j: 4 }, { i: '20', j: 4 }, { i: '21', j: 4 } ], css_id: 'tinytable_css_rmgugahkty0vxi7czjkb',}, 
+          { positions: [ { i: '0', j: 3 }, { i: '0', j: 4 } ], css_id: 'tinytable_css_d2ic4xr592lxpdgyok69',}, 
+          { positions: [ { i: '22', j: 1 }, { i: '22', j: 2 } ], css_id: 'tinytable_css_e510l0kv915tu9i7uc9k',}, 
+          { positions: [ { i: '6', j: 1 }, { i: '6', j: 2 } ], css_id: 'tinytable_css_m00iffkxorebo94mtbnx',}, 
+          { positions: [ { i: '1', j: 1 }, { i: '2', j: 1 }, { i: '3', j: 1 }, { i: '4', j: 1 }, { i: '5', j: 1 }, { i: '7', j: 1 }, { i: '8', j: 1 }, { i: '9', j: 1 }, { i: '10', j: 1 }, { i: '11', j: 1 }, { i: '12', j: 1 }, { i: '13', j: 1 }, { i: '14', j: 1 }, { i: '15', j: 1 }, { i: '16', j: 1 }, { i: '17', j: 1 }, { i: '18', j: 1 }, { i: '19', j: 1 }, { i: '20', j: 1 }, { i: '21', j: 1 }, { i: '1', j: 2 }, { i: '2', j: 2 }, { i: '3', j: 2 }, { i: '4', j: 2 }, { i: '5', j: 2 }, { i: '7', j: 2 }, { i: '8', j: 2 }, { i: '9', j: 2 }, { i: '10', j: 2 }, { i: '11', j: 2 }, { i: '12', j: 2 }, { i: '13', j: 2 }, { i: '14', j: 2 }, { i: '15', j: 2 }, { i: '16', j: 2 }, { i: '17', j: 2 }, { i: '18', j: 2 }, { i: '19', j: 2 }, { i: '20', j: 2 }, { i: '21', j: 2 } ], css_id: 'tinytable_css_7n1c3waalb92qsah6uxp',}, 
+          { positions: [ { i: '0', j: 1 }, { i: '0', j: 2 } ], css_id: 'tinytable_css_r9qjxrs0xdx8bs7savpl',}, 
+          ];
 
-#qhaqrgpscj .gt_table {
-  display: table;
-  border-collapse: collapse;
-  line-height: normal;
-  margin-left: auto;
-  margin-right: auto;
-  color: #333333;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  background-color: #FFFFFF;
-  width: auto;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #A8A8A8;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #A8A8A8;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-}
+          // Loop over the arrays to style the cells
+          cellsToStyle.forEach(function (group) {
+              group.positions.forEach(function (cell) {
+                  tableFns_p8i2x9tgog2j7rc4thcz.styleCell(cell.i, cell.j, group.css_id);
+              });
+          });
+      });
+    </script>
 
-#qhaqrgpscj .gt_caption {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-#qhaqrgpscj .gt_title {
-  color: #333333;
-  font-size: 125%;
-  font-weight: initial;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-color: #FFFFFF;
-  border-bottom-width: 0;
-}
-
-#qhaqrgpscj .gt_subtitle {
-  color: #333333;
-  font-size: 85%;
-  font-weight: initial;
-  padding-top: 3px;
-  padding-bottom: 5px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-color: #FFFFFF;
-  border-top-width: 0;
-}
-
-#qhaqrgpscj .gt_heading {
-  background-color: #FFFFFF;
-  text-align: center;
-  border-bottom-color: #FFFFFF;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#qhaqrgpscj .gt_bottom_border {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#qhaqrgpscj .gt_col_headings {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-}
-
-#qhaqrgpscj .gt_col_heading {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 6px;
-  padding-left: 5px;
-  padding-right: 5px;
-  overflow-x: hidden;
-}
-
-#qhaqrgpscj .gt_column_spanner_outer {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: normal;
-  text-transform: inherit;
-  padding-top: 0;
-  padding-bottom: 0;
-  padding-left: 4px;
-  padding-right: 4px;
-}
-
-#qhaqrgpscj .gt_column_spanner_outer:first-child {
-  padding-left: 0;
-}
-
-#qhaqrgpscj .gt_column_spanner_outer:last-child {
-  padding-right: 0;
-}
-
-#qhaqrgpscj .gt_column_spanner {
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: bottom;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  overflow-x: hidden;
-  display: inline-block;
-  width: 100%;
-}
-
-#qhaqrgpscj .gt_spanner_row {
-  border-bottom-style: hidden;
-}
-
-#qhaqrgpscj .gt_group_heading {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  text-align: left;
-}
-
-#qhaqrgpscj .gt_empty_group_heading {
-  padding: 0.5px;
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  vertical-align: middle;
-}
-
-#qhaqrgpscj .gt_from_md > :first-child {
-  margin-top: 0;
-}
-
-#qhaqrgpscj .gt_from_md > :last-child {
-  margin-bottom: 0;
-}
-
-#qhaqrgpscj .gt_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  margin: 10px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  border-top-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 1px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 1px;
-  border-right-color: #D3D3D3;
-  vertical-align: middle;
-  overflow-x: hidden;
-}
-
-#qhaqrgpscj .gt_stub {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#qhaqrgpscj .gt_stub_row_group {
-  color: #333333;
-  background-color: #FFFFFF;
-  font-size: 100%;
-  font-weight: initial;
-  text-transform: inherit;
-  border-right-style: solid;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-  padding-left: 5px;
-  padding-right: 5px;
-  vertical-align: top;
-}
-
-#qhaqrgpscj .gt_row_group_first td {
-  border-top-width: 2px;
-}
-
-#qhaqrgpscj .gt_row_group_first th {
-  border-top-width: 2px;
-}
-
-#qhaqrgpscj .gt_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#qhaqrgpscj .gt_first_summary_row {
-  border-top-style: solid;
-  border-top-color: #D3D3D3;
-}
-
-#qhaqrgpscj .gt_first_summary_row.thick {
-  border-top-width: 2px;
-}
-
-#qhaqrgpscj .gt_last_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#qhaqrgpscj .gt_grand_summary_row {
-  color: #333333;
-  background-color: #FFFFFF;
-  text-transform: inherit;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#qhaqrgpscj .gt_first_grand_summary_row {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-top-style: double;
-  border-top-width: 6px;
-  border-top-color: #D3D3D3;
-}
-
-#qhaqrgpscj .gt_last_grand_summary_row_top {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 5px;
-  padding-right: 5px;
-  border-bottom-style: double;
-  border-bottom-width: 6px;
-  border-bottom-color: #D3D3D3;
-}
-
-#qhaqrgpscj .gt_striped {
-  background-color: rgba(128, 128, 128, 0.05);
-}
-
-#qhaqrgpscj .gt_table_body {
-  border-top-style: solid;
-  border-top-width: 2px;
-  border-top-color: #D3D3D3;
-  border-bottom-style: solid;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-}
-
-#qhaqrgpscj .gt_footnotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#qhaqrgpscj .gt_footnote {
-  margin: 0px;
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#qhaqrgpscj .gt_sourcenotes {
-  color: #333333;
-  background-color: #FFFFFF;
-  border-bottom-style: none;
-  border-bottom-width: 2px;
-  border-bottom-color: #D3D3D3;
-  border-left-style: none;
-  border-left-width: 2px;
-  border-left-color: #D3D3D3;
-  border-right-style: none;
-  border-right-width: 2px;
-  border-right-color: #D3D3D3;
-}
-
-#qhaqrgpscj .gt_sourcenote {
-  font-size: 90%;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-
-#qhaqrgpscj .gt_left {
-  text-align: left;
-}
-
-#qhaqrgpscj .gt_center {
-  text-align: center;
-}
-
-#qhaqrgpscj .gt_right {
-  text-align: right;
-  font-variant-numeric: tabular-nums;
-}
-
-#qhaqrgpscj .gt_font_normal {
-  font-weight: normal;
-}
-
-#qhaqrgpscj .gt_font_bold {
-  font-weight: bold;
-}
-
-#qhaqrgpscj .gt_font_italic {
-  font-style: italic;
-}
-
-#qhaqrgpscj .gt_super {
-  font-size: 65%;
-}
-
-#qhaqrgpscj .gt_footnote_marks {
-  font-size: 75%;
-  vertical-align: 0.4em;
-  position: initial;
-}
-
-#qhaqrgpscj .gt_asterisk {
-  font-size: 100%;
-  vertical-align: 0;
-}
-
-#qhaqrgpscj .gt_indent_1 {
-  text-indent: 5px;
-}
-
-#qhaqrgpscj .gt_indent_2 {
-  text-indent: 10px;
-}
-
-#qhaqrgpscj .gt_indent_3 {
-  text-indent: 15px;
-}
-
-#qhaqrgpscj .gt_indent_4 {
-  text-indent: 20px;
-}
-
-#qhaqrgpscj .gt_indent_5 {
-  text-indent: 25px;
-}
-
-#qhaqrgpscj .katex-display {
-  display: inline-flex !important;
-  margin-bottom: 0.75em !important;
-}
-
-#qhaqrgpscj div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
-  height: 0px !important;
-}
-</style>
-
-<table class="gt_table cell caption-top table table-sm table-striped small" data-quarto-bootstrap="false">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="gt_col_headings header">
-<th id="label" class="gt_col_heading gt_columns_bottom_border gt_left" data-quarto-table-cell-role="th" scope="col"><strong>Characteristic</strong></th>
-<th id="stat_0" class="gt_col_heading gt_columns_bottom_border gt_center" data-quarto-table-cell-role="th" scope="col"><strong>N = 11,537</strong><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span></th>
-</tr>
-</thead>
-<tbody class="gt_table_body">
-<tr class="odd">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Cohesión social vertical</td>
-<td class="gt_row gt_center" headers="stat_0">16 (6) [0; 45]</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Percepción de corrupción</td>
-<td class="gt_row gt_center" headers="stat_0"><br>
-</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;1</td>
-<td class="gt_row gt_center" headers="stat_0">162 (1.5%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;2</td>
-<td class="gt_row gt_center" headers="stat_0">408 (3.8%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;3</td>
-<td class="gt_row gt_center" headers="stat_0">964 (8.9%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;4</td>
-<td class="gt_row gt_center" headers="stat_0">3,876 (36%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;5</td>
-<td class="gt_row gt_center" headers="stat_0">5,447 (50%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Edad</td>
-<td class="gt_row gt_center" headers="stat_0">50 (15) [18; 84]</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Clase social (EGP-7)</td>
-<td class="gt_row gt_center" headers="stat_0"><br>
-</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;'I Service class I'</td>
-<td class="gt_row gt_center" headers="stat_0">1,303 (15%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;'II Service class II'</td>
-<td class="gt_row gt_center" headers="stat_0">1,551 (18%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;'III Routine non-manual'</td>
-<td class="gt_row gt_center" headers="stat_0">1,360 (16%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;'IIIa: Routine Nonmanual'</td>
-<td class="gt_row gt_center" headers="stat_0">1,239 (14%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;'V Manual supervisors/Lower grade technicians'</td>
-<td class="gt_row gt_center" headers="stat_0">684 (7.9%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;'VI Skilled workers'</td>
-<td class="gt_row gt_center" headers="stat_0">2,209 (26%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;'VII Unskilled workers/Farm labours'</td>
-<td class="gt_row gt_center" headers="stat_0">300 (3.5%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Trato digno</td>
-<td class="gt_row gt_center" headers="stat_0">4.7 (5.3) [0.0; 15.0]</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Autoidentificación política</td>
-<td class="gt_row gt_center" headers="stat_0">7.2 (3.9) [0.0; 12.0]</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Orgullo de ser chileno</td>
-<td class="gt_row gt_center" headers="stat_0"><br>
-</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;1</td>
-<td class="gt_row gt_center" headers="stat_0">127 (1.1%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;2</td>
-<td class="gt_row gt_center" headers="stat_0">278 (2.4%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;3</td>
-<td class="gt_row gt_center" headers="stat_0">679 (5.9%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;4</td>
-<td class="gt_row gt_center" headers="stat_0">5,873 (51%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;5</td>
-<td class="gt_row gt_center" headers="stat_0">4,521 (39%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Generación</td>
-<td class="gt_row gt_center" headers="stat_0"><br>
-</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Silent</td>
-<td class="gt_row gt_center" headers="stat_0">927 (8.0%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;boom</td>
-<td class="gt_row gt_center" headers="stat_0">4,800 (42%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;X</td>
-<td class="gt_row gt_center" headers="stat_0">2,631 (23%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Y</td>
-<td class="gt_row gt_center" headers="stat_0">2,418 (21%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Z</td>
-<td class="gt_row gt_center" headers="stat_0">761 (6.6%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label" style="font-weight: bold">Ola</td>
-<td class="gt_row gt_center" headers="stat_0"><br>
-</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ola 1</td>
-<td class="gt_row gt_center" headers="stat_0">1,176 (10%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ola 2</td>
-<td class="gt_row gt_center" headers="stat_0">1,176 (10%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ola 3</td>
-<td class="gt_row gt_center" headers="stat_0">1,837 (16%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ola 4</td>
-<td class="gt_row gt_center" headers="stat_0">1,837 (16%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ola 5</td>
-<td class="gt_row gt_center" headers="stat_0">1,837 (16%)</td>
-</tr>
-<tr class="odd">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ola 6</td>
-<td class="gt_row gt_center" headers="stat_0">1,837 (16%)</td>
-</tr>
-<tr class="even">
-<td class="gt_row gt_left" headers="label">&nbsp;&nbsp;&nbsp;&nbsp;Ola 7</td>
-<td class="gt_row gt_center" headers="stat_0">1,837 (16%)</td>
-</tr>
-</tbody><tfoot>
-<tr class="gt_footnotes odd">
-<td colspan="2" class="gt_footnote"><span class="gt_footnote_marks" style="white-space:nowrap;font-style:italic;font-weight:normal;line-height:0;"><sup>1</sup></span> Mean (SD) [Min; Max]; n (%)</td>
-</tr>
-</tfoot>
-
-</table>
-
-</div>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/vincentarelbundock/tinytable@main/inst/tinytable.css">
+    <style>
+    /* tinytable css entries after */
+    #tinytable_p8i2x9tgog2j7rc4thcz td.tinytable_css_2izzr6iv2h10frkmwiuc, #tinytable_p8i2x9tgog2j7rc4thcz th.tinytable_css_2izzr6iv2h10frkmwiuc {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: right }
+    #tinytable_p8i2x9tgog2j7rc4thcz td.tinytable_css_dq6lwvsbievby04j2y98, #tinytable_p8i2x9tgog2j7rc4thcz th.tinytable_css_dq6lwvsbievby04j2y98 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: right }
+    #tinytable_p8i2x9tgog2j7rc4thcz td.tinytable_css_rmgugahkty0vxi7czjkb, #tinytable_p8i2x9tgog2j7rc4thcz th.tinytable_css_rmgugahkty0vxi7czjkb { text-align: right }
+    #tinytable_p8i2x9tgog2j7rc4thcz td.tinytable_css_d2ic4xr592lxpdgyok69, #tinytable_p8i2x9tgog2j7rc4thcz th.tinytable_css_d2ic4xr592lxpdgyok69 {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: right }
+    #tinytable_p8i2x9tgog2j7rc4thcz td.tinytable_css_e510l0kv915tu9i7uc9k, #tinytable_p8i2x9tgog2j7rc4thcz th.tinytable_css_e510l0kv915tu9i7uc9k {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.1em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left }
+    #tinytable_p8i2x9tgog2j7rc4thcz td.tinytable_css_m00iffkxorebo94mtbnx, #tinytable_p8i2x9tgog2j7rc4thcz th.tinytable_css_m00iffkxorebo94mtbnx {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 0; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left }
+    #tinytable_p8i2x9tgog2j7rc4thcz td.tinytable_css_7n1c3waalb92qsah6uxp, #tinytable_p8i2x9tgog2j7rc4thcz th.tinytable_css_7n1c3waalb92qsah6uxp { text-align: left }
+    #tinytable_p8i2x9tgog2j7rc4thcz td.tinytable_css_r9qjxrs0xdx8bs7savpl, #tinytable_p8i2x9tgog2j7rc4thcz th.tinytable_css_r9qjxrs0xdx8bs7savpl {  position: relative; --border-bottom: 1; --border-left: 0; --border-right: 0; --border-top: 1; --line-color-bottom: var(--tt-line-color); --line-color-left: var(--tt-line-color); --line-color-right: var(--tt-line-color); --line-color-top: var(--tt-line-color); --line-width-bottom: 0.05em; --line-width-left: 0.1em; --line-width-right: 0.1em; --line-width-top: 0.1em; --trim-bottom-left: 0%; --trim-bottom-right: 0%; --trim-left-bottom: 0%; --trim-left-top: 0%; --trim-right-bottom: 0%; --trim-right-top: 0%; --trim-top-left: 0%; --trim-top-right: 0%; ; text-align: left }
+    </style>
+    <div class="container">
+      <table class="tinytable" id="tinytable_p8i2x9tgog2j7rc4thcz" style="width: auto; margin-left: auto; margin-right: auto;" data-quarto-disable-processing="true">
+        
+        <thead>
+              <tr>
+                <th scope="col" data-row="0" data-col="1"> </th>
+                <th scope="col" data-row="0" data-col="2">  </th>
+                <th scope="col" data-row="0" data-col="3">Mean</th>
+                <th scope="col" data-row="0" data-col="4">Std. Dev.</th>
+              </tr>
+        </thead>
+        
+        <tbody>
+                <tr>
+                  <td data-row="1" data-col="1">Cohesión social vertical (N1 - Y)</td>
+                  <td data-row="1" data-col="2"></td>
+                  <td data-row="1" data-col="3">19.1</td>
+                  <td data-row="1" data-col="4">6.2</td>
+                </tr>
+                <tr>
+                  <td data-row="2" data-col="1">Percepción de corrupción (N1)</td>
+                  <td data-row="2" data-col="2"></td>
+                  <td data-row="2" data-col="3">4.5</td>
+                  <td data-row="2" data-col="4">0.8</td>
+                </tr>
+                <tr>
+                  <td data-row="3" data-col="1">Edad del entrevistado</td>
+                  <td data-row="3" data-col="2"></td>
+                  <td data-row="3" data-col="3">54.3</td>
+                  <td data-row="3" data-col="4">14.4</td>
+                </tr>
+                <tr>
+                  <td data-row="4" data-col="1">Trato digno (N1)</td>
+                  <td data-row="4" data-col="2"></td>
+                  <td data-row="4" data-col="3">0.0</td>
+                  <td data-row="4" data-col="4">0.0</td>
+                </tr>
+                <tr>
+                  <td data-row="5" data-col="1">Autoidentificación política (N1)</td>
+                  <td data-row="5" data-col="2"></td>
+                  <td data-row="5" data-col="3">7.4</td>
+                  <td data-row="5" data-col="4">3.9</td>
+                </tr>
+                <tr>
+                  <td data-row="6" data-col="1">Orgullo de ser chileno (N1)</td>
+                  <td data-row="6" data-col="2"></td>
+                  <td data-row="6" data-col="3">4.2</td>
+                  <td data-row="6" data-col="4">0.7</td>
+                </tr>
+                <tr>
+                  <td data-row="7" data-col="1"></td>
+                  <td data-row="7" data-col="2"></td>
+                  <td data-row="7" data-col="3">N</td>
+                  <td data-row="7" data-col="4">Pct.</td>
+                </tr>
+                <tr>
+                  <td data-row="8" data-col="1">Clase social (N2 - EGP-4)</td>
+                  <td data-row="8" data-col="2">Service class (I+II)</td>
+                  <td data-row="8" data-col="3">310</td>
+                  <td data-row="8" data-col="4">26.9</td>
+                </tr>
+                <tr>
+                  <td data-row="9" data-col="1"></td>
+                  <td data-row="9" data-col="2">Intermediate class (III+IV)</td>
+                  <td data-row="9" data-col="3">253</td>
+                  <td data-row="9" data-col="4">21.9</td>
+                </tr>
+                <tr>
+                  <td data-row="10" data-col="1"></td>
+                  <td data-row="10" data-col="2">Working class (V+VI+VII)</td>
+                  <td data-row="10" data-col="3">319</td>
+                  <td data-row="10" data-col="4">27.6</td>
+                </tr>
+                <tr>
+                  <td data-row="11" data-col="1"></td>
+                  <td data-row="11" data-col="2">Out of labor force</td>
+                  <td data-row="11" data-col="3">272</td>
+                  <td data-row="11" data-col="4">23.6</td>
+                </tr>
+                <tr>
+                  <td data-row="12" data-col="1">Generación (N2)</td>
+                  <td data-row="12" data-col="2">Silent</td>
+                  <td data-row="12" data-col="3">103</td>
+                  <td data-row="12" data-col="4">8.9</td>
+                </tr>
+                <tr>
+                  <td data-row="13" data-col="1"></td>
+                  <td data-row="13" data-col="2">boom</td>
+                  <td data-row="13" data-col="3">499</td>
+                  <td data-row="13" data-col="4">43.2</td>
+                </tr>
+                <tr>
+                  <td data-row="14" data-col="1"></td>
+                  <td data-row="14" data-col="2">X</td>
+                  <td data-row="14" data-col="3">270</td>
+                  <td data-row="14" data-col="4">23.4</td>
+                </tr>
+                <tr>
+                  <td data-row="15" data-col="1"></td>
+                  <td data-row="15" data-col="2">Y</td>
+                  <td data-row="15" data-col="3">224</td>
+                  <td data-row="15" data-col="4">19.4</td>
+                </tr>
+                <tr>
+                  <td data-row="16" data-col="1"></td>
+                  <td data-row="16" data-col="2">Z</td>
+                  <td data-row="16" data-col="3">58</td>
+                  <td data-row="16" data-col="4">5.0</td>
+                </tr>
+                <tr>
+                  <td data-row="17" data-col="1">Sexo (N2)</td>
+                  <td data-row="17" data-col="2">Hombre</td>
+                  <td data-row="17" data-col="3">370</td>
+                  <td data-row="17" data-col="4">32.1</td>
+                </tr>
+                <tr>
+                  <td data-row="18" data-col="1"></td>
+                  <td data-row="18" data-col="2">Mujer</td>
+                  <td data-row="18" data-col="3">784</td>
+                  <td data-row="18" data-col="4">67.9</td>
+                </tr>
+                <tr>
+                  <td data-row="19" data-col="1">Nivel educacional (N2)</td>
+                  <td data-row="19" data-col="2">Sin estudios</td>
+                  <td data-row="19" data-col="3">10</td>
+                  <td data-row="19" data-col="4">0.9</td>
+                </tr>
+                <tr>
+                  <td data-row="20" data-col="1"></td>
+                  <td data-row="20" data-col="2">Educación Básica</td>
+                  <td data-row="20" data-col="3">740</td>
+                  <td data-row="20" data-col="4">64.1</td>
+                </tr>
+                <tr>
+                  <td data-row="21" data-col="1"></td>
+                  <td data-row="21" data-col="2">Educación Superior</td>
+                  <td data-row="21" data-col="3">379</td>
+                  <td data-row="21" data-col="4">32.8</td>
+                </tr>
+                <tr>
+                  <td data-row="22" data-col="1"></td>
+                  <td data-row="22" data-col="2">Posgrado</td>
+                  <td data-row="22" data-col="3">25</td>
+                  <td data-row="22" data-col="4">2.2</td>
+                </tr>
+        </tbody>
+      </table>
+    </div>
+<!-- hack to avoid NA insertion in last line -->
 </div>
 </figure>
 </div>
-<p>Analisis bivariado.</p>
+<p>A partir de los datos descriptivos analizados (<span class="math inline">\(N = 11,537\)</span>), se observa una muestra caracterizada por tensiones institucionales agudas y una marcada polarización en las percepciones de la estructura social. La variable dependiente, cohesión social vertical, presenta una media de 16 puntos (<span class="math inline">\(SD = 6\)</span>) dentro de un rango de <span class="math inline">\([0; 45]\)</span>, lo que sitúa la percepción general en el tercio inferior de la escala, evidenciando un diagnóstico predominantemente crítico o desgastado respecto a la confianza institucional y la legitimidad del orden social vertical. Esta evaluación se contextualiza en un entorno de profunda desafección, donde la percepción de corrupción alcanza niveles críticos: el 86% de la muestra se agrupa en los dos peldaños más altos de la escala (el 50% en la categoría máxima y el 36% en la contigua), lo que contrasta drásticamente con una identidad nacional fuertemente arraigada, donde el 90% de los individuos manifiesta una alta identificación con el país. En términos de su composición sociodemográfica y las variables centrales para las hipótesis, la muestra exhibe una media de edad de 50 años (<span class="math inline">\(SD = 15\)</span>) con un rango de <span class="math inline">\([18; 84]\)</span> años, lo cual se alinea con la distribución generacional, donde la cohorte del Baby Boom es la predominante con un 42%, seguida por la Generación X (23%) y la Generación Y o Millennials (21%), dejando en los márgenes a la generación Silent (8.0%) y a los más jóvenes de la Generación Z (6.6%). Por su parte, la estructura de clase medida a través del esquema EGP-7 muestra que el grupo mayoritario corresponde a los trabajadores manuales calificados de la categoría VI (26%), mientras que la clase de servicios en su conjunto (I y II) acumula un 33%, reflejando un mercado laboral con un peso sustancial de sectores asalariados tradicionales y profesionales, y con una presencia menor de trabajadores no calificados en la categoría VII (3.5%). Finalmente, las variables políticas y de trato muestran una autoidentificación ideológica que se ubica en una media de 7.2 puntos (<span class="math inline">\(SD = 3.9\)</span>) dentro de un espectro de <span class="math inline">\([0.0; 12.0]\)</span>, denotando una leve inclinación hacia el centro-derecha o sectores conservadores según la codificación estándar, combinada con una preocupante asimetría en la variable de trato digno, cuya media de 4.7 (<span class="math inline">\(SD = 5.3\)</span>) sobre un máximo de 15 indica que la gran mayoría de la población reporta niveles muy bajos de dignidad en sus interacciones cotidianas. Esta compleja realidad estructural y de opinión se distribuye temporalmente de manera estratégica para el análisis longitudinal, con una base inicial del 10% de los casos para las Olas 1 y 2, y una estabilización perfecta del 16% en cada una de las mediciones restantes (de la Ola 3 a la Ola 7), garantizando un volumen de datos homogéneo y robusto para capturar las variaciones temporales asociadas al periodo de crisis y pandemia contemplado en el modelo general.</p>
+</section>
+<section id="analisis-bivariado." class="level3" data-number="6.0.2">
+<h3 data-number="6.0.2" class="anchored" data-anchor-id="analisis-bivariado."><span class="header-section-number">6.0.2</span> Analisis bivariado.</h3>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-bivariado" class="quarto-float quarto-figure quarto-figure-center anchored">
@@ -967,6 +534,10 @@ Lista de figuras&nbsp;6.1: Figura 1. Cohesión social vertical por clase social 
 </div>
 </div>
 </div>
+<p>La <a href="#fig-bivariado" class="quarto-xref">Figura&nbsp;<span>6.1</span></a> presenta un análisis bivariado que examina la media de la cohesión social vertical (eje Y) a través de cinco cohortes generacionales (Generation: Silent, Boom, X, Y, Z, en el eje X), segmentado o facetado por las distintas categorías del esquema de clase social EGP-7. Las barras verticales alrededor de cada punto representan los intervalos de confianza al 95%, lo que permite evaluar la precisión de las estimaciones y la significancia visual de las diferencias.</p>
+<p>En primer lugar, se observa un efecto generacional parcialmente consistente con la hipótesis H1, caracterizado por una tendencia descendente de la cohesión social vertical a medida que las cohortes son más jóvenes (de Silent hacia Z). Este patrón de “caída” generacional es especialmente pronunciado y nítido en las clases socioeconómicas más altas, como Service Class I y Service Class II, así como en las ocupaciones de rutina no manuales (Routine non-manual y Routine Nonmanual IIIa), donde los miembros de la generación Silent reportan niveles de cohesión significativamente más altos (superando los 20 puntos en las clases de servicios) en comparación con las generaciones sucesivas, las cuales tienden a estancarse o seguir descendiendo sutilmente en torno a los 15-17 puntos.</p>
+<p>En segundo lugar, el comportamiento de las clases manuales y trabajadoras (EGP-V, VI y VII) quiebra la linealidad del descenso generacional, mostrando dinámicas heterogéneas. En la categoría V (Manual supervisors/Lower grade technicians) se aprecia un desplome drástico entre la generación Silent y los Boomers, seguido de una leve recuperación en las generaciones intermedias antes de volver a caer en la generación Z. Por otro lado, la clase VI (Skilled workers) exhibe un patrón en forma de “U”: la cohesión disminuye desde la generación Silent hasta alcanzar su punto más bajo en la Generación X, para luego experimentar un repunte sistemático y estadísticamente visible en las generaciones más jóvenes (Y y Z). Una tendencia inversa o de curva invertida se observa en la clase VII (Unskilled workers/Farm labours), donde la generación Silent inicia con los niveles de cohesión más bajos (cercanos a 13 puntos), sube de forma sostenida hacia las generaciones Boomer, X e Y, y vuelve a contraerse con la llegada de la generación Z.</p>
+<p>En tercer lugar, el análisis de los intervalos de confianza revela un problema de densidad de datos en los extremos generacionales dentro de ciertas clases. Las barras de error para la generación Silent en casi todos los paneles—y para la generación Z en categorías específicas como la clase VII o la categoría “NA”—son notablemente más amplias. Esto coincide con el reporte descriptivo previo, confirmando que al desagregar la muestra por celdas específicas (como Silent en la clase VII), el tamaño muestral (n) se reduce sustancialmente, lo que disminuye la precisión de la estimación bivariada e incrementa la incertidumbre en los márgenes de error.</p>
 <div class="cell">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>data_f <span class="sc">%&gt;%</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Generacion, <span class="at">y =</span> c05_total, <span class="at">fill =</span> Generacion)) <span class="sc">+</span></span>
@@ -984,46 +555,9 @@ Lista de figuras&nbsp;6.1: Figura 1. Cohesión social vertical por clase social 
 </figure>
 </div>
 </div>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Clase social</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>data_f <span class="sc">%&gt;%</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> egp7, <span class="at">y =</span> c05_total, <span class="at">fill =</span> egp7)) <span class="sc">+</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> .<span class="dv">6</span>) <span class="sc">+</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> .<span class="dv">2</span>, <span class="at">alpha =</span> .<span class="dv">8</span>) <span class="sc">+</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Cohesión social vertical"</span>) <span class="sc">+</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ggdist</span>() <span class="sc">+</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">30</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="05-resultados_files/figure-html/unnamed-chunk-2-2.png" class="img-fluid figure-img" width="672"></p>
-</figure>
 </div>
-</div>
-</div>
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>data_f <span class="sc">%&gt;%</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Generacion) <span class="sc">%&gt;%</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="at">media =</span> <span class="fu">mean</span>(c05_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="at">se    =</span> <span class="fu">sd</span>(c05_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>()),</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ci_low =</span> media <span class="sc">-</span> <span class="fl">1.96</span><span class="sc">*</span>se, <span class="at">ci_high =</span> media <span class="sc">+</span> <span class="fl">1.96</span><span class="sc">*</span>se) <span class="sc">%&gt;%</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Generacion, <span class="at">y =</span> media)) <span class="sc">+</span></span>
-<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"#0571B0"</span>) <span class="sc">+</span></span>
-<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> ci_low, <span class="at">ymax =</span> ci_high),</span>
-<span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>                <span class="at">width =</span> .<span class="dv">2</span>, <span class="at">color =</span> <span class="st">"#0571B0"</span>) <span class="sc">+</span></span>
-<span id="cb3-13"><a href="#cb3-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Cohesión social vertical (media)"</span>) <span class="sc">+</span></span>
-<span id="cb3-14"><a href="#cb3-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ggdist</span>()</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button"><i class="bi"></i></button></div>
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="05-resultados_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
+<p>respecto a la tendencia central y la hipótesis H1, las cajas internas muestran un descenso progresivo en las medianas conforme nos desplazamos de las generaciones mayores a las más jóvenes. La generación Silent exhibe la mediana más alta (en torno a los 17 puntos), mientras que las generaciones Boomer, X, Y y Z muestran un estancamiento en sus medianas, estabilizándose de forma muy similar alrededor de los 15 puntos. Este comportamiento apoya parcialmente la idea de que las cohortes más jóvenes muestran un menor apego o evaluación de la cohesión vertical en comparación con la cohorte histórica de mayor edad, aunque la diferencia se mitiga sustancialmente entre los bloques de las cuatro generaciones sucesivas.</p>
+<p>En segundo lugar, el análisis de la densidad (forma del violín) demuestra una alta homogeneidad estructural. Todos los violines exhiben una forma de “diamante” o distribución unimodal simétrica, ensanchándose notoriamente en la franja de los 12 a los 20 puntos. Esto indica que independientemente de la generación a la que pertenezca el individuo, la gran mayoría de la población tiende a concentrar sus respuestas en valores moderados-bajos de cohesión social vertical. No se aprecian distribuciones bimodales (que sugerirían una polarización extrema de opiniones dentro de una misma generación), sino un consenso generalizado en torno al centro-inferior de la escala.</p>
 <p>Modelos de regresion.</p>
 <div class="cell" data-tbl-cap-location="top">
 <div id="tbl-modelos" class="cell quarto-float quarto-figure quarto-figure-center anchored" data-tbl-cap-location="top">
@@ -1037,12 +571,11 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <thead>
 <tr class="header">
 <th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">&nbsp;</th>
-<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Model 1</th>
-<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Model 2</th>
-<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Model 3</th>
-<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Model 4</th>
-<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Model 5</th>
-<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Model 6</th>
+<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Modelo 0</th>
+<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Modelo Temp.</th>
+<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Modelo 1</th>
+<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Modelo 3</th>
+<th data-quarto-table-cell-role="th" style="padding-left: 5px; padding-right: 5px">Modelo 4</th>
 </tr>
 </thead>
 <tbody>
@@ -1050,28 +583,25 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">Intercept</td>
 <td style="padding-left: 5px; padding-right: 5px">15.848<sup>***</sup></td>
 <td style="padding-left: 5px; padding-right: 5px">15.711<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">15.919<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">22.858<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">17.831<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">21.079<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">15.899<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">21.493<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">21.303<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.111)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.180)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.111)</td>
-<td style="padding-left: 5px; padding-right: 5px">(3.302)</td>
-<td style="padding-left: 5px; padding-right: 5px">(1.094)</td>
-<td style="padding-left: 5px; padding-right: 5px">(2.305)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.106)</td>
+<td style="padding-left: 5px; padding-right: 5px">(2.298)</td>
+<td style="padding-left: 5px; padding-right: 5px">(2.297)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Corruption perception (Grand-mean centered)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.805<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.478<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.766<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.493<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.789<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.480<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.494<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1079,7 +609,6 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.081)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.075)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.070)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.077)</td>
 </tr>
 <tr class="odd">
@@ -1087,9 +616,8 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-1.608<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-1.605<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-1.599<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-1.596<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1097,52 +625,30 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.180)</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.180)</td>
-</tr>
-<tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Age (Grand-mean centered)</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.014</td>
-<td style="padding-left: 5px; padding-right: 5px">0.031</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-</tr>
-<tr class="even">
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.008)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.045)</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Age (Specific-mean centered)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.032</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.246<sup>*</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">0.075<sup>**</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">0.030</td>
+<td style="padding-left: 5px; padding-right: 5px">-0.053</td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.075)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.120)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.028)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.045)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.078)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Age (Person historical mean)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.018</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+<td style="padding-left: 5px; padding-right: 5px">0.012</td>
 <td style="padding-left: 5px; padding-right: 5px">0.014</td>
 </tr>
 <tr class="even">
@@ -1150,36 +656,32 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.050)</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.022)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.022)</td>
 </tr>
 <tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Identificación nacional (Grand-mean centered)</td>
+<td style="padding-left: 5px; padding-right: 5px">National identification (Grand-mean centered)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.739<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">0.733<sup>***</sup></td>
 <td style="padding-left: 5px; padding-right: 5px">0.341<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">0.464<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">0.338<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">0.340<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.091)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.090)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.083)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.076)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.083)</td>
 </tr>
 <tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Identificación nacional (Person historical mean)</td>
+<td style="padding-left: 5px; padding-right: 5px">National identification (Person historical mean)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.832<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.839<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">0.819<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">0.822<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1187,26 +689,39 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.213)</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.212)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Dignified treatment (Grand-mean centered)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.081<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.063<sup>**</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.093<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.052<sup>*</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+<td style="padding-left: 5px; padding-right: 5px">-0.062<sup>**</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.055<sup>**</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.013)</td>
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.021)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.017)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.021)</td>
+</tr>
+<tr class="odd">
+<td style="padding-left: 5px; padding-right: 5px">Dignified treatment (Specific-mean centered)</td>
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+<td style="padding-left: 5px; padding-right: 5px">0.164<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+</tr>
+<tr class="even">
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.016)</td>
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
+<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Dignified treatment (Person historical mean)</td>
@@ -1214,8 +729,7 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">-0.111<sup>**</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.148<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.144<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1223,17 +737,15 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.037)</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.038)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Political self-identification (Grand-mean centered)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.087<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.090<sup>***</sup></td>
 <td style="padding-left: 5px; padding-right: 5px">-0.111<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.132<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.109<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.108<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1241,7 +753,6 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.018)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.017)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.015)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.017)</td>
 </tr>
 <tr class="odd">
@@ -1249,9 +760,8 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.180<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.186<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.182<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.189<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1259,7 +769,6 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.041)</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.041)</td>
 </tr>
 <tr class="odd">
@@ -1267,27 +776,24 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.083</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.290</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.107</td>
+<td style="padding-left: 5px; padding-right: 5px">-0.067</td>
+<td style="padding-left: 5px; padding-right: 5px">-0.094</td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.198)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.203)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.198)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.195)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.196)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Education: Basic</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.769</td>
-<td style="padding-left: 5px; padding-right: 5px">0.730</td>
-<td style="padding-left: 5px; padding-right: 5px">0.825</td>
+<td style="padding-left: 5px; padding-right: 5px">0.659</td>
+<td style="padding-left: 5px; padding-right: 5px">0.707</td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1295,7 +801,6 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.873)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.872)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.861)</td>
 </tr>
 <tr class="odd">
@@ -1303,27 +808,24 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">1.762<sup>*</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">1.728</td>
-<td style="padding-left: 5px; padding-right: 5px">1.817<sup>*</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">1.658</td>
+<td style="padding-left: 5px; padding-right: 5px">1.698</td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.889)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.887)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.877)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.888)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.876)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Education: Postgraduate</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">3.022<sup>**</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">3.099<sup>**</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">3.114<sup>**</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">2.909<sup>**</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">2.969<sup>**</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1331,17 +833,15 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(1.001)</td>
-<td style="padding-left: 5px; padding-right: 5px">(1.002)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.992)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.991)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Generation: Boom</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-1.065</td>
-<td style="padding-left: 5px; padding-right: 5px">-1.515<sup>*</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-1.047</td>
+<td style="padding-left: 5px; padding-right: 5px">-1.074</td>
+<td style="padding-left: 5px; padding-right: 5px">-1.068</td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1349,7 +849,6 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.689)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.621)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.688)</td>
 </tr>
 <tr class="odd">
@@ -1357,9 +856,8 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-1.308</td>
-<td style="padding-left: 5px; padding-right: 5px">-1.978<sup>**</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-1.287</td>
+<td style="padding-left: 5px; padding-right: 5px">-1.337</td>
+<td style="padding-left: 5px; padding-right: 5px">-1.327</td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1367,7 +865,6 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.883)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.632)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.882)</td>
 </tr>
 <tr class="odd">
@@ -1375,9 +872,8 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-1.063</td>
-<td style="padding-left: 5px; padding-right: 5px">-1.862<sup>**</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-1.022</td>
+<td style="padding-left: 5px; padding-right: 5px">-1.089</td>
+<td style="padding-left: 5px; padding-right: 5px">-1.052</td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1385,7 +881,6 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(1.093)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.636)</td>
 <td style="padding-left: 5px; padding-right: 5px">(1.092)</td>
 </tr>
 <tr class="odd">
@@ -1393,9 +888,8 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-1.539</td>
-<td style="padding-left: 5px; padding-right: 5px">-2.571<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-1.498</td>
+<td style="padding-left: 5px; padding-right: 5px">-1.524</td>
+<td style="padding-left: 5px; padding-right: 5px">-1.481</td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1403,125 +897,47 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(1.309)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.705)</td>
-<td style="padding-left: 5px; padding-right: 5px">(1.307)</td>
+<td style="padding-left: 5px; padding-right: 5px">(1.308)</td>
 </tr>
 <tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Service class II</td>
+<td style="padding-left: 5px; padding-right: 5px">Intermediate class (III+IV)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.082</td>
-<td style="padding-left: 5px; padding-right: 5px">0.079</td>
-<td style="padding-left: 5px; padding-right: 5px">0.080</td>
+<td style="padding-left: 5px; padding-right: 5px">-0.419<sup>*</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.426<sup>*</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.251)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.258)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.255)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.178)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.181)</td>
 </tr>
 <tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Routine non-manual</td>
+<td style="padding-left: 5px; padding-right: 5px">Working class (V+VI+VII)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.277</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.279</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.307</td>
+<td style="padding-left: 5px; padding-right: 5px">-0.812<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-0.864<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.262)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.270)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.266)</td>
-</tr>
-<tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Routine non-manual (IIIa)</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.506</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.542</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.508</td>
-</tr>
-<tr class="even">
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.269)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.278)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.274)</td>
-</tr>
-<tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Manual supervisors</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.999<sup>**</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.996<sup>**</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-1.063<sup>***</sup></td>
-</tr>
-<tr class="even">
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.316)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.326)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.322)</td>
-</tr>
-<tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Skilled workers</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.853<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.859<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-0.908<sup>***</sup></td>
-</tr>
-<tr class="even">
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.248)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.255)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.252)</td>
-</tr>
-<tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Unskilled workers</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.323</td>
-<td style="padding-left: 5px; padding-right: 5px">0.226</td>
-<td style="padding-left: 5px; padding-right: 5px">0.252</td>
-</tr>
-<tr class="even">
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.439)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.452)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.445)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.190)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.194)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Wave 2017</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">2.113<sup>***</sup></td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">1.403<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">1.048<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">1.556<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">1.409<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">1.526<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1529,17 +945,15 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">(0.210)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.292)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.263)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.293)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.292)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Wave 2018</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">3.719<sup>***</sup></td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">3.458<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">3.174<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">3.536<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">3.463<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">3.539<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1547,7 +961,6 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">(0.195)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.223)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.241)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.257)</td>
 </tr>
 <tr class="odd">
@@ -1555,9 +968,8 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">-1.800<sup>***</sup></td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-2.327<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-2.727<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-2.065<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-2.319<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-2.090<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1565,7 +977,6 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">(0.194)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.307)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.315)</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.367)</td>
 </tr>
 <tr class="odd">
@@ -1573,9 +984,8 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">-4.866<sup>***</sup></td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">-5.603<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-6.079<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">-5.257<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-5.585<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">-5.279<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1583,17 +993,15 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">(0.195)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.332)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.372)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.429)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.428)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Wave 2022</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">0.712<sup>***</sup></td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.031</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.400</td>
-<td style="padding-left: 5px; padding-right: 5px">0.548</td>
+<td style="padding-left: 5px; padding-right: 5px">0.053</td>
+<td style="padding-left: 5px; padding-right: 5px">0.516</td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1601,17 +1009,15 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">(0.195)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.383)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.479)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.543)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.541)</td>
 </tr>
 <tr class="odd">
 <td style="padding-left: 5px; padding-right: 5px">Wave 2023</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">3.043<sup>***</sup></td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">2.227<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">1.761<sup>***</sup></td>
-<td style="padding-left: 5px; padding-right: 5px">2.676<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">2.242<sup>***</sup></td>
+<td style="padding-left: 5px; padding-right: 5px">2.642<sup>***</sup></td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
@@ -1619,39 +1025,18 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">(0.210)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">(0.418)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.533)</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.593)</td>
-</tr>
-<tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Interaction: Age (within) × Age (between)</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.004<sup>*</sup></td>
-</tr>
-<tr class="even">
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">(0.002)</td>
+<td style="padding-left: 5px; padding-right: 5px">(0.591)</td>
 </tr>
 <tr class="odd" style="border-top: 1px solid #000000;">
 <td style="padding-left: 5px; padding-right: 5px">BIC</td>
 <td style="padding-left: 5px; padding-right: 5px">51120.934</td>
 <td style="padding-left: 5px; padding-right: 5px">48412.698</td>
-<td style="padding-left: 5px; padding-right: 5px">50955.309</td>
-<td style="padding-left: 5px; padding-right: 5px">48207.816</td>
-<td style="padding-left: 5px; padding-right: 5px">48233.575</td>
-<td style="padding-left: 5px; padding-right: 5px">48189.081</td>
+<td style="padding-left: 5px; padding-right: 5px">50880.197</td>
+<td style="padding-left: 5px; padding-right: 5px">48179.382</td>
+<td style="padding-left: 5px; padding-right: 5px">48144.670</td>
 </tr>
 <tr class="even">
-<td style="padding-left: 5px; padding-right: 5px">Numb. obs.</td>
-<td style="padding-left: 5px; padding-right: 5px">7979</td>
+<td style="padding-left: 5px; padding-right: 5px">Num. obs.</td>
 <td style="padding-left: 5px; padding-right: 5px">7979</td>
 <td style="padding-left: 5px; padding-right: 5px">7979</td>
 <td style="padding-left: 5px; padding-right: 5px">7979</td>
@@ -1665,47 +1050,42 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 <td style="padding-left: 5px; padding-right: 5px">1372</td>
 <td style="padding-left: 5px; padding-right: 5px">1372</td>
 <td style="padding-left: 5px; padding-right: 5px">1372</td>
-<td style="padding-left: 5px; padding-right: 5px">1372</td>
 </tr>
 <tr class="even">
 <td style="padding-left: 5px; padding-right: 5px">Var: individuals (Intercept)</td>
 <td style="padding-left: 5px; padding-right: 5px">11.697</td>
 <td style="padding-left: 5px; padding-right: 5px">12.197</td>
-<td style="padding-left: 5px; padding-right: 5px">10.822</td>
-<td style="padding-left: 5px; padding-right: 5px">8.643</td>
-<td style="padding-left: 5px; padding-right: 5px">9.588</td>
-<td style="padding-left: 5px; padding-right: 5px">8.796</td>
+<td style="padding-left: 5px; padding-right: 5px">10.330</td>
+<td style="padding-left: 5px; padding-right: 5px">8.650</td>
+<td style="padding-left: 5px; padding-right: 5px">8.804</td>
 </tr>
 <tr class="odd">
-<td style="padding-left: 5px; padding-right: 5px">Var: Residual</td>
+<td style="padding-left: 5px; padding-right: 5px">Var: individuals (Age within)</td>
 <td style="padding-left: 5px; padding-right: 5px">28.789</td>
 <td style="padding-left: 5px; padding-right: 5px">19.238</td>
-<td style="padding-left: 5px; padding-right: 5px">28.144</td>
-<td style="padding-left: 5px; padding-right: 5px">18.978</td>
-<td style="padding-left: 5px; padding-right: 5px">17.892</td>
-<td style="padding-left: 5px; padding-right: 5px">17.741</td>
+<td style="padding-left: 5px; padding-right: 5px">28.027</td>
+<td style="padding-left: 5px; padding-right: 5px">18.991</td>
+<td style="padding-left: 5px; padding-right: 5px">17.772</td>
 </tr>
 <tr class="even">
-<td style="padding-left: 5px; padding-right: 5px">Var: individuals, age (within)</td>
+<td style="padding-left: 5px; padding-right: 5px">Cov: individuals (Intercept - Age within)</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.185</td>
-<td style="padding-left: 5px; padding-right: 5px">0.197</td>
+<td style="padding-left: 5px; padding-right: 5px">0.195</td>
 </tr>
 <tr class="odd" style="border-bottom: 2px solid #000000;">
-<td style="padding-left: 5px; padding-right: 5px">Cov: individuals (Intercept-age)</td>
+<td style="padding-left: 5px; padding-right: 5px">Var: Residual</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
 <td style="padding-left: 5px; padding-right: 5px">&nbsp;</td>
-<td style="padding-left: 5px; padding-right: 5px">0.008</td>
-<td style="padding-left: 5px; padding-right: 5px">-0.082</td>
+<td style="padding-left: 5px; padding-right: 5px">-0.091</td>
 </tr>
 </tbody><tfoot>
 <tr class="odd">
-<td colspan="7" style="font-size: 0.8em">Note: Cells contain regression coefficients with standard errors in parentheses. <sup>***</sup>p &lt; 0.001; <sup>**</sup>p &lt; 0.01; <sup>*</sup>p &lt; 0.05.</td>
+<td colspan="6" style="font-size: 0.8em">Note: Cells contain regression coefficients with standard errors in parentheses. <sup>***</sup>p &lt; 0.001; <sup>**</sup>p &lt; 0.01; <sup>*</sup>p &lt; 0.05.</td>
 </tr>
 </tfoot>
 
@@ -1715,7 +1095,12 @@ Lista de tablas&nbsp;6.2: Multilevel models for vertical social cohesion
 </figure>
 </div>
 </div>
-<p>El análisis de los determinantes de la cohesión social vertical en Chile, sustentado en una estructura longitudinal de 7,979 observaciones anidadas en 1,372 individuos a lo largo de cinco modelos jerárquicos, revela importantes hallazgos en su especificación completa (Modelo 5). En cuanto a los predictores de percepción a nivel inter-individual (efectos between), el sentido de pertenencia ejerce un impacto positivo y altamente significativo (<span class="math inline">\(\beta = 0.464\)</span>; <span class="math inline">\(p &lt; 0.001\)</span>), mientras que la percepción de corrupción se posiciona como uno de los detractores más robustos del modelo con un marcado coeficiente negativo (<span class="math inline">\(\beta = -0.766\)</span>; <span class="math inline">\(p &lt; 0.001\)</span>). Asimismo, la variable de trato digno—que operacionaliza el conflicto de clase—muestra que a mayor conflicto percibido, menor es la cohesión vertical (<span class="math inline">\(\beta = -0.093\)</span>; <span class="math inline">\(p &lt; 0.001\)</span>), aportando evidencia para la hipótesis <span class="math inline">\(H_2\)</span>, al tiempo que la auto-identificación política presenta un efecto negativo significativo (<span class="math inline">\(\beta = -0.132\)</span>; <span class="math inline">\(p &lt; 0.001\)</span>); a mayor identificacion con la derecha, menor es la cohesión vertical. Respecto a las características estables del individuo (Nivel 2), se confirma la hipótesis <span class="math inline">\(H_1\)</span> sobre la brecha generacional, evidenciando que, en comparación con la cohorte más antigua, todas las generaciones posteriores exhiben una cohesión vertical significativamente menor, con un efecto más dramático en la Generación Z (<span class="math inline">\(\beta = -2.571\)</span>; <span class="math inline">\(p &lt; 0.001\)</span>), seguida por la Generación X (<span class="math inline">\(\beta = -1.978\)</span>; <span class="math inline">\(p &lt; 0.01\)</span>) y los Millennials (<span class="math inline">\(\beta = -1.862\)</span>; <span class="math inline">\(p &lt; 0.01\)</span>); por su parte, el nivel educativo solo arroja un efecto positivo y significativo en el grupo de postgrado (<span class="math inline">\(\beta = 3.099\)</span>; <span class="math inline">\(p &lt; 0.01\)</span>), mientras que el sexo no reporta significancia estadística (<span class="math inline">\(\beta = -0.290\)</span>). El contexto temporal captura con nitidez el impacto de la crisis del estallido, reflejando caídas estrepitosas en la cohesión vertical durante la Ola 2019 (<span class="math inline">\(\beta = -2.727\)</span>; <span class="math inline">\(p &lt; 0.001\)</span>) y la Ola 2021 (<span class="math inline">\(\beta = -6.079\)</span>; <span class="math inline">\(p &lt; 0.001\)</span>) a proposito del estallido social y la pandemia, seguidas de un leve repunte o estabilización en la Ola 2023 (<span class="math inline">\(\beta = 1.761\)</span>; <span class="math inline">\(p &lt; 0.001\)</span>). Finalmente, el examen de los efectos aleatorios complementa este escenario al registrar una reducción de la varianza del intercepto de 11.697 en el modelo nulo a 9.588 en el Modelo 5, demostrando que las variables de Nivel 2 explican una parte importante de la heterogeneidad basal; asimismo, la varianza de la pendiente aleatoria para la edad intra-individual (0.185) junto a una covarianza intercepto-pendiente positiva pero marginal (0.008) confirman la existencia de trayectorias de cambio divergentes en el tiempo, mientras que el descenso de la varianza residual desde 28.789 hasta 17.892 constata que la inclusión de percepciones temporales dinámicas logra explicar una porción crítica de la variabilidad longitudinal de la cohesión en la población chilena.</p>
+<p>El análisis comenzó mediante la estimación de un Modelo Nulo o de intercepto aleatorio (Modelo 0). Este paso inicial resultó fundamental para ejecutar la partición de la varianza y calcular el Coeficiente de Correlación Intraclase (ICC), determinando así si la estructura anidada de los datos, donde las observaciones longitudinales se encuentran agrupadas dentro de los mismos individuos, requería un tratamiento estadístico jerárquico. Los resultados del Modelo 0 revelaron una varianza entre individuos (<span class="math inline">\(\tau_{00}\)</span>) de 11.697 en el Nivel 2 y una varianza residual (<span class="math inline">\(\sigma^2\)</span>) de 28.789 en el Nivel 1. A partir de estos componentes, el cálculo del ICC arrojó un valor de 0.289, lo que indica que el 28.9% de la variabilidad total de la confianza institucional es explicada por diferencias estables y basales entre las personas (efectos <em>between-individual</em>), mientras que el 71.1% restante responde a fluctuaciones temporales dentro del individuo a lo largo del tiempo o a errores de medición (efectos <em>within-individual</em>). Dado que este coeficiente supera ampliamente el umbral crítico del 10% sugerido por la literatura, se justifica técnicamente el uso de modelos de efectos mixtos para corregir la no independencia de las observaciones y evitar sesgos en la estimación del error estándar.</p>
+<p>Posterior y progresivamente, la especificación de los siguientes modelos incorporó variables de percepción y atributos sociodemográficos fijos, permitiendo identificar con precisión los factores estructurales y subjetivos que movilizan la dimensión vertical en el país. Dentro de las variables, la percepción de corrupción centrado en la gran media (<em>Grand-mean centered</em>) emergió como un inhibidor crítico del modelo (Modelo 1, <span class="math inline">\(\beta = -0.789, p &lt; 0.001\)</span>), aportando evidencia empírica a favor de la hipótesis de que la sospecha de corrupción erosiona de raíz la legitimidad del vínculo jerárquico que une a la sociedad con el Estado. En contraposición a este efecto erosivo, la identificación nacional bajo este mismo centrado funcionó como un habilitador positivo de particular relevancia (<span class="math inline">\(\beta = 0.733, p &lt; 0.001\)</span>), respaldando la premisa de que la identidad nacional opera como un “amortiguador” o reserva cultural que estabiliza la percepción del orden social incluso frente a escenarios de profunda desafección institucional. Esta dinámica de opiniones se encuentra fuertemente condicionada por la posición objetiva de los sujetos en la estructura social, manifestada a través de la educación y la clase social. Al evaluar el esquema colapsado, la clase trabajadora manual exhibe niveles significativamente menores de confianza vertical en comparación con la clase de servicios (Modelo 3, <span class="math inline">\(\beta = -0.812, p &lt; 0.001\)</span>), un hallazgo que delata cómo la heterogeneidad estructural del mercado laboral chileno y la exclusión de los beneficios del desarrollo se traducen en un distanciamiento del pacto social, patrón que también afecta de forma significativa a la clase intermedia (<span class="math inline">\(\beta = -0.419, p &lt; 0.05\)</span>). Asimismo, el rol de la educación no se comporta de manera lineal; el modelo demuestra que solo el nivel de posgrado actúa como un dinamizador positivo y robusto en comparación con la categoría de referencia (<span class="math inline">\(\beta = 2.909, p &lt; 0.01\)</span>), sugiriendo que la alta especialización académica facilita una inserción privilegiada en las jerarquías del país y, por ende, una evaluación más favorable de las mismas.</p>
+<p>Por otra parte, los modelos capturan una fractura generacional basal combinada con la vulnerabilidad del sistema ante los acontecimientos históricos recientes. Al analizar las cohortes, y a pesar de la pérdida de significancia estadística por el control multivariado, la Generación Z registra el coeficiente negativo más pronunciado en la estructura generacional (<span class="math inline">\(\beta = -1.524\)</span> en Modelo 3), delineando una tendencia al alejamiento del orden institucional por parte de los ciudadanos más jóvenes en comparación con la generación <em>Silent</em>. Este distanciamiento coexistió con un fuerte shock de contexto capturado a través de las variables temporales de Ola. Específicamente, se observa una caída estrepitosa en la Ola 5, correspondiente al año 2021 (Modelo 3, <span class="math inline">\(\beta = -5.585, p &lt; 0.001\)</span>), la cual refleja de manera nítida el impacto acumulado del Estallido Social de 2019 y las disrupciones socioeconómicas de la pandemia del COVID-19 en la degradación del tejido institucional del país, mostrando un proceso de recuperación hacia la Ola 2023 (<span class="math inline">\(\beta = 2.242, p &lt; 0.001\)</span>).</p>
+<p>Siguiendo la necesidad de modelar la heterogeneidad de las respuestas individuales, el Modelo 4 fue enriquecido mediante la inclusión de una pendiente aleatoria para la edad centrada en el promedio de la persona (<em>Age specific-mean centered</em>). El valor 0.195 corresponde a la covarianza entre el intercepto y la pendiente, y la consecuente reducción en el Criterio de Información Bayesiano (BIC) de 48179.38 a 48144.67 son evidencia a favor de que el paso del tiempo y el envejecimiento intraindividual no afectan a todos los chilenos por igual.</p>
+<p>Finalmente, el Modelo 4 se consolidó como la especificación metodológicamente superior al presentar el mejor ajuste general, cuya virtud principal radica en su capacidad para desagregar los componentes inter e intraindividuales a través de dos estrategias distintas de centrado. Para las variables de Percepción de Corrupción, Identificación Nacional y Autoidentificación Política, el modelo emplea un centrado en la gran media (<em>Grand-mean centered</em>) en el Nivel 1 en coexistencia con el promedio histórico del sujeto (<em>Person historical mean</em>) en el Nivel 2. Bajo esta formulación algebraica, el promedio histórico absorbe la varianza interindividual total, forzando a los coeficientes de Nivel 1 a transformarse en efectos <em>Within</em> puros (intraindividuales), mientras que los coeficientes de las medias históricas en el Nivel 2 deben interpretarse estrictamente como <strong>efectos contextuales netos</strong> (<span class="math inline">\(\beta_B - \beta_W\)</span>). A través de esta descomposición, se constató que el efecto contextual de la cronicidad de la corrupción (<span class="math inline">\(\beta = -1.596, p &lt; 0.001\)</span>) es más de tres veces superior a su fluctuación anual momentánea (<span class="math inline">\(\beta = -0.494, p &lt; 0.001\)</span>). Esto demuestra que para dos observaciones con el mismo nivel de percepción en un año dado, el individuo que arrastra un historial crónico de sospecha institucional sufre una penalización contextual severa en su confianza basal. Homólogamente, el promedio histórico de la identificación nacional opera como un potente efecto contextual positivo (<span class="math inline">\(\beta = 0.822, p &lt; 0.001\)</span>) en comparación con su desvío anual (<span class="math inline">\(\beta = 0.340, p &lt; 0.001\)</span>). Por el contrario, para las variables de Edad y Trato Digno se optó por un centrado en la media del sujeto (<em>Specific-mean centered</em>) en el Nivel 1. Esta estrategia metodológica separa de manera directa los paramétrod: el término centrado arroja el efecto <em>Within</em> puro, mientras que la media histórica en el Nivel 2 provee directamente el <strong>efecto <em>Between</em> puro</strong> (<span class="math inline">\(\beta_B\)</span>).El análisis del Trato Digno en el Modelo 3 ilustra una sugerente paradoja; por un lado, el incremento coyuntural del trato digno respecto al propio promedio del sujeto eleva significativamente su confianza institucional (<span class="math inline">\(\beta = 0.164, p &lt; 0.001\)</span>, efecto Within). Por otro lado, el efecto Between revela una dinámica contraintuitiva; aquellos individuos con trayectorias estables de mayor trato digno en el tiempo exhiben una menor confianza institucional (<span class="math inline">\(\beta = -0.111, p &lt; 0.01\)</span>).</p>
+<p>Al contrastar el cuerpo de hipótesis con las estimaciones de los modelos, se observa un respaldo empírico parcial para las principales tesis del estudio. Se halla evidencia concluyente a favor de la Hipótesis 3 (Identificación nacional), dado que tanto el coeficiente de variación temporal (<span class="math inline">\(\beta = 0.340, p &lt; 0.001\)</span>) como, muy especialmente, el efecto del historial crónico interindividual del sujeto (<span class="math inline">\(\beta = 0.822, p &lt; 0.001\)</span>) son significativos, directos y positivos. De igual forma, existe sustento empírico sólido para la Hipótesis 5 (Variación temporal macro-contingente), confirmándose que las crisis político-sanitarias de la Ola 2019 (<span class="math inline">\(\beta = -2.090, p &lt; 0.001\)</span>) y la Ola 2021 (<span class="math inline">\(\beta = -5.279, p &lt; 0.001\)</span>) contrajeron de forma estrepitosa el constructo dependiente, aunque la Ola 2022 perdió significancia al controlar por efectos interindividuales en el Modelo 4 (<span class="math inline">\(\beta = 0.516\)</span>). Por el contrario, la Hipótesis 1 (Cohorte generacional) es rechazada debido a que ninguna de las cohortes alcanzó significancia estadística frente a la generación <em>Silent</em> (registrando la Generación Z un <span class="math inline">\(\beta = -1.481\)</span> no significativo en el Modelo 4), descartándose un alejamiento generacional neto una vez controladas las variables de percepción. La Hipótesis 2 (Clase social) sufre una contradicción de signo fundamental; aunque se hipotetizaba un efecto positivo (<span class="math inline">\(\gamma^{\text{EGP}}_{40} &gt; 0\)</span>), la clase trabajadora manual exhibió un coeficiente significativamente negativo (<span class="math inline">\(\beta = -0.864, p &lt; 0.001\)</span>), lo que demuestra que pertenecer a estos estratos debilita la confianza institucional en lugar de fortalecerla. Respecto al capital educativo (Hipótesis 4), el supuesto de un incremento monótono se descarta, puesto que solo el nivel de posgrado demostró un efecto dinamizador y estadísticamente significativo (<span class="math inline">\(\beta = 2.969, p &lt; 0.01\)</span>) en comparación con la categoría de base. Finalmente, la Hipótesis 6 (Moderación de la trayectoria temporal) carece de soporte empírico en la especificación actual, dado que las dinámicas contractivas observadas en el tiempo operaron como shocks paralelos y transversales a la estructura de las cohortes, sin mostrar interacciones cruzadas estadísticamente significativas que permitiesen validar una penalización asimétrica en la juventud.</p>
 
 
 <!-- -->
@@ -3631,209 +3016,178 @@ document.addEventListener("DOMContentLoaded", () => {
       </a>
   </div>
 </nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Ejecutar el código</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Resultados"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, include=FALSE}</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>data_f <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"input/data_f_regresion.rds"</span>)</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>data_centrada <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"input/data_centrada_regresion.rds"</span>)</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggdist)</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4)</span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gtsummary)</span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>label_map <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">"(Intercept)"</span>        <span class="ot">=</span> <span class="st">"Intercept"</span>,</span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sense of belonging (Ordinal contrasts)</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord"</span>         <span class="ot">=</span> <span class="st">"Sense of belonging"</span>,</span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord.L"</span>       <span class="ot">=</span> <span class="st">"Sense of belonging (Linear trend)"</span>,</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord.Q"</span>       <span class="ot">=</span> <span class="st">"Sense of belonging (Quadratic trend)"</span>,</span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord.C"</span>       <span class="ot">=</span> <span class="st">"Sense of belonging (Cubic trend)"</span>,</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord^4"</span>       <span class="ot">=</span> <span class="st">"Sense of belonging (4th degree trend)"</span>,</span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_grand"</span>          <span class="ot">=</span> <span class="st">"Sense of belonging (BE)"</span>,</span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_within"</span>         <span class="ot">=</span> <span class="st">"Sense of belonging (WE)"</span>,</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sense of belonging (Dummy coding version - previous)</span></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord2"</span>        <span class="ot">=</span> <span class="st">"Sense of belonging (Level 2)"</span>,</span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord3"</span>        <span class="ot">=</span> <span class="st">"Sense of belonging (Level 3)"</span>,</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord4"</span>        <span class="ot">=</span> <span class="st">"Sense of belonging (Level 4)"</span>,</span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord5"</span>        <span class="ot">=</span> <span class="st">"Sense of belonging (Level 5)"</span>,</span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Corruption perception</span></span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c38"</span>                <span class="ot">=</span> <span class="st">"Corruption perception"</span>,</span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c38_grand"</span>          <span class="ot">=</span> <span class="st">"Corruption perception (BE)"</span>,</span>
-<span id="cb4-36"><a href="#cb4-36" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c38_within"</span>         <span class="ot">=</span> <span class="st">"Corruption perception (WE)"</span>,</span>
-<span id="cb4-37"><a href="#cb4-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-38"><a href="#cb4-38" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Age</span></span>
-<span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>  <span class="st">"m0_edad"</span>            <span class="ot">=</span> <span class="st">"Age"</span>,</span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>  <span class="st">"m0_edad_grand"</span>      <span class="ot">=</span> <span class="st">"Age (BE)"</span>,</span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>  <span class="st">"m0_edad_within"</span>     <span class="ot">=</span> <span class="st">"Age (WE)"</span>,</span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Dignified treatment</span></span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>  <span class="st">"trato_digno"</span>        <span class="ot">=</span> <span class="st">"Dignified treatment"</span>,</span>
-<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>  <span class="st">"trato_digno_grand"</span>  <span class="ot">=</span> <span class="st">"Dignified treatment (BE)"</span>,</span>
-<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>  <span class="st">"trato_digno_within"</span> <span class="ot">=</span> <span class="st">"Dignified treatment (WE)"</span>,</span>
-<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Political self-identification</span></span>
-<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>  <span class="st">"indigena"</span>           <span class="ot">=</span> <span class="st">"Indigenous self-identification"</span>,</span>
-<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c15"</span>                <span class="ot">=</span> <span class="st">"Political self-identification"</span>,</span>
-<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c15_grand"</span>          <span class="ot">=</span> <span class="st">"Political self-identification (BE)"</span>,</span>
-<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c15_within"</span>         <span class="ot">=</span> <span class="st">"Political self-identification (WE)"</span>,</span>
-<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Generation (ref. = Silent)</span></span>
-<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Generacionboom"</span>     <span class="ot">=</span> <span class="st">"Generation: Boom"</span>,</span>
-<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>  <span class="st">"GeneracionX"</span>        <span class="ot">=</span> <span class="st">"Generation: X"</span>,</span>
-<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>  <span class="st">"GeneracionY"</span>        <span class="ot">=</span> <span class="st">"Generation: Y"</span>,</span>
-<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>  <span class="st">"GeneracionZ"</span>        <span class="ot">=</span> <span class="st">"Generation: Z"</span>,</span>
-<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Social class EGP-7 (ref. = Service class I) — SIN comillas simples</span></span>
-<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7II  Service class II"</span>                             <span class="ot">=</span> <span class="st">"Service class II"</span>,</span>
-<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7III Routine non-manual"</span>                           <span class="ot">=</span> <span class="st">"Routine non-manual"</span>,</span>
-<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7IV  Self-employed"</span>                                <span class="ot">=</span> <span class="st">"Self-employed"</span>,</span>
-<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7V   Manual supervisors/Lower grade technicians"</span>   <span class="ot">=</span> <span class="st">"Manual supervisors"</span>,</span>
-<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7VI  Skilled workers"</span>                              <span class="ot">=</span> <span class="st">"Skilled workers"</span>,</span>
-<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7VII Unskilled workers/Farm labours"</span>               <span class="ot">=</span> <span class="st">"Unskilled workers"</span>,</span>
-<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Wave (ref. = Ola 1 / 2016)</span></span>
-<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 2"</span>           <span class="ot">=</span> <span class="st">"Wave 2017"</span>,</span>
-<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 3"</span>           <span class="ot">=</span> <span class="st">"Wave 2018"</span>,</span>
-<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 4"</span>           <span class="ot">=</span> <span class="st">"Wave 2019"</span>,</span>
-<span id="cb4-72"><a href="#cb4-72" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 5"</span>           <span class="ot">=</span> <span class="st">"Wave 2021"</span>,</span>
-<span id="cb4-73"><a href="#cb4-73" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 6"</span>           <span class="ot">=</span> <span class="st">"Wave 2022"</span>,</span>
-<span id="cb4-74"><a href="#cb4-74" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 7"</span>           <span class="ot">=</span> <span class="st">"Wave 2023"</span>,</span>
-<span id="cb4-75"><a href="#cb4-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-76"><a href="#cb4-76" aria-hidden="true" tabindex="-1"></a>  <span class="co"># DV</span></span>
-<span id="cb4-77"><a href="#cb4-77" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c05_total"</span>          <span class="ot">=</span> <span class="st">"Vertical social cohesion (DV)"</span></span>
-<span id="cb4-78"><a href="#cb4-78" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb4-79"><a href="#cb4-79" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-80"><a href="#cb4-80" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-81"><a href="#cb4-81" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-82"><a href="#cb4-82" aria-hidden="true" tabindex="-1"></a><span class="fu">### Analisis descriptivo.</span></span>
-<span id="cb4-83"><a href="#cb4-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-84"><a href="#cb4-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-85"><a href="#cb4-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-86"><a href="#cb4-86" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=FALSE, results='asis'}</span></span>
-<span id="cb4-87"><a href="#cb4-87" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-descriptivos</span></span>
-<span id="cb4-88"><a href="#cb4-88" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Tabla 1. Estadísticos descriptivos (N= 7,982)"</span></span>
-<span id="cb4-89"><a href="#cb4-89" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap-location: top</span></span>
-<span id="cb4-90"><a href="#cb4-90" aria-hidden="true" tabindex="-1"></a> data_f <span class="sc">%&gt;%</span> </span>
-<span id="cb4-91"><a href="#cb4-91" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(c05_total, c38, m0_edad, egp7, trato_digno, c15, c32_01_ord, Generacion, ola) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-92"><a href="#cb4-92" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb4-93"><a href="#cb4-93" aria-hidden="true" tabindex="-1"></a>    <span class="at">c38      =</span> <span class="fu">as.numeric</span>(haven<span class="sc">::</span><span class="fu">zap_labels</span>(c38)),</span>
-<span id="cb4-94"><a href="#cb4-94" aria-hidden="true" tabindex="-1"></a>    <span class="at">c15      =</span> <span class="fu">as.numeric</span>(haven<span class="sc">::</span><span class="fu">zap_labels</span>(c15)),</span>
-<span id="cb4-95"><a href="#cb4-95" aria-hidden="true" tabindex="-1"></a>    <span class="at">c32_01_ord  =</span> <span class="fu">as.numeric</span>(haven<span class="sc">::</span><span class="fu">zap_labels</span>(c32_01_ord)),</span>
-<span id="cb4-96"><a href="#cb4-96" aria-hidden="true" tabindex="-1"></a>    <span class="at">egp7     =</span> <span class="fu">as.factor</span>(egp7)</span>
-<span id="cb4-97"><a href="#cb4-97" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-98"><a href="#cb4-98" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tbl_summary</span>(</span>
-<span id="cb4-99"><a href="#cb4-99" aria-hidden="true" tabindex="-1"></a>    <span class="at">statistic =</span> <span class="fu">list</span>(<span class="fu">all_continuous</span>() <span class="sc">~</span> <span class="st">"{mean} ({sd}) [{min}; {max}]"</span>,</span>
-<span id="cb4-100"><a href="#cb4-100" aria-hidden="true" tabindex="-1"></a>                      <span class="fu">all_categorical</span>() <span class="sc">~</span> <span class="st">"{n} ({p}%)"</span>),</span>
-<span id="cb4-101"><a href="#cb4-101" aria-hidden="true" tabindex="-1"></a>    <span class="at">label =</span> <span class="fu">list</span>(</span>
-<span id="cb4-102"><a href="#cb4-102" aria-hidden="true" tabindex="-1"></a>      c05_total   <span class="sc">~</span> <span class="st">"Cohesión social vertical"</span>,</span>
-<span id="cb4-103"><a href="#cb4-103" aria-hidden="true" tabindex="-1"></a>      c38         <span class="sc">~</span> <span class="st">"Percepción de corrupción"</span>,</span>
-<span id="cb4-104"><a href="#cb4-104" aria-hidden="true" tabindex="-1"></a>      m0_edad     <span class="sc">~</span> <span class="st">"Edad"</span>,</span>
-<span id="cb4-105"><a href="#cb4-105" aria-hidden="true" tabindex="-1"></a>      egp7        <span class="sc">~</span> <span class="st">"Clase social (EGP-7)"</span>,</span>
-<span id="cb4-106"><a href="#cb4-106" aria-hidden="true" tabindex="-1"></a>      trato_digno <span class="sc">~</span> <span class="st">"Trato digno"</span>,</span>
-<span id="cb4-107"><a href="#cb4-107" aria-hidden="true" tabindex="-1"></a>      c15         <span class="sc">~</span> <span class="st">"Autoidentificación política"</span>,</span>
-<span id="cb4-108"><a href="#cb4-108" aria-hidden="true" tabindex="-1"></a>      c32_01_ord  <span class="sc">~</span> <span class="st">"Orgullo de ser chileno"</span>,</span>
-<span id="cb4-109"><a href="#cb4-109" aria-hidden="true" tabindex="-1"></a>      Generacion  <span class="sc">~</span> <span class="st">"Generación"</span>,</span>
-<span id="cb4-110"><a href="#cb4-110" aria-hidden="true" tabindex="-1"></a>      ola         <span class="sc">~</span> <span class="st">"Ola"</span></span>
-<span id="cb4-111"><a href="#cb4-111" aria-hidden="true" tabindex="-1"></a>    ),</span>
-<span id="cb4-112"><a href="#cb4-112" aria-hidden="true" tabindex="-1"></a>    <span class="at">missing =</span> <span class="st">"no"</span></span>
-<span id="cb4-113"><a href="#cb4-113" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span> </span>
-<span id="cb4-114"><a href="#cb4-114" aria-hidden="true" tabindex="-1"></a>  <span class="fu">bold_labels</span>()</span>
-<span id="cb4-115"><a href="#cb4-115" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-116"><a href="#cb4-116" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-117"><a href="#cb4-117" aria-hidden="true" tabindex="-1"></a>Analisis bivariado.</span>
-<span id="cb4-118"><a href="#cb4-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-119"><a href="#cb4-119" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=FALSE}</span></span>
-<span id="cb4-120"><a href="#cb4-120" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-bivariado</span></span>
-<span id="cb4-121"><a href="#cb4-121" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Figura 1. Cohesión social vertical por clase social y generación"</span></span>
-<span id="cb4-122"><a href="#cb4-122" aria-hidden="true" tabindex="-1"></a>resumen_clase_gen <span class="ot">&lt;-</span> data_f <span class="sc">%&gt;%</span></span>
-<span id="cb4-123"><a href="#cb4-123" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(egp7, Generacion) <span class="sc">%&gt;%</span></span>
-<span id="cb4-124"><a href="#cb4-124" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb4-125"><a href="#cb4-125" aria-hidden="true" tabindex="-1"></a>    <span class="at">media =</span> <span class="fu">mean</span>(c05_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-126"><a href="#cb4-126" aria-hidden="true" tabindex="-1"></a>    <span class="at">se =</span> <span class="fu">sd</span>(c05_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>()),</span>
-<span id="cb4-127"><a href="#cb4-127" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
-<span id="cb4-128"><a href="#cb4-128" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb4-129"><a href="#cb4-129" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb4-130"><a href="#cb4-130" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb4-131"><a href="#cb4-131" aria-hidden="true" tabindex="-1"></a>    <span class="at">ci_low  =</span> media <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> se,</span>
-<span id="cb4-132"><a href="#cb4-132" aria-hidden="true" tabindex="-1"></a>    <span class="at">ci_high =</span> media <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> se</span>
-<span id="cb4-133"><a href="#cb4-133" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb4-134"><a href="#cb4-134" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-135"><a href="#cb4-135" aria-hidden="true" tabindex="-1"></a>resumen_clase_gen <span class="sc">%&gt;%</span></span>
-<span id="cb4-136"><a href="#cb4-136" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Generacion, <span class="at">y =</span> media, <span class="at">group =</span> egp7)) <span class="sc">+</span></span>
-<span id="cb4-137"><a href="#cb4-137" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.8</span>, <span class="at">color =</span> <span class="st">"#0571B0"</span>) <span class="sc">+</span></span>
-<span id="cb4-138"><a href="#cb4-138" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>, <span class="at">color =</span> <span class="st">"#0571B0"</span>) <span class="sc">+</span></span>
-<span id="cb4-139"><a href="#cb4-139" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> ci_low, <span class="at">ymax =</span> ci_high), <span class="at">width =</span> <span class="fl">0.15</span>, <span class="at">alpha =</span> .<span class="dv">5</span>, <span class="at">color =</span> <span class="st">"#0571B0"</span>) <span class="sc">+</span></span>
-<span id="cb4-140"><a href="#cb4-140" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> egp7, <span class="at">ncol =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
-<span id="cb4-141"><a href="#cb4-141" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
-<span id="cb4-142"><a href="#cb4-142" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Generation"</span>, <span class="at">y =</span> <span class="st">"Vertical social cohesion (mean)"</span></span>
-<span id="cb4-143"><a href="#cb4-143" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
-<span id="cb4-144"><a href="#cb4-144" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ggdist</span>() <span class="sc">+</span></span>
-<span id="cb4-145"><a href="#cb4-145" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>))</span>
-<span id="cb4-146"><a href="#cb4-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-147"><a href="#cb4-147" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-148"><a href="#cb4-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-149"><a href="#cb4-149" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-150"><a href="#cb4-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-153"><a href="#cb4-153" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb4-154"><a href="#cb4-154" aria-hidden="true" tabindex="-1"></a>data_f <span class="sc">%&gt;%</span></span>
-<span id="cb4-155"><a href="#cb4-155" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Generacion, <span class="at">y =</span> c05_total, <span class="at">fill =</span> Generacion)) <span class="sc">+</span></span>
-<span id="cb4-156"><a href="#cb4-156" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> .<span class="dv">6</span>) <span class="sc">+</span></span>
-<span id="cb4-157"><a href="#cb4-157" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> .<span class="dv">2</span>, <span class="at">alpha =</span> .<span class="dv">8</span>) <span class="sc">+</span></span>
-<span id="cb4-158"><a href="#cb4-158" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#0571B0"</span>,<span class="st">"#92C5DE"</span>,<span class="st">"#b3b3b3ff"</span>,<span class="st">"#F4A582"</span>,<span class="st">"#CA0020"</span>)) <span class="sc">+</span></span>
-<span id="cb4-159"><a href="#cb4-159" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Cohesión social vertical"</span>,</span>
-<span id="cb4-160"><a href="#cb4-160" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Source: ELSOC 2016-2023"</span>) <span class="sc">+</span></span>
-<span id="cb4-161"><a href="#cb4-161" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ggdist</span>() <span class="sc">+</span></span>
-<span id="cb4-162"><a href="#cb4-162" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
-<span id="cb4-163"><a href="#cb4-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-164"><a href="#cb4-164" aria-hidden="true" tabindex="-1"></a><span class="co"># Clase social</span></span>
-<span id="cb4-165"><a href="#cb4-165" aria-hidden="true" tabindex="-1"></a>data_f <span class="sc">%&gt;%</span></span>
-<span id="cb4-166"><a href="#cb4-166" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> egp7, <span class="at">y =</span> c05_total, <span class="at">fill =</span> egp7)) <span class="sc">+</span></span>
-<span id="cb4-167"><a href="#cb4-167" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> .<span class="dv">6</span>) <span class="sc">+</span></span>
-<span id="cb4-168"><a href="#cb4-168" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> .<span class="dv">2</span>, <span class="at">alpha =</span> .<span class="dv">8</span>) <span class="sc">+</span></span>
-<span id="cb4-169"><a href="#cb4-169" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Cohesión social vertical"</span>) <span class="sc">+</span></span>
-<span id="cb4-170"><a href="#cb4-170" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ggdist</span>() <span class="sc">+</span></span>
-<span id="cb4-171"><a href="#cb4-171" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>,</span>
-<span id="cb4-172"><a href="#cb4-172" aria-hidden="true" tabindex="-1"></a>        <span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">30</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span>
-<span id="cb4-173"><a href="#cb4-173" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-174"><a href="#cb4-174" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-175"><a href="#cb4-175" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-178"><a href="#cb4-178" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb4-179"><a href="#cb4-179" aria-hidden="true" tabindex="-1"></a>data_f <span class="sc">%&gt;%</span></span>
-<span id="cb4-180"><a href="#cb4-180" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(Generacion) <span class="sc">%&gt;%</span></span>
-<span id="cb4-181"><a href="#cb4-181" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb4-182"><a href="#cb4-182" aria-hidden="true" tabindex="-1"></a>    <span class="at">media =</span> <span class="fu">mean</span>(c05_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
-<span id="cb4-183"><a href="#cb4-183" aria-hidden="true" tabindex="-1"></a>    <span class="at">se    =</span> <span class="fu">sd</span>(c05_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>()),</span>
-<span id="cb4-184"><a href="#cb4-184" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb4-185"><a href="#cb4-185" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb4-186"><a href="#cb4-186" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">ci_low =</span> media <span class="sc">-</span> <span class="fl">1.96</span><span class="sc">*</span>se, <span class="at">ci_high =</span> media <span class="sc">+</span> <span class="fl">1.96</span><span class="sc">*</span>se) <span class="sc">%&gt;%</span></span>
-<span id="cb4-187"><a href="#cb4-187" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Generacion, <span class="at">y =</span> media)) <span class="sc">+</span></span>
-<span id="cb4-188"><a href="#cb4-188" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">3</span>, <span class="at">color =</span> <span class="st">"#0571B0"</span>) <span class="sc">+</span></span>
-<span id="cb4-189"><a href="#cb4-189" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> ci_low, <span class="at">ymax =</span> ci_high),</span>
-<span id="cb4-190"><a href="#cb4-190" aria-hidden="true" tabindex="-1"></a>                <span class="at">width =</span> .<span class="dv">2</span>, <span class="at">color =</span> <span class="st">"#0571B0"</span>) <span class="sc">+</span></span>
-<span id="cb4-191"><a href="#cb4-191" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Cohesión social vertical (media)"</span>) <span class="sc">+</span></span>
-<span id="cb4-192"><a href="#cb4-192" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ggdist</span>()</span>
-<span id="cb4-193"><a href="#cb4-193" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-194"><a href="#cb4-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-195"><a href="#cb4-195" aria-hidden="true" tabindex="-1"></a>Modelos de regresion.</span>
-<span id="cb4-196"><a href="#cb4-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-197"><a href="#cb4-197" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-200"><a href="#cb4-200" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
-<span id="cb4-201"><a href="#cb4-201" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
-<span id="cb4-202"><a href="#cb4-202" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-modelos</span></span>
-<span id="cb4-203"><a href="#cb4-203" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Multilevel models for vertical social cohesion"</span></span>
-<span id="cb4-204"><a href="#cb4-204" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap-location: top</span></span>
-<span id="cb4-205"><a href="#cb4-205" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-206"><a href="#cb4-206" aria-hidden="true" tabindex="-1"></a>htmltools<span class="sc">::</span><span class="fu">includeHTML</span>(<span class="st">"output/tables/tabla_modelos.html"</span>)</span>
-<span id="cb4-207"><a href="#cb4-207" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb4-208"><a href="#cb4-208" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-209"><a href="#cb4-209" aria-hidden="true" tabindex="-1"></a>El análisis de los determinantes de la cohesión social vertical en Chile, sustentado en una estructura longitudinal de 7,979 observaciones anidadas en 1,372 individuos a lo largo de cinco modelos jerárquicos, revela importantes hallazgos en su especificación completa (Modelo 5). En cuanto a los predictores de percepción a nivel inter-individual (efectos between), el sentido de pertenencia ejerce un impacto positivo y altamente significativo ($\beta = 0.464$; $p &lt; 0.001$), mientras que la percepción de corrupción se posiciona como uno de los detractores más robustos del modelo con un marcado coeficiente negativo ($\beta = -0.766$; $p &lt; 0.001$). Asimismo, la variable de trato digno—que operacionaliza el conflicto de clase—muestra que a mayor conflicto percibido, menor es la cohesión vertical ($\beta = -0.093$; $p &lt; 0.001$), aportando evidencia para la hipótesis $H_2$, al tiempo que la auto-identificación política presenta un efecto negativo significativo ($\beta = -0.132$; $p &lt; 0.001$); a mayor identificacion con la derecha, menor es la cohesión vertical. Respecto a las características estables del individuo (Nivel 2), se confirma la hipótesis $H_1$ sobre la brecha generacional, evidenciando que, en comparación con la cohorte más antigua, todas las generaciones posteriores exhiben una cohesión vertical significativamente menor, con un efecto más dramático en la Generación Z ($\beta = -2.571$; $p &lt; 0.001$), seguida por la Generación X ($\beta = -1.978$; $p &lt; 0.01$) y los Millennials ($\beta = -1.862$; $p &lt; 0.01$); por su parte, el nivel educativo solo arroja un efecto positivo y significativo en el grupo de postgrado ($\beta = 3.099$; $p &lt; 0.01$), mientras que el sexo no reporta significancia estadística ($\beta = -0.290$). El contexto temporal captura con nitidez el impacto de la crisis del estallido, reflejando caídas estrepitosas en la cohesión vertical durante la Ola 2019 ($\beta = -2.727$; $p &lt; 0.001$) y la Ola 2021 ($\beta = -6.079$; $p &lt; 0.001$) a proposito del estallido social y la pandemia, seguidas de un leve repunte o estabilización en la Ola 2023 ($\beta = 1.761$; $p &lt; 0.001$). Finalmente, el examen de los efectos aleatorios complementa este escenario al registrar una reducción de la varianza del intercepto de 11.697 en el modelo nulo a 9.588 en el Modelo 5, demostrando que las variables de Nivel 2 explican una parte importante de la heterogeneidad basal; asimismo, la varianza de la pendiente aleatoria para la edad intra-individual (0.185) junto a una covarianza intercepto-pendiente positiva pero marginal (0.008) confirman la existencia de trayectorias de cambio divergentes en el tiempo, mientras que el descenso de la varianza residual desde 28.789 hasta 17.892 constata que la inclusión de percepciones temporales dinámicas logra explicar una porción crítica de la variabilidad longitudinal de la cohesión en la población chilena.</span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Resultados"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, include=FALSE}</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>data_f <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"input/data_f_regresion.rds"</span>)</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>data_centrada <span class="ot">&lt;-</span> <span class="fu">readRDS</span>(<span class="st">"input/data_centrada_regresion.rds"</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tibble)</span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggdist)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(lme4)</span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gtsummary)</span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>label_map <span class="ot">&lt;-</span> <span class="fu">c</span>(</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">"(Intercept)"</span>        <span class="ot">=</span> <span class="st">"Intercept"</span>,</span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sense of belonging (Ordinal contrasts)</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord"</span>         <span class="ot">=</span> <span class="st">"Sense of belonging"</span>,</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord.L"</span>       <span class="ot">=</span> <span class="st">"Sense of belonging (Linear trend)"</span>,</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord.Q"</span>       <span class="ot">=</span> <span class="st">"Sense of belonging (Quadratic trend)"</span>,</span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord.C"</span>       <span class="ot">=</span> <span class="st">"Sense of belonging (Cubic trend)"</span>,</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord^4"</span>       <span class="ot">=</span> <span class="st">"Sense of belonging (4th degree trend)"</span>,</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_grand"</span>          <span class="ot">=</span> <span class="st">"Sense of belonging (BE)"</span>,</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_within"</span>         <span class="ot">=</span> <span class="st">"Sense of belonging (WE)"</span>,</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Sense of belonging (Dummy coding version - previous)</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord2"</span>        <span class="ot">=</span> <span class="st">"Sense of belonging (Level 2)"</span>,</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord3"</span>        <span class="ot">=</span> <span class="st">"Sense of belonging (Level 3)"</span>,</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord4"</span>        <span class="ot">=</span> <span class="st">"Sense of belonging (Level 4)"</span>,</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c32_01_ord5"</span>        <span class="ot">=</span> <span class="st">"Sense of belonging (Level 5)"</span>,</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Corruption perception</span></span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c38"</span>                <span class="ot">=</span> <span class="st">"Corruption perception"</span>,</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c38_grand"</span>          <span class="ot">=</span> <span class="st">"Corruption perception (BE)"</span>,</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c38_within"</span>         <span class="ot">=</span> <span class="st">"Corruption perception (WE)"</span>,</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Age</span></span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>  <span class="st">"m0_edad"</span>            <span class="ot">=</span> <span class="st">"Age"</span>,</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>  <span class="st">"m0_edad_grand"</span>      <span class="ot">=</span> <span class="st">"Age (BE)"</span>,</span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>  <span class="st">"m0_edad_within"</span>     <span class="ot">=</span> <span class="st">"Age (WE)"</span>,</span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Dignified treatment</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>  <span class="st">"trato_digno"</span>        <span class="ot">=</span> <span class="st">"Dignified treatment"</span>,</span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>  <span class="st">"trato_digno_grand"</span>  <span class="ot">=</span> <span class="st">"Dignified treatment (BE)"</span>,</span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a>  <span class="st">"trato_digno_within"</span> <span class="ot">=</span> <span class="st">"Dignified treatment (WE)"</span>,</span>
+<span id="cb2-47"><a href="#cb2-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-48"><a href="#cb2-48" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Political self-identification</span></span>
+<span id="cb2-49"><a href="#cb2-49" aria-hidden="true" tabindex="-1"></a>  <span class="st">"indigena"</span>           <span class="ot">=</span> <span class="st">"Indigenous self-identification"</span>,</span>
+<span id="cb2-50"><a href="#cb2-50" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c15"</span>                <span class="ot">=</span> <span class="st">"Political self-identification"</span>,</span>
+<span id="cb2-51"><a href="#cb2-51" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c15_grand"</span>          <span class="ot">=</span> <span class="st">"Political self-identification (BE)"</span>,</span>
+<span id="cb2-52"><a href="#cb2-52" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c15_within"</span>         <span class="ot">=</span> <span class="st">"Political self-identification (WE)"</span>,</span>
+<span id="cb2-53"><a href="#cb2-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-54"><a href="#cb2-54" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Generation (ref. = Silent)</span></span>
+<span id="cb2-55"><a href="#cb2-55" aria-hidden="true" tabindex="-1"></a>  <span class="st">"Generacionboom"</span>     <span class="ot">=</span> <span class="st">"Generation: Boom"</span>,</span>
+<span id="cb2-56"><a href="#cb2-56" aria-hidden="true" tabindex="-1"></a>  <span class="st">"GeneracionX"</span>        <span class="ot">=</span> <span class="st">"Generation: X"</span>,</span>
+<span id="cb2-57"><a href="#cb2-57" aria-hidden="true" tabindex="-1"></a>  <span class="st">"GeneracionY"</span>        <span class="ot">=</span> <span class="st">"Generation: Y"</span>,</span>
+<span id="cb2-58"><a href="#cb2-58" aria-hidden="true" tabindex="-1"></a>  <span class="st">"GeneracionZ"</span>        <span class="ot">=</span> <span class="st">"Generation: Z"</span>,</span>
+<span id="cb2-59"><a href="#cb2-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-60"><a href="#cb2-60" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Social class EGP-7 (ref. = Service class I) — SIN comillas simples</span></span>
+<span id="cb2-61"><a href="#cb2-61" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7II  Service class II"</span>                             <span class="ot">=</span> <span class="st">"Service class II"</span>,</span>
+<span id="cb2-62"><a href="#cb2-62" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7III Routine non-manual"</span>                           <span class="ot">=</span> <span class="st">"Routine non-manual"</span>,</span>
+<span id="cb2-63"><a href="#cb2-63" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7IV  Self-employed"</span>                                <span class="ot">=</span> <span class="st">"Self-employed"</span>,</span>
+<span id="cb2-64"><a href="#cb2-64" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7V   Manual supervisors/Lower grade technicians"</span>   <span class="ot">=</span> <span class="st">"Manual supervisors"</span>,</span>
+<span id="cb2-65"><a href="#cb2-65" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7VI  Skilled workers"</span>                              <span class="ot">=</span> <span class="st">"Skilled workers"</span>,</span>
+<span id="cb2-66"><a href="#cb2-66" aria-hidden="true" tabindex="-1"></a>  <span class="st">"egp7VII Unskilled workers/Farm labours"</span>               <span class="ot">=</span> <span class="st">"Unskilled workers"</span>,</span>
+<span id="cb2-67"><a href="#cb2-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-68"><a href="#cb2-68" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Wave (ref. = Ola 1 / 2016)</span></span>
+<span id="cb2-69"><a href="#cb2-69" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 2"</span>           <span class="ot">=</span> <span class="st">"Wave 2017"</span>,</span>
+<span id="cb2-70"><a href="#cb2-70" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 3"</span>           <span class="ot">=</span> <span class="st">"Wave 2018"</span>,</span>
+<span id="cb2-71"><a href="#cb2-71" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 4"</span>           <span class="ot">=</span> <span class="st">"Wave 2019"</span>,</span>
+<span id="cb2-72"><a href="#cb2-72" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 5"</span>           <span class="ot">=</span> <span class="st">"Wave 2021"</span>,</span>
+<span id="cb2-73"><a href="#cb2-73" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 6"</span>           <span class="ot">=</span> <span class="st">"Wave 2022"</span>,</span>
+<span id="cb2-74"><a href="#cb2-74" aria-hidden="true" tabindex="-1"></a>  <span class="st">"olaOla 7"</span>           <span class="ot">=</span> <span class="st">"Wave 2023"</span>,</span>
+<span id="cb2-75"><a href="#cb2-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-76"><a href="#cb2-76" aria-hidden="true" tabindex="-1"></a>  <span class="co"># DV</span></span>
+<span id="cb2-77"><a href="#cb2-77" aria-hidden="true" tabindex="-1"></a>  <span class="st">"c05_total"</span>          <span class="ot">=</span> <span class="st">"Vertical social cohesion (DV)"</span></span>
+<span id="cb2-78"><a href="#cb2-78" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb2-79"><a href="#cb2-79" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-80"><a href="#cb2-80" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-81"><a href="#cb2-81" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-82"><a href="#cb2-82" aria-hidden="true" tabindex="-1"></a><span class="fu">### Analisis descriptivo.</span></span>
+<span id="cb2-83"><a href="#cb2-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-84"><a href="#cb2-84" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=FALSE, results='asis'}</span></span>
+<span id="cb2-85"><a href="#cb2-85" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-descriptivos</span></span>
+<span id="cb2-86"><a href="#cb2-86" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Tabla 1. Estadísticos descriptivos (N= )"</span></span>
+<span id="cb2-87"><a href="#cb2-87" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap-location: top</span></span>
+<span id="cb2-88"><a href="#cb2-88" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-89"><a href="#cb2-89" aria-hidden="true" tabindex="-1"></a>htmltools<span class="sc">::</span><span class="fu">includeHTML</span>(<span class="st">"procesamiento/output/tables/tabla_descriptiva_ola7.html"</span>)</span>
+<span id="cb2-90"><a href="#cb2-90" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-91"><a href="#cb2-91" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-92"><a href="#cb2-92" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-93"><a href="#cb2-93" aria-hidden="true" tabindex="-1"></a>A partir de los datos descriptivos analizados ($N = 11,537$), se observa una muestra caracterizada por tensiones institucionales agudas y una marcada polarización en las percepciones de la estructura social. La variable dependiente, cohesión social vertical, presenta una media de 16 puntos ($SD = 6$) dentro de un rango de $<span class="co">[</span><span class="ot">0; 45</span><span class="co">]</span>$, lo que sitúa la percepción general en el tercio inferior de la escala, evidenciando un diagnóstico predominantemente crítico o desgastado respecto a la confianza institucional y la legitimidad del orden social vertical. Esta evaluación se contextualiza en un entorno de profunda desafección, donde la percepción de corrupción alcanza niveles críticos: el 86% de la muestra se agrupa en los dos peldaños más altos de la escala (el 50% en la categoría máxima y el 36% en la contigua), lo que contrasta drásticamente con una identidad nacional fuertemente arraigada, donde el 90% de los individuos manifiesta una alta identificación con el país. En términos de su composición sociodemográfica y las variables centrales para las hipótesis, la muestra exhibe una media de edad de 50 años ($SD = 15$) con un rango de $<span class="co">[</span><span class="ot">18; 84</span><span class="co">]</span>$ años, lo cual se alinea con la distribución generacional, donde la cohorte del Baby Boom es la predominante con un 42%, seguida por la Generación X (23%) y la Generación Y o Millennials (21%), dejando en los márgenes a la generación Silent (8.0%) y a los más jóvenes de la Generación Z (6.6%). Por su parte, la estructura de clase medida a través del esquema EGP-7 muestra que el grupo mayoritario corresponde a los trabajadores manuales calificados de la categoría VI (26%), mientras que la clase de servicios en su conjunto (I y II) acumula un 33%, reflejando un mercado laboral con un peso sustancial de sectores asalariados tradicionales y profesionales, y con una presencia menor de trabajadores no calificados en la categoría VII (3.5%). Finalmente, las variables políticas y de trato muestran una autoidentificación ideológica que se ubica en una media de 7.2 puntos ($SD = 3.9$) dentro de un espectro de $<span class="co">[</span><span class="ot">0.0; 12.0</span><span class="co">]</span>$, denotando una leve inclinación hacia el centro-derecha o sectores conservadores según la codificación estándar, combinada con una preocupante asimetría en la variable de trato digno, cuya media de 4.7 ($SD = 5.3$) sobre un máximo de 15 indica que la gran mayoría de la población reporta niveles muy bajos de dignidad en sus interacciones cotidianas. Esta compleja realidad estructural y de opinión se distribuye temporalmente de manera estratégica para el análisis longitudinal, con una base inicial del 10% de los casos para las Olas 1 y 2, y una estabilización perfecta del 16% en cada una de las mediciones restantes (de la Ola 3 a la Ola 7), garantizando un volumen de datos homogéneo y robusto para capturar las variaciones temporales asociadas al periodo de crisis y pandemia contemplado en el modelo general.</span>
+<span id="cb2-94"><a href="#cb2-94" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-95"><a href="#cb2-95" aria-hidden="true" tabindex="-1"></a><span class="fu">### Analisis bivariado.</span></span>
+<span id="cb2-96"><a href="#cb2-96" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-97"><a href="#cb2-97" aria-hidden="true" tabindex="-1"></a><span class="in">```{r, echo=FALSE}</span></span>
+<span id="cb2-98"><a href="#cb2-98" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: fig-bivariado</span></span>
+<span id="cb2-99"><a href="#cb2-99" aria-hidden="true" tabindex="-1"></a><span class="co">#| fig-cap: "Figura 1. Cohesión social vertical por clase social y generación"</span></span>
+<span id="cb2-100"><a href="#cb2-100" aria-hidden="true" tabindex="-1"></a>resumen_clase_gen <span class="ot">&lt;-</span> data_f <span class="sc">%&gt;%</span></span>
+<span id="cb2-101"><a href="#cb2-101" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Filtramos para eliminar filas donde egp7 o Generacion sean NA</span></span>
+<span id="cb2-102"><a href="#cb2-102" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(egp7), <span class="sc">!</span><span class="fu">is.na</span>(Generacion)) <span class="sc">%&gt;%</span> </span>
+<span id="cb2-103"><a href="#cb2-103" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(egp7, Generacion) <span class="sc">%&gt;%</span></span>
+<span id="cb2-104"><a href="#cb2-104" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
+<span id="cb2-105"><a href="#cb2-105" aria-hidden="true" tabindex="-1"></a>    <span class="at">media =</span> <span class="fu">mean</span>(c05_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>),</span>
+<span id="cb2-106"><a href="#cb2-106" aria-hidden="true" tabindex="-1"></a>    <span class="at">se =</span> <span class="fu">sd</span>(c05_total, <span class="at">na.rm =</span> <span class="cn">TRUE</span>) <span class="sc">/</span> <span class="fu">sqrt</span>(<span class="fu">n</span>()),</span>
+<span id="cb2-107"><a href="#cb2-107" aria-hidden="true" tabindex="-1"></a>    <span class="at">n =</span> <span class="fu">n</span>(),</span>
+<span id="cb2-108"><a href="#cb2-108" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
+<span id="cb2-109"><a href="#cb2-109" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
+<span id="cb2-110"><a href="#cb2-110" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
+<span id="cb2-111"><a href="#cb2-111" aria-hidden="true" tabindex="-1"></a>    <span class="at">ci_low  =</span> media <span class="sc">-</span> <span class="fl">1.96</span> <span class="sc">*</span> se,</span>
+<span id="cb2-112"><a href="#cb2-112" aria-hidden="true" tabindex="-1"></a>    <span class="at">ci_high =</span> media <span class="sc">+</span> <span class="fl">1.96</span> <span class="sc">*</span> se</span>
+<span id="cb2-113"><a href="#cb2-113" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb2-114"><a href="#cb2-114" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-115"><a href="#cb2-115" aria-hidden="true" tabindex="-1"></a>resumen_clase_gen <span class="sc">%&gt;%</span></span>
+<span id="cb2-116"><a href="#cb2-116" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Generacion, <span class="at">y =</span> media, <span class="at">group =</span> egp7)) <span class="sc">+</span></span>
+<span id="cb2-117"><a href="#cb2-117" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="at">linewidth =</span> <span class="fl">0.8</span>, <span class="at">color =</span> <span class="st">"#0571B0"</span>) <span class="sc">+</span></span>
+<span id="cb2-118"><a href="#cb2-118" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="at">size =</span> <span class="dv">2</span>, <span class="at">color =</span> <span class="st">"#0571B0"</span>) <span class="sc">+</span></span>
+<span id="cb2-119"><a href="#cb2-119" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_errorbar</span>(<span class="fu">aes</span>(<span class="at">ymin =</span> ci_low, <span class="at">ymax =</span> ci_high), <span class="at">width =</span> <span class="fl">0.15</span>, <span class="at">alpha =</span> .<span class="dv">5</span>, <span class="at">color =</span> <span class="st">"#0571B0"</span>) <span class="sc">+</span></span>
+<span id="cb2-120"><a href="#cb2-120" aria-hidden="true" tabindex="-1"></a>  <span class="fu">facet_wrap</span>(<span class="sc">~</span> egp7, <span class="at">ncol =</span> <span class="dv">3</span>) <span class="sc">+</span></span>
+<span id="cb2-121"><a href="#cb2-121" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(</span>
+<span id="cb2-122"><a href="#cb2-122" aria-hidden="true" tabindex="-1"></a>    <span class="at">x =</span> <span class="st">"Generation"</span>, <span class="at">y =</span> <span class="st">"Vertical social cohesion (mean)"</span></span>
+<span id="cb2-123"><a href="#cb2-123" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">+</span></span>
+<span id="cb2-124"><a href="#cb2-124" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ggdist</span>() <span class="sc">+</span></span>
+<span id="cb2-125"><a href="#cb2-125" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">strip.text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">8</span>))</span>
+<span id="cb2-126"><a href="#cb2-126" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-127"><a href="#cb2-127" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-128"><a href="#cb2-128" aria-hidden="true" tabindex="-1"></a>La @fig-bivariado presenta un análisis bivariado que examina la media de la cohesión social vertical (eje Y) a través de cinco cohortes generacionales (Generation: Silent, Boom, X, Y, Z, en el eje X), segmentado o facetado por las distintas categorías del esquema de clase social EGP-7. Las barras verticales alrededor de cada punto representan los intervalos de confianza al 95%, lo que permite evaluar la precisión de las estimaciones y la significancia visual de las diferencias.</span>
+<span id="cb2-129"><a href="#cb2-129" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-130"><a href="#cb2-130" aria-hidden="true" tabindex="-1"></a>En primer lugar, se observa un efecto generacional parcialmente consistente con la hipótesis H1, caracterizado por una tendencia descendente de la cohesión social vertical a medida que las cohortes son más jóvenes (de Silent hacia Z). Este patrón de "caída" generacional es especialmente pronunciado y nítido en las clases socioeconómicas más altas, como Service Class I y Service Class II, así como en las ocupaciones de rutina no manuales (Routine non-manual y Routine Nonmanual IIIa), donde los miembros de la generación Silent reportan niveles de cohesión significativamente más altos (superando los 20 puntos en las clases de servicios) en comparación con las generaciones sucesivas, las cuales tienden a estancarse o seguir descendiendo sutilmente en torno a los 15-17 puntos.</span>
+<span id="cb2-131"><a href="#cb2-131" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-132"><a href="#cb2-132" aria-hidden="true" tabindex="-1"></a>En segundo lugar, el comportamiento de las clases manuales y trabajadoras (EGP-V, VI y VII) quiebra la linealidad del descenso generacional, mostrando dinámicas heterogéneas. En la categoría V (Manual supervisors/Lower grade technicians) se aprecia un desplome drástico entre la generación Silent y los Boomers, seguido de una leve recuperación en las generaciones intermedias antes de volver a caer en la generación Z. Por otro lado, la clase VI (Skilled workers) exhibe un patrón en forma de "U": la cohesión disminuye desde la generación Silent hasta alcanzar su punto más bajo en la Generación X, para luego experimentar un repunte sistemático y estadísticamente visible en las generaciones más jóvenes (Y y Z). Una tendencia inversa o de curva invertida se observa en la clase VII (Unskilled workers/Farm labours), donde la generación Silent inicia con los niveles de cohesión más bajos (cercanos a 13 puntos), sube de forma sostenida hacia las generaciones Boomer, X e Y, y vuelve a contraerse con la llegada de la generación Z.</span>
+<span id="cb2-133"><a href="#cb2-133" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-134"><a href="#cb2-134" aria-hidden="true" tabindex="-1"></a>En tercer lugar, el análisis de los intervalos de confianza revela un problema de densidad de datos en los extremos generacionales dentro de ciertas clases. Las barras de error para la generación Silent en casi todos los paneles—y para la generación Z en categorías específicas como la clase VII o la categoría "NA"—son notablemente más amplias. Esto coincide con el reporte descriptivo previo, confirmando que al desagregar la muestra por celdas específicas (como Silent en la clase VII), el tamaño muestral (n) se reduce sustancialmente, lo que disminuye la precisión de la estimación bivariada e incrementa la incertidumbre en los márgenes de error.</span>
+<span id="cb2-135"><a href="#cb2-135" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-138"><a href="#cb2-138" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb2-139"><a href="#cb2-139" aria-hidden="true" tabindex="-1"></a>data_f <span class="sc">%&gt;%</span></span>
+<span id="cb2-140"><a href="#cb2-140" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> Generacion, <span class="at">y =</span> c05_total, <span class="at">fill =</span> Generacion)) <span class="sc">+</span></span>
+<span id="cb2-141"><a href="#cb2-141" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_violin</span>(<span class="at">alpha =</span> .<span class="dv">6</span>) <span class="sc">+</span></span>
+<span id="cb2-142"><a href="#cb2-142" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_boxplot</span>(<span class="at">width =</span> .<span class="dv">2</span>, <span class="at">alpha =</span> .<span class="dv">8</span>) <span class="sc">+</span></span>
+<span id="cb2-143"><a href="#cb2-143" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_fill_manual</span>(<span class="at">values =</span> <span class="fu">c</span>(<span class="st">"#0571B0"</span>,<span class="st">"#92C5DE"</span>,<span class="st">"#b3b3b3ff"</span>,<span class="st">"#F4A582"</span>,<span class="st">"#CA0020"</span>)) <span class="sc">+</span></span>
+<span id="cb2-144"><a href="#cb2-144" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="cn">NULL</span>, <span class="at">y =</span> <span class="st">"Cohesión social vertical"</span>,</span>
+<span id="cb2-145"><a href="#cb2-145" aria-hidden="true" tabindex="-1"></a>       <span class="at">caption =</span> <span class="st">"Source: ELSOC 2016-2023"</span>) <span class="sc">+</span></span>
+<span id="cb2-146"><a href="#cb2-146" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_ggdist</span>() <span class="sc">+</span></span>
+<span id="cb2-147"><a href="#cb2-147" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">legend.position =</span> <span class="st">"none"</span>)</span>
+<span id="cb2-148"><a href="#cb2-148" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-149"><a href="#cb2-149" aria-hidden="true" tabindex="-1"></a>respecto a la tendencia central y la hipótesis H1, las cajas internas muestran un descenso progresivo en las medianas conforme nos desplazamos de las generaciones mayores a las más jóvenes. La generación Silent exhibe la mediana más alta (en torno a los 17 puntos), mientras que las generaciones Boomer, X, Y y Z muestran un estancamiento en sus medianas, estabilizándose de forma muy similar alrededor de los 15 puntos. Este comportamiento apoya parcialmente la idea de que las cohortes más jóvenes muestran un menor apego o evaluación de la cohesión vertical en comparación con la cohorte histórica de mayor edad, aunque la diferencia se mitiga sustancialmente entre los bloques de las cuatro generaciones sucesivas.</span>
+<span id="cb2-150"><a href="#cb2-150" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-151"><a href="#cb2-151" aria-hidden="true" tabindex="-1"></a>En segundo lugar, el análisis de la densidad (forma del violín) demuestra una alta homogeneidad estructural. Todos los violines exhiben una forma de "diamante" o distribución unimodal simétrica, ensanchándose notoriamente en la franja de los 12 a los 20 puntos. Esto indica que independientemente de la generación a la que pertenezca el individuo, la gran mayoría de la población tiende a concentrar sus respuestas en valores moderados-bajos de cohesión social vertical. No se aprecian distribuciones bimodales (que sugerirían una polarización extrema de opiniones dentro de una misma generación), sino un consenso generalizado en torno al centro-inferior de la escala.</span>
+<span id="cb2-152"><a href="#cb2-152" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-153"><a href="#cb2-153" aria-hidden="true" tabindex="-1"></a>Modelos de regresion.</span>
+<span id="cb2-154"><a href="#cb2-154" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-157"><a href="#cb2-157" aria-hidden="true" tabindex="-1"></a><span class="in">```{r}</span></span>
+<span id="cb2-158"><a href="#cb2-158" aria-hidden="true" tabindex="-1"></a><span class="co">#| echo: false</span></span>
+<span id="cb2-159"><a href="#cb2-159" aria-hidden="true" tabindex="-1"></a><span class="co">#| label: tbl-modelos</span></span>
+<span id="cb2-160"><a href="#cb2-160" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap: "Multilevel models for vertical social cohesion"</span></span>
+<span id="cb2-161"><a href="#cb2-161" aria-hidden="true" tabindex="-1"></a><span class="co">#| tbl-cap-location: top</span></span>
+<span id="cb2-162"><a href="#cb2-162" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-163"><a href="#cb2-163" aria-hidden="true" tabindex="-1"></a>htmltools<span class="sc">::</span><span class="fu">includeHTML</span>(<span class="st">"output/tables/tabla_modelos.html"</span>)</span>
+<span id="cb2-164"><a href="#cb2-164" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb2-165"><a href="#cb2-165" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-166"><a href="#cb2-166" aria-hidden="true" tabindex="-1"></a>El análisis comenzó mediante la estimación de un Modelo Nulo o de intercepto aleatorio (Modelo 0). Este  paso inicial resultó fundamental para ejecutar la partición de la varianza y calcular el Coeficiente de Correlación Intraclase (ICC), determinando así si la estructura anidada de los datos, donde las observaciones longitudinales se encuentran agrupadas dentro de los mismos individuos, requería un tratamiento estadístico jerárquico. Los resultados del Modelo 0 revelaron una varianza entre individuos ($\tau_{00}$) de 11.697 en el Nivel 2 y una varianza residual ($\sigma^2$) de 28.789 en el Nivel 1. A partir de estos componentes, el cálculo del ICC arrojó un valor de 0.289, lo que indica que el 28.9% de la variabilidad total de la confianza institucional es explicada por diferencias estables y basales entre las personas (efectos *between-individual*), mientras que el 71.1% restante responde a fluctuaciones temporales dentro del individuo a lo largo del tiempo o a errores de medición (efectos *within-individual*). Dado que este coeficiente supera ampliamente el umbral crítico del 10% sugerido por la literatura, se justifica técnicamente el uso de modelos de efectos mixtos para corregir la no independencia de las observaciones y evitar sesgos en la estimación del error estándar.</span>
+<span id="cb2-167"><a href="#cb2-167" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-168"><a href="#cb2-168" aria-hidden="true" tabindex="-1"></a>Posterior y progresivamente, la especificación de los siguientes modelos incorporó variables de percepción y atributos sociodemográficos fijos, permitiendo identificar con precisión los factores estructurales y subjetivos que movilizan la dimensión vertical en el país. Dentro de las variables, la percepción de corrupción centrado en la gran media (*Grand-mean centered*) emergió como un inhibidor crítico del modelo (Modelo 1, $\beta = -0.789, p &lt; 0.001$), aportando evidencia empírica a favor de la hipótesis de que la sospecha de corrupción erosiona de raíz la legitimidad del vínculo jerárquico que une a la sociedad con el Estado. En contraposición a este efecto erosivo, la identificación nacional bajo este mismo centrado funcionó como un habilitador positivo de particular relevancia ($\beta = 0.733, p &lt; 0.001$), respaldando la premisa de que la identidad nacional opera como un “amortiguador” o reserva cultural que estabiliza la percepción del orden social incluso frente a escenarios de profunda desafección institucional. Esta dinámica de opiniones se encuentra fuertemente condicionada por la posición objetiva de los sujetos en la estructura social, manifestada a través de la educación y la clase social. Al evaluar el esquema colapsado, la clase trabajadora manual exhibe niveles significativamente menores de confianza vertical en comparación con la clase de servicios (Modelo 3, $\beta = -0.812, p &lt; 0.001$), un hallazgo que delata cómo la heterogeneidad estructural del mercado laboral chileno y la exclusión de los beneficios del desarrollo se traducen en un distanciamiento del pacto social, patrón que también afecta de forma significativa a la clase intermedia ($\beta = -0.419, p &lt; 0.05$). Asimismo, el rol de la educación no se comporta de manera lineal; el modelo demuestra que solo el nivel de posgrado actúa como un dinamizador positivo y robusto en comparación con la categoría de referencia ($\beta = 2.909, p &lt; 0.01$), sugiriendo que la alta especialización académica facilita una inserción privilegiada en las jerarquías del país y, por ende, una evaluación más favorable de las mismas.</span>
+<span id="cb2-169"><a href="#cb2-169" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-170"><a href="#cb2-170" aria-hidden="true" tabindex="-1"></a>Por otra parte, los modelos capturan una fractura generacional basal combinada con la vulnerabilidad del sistema ante los acontecimientos históricos recientes. Al analizar las cohortes, y a pesar de la pérdida de significancia estadística por el control multivariado, la Generación Z registra el coeficiente negativo más pronunciado en la estructura generacional ($\beta = -1.524$ en Modelo 3), delineando una tendencia al alejamiento del orden institucional por parte de los ciudadanos más jóvenes en comparación con la generación *Silent*. Este distanciamiento coexistió con un fuerte shock de contexto capturado a través de las variables temporales de Ola. Específicamente, se observa una caída estrepitosa en la Ola 5, correspondiente al año 2021 (Modelo 3, $\beta = -5.585, p &lt; 0.001$), la cual refleja de manera nítida el impacto acumulado del Estallido Social de 2019 y las disrupciones socioeconómicas de la pandemia del COVID-19 en la degradación del tejido institucional del país, mostrando un proceso de recuperación hacia la Ola 2023 ($\beta = 2.242, p &lt; 0.001$).</span>
+<span id="cb2-171"><a href="#cb2-171" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-172"><a href="#cb2-172" aria-hidden="true" tabindex="-1"></a>Siguiendo la necesidad de modelar la heterogeneidad de las respuestas individuales, el Modelo 4 fue enriquecido mediante la inclusión de una pendiente aleatoria para la edad centrada en el promedio de la persona (*Age specific-mean centered*). El valor 0.195 corresponde a la covarianza entre el intercepto y la pendiente, y la consecuente reducción en el Criterio de Información Bayesiano (BIC) de 48179.38 a 48144.67 son evidencia a favor de que el paso del tiempo y el envejecimiento intraindividual no afectan a todos los chilenos por igual.</span>
+<span id="cb2-173"><a href="#cb2-173" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-174"><a href="#cb2-174" aria-hidden="true" tabindex="-1"></a>Finalmente, el Modelo 4 se consolidó como la especificación metodológicamente superior al presentar el mejor ajuste general, cuya virtud principal radica en su capacidad para desagregar los componentes inter e intraindividuales a través de dos estrategias distintas de centrado. Para las variables de Percepción de Corrupción, Identificación Nacional y Autoidentificación Política, el modelo emplea un centrado en la gran media (*Grand-mean centered*) en el Nivel 1 en coexistencia con el promedio histórico del sujeto (*Person historical mean*) en el Nivel 2. Bajo esta formulación algebraica, el promedio histórico absorbe la varianza interindividual total, forzando a los coeficientes de Nivel 1 a transformarse en efectos *Within* puros (intraindividuales), mientras que los coeficientes de las medias históricas en el Nivel 2 deben interpretarse estrictamente como **efectos contextuales netos** ($\beta_B - \beta_W$). A través de esta descomposición, se constató que el efecto contextual de la cronicidad de la corrupción ($\beta = -1.596, p &lt; 0.001$) es más de tres veces superior a su fluctuación anual momentánea ($\beta = -0.494, p &lt; 0.001$). Esto demuestra que para dos observaciones con el mismo nivel de percepción en un año dado, el individuo que arrastra un historial crónico de sospecha institucional sufre una penalización contextual severa en su confianza basal. Homólogamente, el promedio histórico de la identificación nacional opera como un potente efecto contextual positivo ($\beta = 0.822, p &lt; 0.001$) en comparación con su desvío anual ($\beta = 0.340, p &lt; 0.001$). Por el contrario, para las variables de Edad y Trato Digno se optó por un centrado en la media del sujeto (*Specific-mean centered*) en el Nivel 1. Esta estrategia metodológica separa de manera directa los paramétrod: el término centrado arroja el efecto *Within* puro, mientras que la media histórica en el Nivel 2 provee directamente el **efecto *Between* puro** ($\beta_B$).El análisis del Trato Digno en el Modelo 3 ilustra una sugerente paradoja; por un lado, el incremento coyuntural del trato digno respecto al propio promedio del sujeto eleva significativamente su confianza institucional ($\beta = 0.164, p &lt; 0.001$, efecto Within). Por otro lado, el efecto Between revela una dinámica contraintuitiva; aquellos individuos con trayectorias estables de mayor trato digno en el tiempo exhiben una menor confianza institucional ($\beta = -0.111, p &lt; 0.01$). </span>
+<span id="cb2-175"><a href="#cb2-175" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-176"><a href="#cb2-176" aria-hidden="true" tabindex="-1"></a>Al contrastar el cuerpo de hipótesis con las estimaciones de los modelos, se observa un respaldo empírico parcial para las principales tesis del estudio. Se halla evidencia concluyente a favor de la Hipótesis 3 (Identificación nacional), dado que tanto el coeficiente de variación temporal ($\beta = 0.340, p &lt; 0.001$) como, muy especialmente, el efecto del historial crónico interindividual del sujeto ($\beta = 0.822, p &lt; 0.001$) son significativos, directos y positivos. De igual forma, existe sustento empírico sólido para la Hipótesis 5 (Variación temporal macro-contingente), confirmándose que las crisis político-sanitarias de la Ola 2019 ($\beta = -2.090, p &lt; 0.001$) y la Ola 2021 ($\beta = -5.279, p &lt; 0.001$) contrajeron de forma estrepitosa el constructo dependiente, aunque la Ola 2022 perdió significancia al controlar por efectos interindividuales en el Modelo 4 ($\beta = 0.516$). Por el contrario, la Hipótesis 1 (Cohorte generacional) es rechazada debido a que ninguna de las cohortes alcanzó significancia estadística frente a la generación *Silent* (registrando la Generación Z un $\beta = -1.481$ no significativo en el Modelo 4), descartándose un alejamiento generacional neto una vez controladas las variables de percepción. La Hipótesis 2 (Clase social) sufre una contradicción de signo fundamental; aunque se hipotetizaba un efecto positivo ($\gamma^{\text{EGP}}_{40} &gt; 0$), la clase trabajadora manual exhibió un coeficiente significativamente negativo ($\beta = -0.864, p &lt; 0.001$), lo que demuestra que pertenecer a estos estratos debilita la confianza institucional en lugar de fortalecerla. Respecto al capital educativo (Hipótesis 4), el supuesto de un incremento monótono se descarta, puesto que solo el nivel de posgrado demostró un efecto dinamizador y estadísticamente significativo ($\beta = 2.969, p &lt; 0.01$) en comparación con la categoría de base. Finalmente, la Hipótesis 6 (Moderación de la trayectoria temporal) carece de soporte empírico en la especificación actual, dado que las dinámicas contractivas observadas en el tiempo operaron como shocks paralelos y transversales a la estructura de las cohortes, sin mostrar interacciones cruzadas estadísticamente significativas que permitiesen validar una penalización asimétrica en la juventud.</span>
 </code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->

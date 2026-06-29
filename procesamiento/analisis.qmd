@@ -1,0 +1,487 @@
+---
+title: "Análisis Multinivel"
+subtitle: "Cohesión Social Vertical en Chile (2016–2023)"
+author: ""
+date: today
+lang: es
+fontsize: 12pt
+format:
+  html:
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    toc-title: Contenidos
+    number-sections: true
+    theme: cosmo
+    code-fold: show
+    code-tools: true
+    title-block-banner: true
+execute:
+  warning: false
+  message: false
+editor_options:
+  chunk_output_type: console
+---
+
+```{r}
+label_map <- c(
+  "(Intercept)"            = "Intercept",
+  
+  # Corruption perception
+  "c38"                    = "Corruption perception",
+  "c38_grand"              = "Corruption perception (Grand-mean centered)",
+  "c38_within"             = "Corruption perception (Specific-mean centered)",
+  "c38_between"            = "Corruption perception (Person historical mean)",
+  "c38_within:c38_between" = "Corruption perception (Cross-level Interaction)",
+  "c38_catIntermedio"      = "Corruption perception: Intermediate",
+  "c38_catAlto"            = "Corruption perception: High",
+
+  # Age
+  "m0_edad"                = "Age",
+  "m0_edad_grand"          = "Age (Grand-mean centered)",
+  "m0_edad_within"         = "Age (Specific-mean centered)",
+  "m0_edad_between"        = "Age (Person historical mean)",
+  "m0_edad_within:m0_edad_between" = "Interaction: Age (within) × Age (between)",
+
+  # Meritocracy / National identification
+  "c32_01_ord"             = "Meritocracy perception",
+  "c32_01_ord.L"           = "Meritocracy perception (Linear trend)",
+  "c32_01_ord.Q"           = "Meritocracy perception (Quadratic trend)",
+  "c32_01_ord.C"           = "Meritocracy perception (Cubic trend)",
+  "c32_01_ord^4"           = "Meritocracy perception (4th degree trend)",
+  "c32_grand"              = "National identification (Grand-mean centered)",
+  "c32_within"             = "National identification (Specific-mean centered)",
+  "c32_between"            = "National identification (Person historical mean)",
+  "c32_catIntermedio"      = "National identification: Intermediate",
+  "c32_catAlto"            = "National identification: High",
+
+  # Dignified treatment
+  "trato_digno"            = "Dignified treatment",
+  "trato_digno_grand"      = "Dignified treatment (Grand-mean centered)",
+  "trato_digno_within"     = "Dignified treatment (Specific-mean centered)",
+  "trato_digno_between"    = "Dignified treatment (Person historical mean)",
+
+  # Political self-identification
+  "c15"                    = "Political self-identification",
+  "c15_grand"              = "Political self-identification (Grand-mean centered)",
+  "c15_within"             = "Political self-identification (Specific-mean centered)",
+  "c15_between"            = "Political self-identification (Person historical mean)",
+
+  # Indigenous self-identification
+  "indigena"               = "Indigenous self-identification",
+
+  # Sex & Education
+  "sexoMujer"              = "Sex: Female",
+  "neduEducación Básica"   = "Education: Basic",
+  "neduEducación Superior" = "Education: Higher education",
+  "neduPosgrado"           = "Education: Postgraduate",
+
+  # Generation (ref. = Silent)
+  "Generacionboom"         = "Generation: Boom",
+  "GeneracionX"            = "Generation: X",
+  "GeneracionY"            = "Generation: Y",
+  "GeneracionZ"            = "Generation: Z",
+
+  # Social class EGP-7 (ref. = Service class I)
+  "egp7'II  Service class II'"                           = "Service class II",
+  "egp7'III Routine non-manual'"                         = "Routine non-manual",
+  "egp7'IIIa: Routine Nonmanual'"                        = "Routine non-manual (IIIa)",
+  "egp7'V   Manual supervisors/Lower grade technicians'" = "Manual supervisors",
+  "egp7'VI  Skilled workers'"                            = "Skilled workers",
+  "egp7'VII Unskilled workers/Farm labours'"             = "Unskilled workers",
+
+  # Social class EGP-4 (ref. = Service class I+II)
+  "egp4Intermediate class (III+IV)"                    = "Intermediate class (III+IV)",
+  "egp4Working class (V+VI+VII)"                       = "Working class (V+VI+VII)",
+  "egp4Out of labor force"                             = "Out of labor force",
+
+  # Wave (ref. = Ola 1 / 2016)
+  "olaOla 2" = "Wave 2017",
+  "olaOla 3" = "Wave 2018",
+  "olaOla 4" = "Wave 2019",
+  "olaOla 5" = "Wave 2021",
+  "olaOla 6" = "Wave 2022",
+  "olaOla 7" = "Wave 2023",
+
+  # DV
+  "c05_total" = "Organizational participation (DV)",
+
+  # Interacciones edad within x clase social EGP-4
+  "m0_edad_within:egp4Intermediate class (III+IV)"    = "Age (within) × Intermediate class",
+  "m0_edad_within:egp4Working class (V+VI+VII)"       = "Age (within) × Working class",
+  "m0_edad_within:egp4Out of labor force"             = "Age (within) × Out of labor force"
+) 
+```
+
+# Presentación
+
+Este documento presenta la estimación de modelos lineales mixtos (*Linear Mixed Models*, LMM) para el análisis de la cohesión social vertical en Chile entre 2016 y 2023. Se sigue una estrategia de modelación progresiva, partiendo de un modelo nulo y añadiendo predictores de forma incremental. Todas las variables continuas se utilizan en su versión centrada: las variables que capturan variación intraindividual se centran en la media del propio individuo (*within-person centering*), y las variables que capturan diferencias estables entre individuos se incluyen como promedios individuales (*between-person means*). Esta descomposición permite separar los efectos dentro y entre individuos en el marco de un diseño longitudinal.
+
+# Librerías y datos
+
+```{r}
+#| label: setup
+library(haven)
+library(here)
+library(lme4)
+library(lmerTest)
+library(performance)
+library(psych)
+library(texreg)
+library(modelsummary)
+library(dplyr)
+
+output_tables_dir <- file.path("output", "tables")
+dir.create(output_tables_dir, recursive = TRUE, showWarnings = FALSE)
+
+data          <- readRDS(here("input/data_regresion.rds"))
+data_f        <- readRDS(here("input/data_f_regresion.rds"))
+data_centrada <- readRDS(here("input/data_centrada_regresion.rds"))
+```
+
+# Preparación de la muestra analítica
+
+## Centrado de variables adicionales
+
+Se reconstruyen las versiones centradas de `c32` (percepción de meritocracia) que no fueron guardadas en el archivo procesado, dado que esta variable requiere conversión numérica previa desde su formato ordinal.
+
+```{r}
+#| label: centrado-c32
+data_centrada <- data_centrada %>%
+  mutate(c32_01_ord = as.factor(c32_01_ord)) %>%
+  mutate(c32_num = as.numeric(as.character(c32_01_ord))) %>%
+  mutate(c32_grand = c32_num - mean(c32_num, na.rm = TRUE)) %>%
+  group_by(idencuesta) %>%
+  mutate(
+    c32_within  = c32_num - mean(c32_num, na.rm = TRUE),
+    c32_between = mean(c32_num, na.rm = TRUE)
+  ) %>%
+  ungroup()
+```
+
+## Restricción a muestra homogénea
+
+Para garantizar que todos los modelos se estimen sobre la misma muestra, se restringe `data_centrada` a los casos con información completa en todas las variables utilizadas. Esto evita que las comparaciones de ajuste entre modelos estén contaminadas por diferencias en el tamaño muestral.
+
+```{r}
+#| label: muestra-homogenea
+data_centrada <- data_centrada %>%
+  filter(complete.cases(.))
+
+cat("N observaciones (muestra homogénea):", nrow(data_centrada), "\n")
+cat("N individuos:", n_distinct(data_centrada$idencuesta), "\n")
+```
+
+# Consistencia interna
+
+Antes de la estimación de modelos, se verifica la consistencia interna de la escala de trato digno (`c35_01` a `c35_03`) mediante el coeficiente alpha de Cronbach. Un alpha satisfactorio justifica el uso del índice aditivo como indicador único en los modelos.
+
+```{r}
+#| label: alpha
+alpha_trato_digno <- data %>%
+  select(c35_01:c35_03) %>%
+  psych::alpha()
+
+alpha_trato_digno
+```
+
+# Estimación de modelos
+
+## Modelo nulo e ICC
+
+El modelo nulo sin predictores permite estimar la Correlación Intraclase (ICC), que cuantifica qué proporción de la varianza total en participación organizacional es atribuible a diferencias estables entre individuos. Una ICC elevada justifica el uso de modelos multinivel.
+
+```{r}
+#| label: modelo-nulo
+model_0_cent <- lmer(c05_total ~ (1 | idencuesta), data = data_centrada)
+performance::icc(model_0_cent)
+performance::r2(model_0_cent)
+```
+
+## Modelo temporal
+
+Se incorpora únicamente la ola de medición como predictor, capturando la tendencia agregada de la participación a lo largo del tiempo antes de introducir predictores sustantivos.
+
+```{r}
+#| label: modelo-temporal
+model_temp_cent <- lmer(c05_total ~ ola + (1 | idencuesta), data = data_centrada)
+summary(model_temp_cent)
+performance::r2(model_temp_cent)
+```
+
+## Modelo 1: predictores actitudinales (efectos within)
+
+Se introducen los predictores actitudinales en su versión *within-person* (desviación respecto a la media individual) para capturar los cambios intraindividuales a lo largo del tiempo. Las variables cuya variación es principalmente entre individuos se incluyen como promedios individuales (*between*).
+
+```{r}
+#| label: modelo-1
+model_1_cent <- lmer(c05_total ~ 
+                       c38_within +
+                       m0_edad_within +
+                       trato_digno_within +
+                       c15_within +
+                       c32_within +
+                       Generacion + 
+                       (1 | idencuesta), data = data_centrada)
+summary(model_1_cent)
+performance::r2(model_1_cent)
+```
+
+## Modelo 2: predictores estructurales y between
+
+Se incorporan los predictores estructurales de nivel individual (generación, clase social, sexo, nivel educativo) junto con los promedios individuales de las variables actitudinales, capturando las diferencias estables entre individuos.
+
+```{r}
+#| label: modelo-2
+model_2_cent <- lmer(c05_total ~ 
+                       Generacion + egp4 + sexo + nedu +
+                       c38_between + m0_edad_between +
+                       trato_digno_between + c15_between + c32_between +
+                       (1 | idencuesta), data = data_centrada)
+summary(model_2_cent)
+performance::r2(model_2_cent)
+```
+
+## Modelo 3: modelo completo con intercepto aleatorio
+
+Se combina la descomposición within/between completa con los predictores estructurales y la ola de medición. Este modelo constituye la especificación de referencia antes de introducir pendientes aleatorias.
+
+```{r}
+#| label: modelo-3
+model_3b_cent <- lmer(c05_total ~ 
+                        c38_within + c38_between +
+                        m0_edad_within + m0_edad_between +
+                        trato_digno_within + trato_digno_between +
+                        c15_within + c15_between +
+                        c32_within + c32_between +
+                        egp4 + Generacion + ola + sexo + nedu +
+                        (1 | idencuesta), data = data_centrada)
+summary(model_3b_cent)
+performance::r2(model_3b_cent)
+```
+
+## Modelo 4: pendiente aleatoria de edad
+
+Se extiende el modelo completo permitiendo que el efecto del envejecimiento (*within*) varíe entre individuos mediante una pendiente aleatoria. Esto captura trayectorias de participación heterogéneas según la edad.
+
+```{r}
+#| label: modelo-4
+test5 <- lmer(c05_total ~ 
+                c38_within + c38_between +
+                m0_edad_within + m0_edad_between +
+                trato_digno_within + trato_digno_between +
+                c15_within + c15_between +
+                c32_within + c32_between +
+                egp4 + Generacion + ola + sexo + nedu +
+                (1 + m0_edad_within | idencuesta), data = data_centrada)
+summary(test5)
+performance::r2(test5)
+performance::check_singularity(test5)
+```
+
+# Exploración de pendientes aleatorias adicionales
+
+Se evalúa si otras variables *within* justifican pendientes aleatorias, comparando modelos con distintas combinaciones mediante pruebas de razón de verosimilitud. Esto permite identificar qué variables muestran variación individual en sus efectos longitudinales.
+
+```{r}
+#| label: pendientes-aleatorias
+# Modelo base con solo pendiente de edad
+test5_base_edad <- lmer(c05_total ~ 
+                          c38_within + c38_between +
+                          m0_edad_within + m0_edad_between +
+                          trato_digno_within + trato_digno_between +
+                          c15_within + c15_between +
+                          c32_within + c32_between +
+                          egp4 + Generacion + ola + sexo + nedu +
+                          (1 + m0_edad_within | idencuesta),
+                        data = data_centrada,
+                        control = lmerControl(optimizer = "bobyqa",
+                                              optCtrl = list(maxfun = 2e5)))
+
+# Agregando pendiente de corrupción
+test5_solo_corrupcion <- lmer(c05_total ~ 
+                                c38_within + c38_between +
+                                m0_edad_within + m0_edad_between +
+                                trato_digno_within + trato_digno_between +
+                                c15_within + c15_between +
+                                c32_within + c32_between +
+                                egp4 + Generacion + ola + sexo + nedu +
+                                (1 + m0_edad_within + c38_within | idencuesta),
+                              data = data_centrada,
+                              control = lmerControl(optimizer = "bobyqa",
+                                                    optCtrl = list(maxfun = 2e5)))
+
+# Agregando pendiente de identificación política
+test5_solo_politica <- lmer(c05_total ~ 
+                              c38_within + c38_between +
+                              m0_edad_within + m0_edad_between +
+                              trato_digno_within + trato_digno_between +
+                              c15_within + c15_between +
+                              c32_within + c32_between +
+                              egp4 + Generacion + ola + sexo + nedu +
+                              (1 + m0_edad_within + c15_within | idencuesta),
+                            data = data_centrada,
+                            control = lmerControl(optimizer = "bobyqa",
+                                                  optCtrl = list(maxfun = 2e5)))
+
+# Comparación de ajuste entre modelos con distintas pendientes aleatorias
+anova(test5_base_edad, test5_solo_corrupcion, test5_solo_politica, refit = FALSE)
+```
+
+# Exploración de interacciones within × between
+
+Se evalúa si el efecto *within* de cada variable actitudinal está moderado por su nivel promedio (*between*), lo que implicaría que el impacto del cambio intraindividual depende de la posición basal del individuo en esa variable.
+
+```{r}
+#| label: interacciones-wb
+# Modelo base sin interacciones
+modelo_base <- lmer(c05_total ~ 
+                      c38_within + c38_between +
+                      m0_edad_within + m0_edad_between +
+                      trato_digno_within + trato_digno_between +
+                      c15_within + c15_between +
+                      c32_within + c32_between +
+                      egp4 + Generacion + ola + sexo + nedu +
+                      (1 | idencuesta), data = data_centrada)
+
+# Interacción edad within × between
+modelo_edad_wb <- lmer(c05_total ~ 
+                         c38_within + c38_between +
+                         m0_edad_within * m0_edad_between +
+                         trato_digno_within + trato_digno_between +
+                         c15_within + c15_between +
+                         c32_within + c32_between +
+                         egp4 + Generacion + ola + sexo + nedu +
+                         (1 | idencuesta), data = data_centrada)
+
+# Interacción trato digno within × between
+modelo_trato_wb <- lmer(c05_total ~ 
+                          c38_within + c38_between +
+                          m0_edad_within + m0_edad_between +
+                          trato_digno_within * trato_digno_between +
+                          c15_within + c15_between +
+                          c32_within + c32_between +
+                          egp4 + Generacion + ola + sexo + nedu +
+                          (1 | idencuesta), data = data_centrada)
+
+# Interacción política within × between
+modelo_pol_wb <- lmer(c05_total ~ 
+                        c38_within + c38_between +
+                        m0_edad_within + m0_edad_between +
+                        trato_digno_within + trato_digno_between +
+                        c15_within * c15_between +
+                        c32_within + c32_between +
+                        egp4 + Generacion + ola + sexo + nedu +
+                        (1 | idencuesta), data = data_centrada)
+
+# Interacción meritocracia within × between
+modelo_c32_wb <- lmer(c05_total ~ 
+                        c38_within + c38_between +
+                        m0_edad_within + m0_edad_between +
+                        trato_digno_within + trato_digno_between +
+                        c15_within + c15_between +
+                        c32_within * c32_between +
+                        egp4 + Generacion + ola + sexo + nedu +
+                        (1 | idencuesta), data = data_centrada)
+
+# Interacción corrupción within × between
+modelo_c38_wb <- lmer(c05_total ~ 
+                        c38_within * c38_between +
+                        m0_edad_within + m0_edad_between +
+                        trato_digno_within + trato_digno_between +
+                        c15_within + c15_between +
+                        c32_within + c32_between +
+                        egp4 + Generacion + ola + sexo + nedu +
+                        (1 | idencuesta), data = data_centrada)
+
+# Comparación de ajuste
+compare_performance(
+  modelo_base, modelo_edad_wb, modelo_trato_wb,
+  modelo_pol_wb, modelo_c32_wb, modelo_c38_wb,
+  metrics = c("AIC", "BIC", "R2_marginal", "R2_conditional")
+)
+
+# Pruebas de razón de verosimilitud vs modelo base
+anova(modelo_base, modelo_edad_wb,  refit = FALSE)
+anova(modelo_base, modelo_trato_wb, refit = FALSE)
+anova(modelo_base, modelo_pol_wb,   refit = FALSE)
+anova(modelo_base, modelo_c32_wb,   refit = FALSE)
+anova(modelo_base, modelo_c38_wb,   refit = FALSE)
+```
+
+# Comparación de ajuste entre modelos
+
+Se compara el ajuste de la secuencia progresiva de modelos mediante BIC y pruebas de razón de verosimilitud. La tabla se exporta en formato HTML para su inclusión en el informe final.
+
+```{r}
+#| label: comparacion-modelos
+modelos_comparacion <- list(
+  "Modelo 0"     = model_0_cent,
+  "Modelo Temp." = model_temp_cent,
+  "Modelo 1"     = model_1_cent,
+  "Modelo 2"     = model_2_cent,
+  "Modelo 3"     = model_3b_cent,
+  "Modelo 4"     = test5
+)
+
+tabla_comparacion_path <- file.path(output_tables_dir, "tabla_comparacion.html")
+modelsummary::modelsummary(
+  modelos_comparacion,
+  output = tabla_comparacion_path,
+  coef_keep = "^(Intercept)$",
+  gof_map = data.frame(
+    raw = c("nobs", "AIC", "BIC", "logLik", "deviance"),
+    clean = c("N obs.", "AIC", "BIC", "Log-Lik.", "Deviance"),
+    fmt = c(0, 2, 2, 2, 2),
+    stringsAsFactors = FALSE
+  ),
+  title = "Comparación de ajuste entre modelos"
+)
+
+```
+
+# Tabla de regresión final
+
+Se genera la tabla de regresión con los coeficientes de todos los modelos de la secuencia principal. La tabla se exporta en formato HTML y se abre en el navegador para su revisión. El `label_map` controla las etiquetas de las variables en la tabla.
+
+```{r}
+#| label: tabla-regresion
+tabla_modelos_path <- file.path(output_tables_dir, "tabla_modelos.html")
+
+htmlreg(
+  list(model_0_cent, model_temp_cent, model_1_cent,
+       model_2_cent, model_3b_cent, test5),
+  custom.model.names = c("Modelo 0", "Modelo Temp.", "Modelo 1",
+                         "Modelo 2", "Modelo 3", "Modelo 4"),
+  caption.above = TRUE,
+  caption = NULL,
+  stars = c(0.05, 0.01, 0.001),
+  custom.coef.map = as.list(label_map),
+  digits = 3,
+  custom.note = "Note: Cells contain regression coefficients with standard errors in parentheses. %stars.",
+  leading.zero = TRUE,
+  include.loglik = FALSE,
+  include.aic = FALSE,
+  center = TRUE,
+  custom.gof.names = c(
+    "BIC",
+    "Num. obs.",
+    "Num. groups: individuals",
+    "Var: individuals (Intercept)",
+    "Var: individuals (Age within)",
+    "Cov: individuals (Intercept - Age within)",
+    "Var: Residual"
+  ),
+  file = tabla_modelos_path
+)
+
+lmer(c05_total ~ Generacion + ola + (1 | idencuesta),
+     data = data_centrada)
+
+     summary(lmer(c05_total ~ m0_edad_within +
+                       Generacion + egp4 + sexo + nedu +
+                       c38_between +
+                       trato_digno_between + c15_between + c32_between +
+                       (1 | idencuesta), data = data_centrada))
+                       
+```

@@ -1,5 +1,19 @@
 ---
 title: "Antecedentes"
 ---
+La confianza en las instituciones se define como el grado de certidumbre y satisfacción que la ciudadanía deposita en el desempeño gubernamental y en la credibilidad de sus organizaciones [@han2021; @_confianza_2024]. Teóricamente, este constructo representa el núcleo de la cohesión social vertical, articulando el vínculo jerárquico entre el individuo y el Estado [@chan_charting_2006; @ministeriodedesarrollosocialyfamilia_informe_2020]. Para @_essentials_2017, la confianza es un elemento constitutivo esencial de la convivencia colectiva, pues actúa como un recurso moral que reduce los costos de gobernanza e incentiva la obediencia voluntaria de las normas.
 
-Respaldo teórico y empírico de la investigación
+Como "pegamento social", la confianza institucional es fundamental para la estabilidad democrática, el crecimiento económico y el bienestar de la población [@kim_social_2021]. Sin embargo, a diferencia de la confianza interpersonal (dimensión horizontal), la confianza en las instituciones es un fenómeno más abstracto que depende de la percepción de legitimidad y de la capacidad del sistema para representar valores compartidos [@_essentials_2017; @_cohesion_2022].
+
+En la última década, Chile ha experimentado un deterioro crítico en sus índices de confianza pública. Según el informe de la OCDE (2024), solo el 30% de los chilenos manifiesta una confianza alta o moderadamente alta en su gobierno nacional, una cifra significativamente menor al promedio de los países miembros (39%). Esta desafección es aún más pronunciada en instituciones clave como el Congreso Nacional (19%) y los partidos políticos (14%), lo que refleja una fractura profunda en la legitimidad del sistema representativo [@_confianza_2024].
+La literatura identifica que esta erosión se ha visto catalizada por shocks de contexto de gran magnitud: el estallido social de 2019 y la pandemia del COVID-19 [@_cohesion_2022]. Estos eventos actuaron como disrupciones que pusieron a prueba la capacidad de respuesta del Estado. Cuando las instituciones no logran proveer soluciones eficaces y dignas ante situaciones de crisis, la confianza vertical se debilita de forma sistémica, comprometiendo el contrato social [@ministeriodedesarrollosocialyfamilia_informe_2020; @han2021].
+
+La confianza institucional no es un rasgo estático, sino que se reconfigura según factores estructurales y de desempeño:
+
+Integridad y Corrupción: La percepción de que las instituciones sirven al interés público y la ausencia de corrupción son los predictores más fuertes de la confianza [@_confianza_2024]. En Chile, la sospecha de corrupción erosiona de raíz la legitimidad del vínculo jerárquico sociedad-Estado [@ministeriodedesarrollosocialyfamilia_informe_2020].
+
+Clase Social y Educación: Kim et al. [@kim_social_2021] sugieren que los individuos con mayor capital cultural (educación) tienden a evaluar a sus líderes con estándares más exigentes, lo que puede derivar en una menor confianza. No obstante, en América Latina, la heterogeneidad estructural y la exclusión de los beneficios del desarrollo provocan que las clases trabajadoras manuales presenten los niveles más bajos de adhesión al pacto social [@molina_repensando_2022].
+
+Fractura Generacional: Existe un abismo etario creciente. Los grupos más jóvenes, específicamente la Generación Z, exhiben niveles de confianza sistemáticamente menores y un alejamiento del orden institucional en comparación con las generaciones antiguas [@_confianza_2024; @diazsarmiento_entendiendo_2017].
+
+Sentido de Pertenencia: Existe un debilitamiento del vínculo comunitario. Los altos niveles de desigualdad y la percepción de discriminación actúan como fracturas del sentido de pertenencia en Chile, fomentando la priorización del estatus económico personal por sobre el destino compartido y mermando sistemáticamente la confianza en las instituciones públicas [@_confianza_2024].

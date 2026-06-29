@@ -5,20 +5,22 @@ title: "Métodos"
 Para analizar las relaciones entre las variables de este estudio, se utilizará una metodología multinivel (también denominada modelos de efectos mixtos o modelos jerárquicos), la cual es fundamental cuando los datos presentan una estructura anidada @silveira_mixedeffects_2023. En este caso particular, dado que se cuenta con varias observaciones a partir de las mismas personas a lo largo del tiempo (2016-2023), los datos se estructuran con las mediciones repetidas en el Nivel 1 anidadas dentro de los individuos en el Nivel 2.
 Esta aproximación metodológica se justifica por las siguientes razones técnicas y analíticas:
 
-    Dependencia de las observaciones: Las mediciones tomadas de un mismo participante a través de los años tienden a ser más similares entre sí que las mediciones entre distintos participantes. Los modelos de regresión tradicionales (lineales o logísticos) asumen independencia entre las observaciones, por lo que su uso en datos longitudinales podría conducir a sesgos; en cambio el modelo multinivel aborda explícitamente estas correlaciones.
-    Integración de efectos fijos y aleatorios: Esta metodología permite combinar efectos fijos variables que no cambian en el tiempo como el sexo o la generacion con efectos aleatorios, que capturan la variación y las tendencias individuales de cada sujeto analizado.
-    Análisis de trayectorias individuales: Al tratar a la persona como la unidad estable (Nivel 2), es posible evaluar cómo las variaciones anuales en las percepciones de Nivel 1 (como el cambio en la percepción de corrupción o trato digno) impactan la trayectoria de la cohesión social vertical, controlando al mismo tiempo por los atributos sociodemográficos estables @silveira_mixedeffects_2023
+ 1. No independencia de las observaciones: Las mediciones tomadas de un mismo participante a través de los años tienden a ser más similares entre sí que las mediciones entre distintos participantes. Los modelos de regresión tradicionales asumen independencia entre las observaciones, por lo que su uso en datos longitudinales podría conducir a sesgos; en cambio el modelo multinivel aborda explícitamente estas correlaciones.
 
-En resumen, la aplicación de modelos multinivel para datos longitudinales mejora el ajuste del modelo y permite una interpretación más robusta de los predictores de la cohesión social, alineando la estrategia estadística con la configuración compleja de los datos recolectados.
+2. Integración de efectos fijos y aleatorios: Esta metodología permite combinar efectos fijos variables que no cambian en el tiempo como el sexo o la generacion con efectos aleatorios, que capturan la variación y las tendencias individuales de cada sujeto analizado.
+
+3. Análisis de trayectorias individuales: Al tratar a la persona como la unidad estable (Nivel 2), es posible evaluar cómo las variaciones anuales en las percepciones de Nivel 1 (como el cambio en la percepción de corrupción o trato digno) impactan la trayectoria de la cohesión social vertical, controlando al mismo tiempo por los atributos sociodemográficos estables @silveira_mixedeffects_2023
+
+En resumen, la aplicación de modelos multinivel para datos longitudinales mejora el ajuste del modelo al ser un tratamiento adecuado para la estructura de los datos y permite una interpretación más robusta de los predictores de la cohesión social, alineando la estrategia estadística con la configuración de los datos.
 
 ### Datos.
 
-Los datos utilizados en este estudio provienen del Estudio Longitudinal Social de Chile (ELSOC), una encuesta de tipo panel desarrollada por el Centro de Estudios de Conflicto y Cohesión Social (COES) desde el año 2016 @_cohesion_b. Al tratarse de un instrumento de naturaleza longitudinal, ELSOC entrevista anualmente a los mismos sujetos; aproximadamente 3,000 personas por ola, lo que permite un análisis preciso de los cambios en las trayectorias individuales y las dinámicas de transformación social en Chile.
+Los datos utilizados en este estudio provienen del Estudio Longitudinal Social de Chile (ELSOC), una encuesta de tipo panel desarrollada por el Centro de Estudios de Conflicto y Cohesión Social (COES) desde el año 2016. Al tratarse de un instrumento de naturaleza longitudinal, ELSOC entrevista anualmente a los mismos sujetos; aproximadamente 3,000 personas por ola, lo que permite un análisis preciso de los cambios en las trayectorias individuales y las dinámicas de transformación social en Chile.
 La encuesta emplea un muestreo probabilístico, estratificado (por tamaño de ciudades), por conglomerados y multietápico, lo que garantiza que la unidad básica de observación sean los individuos seleccionados aleatoriamente dentro de los hogares. La población objetivo comprende a hombres y mujeres de 18 a 75 años, alcanzando una representatividad del 77% de la población total del país y del 93% de la población urbana, con un error muestral estimado del 2%. El cuestionario se estructura en siete módulos temáticos, incluyendo territorio, redes y actitudes sociales, ciudadanía y democracia, y desigualdad y legitimidad, lo cual permite capturar las múltiples dimensiones de la cohesión social [_cohesion_b, 475]. Esta base de datos es única en el país y resulta idónea para este estudio, ya que permite aplicar modelos de análisis que consideran la variabilidad intraindividual a lo largo del tiempo.
 
 ### Protocolo de trabajo.
 
-Los Archivos de limpieza y procesamiento pueden encontrarse en los anexos con su respectiva explicacion.
+Los Archivos de preparacion, limpieza, analisis exploratorio y procesamiento pueden encontrarse en los anexos con su respectiva explicacion exhaustiva. En términos generales, el flujo de trabajo consistió en los siguientes pasos:
 
 Tratamiento de valores perdidos: Los códigos de no respuesta propios del instrumento (−999, −888, −777 y −666) fueron recodificados como valores perdidos del sistema (NA). La variable de confianza institucional (c38), disponible solo desde olas posteriores, fue imputada hacia atrás (backward fill) para recuperar observaciones en Olas 1 y 2.
 
@@ -31,13 +33,6 @@ Centrado de variables. Para los modelos multinivel se construyeron dos versiones
 
 La especificacion de los modelos (Linear Mixed Models, LMM) fue estimada con el paquete lme4. La variable dependiente en todos los modelos fue el índice de participación en organizaciones sociales (c05_total).
 
-Modelo nulo e ICC. Se estimó un modelo nulo sin predictores para obtener la Correlación Intraclase (ICC), que cuantifica qué proporción de la varianza total en participación es atribuible a diferencias estables entre individuos; luego se estimó una secuencia progresiva de modelos con interceptos aleatorios por individuo (1 | idencuesta):
-
-Modelo temporal: incluye únicamente la ola de medición como predictor, capturando la tendencia agregada en el tiempo.
-Modelo 1: incorpora los predictores actitudinales y contextuales centrados en la gran media: confianza institucional (c38_grand), edad (m0_edad_grand), trato digno (trato_digno_grand), participación política (c15_grand) y percepción de meritocracia (c32_grand).
-Modelo 2: incorpora los predictores estructurales: generación, clase social (EGP-7), sexo y nivel educativo.
-Modelo 3: modelo completo que combina ambos conjuntos de predictores más la ola de medición.
-Modelo 4: extiende el modelo completo permitiendo que la pendiente de la edad varíe entre individuos (1 + m0_edad_within | idencuesta), es decir, incorpora una pendiente aleatoria para capturar trayectorias de envejecimiento heterogéneas en la participación.
 
 Centrado de variables. Las variables continuas se utilizaron en su versión centrada según si se estimarian efectos aleatorios. Las variables que capturan características relativamente estables del individuo —confianza institucional, trato digno, participación política y percepción de meritocracia— se centraron en la gran media (grand-mean centering), interpretándose sus coeficientes como efectos entre individuos (between-person effects). La edad se centró en la media del individuo (within-person centering), capturando el efecto del envejecimiento a lo largo del panel.
 

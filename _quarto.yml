@@ -13,13 +13,10 @@ book:
   output-file: reportes-facso-plantilla
   repo-url: https://github.com/KAravena/reportesfacsobook_template  #URL del repositorio del libro (cambia segun tu repo)
   author:
-    - name: Nombre Apellido
+    - name: Nicolás Outerbridge
       affiliation: Departamento de Sociologia, Universidad de Chile
       orcid: 0000-0000-0000-0000
-    - name: Nombre Apellido
-      affiliation: Departamento de Sociologia, Universidad de Chile
-      orcid: 0000-0000-0000-0000
-    - name: Nombre Apellido
+    - name: Vicente Rojas
       affiliation: Departamento de Sociologia, Universidad de Chile
       orcid: 0000-0000-0000-0000
   date: today              # Usa fecha fija (YYYY-MM-DD) si necesitas control editorial
@@ -52,7 +49,9 @@ book:
     - apendices/A-encuestas.qmd
     - apendices/B-tablas.qmd
     # Guarda anexos extensos en apendices/ y listalos aqui.
-       # Estilo de citas (cambia a otro .csl si lo prefieres)
+
+csl: refs/apa.csl                # Estilo de citas (cambia a otro .csl si lo prefieres)
+bibliography: refs/Cohesion social.bib
 link-citations: true             # Enlaces desde el texto hacia la bibliografia
 reference-location: section      # Citas agrupadas al final de cada seccion
 

@@ -1,0 +1,571 @@
+---
+title: "Análisis Descriptivo y Exploratorio"
+subtitle: "Cohesión Social Vertical en Chile (2016–2023)"
+author: ""
+date: today
+lang: es
+fontsize: 12pt
+format:
+  html:
+    toc: true
+    toc-location: right
+    toc-depth: 3
+    toc-title: Contenidos
+    number-sections: true
+    theme: cosmo
+    code-fold: show
+    code-tools: true
+    title-block-banner: true
+execute:
+  warning: false
+  message: false
+editor_options:
+  chunk_output_type: console
+---
+
+```{r}
+
+label_map <- c(
+  "(Intercept)"            = "Intercept",
+  
+  # Corruption perception
+  "c38"                    = "Corruption perception",
+  "c38_grand"              = "Corruption perception (Grand-mean centered)",
+  "c38_within"             = "Corruption perception (Specific-mean centered)",
+  "c38_between"            = "Corruption perception (Person historical mean)",
+  "c38_within:c38_between" = "Corruption perception (Cross-level Interaction)",
+  "c38_catIntermedio"      = "Corruption perception: Intermediate",
+  "c38_catAlto"            = "Corruption perception: High",
+
+  # Age
+  "m0_edad"                = "Age",
+  "m0_edad_grand"          = "Age (Grand-mean centered)",
+  "m0_edad_within"         = "Age (Specific-mean centered)",
+  "m0_edad_between"        = "Age (Person historical mean)",
+  "m0_edad_within:m0_edad_between" = "Interaction: Age (within) × Age (between)",
+
+  # Meritocracy / National identification
+  "c32_01_ord"             = "Meritocracy perception",
+  "c32_01_ord.L"           = "Meritocracy perception (Linear trend)",
+  "c32_01_ord.Q"           = "Meritocracy perception (Quadratic trend)",
+  "c32_01_ord.C"           = "Meritocracy perception (Cubic trend)",
+  "c32_01_ord^4"           = "Meritocracy perception (4th degree trend)",
+  "c32_grand"              = "National identification (Grand-mean centered)",
+  "c32_within"             = "National identification (Specific-mean centered)",
+  "c32_between"            = "National identification (Person historical mean)",
+  "c32_catIntermedio"      = "National identification: Intermediate",
+  "c32_catAlto"            = "National identification: High",
+
+  # Dignified treatment
+  "trato_digno"            = "Dignified treatment",
+  "trato_digno_grand"      = "Dignified treatment (Grand-mean centered)",
+  "trato_digno_within"     = "Dignified treatment (Specific-mean centered)",
+  "trato_digno_between"    = "Dignified treatment (Person historical mean)",
+
+  # Political self-identification
+  "c15"                    = "Political self-identification",
+  "c15_grand"              = "Political self-identification (Grand-mean centered)",
+  "c15_within"             = "Political self-identification (Specific-mean centered)",
+  "c15_between"            = "Political self-identification (Person historical mean)",
+
+  # Indigenous self-identification
+  "indigena"               = "Indigenous self-identification",
+
+  # Sex & Education
+  "sexoMujer"              = "Sex: Female",
+  "neduEducación Básica"   = "Education: Basic",
+  "neduEducación Superior" = "Education: Higher education",
+  "neduPosgrado"           = "Education: Postgraduate",
+
+  # Generation (ref. = Silent)
+  "Generacionboom"         = "Generation: Boom",
+  "GeneracionX"            = "Generation: X",
+  "GeneracionY"            = "Generation: Y",
+  "GeneracionZ"            = "Generation: Z",
+
+  # Social class EGP-7 (ref. = Service class I)
+  "egp7'II  Service class II'"                           = "Service class II",
+  "egp7'III Routine non-manual'"                         = "Routine non-manual",
+  "egp7'IIIa: Routine Nonmanual'"                        = "Routine non-manual (IIIa)",
+  "egp7'V   Manual supervisors/Lower grade technicians'" = "Manual supervisors",
+  "egp7'VI  Skilled workers'"                            = "Skilled workers",
+  "egp7'VII Unskilled workers/Farm labours'"             = "Unskilled workers",
+
+  # Social class EGP-4 (ref. = Service class I+II)
+  "egp4Intermediate class (III+IV)"                    = "Intermediate class (III+IV)",
+  "egp4Working class (V+VI+VII)"                       = "Working class (V+VI+VII)",
+  "egp4Out of labor force"                             = "Out of labor force",
+
+  # Wave (ref. = Ola 1 / 2016)
+  "olaOla 2" = "Wave 2017",
+  "olaOla 3" = "Wave 2018",
+  "olaOla 4" = "Wave 2019",
+  "olaOla 5" = "Wave 2021",
+  "olaOla 6" = "Wave 2022",
+  "olaOla 7" = "Wave 2023",
+
+  # DV
+  "c05_total" = "Organizational participation (DV)",
+
+  # Interacciones edad within x clase social EGP-4
+  "m0_edad_within:egp4Intermediate class (III+IV)"    = "Age (within) × Intermediate class",
+  "m0_edad_within:egp4Working class (V+VI+VII)"       = "Age (within) × Working class",
+  "m0_edad_within:egp4Out of labor force"             = "Age (within) × Out of labor force"
+) 
+```
+# Presentación
+
+Este documento presenta el análisis descriptivo y exploratorio de los datos procesados, previo a la estimación de los modelos multinivel. Se reportan estadísticos descriptivos de las variables del estudio, se examinan las distribuciones de la variable dependiente a lo largo del tiempo y por subgrupos, y se exploran relaciones bivariadas entre la cohesión social vertical y los principales predictores teóricos.
+
+# Librerías y datos
+
+```{r}
+#| label: setup
+library(here)
+library(tidyverse)
+library(ggplot2)
+library(ggdist)
+library(lme4)
+library(gtsummary)
+library(tibble)
+
+data_f        <- readRDS(here("input/data_f_regresion.rds"))
+data_centrada <- readRDS(here("input/data_centrada_regresion.rds"))
+
+output_tables_dir <- file.path("output", "tables")
+output_graphs_dir <- file.path("output", "graphs")
+dir.create(output_tables_dir, recursive = TRUE, showWarnings = FALSE)
+dir.create(output_graphs_dir, recursive = TRUE, showWarnings = FALSE)
+```
+# Tabla de estadísticos descriptivos
+
+Se presenta una tabla de estadísticos descriptivos para las variables incluidas en el análisis. Las variables continuas se reportan con media, desviación estándar, mínimo y máximo; las variables categóricas con frecuencias absolutas y relativas. La tabla se restringe a casos con información válida en cada variable.
+
+```{r}
+library(vtable)
+
+# Preparar los datos primero (Ola 7, variables seleccionadas y casos completos)
+datos_limpios <- data_f %>% 
+  filter(ola == "Ola 7") %>% 
+  select(c05_total, c38, m0_edad, egp4, trato_digno, c15, c32_01_ord, Generacion) %>% 
+  mutate(
+    c38        = as.numeric(haven::zap_labels(c38)),
+    c15        = as.numeric(haven::zap_labels(c15)),
+    c32_01_ord = as.numeric(haven::zap_labels(c32_01_ord)),
+    egp4       = as.factor(egp4)
+  ) %>% 
+  drop_na()
+table(data_f$trato_digno)
+# Generar la tabla descriptiva automáticamente
+st(datos_limpios, 
+   labels = c("Cohesión social vertical", "Percepción de corrupción", "Edad", 
+              "Clase social (EGP-4)", "Trato digno", "Autoidentificación política", 
+              "Orgullo de ser chileno", "Generación"),
+   title = "Estadísticos descriptivos (Casos completos - Ola 7)")
+```
+
+
+```{r}
+library(dplyr)
+library(modelsummary)
+
+# 1. Preparar los datos filtrando la Ola 7 e incluyendo TODAS las variables del modelo
+datos_limpios <- data_f %>% 
+  filter(ola == "Ola 7") %>% 
+  # Incluimos también sexo y nedu que se usan en tus modelos de Nivel 2
+  select(c05_total, c38, m0_edad, egp4, c15, c32_01_ord, Generacion, sexo, nedu) %>% 
+  mutate(
+    c38        = as.numeric(haven::zap_labels(c38)),
+    c15        = as.numeric(haven::zap_labels(c15)),
+    c32_01_ord = as.numeric(haven::zap_labels(c32_01_ord)),
+    egp4       = as.factor(egp4),
+    sexo       = as.factor(sexo),
+    nedu       = as.factor(nedu)
+  ) %>% 
+  drop_na()
+
+# 2. Renombrar explicitando cuáles actúan como Nivel 1 (tiempo) y Nivel 2 (individual/agregado)
+datos_filtrados_etiquetados <- datos_limpios %>% 
+  dplyr::rename(
+    # Variables que en el modelo tienen efectos de Nivel 1 (Variables del tiempo / Within / Grand)
+    `Cohesión social vertical (N1 - Y)` = c05_total,
+    `Percepción de corrupción (N1)`    = c38,
+    `Edad (N1)`                        = m0_edad,
+    `Autoidentificación política (N1)`  = c15,
+    `Orgullo de ser chileno (N1)`      = c32_01_ord,
+    
+    # Variables de Nivel 2 (Sociodemográficas fijas / Características del individuo)
+    `Clase social (N2 - EGP-4)`        = egp4,
+    `Generación (N2)`                  = Generacion,
+    `Sexo (N2)`                        = sexo,
+    `Nivel educacional (N2)`           = nedu
+  )
+
+# 3. Generar la tabla de balance/descriptivos para la Ola 7
+datasummary_balance(
+  ~ 1, 
+  data = datos_filtrados_etiquetados, 
+  dinm = FALSE,
+  # Esta línea une tu carpeta "output/tables" con el nombre del archivo:
+  output = file.path(output_tables_dir, "tabla_descriptiva_ola7.html") 
+)
+```
+
+```{r}
+#| label: tabla-descriptivos-ola7
+tabla_descriptivos <- data_f %>% 
+  filter(ola == "Ola 7") %>%               # <-- Cambiado a Ola 7
+  select(c05_total, c38, m0_edad, egp4, trato_digno,
+         c15, c32_01_ord, Generacion) %>%  # <-- Se eliminó 'ola'
+  mutate(
+    c38        = as.numeric(haven::zap_labels(c38)),
+    c15        = as.numeric(haven::zap_labels(c15)),
+    c32_01_ord = as.numeric(haven::zap_labels(c32_01_ord)),
+    egp4       = as.factor(egp4)
+  ) %>% 
+  drop_na() %>%                            # <-- Solo observaciones completas
+  tbl_summary(
+    type = list(
+      c38        ~ "continuous",           # <-- Forzada como continua
+      c32_01_ord ~ "continuous"            # <-- Forzada como continua
+    ),
+    statistic = list(
+      all_continuous()  ~ "{mean} ({sd}) [{min}; {max}]",
+      all_categorical() ~ "{n} ({p}%)"
+    ),
+    label = list(
+      c05_total   ~ "Cohesión social vertical",
+      c38         ~ "Percepción de corrupción",
+      m0_edad     ~ "Edad",
+      egp4        ~ "Clase social (EGP-4)",
+      trato_digno ~ "Trato digno",
+      c15         ~ "Autoidentificación política",
+      c32_01_ord  ~ "Orgullo de ser chileno",
+      Generacion  ~ "Generación"
+    ),
+    missing = "no"
+  ) %>%
+  add_n() %>%
+  bold_labels() %>%
+  modify_caption("**Tabla 1. Estadísticos descriptivos (Casos completos - Ola 7)**")
+
+# Mostrar la tabla
+tabla_descriptivos
+```
+# Distribución por sexo y nivel educativo
+
+Se examina la composición de la muestra por sexo y nivel educativo como verificación de la representatividad de la muestra analítica.
+
+```{r}
+#| label: dist-sexo-nedu
+table(data_f$sexo)
+table(data_f$nedu)
+```
+
+# Análisis exploratorio bivariado
+
+## Cohesión vertical por generación y clase social
+
+Se examina la media de cohesión social vertical según la combinación de generación y clase social (EGP-7), con intervalos de confianza al 95%. Este gráfico permite identificar patrones de interacción entre ambas variables antes de su inclusión en los modelos.
+
+```{r}
+#| label: grafico-clase-generacion
+resumen_clase_gen <- data_f %>%
+  group_by(egp7, Generacion) %>%
+  summarise(
+    media   = mean(c05_total, na.rm = TRUE),
+    se      = sd(c05_total, na.rm = TRUE) / sqrt(n()),
+    n       = n(),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    ci_low  = media - 1.96 * se,
+    ci_high = media + 1.96 * se
+  )
+
+grafico_clase_gen <- resumen_clase_gen %>%
+  ggplot(aes(x = Generacion, y = media, group = egp7)) +
+  geom_line(linewidth = 0.8, color = "#0571B0") +
+  geom_point(size = 2, color = "#0571B0") +
+  geom_errorbar(aes(ymin = ci_low, ymax = ci_high),
+                width = 0.15, alpha = 0.5, color = "#0571B0") +
+  facet_wrap(~ egp7, ncol = 3) +
+  labs(
+    x = "Generación",
+    y = "Cohesión social vertical (media)"
+  ) +
+  theme_ggdist() +
+  theme(strip.text = element_text(size = 8))
+
+grafico_clase_gen
+
+grafico_clase_gen_path <- file.path(output_graphs_dir, "cohesion_clase_generacion.png")
+if (!file.exists(grafico_clase_gen_path)) {
+  ggsave(filename = grafico_clase_gen_path, plot = grafico_clase_gen,
+         width = 8, height = 6, dpi = 300)
+}
+```
+
+## Evolución temporal de la cohesión vertical
+
+Se examina la trayectoria promedio de la cohesión social vertical a lo largo de las siete olas, con intervalos de confianza. Este gráfico permite identificar los efectos de los shocks contextuales (estallido social 2019, pandemia 2020–2022).
+
+```{r}
+#| label: grafico-temporal
+resumen_ola <- data_f %>%
+  group_by(ola) %>%
+  summarise(
+    media   = mean(c05_total, na.rm = TRUE),
+    se      = sd(c05_total, na.rm = TRUE) / sqrt(n()),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    ci_low  = media - 1.96 * se,
+    ci_high = media + 1.96 * se
+  )
+
+grafico_temporal <- resumen_ola %>%
+  ggplot(aes(x = ola, y = media, group = 1)) +
+  geom_ribbon(aes(ymin = ci_low, ymax = ci_high), alpha = 0.2, fill = "#0571B0") +
+  geom_line(linewidth = 1, color = "#0571B0") +
+  geom_point(size = 3, color = "#0571B0") +
+  annotate("rect", xmin = 3.5, xmax = 5.5, ymin = -Inf, ymax = Inf,
+           alpha = 0.1, fill = "red") +
+  annotate("text", x = 4.5, y = max(resumen_ola$ci_high),
+           label = "Estallido + Pandemia", size = 3, color = "red") +
+  labs(
+    x = "Ola de medición",
+    y = "Cohesión social vertical (media)"
+  ) +
+  theme_ggdist()
+
+grafico_temporal
+
+ggsave(file.path(output_graphs_dir, "cohesion_temporal.png"),
+       plot = grafico_temporal, width = 8, height = 5, dpi = 300)
+```
+
+## Cohesión vertical por nivel educativo
+
+Se examina la distribución de la cohesión social vertical según nivel educativo, para explorar el gradiente educativo antes de la modelación.
+
+```{r}
+#| label: grafico-educacion
+resumen_nedu <- data_f %>%
+  filter(!is.na(nedu)) %>%
+  group_by(nedu) %>%
+  summarise(
+    media   = mean(c05_total, na.rm = TRUE),
+    se      = sd(c05_total, na.rm = TRUE) / sqrt(n()),
+    n       = n(),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    ci_low  = media - 1.96 * se,
+    ci_high = media + 1.96 * se
+  )
+
+grafico_nedu <- resumen_nedu %>%
+  ggplot(aes(x = nedu, y = media)) +
+  geom_col(fill = "#0571B0", alpha = 0.8) +
+  geom_errorbar(aes(ymin = ci_low, ymax = ci_high),
+                width = 0.2, color = "gray30") +
+  geom_text(aes(label = paste0("n=", n)), vjust = -1.5, size = 3) +
+  labs(
+    x = "Nivel educativo",
+    y = "Cohesión social vertical (media)"
+  ) +
+  theme_ggdist()
+
+grafico_nedu
+
+ggsave(file.path(output_graphs_dir, "cohesion_educacion.png"),
+       plot = grafico_nedu, width = 7, height = 5, dpi = 300)
+```
+
+## Cohesión vertical por percepción de corrupción
+
+Se examina si existe un gradiente en la cohesión vertical según el nivel de percepción de corrupción institucional, tanto en su versión categórica como continua.
+
+```{r}
+#| label: grafico-corrupcion
+resumen_c38 <- data_f %>%
+  filter(!is.na(c38_cat)) %>%
+  group_by(c38_cat) %>%
+  summarise(
+    media   = mean(c05_total, na.rm = TRUE),
+    se      = sd(c05_total, na.rm = TRUE) / sqrt(n()),
+    n       = n(),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    ci_low  = media - 1.96 * se,
+    ci_high = media + 1.96 * se
+  )
+
+grafico_c38 <- resumen_c38 %>%
+  ggplot(aes(x = c38_cat, y = media)) +
+  geom_col(fill = "#CA0020", alpha = 0.8) +
+  geom_errorbar(aes(ymin = ci_low, ymax = ci_high),
+                width = 0.2, color = "gray30") +
+  geom_text(aes(label = paste0("n=", n)), vjust = -1.5, size = 3) +
+  labs(
+    x = "Percepción de corrupción",
+    y = "Cohesión social vertical (media)"
+  ) +
+  theme_ggdist()
+
+grafico_c38
+
+ggsave(file.path(output_graphs_dir, "cohesion_corrupcion.png"),
+       plot = grafico_c38, width = 7, height = 5, dpi = 300)
+```
+
+## Cohesión vertical por percepción de meritocracia
+
+Se examina la relación entre la percepción de meritocracia y la cohesión vertical, tanto en su versión categórica como a través de la evolución temporal por nivel de meritocracia.
+
+```{r}
+#| label: grafico-meritocracia
+resumen_c32 <- data_f %>%
+  filter(!is.na(c32_cat)) %>%
+  group_by(c32_cat) %>%
+  summarise(
+    media   = mean(c05_total, na.rm = TRUE),
+    se      = sd(c05_total, na.rm = TRUE) / sqrt(n()),
+    n       = n(),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    ci_low  = media - 1.96 * se,
+    ci_high = media + 1.96 * se
+  )
+
+grafico_c32 <- resumen_c32 %>%
+  ggplot(aes(x = c32_cat, y = media)) +
+  geom_col(fill = "#1A9641", alpha = 0.8) +
+  geom_errorbar(aes(ymin = ci_low, ymax = ci_high),
+                width = 0.2, color = "gray30") +
+  geom_text(aes(label = paste0("n=", n)), vjust = -1.5, size = 3) +
+  labs(
+    x = "Percepción de meritocracia",
+    y = "Cohesión social vertical (media)"
+  ) +
+  theme_ggdist()
+
+grafico_c32
+
+ggsave(file.path(output_graphs_dir, "cohesion_meritocracia.png"),
+       plot = grafico_c32, width = 7, height = 5, dpi = 300)
+```
+
+## Evolución temporal por generación
+
+Se examina si las trayectorias temporales de la cohesión vertical difieren entre cohortes generacionales, lo que permite explorar efectos de interacción generación × tiempo antes de la modelación.
+
+```{r}
+#| label: grafico-temporal-generacion
+resumen_ola_gen <- data_f %>%
+  filter(!is.na(Generacion)) %>%
+  group_by(ola, Generacion) %>%
+  summarise(
+    media   = mean(c05_total, na.rm = TRUE),
+    se      = sd(c05_total, na.rm = TRUE) / sqrt(n()),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    ci_low  = media - 1.96 * se,
+    ci_high = media + 1.96 * se
+  )
+
+grafico_ola_gen <- resumen_ola_gen %>%
+  ggplot(aes(x = ola, y = media, color = Generacion, group = Generacion)) +
+  geom_ribbon(aes(ymin = ci_low, ymax = ci_high, fill = Generacion),
+              alpha = 0.1, color = NA) +
+  geom_line(linewidth = 0.9) +
+  geom_point(size = 2) +
+  scale_color_brewer(palette = "Set1") +
+  scale_fill_brewer(palette = "Set1") +
+  labs(
+    x = "Ola de medición",
+    y = "Cohesión social vertical (media)",
+    color = "Generación",
+    fill  = "Generación"
+  ) +
+  theme_ggdist() +
+  theme(legend.position = "bottom")
+
+grafico_ola_gen
+
+ggsave(file.path(output_graphs_dir, "cohesion_temporal_generacion.png"),
+       plot = grafico_ola_gen, width = 9, height = 6, dpi = 300)
+```
+
+## Evolución temporal por clase social
+
+De forma análoga, se examina si las trayectorias temporales difieren entre clases sociales (EGP-4).
+
+```{r}
+#| label: grafico-temporal-clase
+resumen_ola_clase <- data_f %>%
+  filter(!is.na(egp4)) %>%
+  group_by(ola, egp4) %>%
+  summarise(
+    media   = mean(c05_total, na.rm = TRUE),
+    se      = sd(c05_total, na.rm = TRUE) / sqrt(n()),
+    .groups = "drop"
+  ) %>%
+  mutate(
+    ci_low  = media - 1.96 * se,
+    ci_high = media + 1.96 * se
+  )
+
+grafico_ola_clase <- resumen_ola_clase %>%
+  ggplot(aes(x = ola, y = media, color = egp4, group = egp4)) +
+  geom_ribbon(aes(ymin = ci_low, ymax = ci_high, fill = egp4),
+              alpha = 0.1, color = NA) +
+  geom_line(linewidth = 0.9) +
+  geom_point(size = 2) +
+  scale_color_brewer(palette = "Dark2") +
+  scale_fill_brewer(palette = "Dark2") +
+  labs(    x = "Ola de medición",
+    y = "Cohesión social vertical (media)",
+    color = "Clase social",
+    fill  = "Clase social"
+  ) +
+  theme_ggdist() +
+  theme(legend.position = "bottom")
+
+grafico_ola_clase
+
+ggsave(file.path(output_graphs_dir, "cohesion_temporal_clase.png"),
+       plot = grafico_ola_clase, width = 9, height = 6, dpi = 300)
+```
+
+## Distribución de la variable dependiente
+
+Se examina la distribución de `c05_total` para evaluar su forma y detectar posibles asimetrías o valores extremos relevantes para la modelación.
+
+```{r}
+#| label: grafico-distribucion-dv
+grafico_dist <- data_f %>%
+  ggplot(aes(x = c05_total)) +
+  geom_histogram(binwidth = 1, fill = "#0571B0", color = "white", alpha = 0.8) +
+  geom_vline(xintercept = mean(data_f$c05_total, na.rm = TRUE),
+             color = "red", linetype = "dashed", linewidth = 0.8) +
+  annotate("text",
+           x = mean(data_f$c05_total, na.rm = TRUE) + 0.5,
+           y = Inf, vjust = 2,
+           label = paste0("Media = ", round(mean(data_f$c05_total, na.rm = TRUE), 2)),
+           color = "red", size = 3.5) +
+  labs(
+    x = "Cohesión social vertical (c05_total)",
+    y = "Frecuencia"
+  ) +
+  theme_ggdist()
+
+grafico_dist
+
+ggsave(file.path(output_graphs_dir, "distribucion_dv.png"),
+       plot = grafico_dist, width = 7, height = 5, dpi = 300)
+```

@@ -2,54 +2,46 @@
 title: "Hipótesis"
 ---
 
-H1:
-$$
-c_{05_{ti}} = \gamma_{00} + \sum_{g=2}^{5} \gamma_{g0}\,\text{Gen}_{gi} + u_{0i} + \varepsilon_{ti}
-$$
+## Especificación del Modelo e Hipótesis de Investigación
 
-donde $\text{Gen}_{gi}$ son variables indicadoras para cada cohorte $g$ (ref. = Silent), y se espera que
-
-$$
-\gamma_{20} < \gamma_{30} < \gamma_{40} < \gamma_{50} < 0
-$$
-
-H2:Clase social.
-
-$$
-c_{05_{ti}} = \gamma_{00} + \sum_{k=2}^{7} \gamma_{k0}\,\text{EGP}_{ki} + u_{0i} + \varepsilon_{ti}
-$$
-
-donde $\text{EGP}_{ki}$ son variables indicadoras (dummy) para cada categoría $k$ de la escala EGP-7 (categoría de referencia = Service Class I), y se espera que
-
-$$
-\gamma_{k0} > 0
-$$
-
-para las clases manuales y trabajadoras, reflejando mayores niveles de cohesión vertical en comparación con la clase de servicio.
-
-H3: Identificación nacional.
-
-$$
-c_{05_{ti}} = \gamma_{00} + \gamma_{10}\,\text{c32}_{ti} + u_{0i} + \varepsilon_{ti}
-$$
-
-donde $\text{c32}_{ti}$ es el nivel de identificación nacional del individuo $i$ en el tiempo $t$, y se espera que
-
-$$
-\gamma_{10} > 0
-$$
-
-Ecuacion final con controles:
-
-Fragmento de código
-
+### Modelo de Regresión Multinivel Longitudinal
 $$
 \begin{aligned}
-c_{05_{ti}} = \, & \gamma_{00} + \gamma_{10}\,\text{c38}_{i} + \gamma_{20}\,\text{edad}_{i} + \gamma_{30}\,\text{trato}_{i} + \gamma_{40}\,\text{c15}_{i} + \gamma_{50}\,\text{c32}_{ti} + \gamma_{60}\,\text{Sexo}_{i} + \gamma_{70}\,\text{Nedu}_{i} + \\
-& \sum_{g=2}^{5} \gamma_{g0}\,\text{Gen}_{gi} 
-+ \sum_{k=2}^{7} \gamma_{k0}\,\text{EGP}_{ki} 
-+ \sum_{w=1}^{3} \gamma_{w0}\,\text{Ola}_{wti} 
-+ u_{0i} + \varepsilon_{ti}
+c_{05_{ti}} = \gamma_{00} 
+&+ \gamma_{10}\text{c38}_{i} + \gamma_{20}\text{edad}_{i} + \gamma_{30}\text{trato}_{i} + \gamma_{40}\text{c15}_{i} + \gamma_{50}\text{c32}_{ti} + \gamma_{60}\text{Sexo}_{i} \\
+&+ \gamma^{\text{Edu}}_{e0}\text{Nedu}_{ei} + \gamma^{\text{Gen}}_{g0}\text{Gen}_{gi} + \gamma^{\text{EGP}}_{k0}\text{EGP}_{ki} + \gamma^{\text{Ola}}_{w0}\text{Ola}_{wti} \\
+&+ \gamma^{\text{Ola}\times\text{Gen}}_{wg0} (\text{Ola}_{wti} \times \text{Gen}_{gi}) + u_{0i} + \varepsilon_{ti}
 \end{aligned}
 $$
-
+Donde $u_{0i} \sim \mathcal{N}(0, \tau_{00})$ representa la heterogeneidad no observada entre individuos (efecto aleatorio del intercepto a Nivel 2) y $\varepsilon_{ti} \sim \mathcal{N}(0, \sigma^2)$ corresponde 
+al error residual estocástico intraclasificado a lo largo del tiempo (Nivel 1). Para aislar los efectos 
+within de los coeficientes de Nivel 1, las variables con variación temporal ($c38_{ti}$, $\text{edad}_{ti}$, 
+$\text{trato}_{ti}$, $c15_{ti}$, $c32_{ti}$) serán centradas, ya sea a la gran media muestral 
+(\textit{grand-mean centering}, GMC) o a la media específica de cada individuo 
+(\textit{person-mean centering}, CWC), según corresponda. Los términos $x_{i}$ representan 
+el promedio histórico de cada individuo y capturan la variación entre personas o contextual(efecto between o contextual), segun el tipo de centrado,
+permitiendo descomponer de forma limpia ambos niveles de variación en el modelo.
+---
+### Hipótesis de Investigación
+**H1: Cohorte generacional**
+Los coeficientes $\gamma^{\text{Gen}}_{g0}$ asociados a las cohortes generacionales ($\text{ref.} = \text{Silent}$) exhibirán un comportamiento negativo y creciente en magnitud a medida que disminuye la edad de la cohorte:
+$$\gamma^{\text{Gen}}_{20} < \gamma^{\text{Gen}}_{30} < \gamma^{\text{Gen}}_{40} < \gamma^{\text{Gen}}_{50} < 0$$
+Donde las categorías se operacionalizan como $g=2$ ($\text{Boom}$), $g=3$ ($\text{X}$), $g=4$ ($\text{Y}$) y $g=5$ ($\text{Z}$).
+**H2: Clase social (Esquema EGP-4)**
+Al colapsar la estructura ocupacional en el esquema de cuatro categorías ($\text{EGP-4}$), el coeficiente $\gamma^{\text{EGP}}_{40}$ asociado a la clase trabajadora manual ($\text{ref.} = \text{Clase de Servicios / I+II}$) presentará un efecto positivo y estadísticamente significativo sobre el constructo dependiente:
+$$\gamma^{\text{EGP}}_{40} > 0$$
+Donde el espacio categorial restante se compone de $k=2$ ($\text{Clase Intermedia}$) y $k=3$ ($\text{Trabajadores Independientes}$).
+**H3: Identificación nacional**
+El parámetro longitudinal $\gamma_{50}$ vinculado a la variabilidad intraindividual de la identificación nacional ($\text{c32}_{ti}$) mostrará un efecto directo y positivo:
+$$\gamma_{50} > 0$$
+**H4: Capital educativo**
+Los coeficientes $\gamma^{\text{Edu}}_{e0}$ correspondientes al nivel educacional formal del sujeto ($\text{ref.} = \text{Sin estudios o Básica incompleta}$) serán positivos y monótonamente crecientes conforme aumenta el estatus educativo:
+$$0 < \gamma^{\text{Edu}}_{20} < \gamma^{\text{Edu}}_{30} < \gamma^{\text{Edu}}_{40}$$
+Donde la escala se estratifica en $e=2$ ($\text{Educación Media}$), $e=3$ ($\text{Educación Superior}$) y $e=4$ ($\text{Posgrado}$).
+**H5: Variación temporal macro-contingente**
+Los estimadores fijos $\gamma^{\text{Ola}}_{w0}$ de los períodos coincidentes con las crisis político-sanitarias (2019-2022) en comparación con la línea de base ($\text{ref.} = \text{Ola 1, 2016}$) reflejarán un impacto contractivo y significativo en la variable latente:
+$$\gamma^{\text{Ola}}_{40} < 0, \quad \gamma^{\text{Ola}}_{50} < 0, \quad \gamma^{\text{Ola}}_{60} < 0$$
+Representando las observaciones de las olas 2019 ($w=4$), 2021 ($w=5$) y 2022 ($w=6$).
+**H6: Moderación de la trayectoria temporal (Efecto de Nivel 2)**
+El efecto del paso del tiempo sobre el constructo dependiente está moderado por la estructura de cohorte del individuo. Específicamente, se plantea una interacción cruzada (Nivel $1 \times$ Nivel 2) donde la penalización o caída en los niveles de la variable durante los períodos de crisis ($w \in \{4, 5, 6\}$) se agudizará de forma asimétrica en las generaciones más jóvenes ($g \in \{4, 5\}$):
+$$\gamma^{\text{Ola}\times\text{Gen}}_{wg0} < 0 \quad \text{para } w \geq 4 \text{ y } g \geq 4$$

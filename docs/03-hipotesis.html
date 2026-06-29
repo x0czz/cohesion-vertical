@@ -282,8 +282,17 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#especificación-del-modelo-e-hipótesis-de-investigación" id="toc-especificación-del-modelo-e-hipótesis-de-investigación" class="nav-link active" data-scroll-target="#especificación-del-modelo-e-hipótesis-de-investigación"><span class="header-section-number">4.1</span> Especificación del Modelo e Hipótesis de Investigación</a>
+  <ul class="collapse">
+  <li><a href="#modelo-de-regresión-multinivel-longitudinal" id="toc-modelo-de-regresión-multinivel-longitudinal" class="nav-link" data-scroll-target="#modelo-de-regresión-multinivel-longitudinal"><span class="header-section-number">4.1.1</span> Modelo de Regresión Multinivel Longitudinal</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -307,45 +316,24 @@ window.Quarto = {
 </header>
 
 
-<p>H1: <span class="math display">\[
-c_{05_{ti}} = \gamma_{00} + \sum_{g=2}^{5} \gamma_{g0}\,\text{Gen}_{gi} + u_{0i} + \varepsilon_{ti}
-\]</span></p>
-<p>donde <span class="math inline">\(\text{Gen}_{gi}\)</span> son variables indicadoras para cada cohorte <span class="math inline">\(g\)</span> (ref. = Silent), y se espera que</p>
-<p><span class="math display">\[
-\gamma_{20} &lt; \gamma_{30} &lt; \gamma_{40} &lt; \gamma_{50} &lt; 0
-\]</span></p>
-<p>H2:Clase social.</p>
-<p><span class="math display">\[
-c_{05_{ti}} = \gamma_{00} + \sum_{k=2}^{7} \gamma_{k0}\,\text{EGP}_{ki} + u_{0i} + \varepsilon_{ti}
-\]</span></p>
-<p>donde <span class="math inline">\(\text{EGP}_{ki}\)</span> son variables indicadoras (dummy) para cada categoría <span class="math inline">\(k\)</span> de la escala EGP-7 (categoría de referencia = Service Class I), y se espera que</p>
-<p><span class="math display">\[
-\gamma_{k0} &gt; 0
-\]</span></p>
-<p>para las clases manuales y trabajadoras, reflejando mayores niveles de cohesión vertical en comparación con la clase de servicio.</p>
-<p>H3: Identificación nacional.</p>
-<p><span class="math display">\[
-c_{05_{ti}} = \gamma_{00} + \gamma_{10}\,\text{c32}_{ti} + u_{0i} + \varepsilon_{ti}
-\]</span></p>
-<p>donde <span class="math inline">\(\text{c32}_{ti}\)</span> es el nivel de identificación nacional del individuo <span class="math inline">\(i\)</span> en el tiempo <span class="math inline">\(t\)</span>, y se espera que</p>
-<p><span class="math display">\[
-\gamma_{10} &gt; 0
-\]</span></p>
-<p>Ecuacion final con controles:</p>
-<p>Fragmento de código</p>
+<section id="especificación-del-modelo-e-hipótesis-de-investigación" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="especificación-del-modelo-e-hipótesis-de-investigación"><span class="header-section-number">4.1</span> Especificación del Modelo e Hipótesis de Investigación</h2>
+<section id="modelo-de-regresión-multinivel-longitudinal" class="level3" data-number="4.1.1">
+<h3 data-number="4.1.1" class="anchored" data-anchor-id="modelo-de-regresión-multinivel-longitudinal"><span class="header-section-number">4.1.1</span> Modelo de Regresión Multinivel Longitudinal</h3>
 <p><span class="math display">\[
 \begin{aligned}
-c_{05_{ti}} = \, &amp; \gamma_{00} + \gamma_{10}\,\text{c38}_{i} + \gamma_{20}\,\text{edad}_{i} + \gamma_{30}\,\text{trato}_{i} + \gamma_{40}\,\text{c15}_{i} + \gamma_{50}\,\text{c32}_{ti} + \gamma_{60}\,\text{Sexo}_{i} + \gamma_{70}\,\text{Nedu}_{i} + \\
-&amp; \sum_{g=2}^{5} \gamma_{g0}\,\text{Gen}_{gi}
-+ \sum_{k=2}^{7} \gamma_{k0}\,\text{EGP}_{ki}
-+ \sum_{w=1}^{3} \gamma_{w0}\,\text{Ola}_{wti}
-+ u_{0i} + \varepsilon_{ti}
+c_{05_{ti}} = \gamma_{00}
+&amp;+ \gamma_{10}\text{c38}_{i} + \gamma_{20}\text{edad}_{i} + \gamma_{30}\text{trato}_{i} + \gamma_{40}\text{c15}_{i} + \gamma_{50}\text{c32}_{ti} + \gamma_{60}\text{Sexo}_{i} \\
+&amp;+ \gamma^{\text{Edu}}_{e0}\text{Nedu}_{ei} + \gamma^{\text{Gen}}_{g0}\text{Gen}_{gi} + \gamma^{\text{EGP}}_{k0}\text{EGP}_{ki} + \gamma^{\text{Ola}}_{w0}\text{Ola}_{wti} \\
+&amp;+ \gamma^{\text{Ola}\times\text{Gen}}_{wg0} (\text{Ola}_{wti} \times \text{Gen}_{gi}) + u_{0i} + \varepsilon_{ti}
 \end{aligned}
-\]</span></p>
+\]</span> Donde <span class="math inline">\(u_{0i} \sim \mathcal{N}(0, \tau_{00})\)</span> representa la heterogeneidad no observada entre individuos (efecto aleatorio del intercepto a Nivel 2) y <span class="math inline">\(\varepsilon_{ti} \sim \mathcal{N}(0, \sigma^2)\)</span> corresponde al error residual estocástico intraclasificado a lo largo del tiempo (Nivel 1). Para aislar los efectos within de los coeficientes de Nivel 1, las variables con variación temporal (<span class="math inline">\(c38_{ti}\)</span>, <span class="math inline">\(\text{edad}_{ti}\)</span>, <span class="math inline">\(\text{trato}_{ti}\)</span>, <span class="math inline">\(c15_{ti}\)</span>, <span class="math inline">\(c32_{ti}\)</span>) serán centradas, ya sea a la gran media muestral (, GMC) o a la media específica de cada individuo (, CWC), según corresponda. Los términos <span class="math inline">\(x_{i}\)</span> representan el promedio histórico de cada individuo y capturan la variación entre personas o contextual(efecto between o contextual), segun el tipo de centrado, permitiendo descomponer de forma limpia ambos niveles de variación en el modelo. — ### Hipótesis de Investigación <strong>H1: Cohorte generacional</strong> Los coeficientes <span class="math inline">\(\gamma^{\text{Gen}}_{g0}\)</span> asociados a las cohortes generacionales (<span class="math inline">\(\text{ref.} = \text{Silent}\)</span>) exhibirán un comportamiento negativo y creciente en magnitud a medida que disminuye la edad de la cohorte: <span class="math display">\[\gamma^{\text{Gen}}_{20} &lt; \gamma^{\text{Gen}}_{30} &lt; \gamma^{\text{Gen}}_{40} &lt; \gamma^{\text{Gen}}_{50} &lt; 0\]</span> Donde las categorías se operacionalizan como <span class="math inline">\(g=2\)</span> (<span class="math inline">\(\text{Boom}\)</span>), <span class="math inline">\(g=3\)</span> (<span class="math inline">\(\text{X}\)</span>), <span class="math inline">\(g=4\)</span> (<span class="math inline">\(\text{Y}\)</span>) y <span class="math inline">\(g=5\)</span> (<span class="math inline">\(\text{Z}\)</span>). <strong>H2: Clase social (Esquema EGP-4)</strong> Al colapsar la estructura ocupacional en el esquema de cuatro categorías (<span class="math inline">\(\text{EGP-4}\)</span>), el coeficiente <span class="math inline">\(\gamma^{\text{EGP}}_{40}\)</span> asociado a la clase trabajadora manual (<span class="math inline">\(\text{ref.} = \text{Clase de Servicios / I+II}\)</span>) presentará un efecto positivo y estadísticamente significativo sobre el constructo dependiente: <span class="math display">\[\gamma^{\text{EGP}}_{40} &gt; 0\]</span> Donde el espacio categorial restante se compone de <span class="math inline">\(k=2\)</span> (<span class="math inline">\(\text{Clase Intermedia}\)</span>) y <span class="math inline">\(k=3\)</span> (<span class="math inline">\(\text{Trabajadores Independientes}\)</span>). <strong>H3: Identificación nacional</strong> El parámetro longitudinal <span class="math inline">\(\gamma_{50}\)</span> vinculado a la variabilidad intraindividual de la identificación nacional (<span class="math inline">\(\text{c32}_{ti}\)</span>) mostrará un efecto directo y positivo: <span class="math display">\[\gamma_{50} &gt; 0\]</span> <strong>H4: Capital educativo</strong> Los coeficientes <span class="math inline">\(\gamma^{\text{Edu}}_{e0}\)</span> correspondientes al nivel educacional formal del sujeto (<span class="math inline">\(\text{ref.} = \text{Sin estudios o Básica incompleta}\)</span>) serán positivos y monótonamente crecientes conforme aumenta el estatus educativo: <span class="math display">\[0 &lt; \gamma^{\text{Edu}}_{20} &lt; \gamma^{\text{Edu}}_{30} &lt; \gamma^{\text{Edu}}_{40}\]</span> Donde la escala se estratifica en <span class="math inline">\(e=2\)</span> (<span class="math inline">\(\text{Educación Media}\)</span>), <span class="math inline">\(e=3\)</span> (<span class="math inline">\(\text{Educación Superior}\)</span>) y <span class="math inline">\(e=4\)</span> (<span class="math inline">\(\text{Posgrado}\)</span>). <strong>H5: Variación temporal macro-contingente</strong> Los estimadores fijos <span class="math inline">\(\gamma^{\text{Ola}}_{w0}\)</span> de los períodos coincidentes con las crisis político-sanitarias (2019-2022) en comparación con la línea de base (<span class="math inline">\(\text{ref.} = \text{Ola 1, 2016}\)</span>) reflejarán un impacto contractivo y significativo en la variable latente: <span class="math display">\[\gamma^{\text{Ola}}_{40} &lt; 0, \quad \gamma^{\text{Ola}}_{50} &lt; 0, \quad \gamma^{\text{Ola}}_{60} &lt; 0\]</span> Representando las observaciones de las olas 2019 (<span class="math inline">\(w=4\)</span>), 2021 (<span class="math inline">\(w=5\)</span>) y 2022 (<span class="math inline">\(w=6\)</span>). <strong>H6: Moderación de la trayectoria temporal (Efecto de Nivel 2)</strong> El efecto del paso del tiempo sobre el constructo dependiente está moderado por la estructura de cohorte del individuo. Específicamente, se plantea una interacción cruzada (Nivel <span class="math inline">\(1 \times\)</span> Nivel 2) donde la penalización o caída en los niveles de la variable durante los períodos de crisis (<span class="math inline">\(w \in \{4, 5, 6\}\)</span>) se agudizará de forma asimétrica en las generaciones más jóvenes (<span class="math inline">\(g \in \{4, 5\}\)</span>): <span class="math display">\[\gamma^{\text{Ola}\times\text{Gen}}_{wg0} &lt; 0 \quad \text{para } w \geq 4 \text{ y } g \geq 4\]</span></p>
 
 
 <!-- -->
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script>
@@ -2260,56 +2248,49 @@ document.addEventListener("DOMContentLoaded", () => {
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Hipótesis"</span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>H1:</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>c_{05_{ti}} = \gamma_{00} + \sum_{g=2}^{5} \gamma_{g0}\,\text{Gen}_{gi} + u_{0i} + \varepsilon_{ti}</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## Especificación del Modelo e Hipótesis de Investigación</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">### Modelo de Regresión Multinivel Longitudinal</span></span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>donde $\text{Gen}_{gi}$ son variables indicadoras para cada cohorte $g$ (ref. = Silent), y se espera que</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>\gamma_{20} &lt; \gamma_{30} &lt; \gamma_{40} &lt; \gamma_{50} &lt; 0</span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>H2:Clase social.</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>c_{05_{ti}} = \gamma_{00} + \sum_{k=2}^{7} \gamma_{k0}\,\text{EGP}_{ki} + u_{0i} + \varepsilon_{ti}</span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>donde $\text{EGP}_{ki}$ son variables indicadoras (dummy) para cada categoría $k$ de la escala EGP-7 (categoría de referencia = Service Class I), y se espera que</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>\gamma_{k0} &gt; 0</span>
-<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>para las clases manuales y trabajadoras, reflejando mayores niveles de cohesión vertical en comparación con la clase de servicio.</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>H3: Identificación nacional.</span>
-<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>c_{05_{ti}} = \gamma_{00} + \gamma_{10}\,\text{c32}_{ti} + u_{0i} + \varepsilon_{ti}</span>
-<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>donde $\text{c32}_{ti}$ es el nivel de identificación nacional del individuo $i$ en el tiempo $t$, y se espera que</span>
-<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>\gamma_{10} &gt; 0</span>
-<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Ecuacion final con controles:</span>
-<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Fragmento de código</span>
-<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>$$</span>
-<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>\begin{aligned}</span>
-<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>c_{05_{ti}} = \, &amp; \gamma_{00} + \gamma_{10}\,\text{c38}_{i} + \gamma_{20}\,\text{edad}_{i} + \gamma_{30}\,\text{trato}_{i} + \gamma_{40}\,\text{c15}_{i} + \gamma_{50}\,\text{c32}_{ti} + \gamma_{60}\,\text{Sexo}_{i} + \gamma_{70}\,\text{Nedu}_{i} + <span class="sc">\\</span></span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>&amp; \sum_{g=2}^{5} \gamma_{g0}\,\text{Gen}_{gi} </span>
-<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span>\sum_{k=2}^{7} \gamma_{k0}\,\text{EGP}_{ki} </span>
-<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span>\sum_{w=1}^{3} \gamma_{w0}\,\text{Ola}_{wti} </span>
-<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a><span class="ss">+ </span>u_{0i} + \varepsilon_{ti}</span>
-<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>\end{aligned}</span>
-<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a>$$</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>\begin{aligned}</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>c_{05_{ti}} = \gamma_{00} </span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>&amp;+ \gamma_{10}\text{c38}_{i} + \gamma_{20}\text{edad}_{i} + \gamma_{30}\text{trato}_{i} + \gamma_{40}\text{c15}_{i} + \gamma_{50}\text{c32}_{ti} + \gamma_{60}\text{Sexo}_{i} <span class="sc">\\</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>&amp;+ \gamma^{\text{Edu}}_{e0}\text{Nedu}_{ei} + \gamma^{\text{Gen}}_{g0}\text{Gen}_{gi} + \gamma^{\text{EGP}}_{k0}\text{EGP}_{ki} + \gamma^{\text{Ola}}_{w0}\text{Ola}_{wti} <span class="sc">\\</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>&amp;+ \gamma^{\text{Ola}\times\text{Gen}}_{wg0} (\text{Ola}_{wti} \times \text{Gen}_{gi}) + u_{0i} + \varepsilon_{ti}</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>\end{aligned}</span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>$$</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>Donde $u_{0i} \sim \mathcal{N}(0, \tau_{00})$ representa la heterogeneidad no observada entre individuos (efecto aleatorio del intercepto a Nivel 2) y $\varepsilon_{ti} \sim \mathcal{N}(0, \sigma^2)$ corresponde </span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>al error residual estocástico intraclasificado a lo largo del tiempo (Nivel 1). Para aislar los efectos </span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>within de los coeficientes de Nivel 1, las variables con variación temporal ($c38_{ti}$, $\text{edad}_{ti}$, </span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>$\text{trato}_{ti}$, $c15_{ti}$, $c32_{ti}$) serán centradas, ya sea a la gran media muestral </span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>(\textit{grand-mean centering}, GMC) o a la media específica de cada individuo </span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>(\textit{person-mean centering}, CWC), según corresponda. Los términos $x_{i}$ representan </span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>el promedio histórico de cada individuo y capturan la variación entre personas o contextual(efecto between o contextual), segun el tipo de centrado,</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>permitiendo descomponer de forma limpia ambos niveles de variación en el modelo.</span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>---</span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">### Hipótesis de Investigación</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>**H1: Cohorte generacional**</span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>Los coeficientes $\gamma^{\text{Gen}}_{g0}$ asociados a las cohortes generacionales ($\text{ref.} = \text{Silent}$) exhibirán un comportamiento negativo y creciente en magnitud a medida que disminuye la edad de la cohorte:</span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>$$\gamma^{\text{Gen}}_{20} &lt; \gamma^{\text{Gen}}_{30} &lt; \gamma^{\text{Gen}}_{40} &lt; \gamma^{\text{Gen}}_{50} &lt; 0$$</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>Donde las categorías se operacionalizan como $g=2$ ($\text{Boom}$), $g=3$ ($\text{X}$), $g=4$ ($\text{Y}$) y $g=5$ ($\text{Z}$).</span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>**H2: Clase social (Esquema EGP-4)**</span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>Al colapsar la estructura ocupacional en el esquema de cuatro categorías ($\text{EGP-4}$), el coeficiente $\gamma^{\text{EGP}}_{40}$ asociado a la clase trabajadora manual ($\text{ref.} = \text{Clase de Servicios / I+II}$) presentará un efecto positivo y estadísticamente significativo sobre el constructo dependiente:</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>$$\gamma^{\text{EGP}}_{40} &gt; 0$$</span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>Donde el espacio categorial restante se compone de $k=2$ ($\text{Clase Intermedia}$) y $k=3$ ($\text{Trabajadores Independientes}$).</span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>**H3: Identificación nacional**</span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>El parámetro longitudinal $\gamma_{50}$ vinculado a la variabilidad intraindividual de la identificación nacional ($\text{c32}_{ti}$) mostrará un efecto directo y positivo:</span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>$$\gamma_{50} &gt; 0$$</span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>**H4: Capital educativo**</span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>Los coeficientes $\gamma^{\text{Edu}}_{e0}$ correspondientes al nivel educacional formal del sujeto ($\text{ref.} = \text{Sin estudios o Básica incompleta}$) serán positivos y monótonamente crecientes conforme aumenta el estatus educativo:</span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>$$0 &lt; \gamma^{\text{Edu}}_{20} &lt; \gamma^{\text{Edu}}_{30} &lt; \gamma^{\text{Edu}}_{40}$$</span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>Donde la escala se estratifica en $e=2$ ($\text{Educación Media}$), $e=3$ ($\text{Educación Superior}$) y $e=4$ ($\text{Posgrado}$).</span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>**H5: Variación temporal macro-contingente**</span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>Los estimadores fijos $\gamma^{\text{Ola}}_{w0}$ de los períodos coincidentes con las crisis político-sanitarias (2019-2022) en comparación con la línea de base ($\text{ref.} = \text{Ola 1, 2016}$) reflejarán un impacto contractivo y significativo en la variable latente:</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a>$$\gamma^{\text{Ola}}_{40} &lt; 0, \quad \gamma^{\text{Ola}}_{50} &lt; 0, \quad \gamma^{\text{Ola}}_{60} &lt; 0$$</span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>Representando las observaciones de las olas 2019 ($w=4$), 2021 ($w=5$) y 2022 ($w=6$).</span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>**H6: Moderación de la trayectoria temporal (Efecto de Nivel 2)**</span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>El efecto del paso del tiempo sobre el constructo dependiente está moderado por la estructura de cohorte del individuo. Específicamente, se plantea una interacción cruzada (Nivel $1 \times$ Nivel 2) donde la penalización o caída en los niveles de la variable durante los períodos de crisis ($w \in <span class="sc">\{</span>4, 5, 6<span class="sc">\}</span>$) se agudizará de forma asimétrica en las generaciones más jóvenes ($g \in <span class="sc">\{</span>4, 5<span class="sc">\}</span>$):</span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>$$\gamma^{\text{Ola}\times\text{Gen}}_{wg0} &lt; 0 \quad \text{para } w \geq 4 \text{ y } g \geq 4$$</span></code></pre></div><button title="Copiar al portapapeles" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></div>
 </div></div></div></div></div>
 </div> <!-- /content -->
 

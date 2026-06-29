@@ -81,45 +81,25 @@ label_map <- c(
 
 ### Analisis descriptivo.
 
-
-
 ```{r, echo=FALSE, results='asis'}
 #| label: tbl-descriptivos
-#| tbl-cap: "Tabla 1. Estadísticos descriptivos (N= 7,982)"
+#| tbl-cap: "Tabla 1. Estadísticos descriptivos (N= )"
 #| tbl-cap-location: top
- data_f %>% 
-  select(c05_total, c38, m0_edad, egp7, trato_digno, c15, c32_01_ord, Generacion, ola) %>% 
-  mutate(
-    c38      = as.numeric(haven::zap_labels(c38)),
-    c15      = as.numeric(haven::zap_labels(c15)),
-    c32_01_ord  = as.numeric(haven::zap_labels(c32_01_ord)),
-    egp7     = as.factor(egp7)
-  ) %>% 
-  tbl_summary(
-    statistic = list(all_continuous() ~ "{mean} ({sd}) [{min}; {max}]",
-                      all_categorical() ~ "{n} ({p}%)"),
-    label = list(
-      c05_total   ~ "Cohesión social vertical",
-      c38         ~ "Percepción de corrupción",
-      m0_edad     ~ "Edad",
-      egp7        ~ "Clase social (EGP-7)",
-      trato_digno ~ "Trato digno",
-      c15         ~ "Autoidentificación política",
-      c32_01_ord  ~ "Orgullo de ser chileno",
-      Generacion  ~ "Generación",
-      ola         ~ "Ola"
-    ),
-    missing = "no"
-  ) %>% 
-  bold_labels()
+
+htmltools::includeHTML("procesamiento/output/tables/tabla_descriptiva_ola7.html")
+
 ```
 
-Analisis bivariado.
+A partir de los datos descriptivos analizados ($N = 11,537$), se observa una muestra caracterizada por tensiones institucionales agudas y una marcada polarización en las percepciones de la estructura social. La variable dependiente, cohesión social vertical, presenta una media de 16 puntos ($SD = 6$) dentro de un rango de $[0; 45]$, lo que sitúa la percepción general en el tercio inferior de la escala, evidenciando un diagnóstico predominantemente crítico o desgastado respecto a la confianza institucional y la legitimidad del orden social vertical. Esta evaluación se contextualiza en un entorno de profunda desafección, donde la percepción de corrupción alcanza niveles críticos: el 86% de la muestra se agrupa en los dos peldaños más altos de la escala (el 50% en la categoría máxima y el 36% en la contigua), lo que contrasta drásticamente con una identidad nacional fuertemente arraigada, donde el 90% de los individuos manifiesta una alta identificación con el país. En términos de su composición sociodemográfica y las variables centrales para las hipótesis, la muestra exhibe una media de edad de 50 años ($SD = 15$) con un rango de $[18; 84]$ años, lo cual se alinea con la distribución generacional, donde la cohorte del Baby Boom es la predominante con un 42%, seguida por la Generación X (23%) y la Generación Y o Millennials (21%), dejando en los márgenes a la generación Silent (8.0%) y a los más jóvenes de la Generación Z (6.6%). Por su parte, la estructura de clase medida a través del esquema EGP-7 muestra que el grupo mayoritario corresponde a los trabajadores manuales calificados de la categoría VI (26%), mientras que la clase de servicios en su conjunto (I y II) acumula un 33%, reflejando un mercado laboral con un peso sustancial de sectores asalariados tradicionales y profesionales, y con una presencia menor de trabajadores no calificados en la categoría VII (3.5%). Finalmente, las variables políticas y de trato muestran una autoidentificación ideológica que se ubica en una media de 7.2 puntos ($SD = 3.9$) dentro de un espectro de $[0.0; 12.0]$, denotando una leve inclinación hacia el centro-derecha o sectores conservadores según la codificación estándar, combinada con una preocupante asimetría en la variable de trato digno, cuya media de 4.7 ($SD = 5.3$) sobre un máximo de 15 indica que la gran mayoría de la población reporta niveles muy bajos de dignidad en sus interacciones cotidianas. Esta compleja realidad estructural y de opinión se distribuye temporalmente de manera estratégica para el análisis longitudinal, con una base inicial del 10% de los casos para las Olas 1 y 2, y una estabilización perfecta del 16% en cada una de las mediciones restantes (de la Ola 3 a la Ola 7), garantizando un volumen de datos homogéneo y robusto para capturar las variaciones temporales asociadas al periodo de crisis y pandemia contemplado en el modelo general.
+
+### Analisis bivariado.
 
 ```{r, echo=FALSE}
 #| label: fig-bivariado
 #| fig-cap: "Figura 1. Cohesión social vertical por clase social y generación"
 resumen_clase_gen <- data_f %>%
+  # Filtramos para eliminar filas donde egp7 o Generacion sean NA
+  filter(!is.na(egp7), !is.na(Generacion)) %>% 
   group_by(egp7, Generacion) %>%
   summarise(
     media = mean(c05_total, na.rm = TRUE),
@@ -143,10 +123,15 @@ resumen_clase_gen %>%
   ) +
   theme_ggdist() +
   theme(strip.text = element_text(size = 8))
-
 ```
 
+La @fig-bivariado presenta un análisis bivariado que examina la media de la cohesión social vertical (eje Y) a través de cinco cohortes generacionales (Generation: Silent, Boom, X, Y, Z, en el eje X), segmentado o facetado por las distintas categorías del esquema de clase social EGP-7. Las barras verticales alrededor de cada punto representan los intervalos de confianza al 95%, lo que permite evaluar la precisión de las estimaciones y la significancia visual de las diferencias.
 
+En primer lugar, se observa un efecto generacional parcialmente consistente con la hipótesis H1, caracterizado por una tendencia descendente de la cohesión social vertical a medida que las cohortes son más jóvenes (de Silent hacia Z). Este patrón de "caída" generacional es especialmente pronunciado y nítido en las clases socioeconómicas más altas, como Service Class I y Service Class II, así como en las ocupaciones de rutina no manuales (Routine non-manual y Routine Nonmanual IIIa), donde los miembros de la generación Silent reportan niveles de cohesión significativamente más altos (superando los 20 puntos en las clases de servicios) en comparación con las generaciones sucesivas, las cuales tienden a estancarse o seguir descendiendo sutilmente en torno a los 15-17 puntos.
+
+En segundo lugar, el comportamiento de las clases manuales y trabajadoras (EGP-V, VI y VII) quiebra la linealidad del descenso generacional, mostrando dinámicas heterogéneas. En la categoría V (Manual supervisors/Lower grade technicians) se aprecia un desplome drástico entre la generación Silent y los Boomers, seguido de una leve recuperación en las generaciones intermedias antes de volver a caer en la generación Z. Por otro lado, la clase VI (Skilled workers) exhibe un patrón en forma de "U": la cohesión disminuye desde la generación Silent hasta alcanzar su punto más bajo en la Generación X, para luego experimentar un repunte sistemático y estadísticamente visible en las generaciones más jóvenes (Y y Z). Una tendencia inversa o de curva invertida se observa en la clase VII (Unskilled workers/Farm labours), donde la generación Silent inicia con los niveles de cohesión más bajos (cercanos a 13 puntos), sube de forma sostenida hacia las generaciones Boomer, X e Y, y vuelve a contraerse con la llegada de la generación Z.
+
+En tercer lugar, el análisis de los intervalos de confianza revela un problema de densidad de datos en los extremos generacionales dentro de ciertas clases. Las barras de error para la generación Silent en casi todos los paneles—y para la generación Z en categorías específicas como la clase VII o la categoría "NA"—son notablemente más amplias. Esto coincide con el reporte descriptivo previo, confirmando que al desagregar la muestra por celdas específicas (como Silent en la clase VII), el tamaño muestral (n) se reduce sustancialmente, lo que disminuye la precisión de la estimación bivariada e incrementa la incertidumbre en los márgenes de error.
 
 ```{r}
 data_f %>%
@@ -158,38 +143,12 @@ data_f %>%
        caption = "Source: ELSOC 2016-2023") +
   theme_ggdist() +
   theme(legend.position = "none")
-
-# Clase social
-data_f %>%
-  ggplot(aes(x = egp7, y = c05_total, fill = egp7)) +
-  geom_violin(alpha = .6) +
-  geom_boxplot(width = .2, alpha = .8) +
-  labs(x = NULL, y = "Cohesión social vertical") +
-  theme_ggdist() +
-  theme(legend.position = "none",
-        axis.text.x = element_text(angle = 30, hjust = 1))
 ```
+respecto a la tendencia central y la hipótesis H1, las cajas internas muestran un descenso progresivo en las medianas conforme nos desplazamos de las generaciones mayores a las más jóvenes. La generación Silent exhibe la mediana más alta (en torno a los 17 puntos), mientras que las generaciones Boomer, X, Y y Z muestran un estancamiento en sus medianas, estabilizándose de forma muy similar alrededor de los 15 puntos. Este comportamiento apoya parcialmente la idea de que las cohortes más jóvenes muestran un menor apego o evaluación de la cohesión vertical en comparación con la cohorte histórica de mayor edad, aunque la diferencia se mitiga sustancialmente entre los bloques de las cuatro generaciones sucesivas.
 
-
-```{r}
-data_f %>%
-  group_by(Generacion) %>%
-  summarise(
-    media = mean(c05_total, na.rm = TRUE),
-    se    = sd(c05_total, na.rm = TRUE) / sqrt(n()),
-    .groups = "drop"
-  ) %>%
-  mutate(ci_low = media - 1.96*se, ci_high = media + 1.96*se) %>%
-  ggplot(aes(x = Generacion, y = media)) +
-  geom_point(size = 3, color = "#0571B0") +
-  geom_errorbar(aes(ymin = ci_low, ymax = ci_high),
-                width = .2, color = "#0571B0") +
-  labs(x = NULL, y = "Cohesión social vertical (media)") +
-  theme_ggdist()
-```
+En segundo lugar, el análisis de la densidad (forma del violín) demuestra una alta homogeneidad estructural. Todos los violines exhiben una forma de "diamante" o distribución unimodal simétrica, ensanchándose notoriamente en la franja de los 12 a los 20 puntos. Esto indica que independientemente de la generación a la que pertenezca el individuo, la gran mayoría de la población tiende a concentrar sus respuestas en valores moderados-bajos de cohesión social vertical. No se aprecian distribuciones bimodales (que sugerirían una polarización extrema de opiniones dentro de una misma generación), sino un consenso generalizado en torno al centro-inferior de la escala.
 
 Modelos de regresion.
-
 
 ```{r}
 #| echo: false
@@ -200,4 +159,4 @@ Modelos de regresion.
 htmltools::includeHTML("output/tables/tabla_modelos.html")
 ```
 
-El análisis de los determinantes de la cohesión social vertical en Chile, sustentado en una estructura longitudinal de 7,979 observaciones anidadas en 1,372 individuos a lo largo de cinco modelos jerárquicos, revela importantes hallazgos en su especificación completa (Modelo 5). En cuanto a los predictores de percepción a nivel inter-individual (efectos between), el sentido de pertenencia ejerce un impacto positivo y altamente significativo ($\beta = 0.464$; $p < 0.001$), mientras que la percepción de corrupción se posiciona como uno de los detractores más robustos del modelo con un marcado coeficiente negativo ($\beta = -0.766$; $p < 0.001$). Asimismo, la variable de trato digno—que operacionaliza el conflicto de clase—muestra que a mayor conflicto percibido, menor es la cohesión vertical ($\beta = -0.093$; $p < 0.001$), aportando evidencia para la hipótesis $H_2$, al tiempo que la auto-identificación política presenta un efecto negativo significativo ($\beta = -0.132$; $p < 0.001$); a mayor identificacion con la derecha, menor es la cohesión vertical. Respecto a las características estables del individuo (Nivel 2), se confirma la hipótesis $H_1$ sobre la brecha generacional, evidenciando que, en comparación con la cohorte más antigua, todas las generaciones posteriores exhiben una cohesión vertical significativamente menor, con un efecto más dramático en la Generación Z ($\beta = -2.571$; $p < 0.001$), seguida por la Generación X ($\beta = -1.978$; $p < 0.01$) y los Millennials ($\beta = -1.862$; $p < 0.01$); por su parte, el nivel educativo solo arroja un efecto positivo y significativo en el grupo de postgrado ($\beta = 3.099$; $p < 0.01$), mientras que el sexo no reporta significancia estadística ($\beta = -0.290$). El contexto temporal captura con nitidez el impacto de la crisis del estallido, reflejando caídas estrepitosas en la cohesión vertical durante la Ola 2019 ($\beta = -2.727$; $p < 0.001$) y la Ola 2021 ($\beta = -6.079$; $p < 0.001$) a proposito del estallido social y la pandemia, seguidas de un leve repunte o estabilización en la Ola 2023 ($\beta = 1.761$; $p < 0.001$). Finalmente, el examen de los efectos aleatorios complementa este escenario al registrar una reducción de la varianza del intercepto de 11.697 en el modelo nulo a 9.588 en el Modelo 5, demostrando que las variables de Nivel 2 explican una parte importante de la heterogeneidad basal; asimismo, la varianza de la pendiente aleatoria para la edad intra-individual (0.185) junto a una covarianza intercepto-pendiente positiva pero marginal (0.008) confirman la existencia de trayectorias de cambio divergentes en el tiempo, mientras que el descenso de la varianza residual desde 28.789 hasta 17.892 constata que la inclusión de percepciones temporales dinámicas logra explicar una porción crítica de la variabilidad longitudinal de la cohesión en la población chilena.
+El análisis de los determinantes de la confianza en las instituciones se abordó mediante una estrategia de modelación de efectos mixtos, idónea para capturar de manera simultánea la variabilidad entre individuos y los cambios a lo largo del tiempo durante el periodo 2016-2023. Siguiendo las recomendaciones metodológicas de Enders y Tofighi (2007), se procedió al centrado a la media de grupo (CWC) para las variables de Nivel 1 y a la inclusión de los promedios históricos en el Nivel 2. Esta especificación es fundamental para la correcta interpretación de los hallazgos, puesto que la estimación de los coeficientes de Nivel 1 permite aislar el efecto within (intra-individual) puro, garantizando que las fluctuaciones anuales específicas estén controladas por el promedio histórico del sujeto. Por su parte, el coeficiente de la variable grupal en el Nivel 2 representa el efecto between (inter-individual), permitiendo una diferenciación teórica y empírica nítida entre dinámicas longitudinales e individuales.Como paso analítico previo, el Modelo 0 (Nulo) permitió realizar la partición de la varianza y calcular la Correlación Intraclase (ICC) con el fin de evaluar la pertinencia del anidamiento de los datos. A partir de una varianza de intercepto ($\tau_{00}$) de 11.697 y una varianza residual ($\sigma^2$) de 28.789, se obtuvo un ICC de aproximadamente 0.289. Este resultado indica que el 28.9% de la varianza en la confianza institucional se explica por diferencias estables y estructurales entre las personas, mientras que el 71.1% restante responde a fluctuaciones temporales endógenas o a errores de medición. Al superar ampliamente el umbral crítico del 10%, este indicador justifica técnicamente el empleo de modelos multinivel, evitando así sesgos potenciales en las inferencias estadísticas subsiguientes.Al examinar los predictores sustantivos en el Modelo 4 (modelo final), la percepción de corrupción devela ser el detractor más robusto y severo de la confianza institucional. Bajo la lógica de Enders y Tofighi, se evidencia un marcado contraste entre el efecto crónico y el shock puntual: el promedio histórico de la percepción de corrupción de un individuo (efecto between) ejerce un impacto devastador ($\beta = -2.090$, $p < 0.001$) que cuadruplica la magnitud de una fluctuación anual específica (efecto within, $\beta = -0.494$, $p < 0.001$). Esto sugiere de forma contundente que la confianza no se erosiona de manera irreversible por escándalos aislados, sino por una evaluación sistémica y prolongada de falta de integridad en el entorno, coincidiendo con el diagnóstico de la OCDE sobre la prioridad de la integridad pública para reconstruir el vínculo ciudadano. En una dirección opuesta, la identificación nacional se ratifica como el principal motor de resiliencia y cohesión social; en consonancia con los planteamientos de Schiefer (2016), su promedio histórico presenta un fuerte efecto positivo ($\beta = 1.162$, $p < 0.001$), actuando como un potente amortiguador cultural.Por otro lado, el comportamiento de las variables de estratificación y capital humano devela importantes fracturas de carácter estructural y generacional. Un hallazgo metodológico y teórico fundamental ocurre al observar la transición entre los modelos: en el Modelo Temporal, las variables de generación (Boomers, X e Y) mostraban efectos negativos significativos; sin embargo, al controlar por el promedio histórico de la variable individual edad (Nivel 2) a partir del Modelo 1, el efecto de estas variables generacionales pierde su significancia estadística. Esto demuestra que la aparente desconfianza atribuida a la cohorte era absorbida por el efecto puramente biográfico y longitudinal de la edad acumulada. La única excepción a esta regla es la Generación Z, la cual mantiene un distanciamiento estructural, robusto y estadísticamente significativo frente a las instituciones institucionales ($\beta = -1.481$), sugiriendo que los jóvenes más australes han abandonado los surcos de legitimación tradicional en favor de perfiles más críticos e independientes.En cuanto a la estructura de clases, los resultados exponen una brecha socioeconómica evidente: tanto la clase intermedia ($\beta = -0.426$, $p < 0.05$) como la clase trabajadora manual ($\beta = -0.864$, $p < 0.001$) exhiben niveles de confianza significativamente menores en comparación con la clase de servicios de referencia, validando el diagnóstico de Molina y Alfageme (2022) sobre la exclusión material y subjetiva del pacto social en América Latina. Finalmente, respecto al capital educativo se observa una tendencia monótonamente creciente en los coeficientes, aunque únicamente el nivel de Posgrado se consolida como un habilitador estadísticamente significativo ($\beta = 2.969$, $p < 0.01$). Cabe destacar que el modelo final constató la estabilidad de estas brechas estructurales a través del tiempo, dado que la varianza y covarianza de las pendientes aleatorias resultaron marginales.Finalmente, la dimensión temporal del modelo captura con precisión la trayectoria histórica reciente del contexto chileno a través de los coeficientes asignados a las olas de medición en comparación con la Ola basal de 2016. Tras repuntes significativos en 2017 ($\beta = 1.526$, $p < 0.001$) y 2018 ($\beta = 3.539$, $p < 0.001$), se registra una caída estrepitosa del indicador de confianza hacia la Ola 2019 ($\beta = -2.090$, $p < 0.001$) y especialmente en la Ola 2021 ($\beta = -5.279$, $p < 0.001$), reflejando el impacto acumulado y erosivo del estallido social y la subsiguiente crisis de la pandemia. No obstante, al avanzar hacia la Ola 2023, los datos muestran un fuerte repunte estadísticamente significativo ($\beta = 2.642$, $p < 0.001$), sugiriendo una fase de estabilización institucional tras el periodo de mayor agitación. En contraste con estos movimientos, la variable de Trato Digno arrojó un comportamiento contraintuitivo respecto a las expectativas teóricas, registrando coeficientes negativos tanto en su componente within ($\beta = -0.055$, $p < 0.01$) como between ($\beta = -0.199$, $p < 0.001$) en el modelo final, lo que plantea la necesidad de revisar su operacionalización en escenarios de alta desafección ciudadana.
