@@ -19,7 +19,7 @@ jobs:
       run: |
         sudo apt-get install -y tree
         # Ignora carpetas basura de Quarto y librerías ocultas
-        tree --charset=ascii -I '.git|.github|.Rproj.user|docs|site_libs|*_files|_freeze|*.html|tree.txt|search.json' > tree.txt
+        tree --charset=ascii -I '.git|.github|.Rproj.user|docs|site_libs|*_files|_freeze|*.html|tree.txt|search.json|includes|assets' > tree.txt
 
     - name: Inyectar en el README
       run: |
