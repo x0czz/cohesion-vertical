@@ -30,3 +30,6 @@ El despliegue web se puede realizar mediante [**GitHub Pages**](https://www.yout
 Este proyecto analiza los datos de la encuesta ELSOC entre los años 2016 y 2023.
 
 ## Estructura del Proyecto
+
+<!--START_TREE-->
+<!--END_TREE-->
