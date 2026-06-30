@@ -43,24 +43,6 @@ Este proyecto analiza los datos de la encuesta ELSOC entre los años 2016 y 2023
 |-- README.md
 |-- _metadata.yml
 |-- _quarto.yml
-|-- apendices
-|   |-- A-encuestas.qmd
-|   `-- B-tablas.qmd
-|-- assets
-|   |-- cover.png
-|   |-- favicon-2025-20251031.svg
-|   |-- favicon.svg
-|   |-- file.svg
-|   |-- sharing-default.png
-|   `-- styles.scss
-|-- includes
-|   |-- backmatter.tex
-|   |-- cover-config.tex
-|   |-- pdf-config-scrbook.yml
-|   |-- preamble.tex
-|   |-- reference.docx
-|   |-- reportes-facso-plantilla.tex
-|   `-- title-pdf.tex
 |-- index.qmd
 |-- input
 |   |-- ELSOC_subset.rds
@@ -103,6 +85,6 @@ Este proyecto analiza los datos de la encuesta ELSOC entre los años 2016 y 2023
 |-- reportes-facso-plantilla.tex
 `-- testnofig.tex
 
-14 directories, 55 files
+11 directories, 40 files
 ```
 <!--END_TREE-->
