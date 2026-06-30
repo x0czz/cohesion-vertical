@@ -50,7 +50,6 @@ Estos documentos generan las salidas (gráficos y tablas) que se encuentran en:
 |-- index.tex
 |-- index.toc
 |-- input
-|   |-- ELSOC_subset.rds
 |   |-- ELSOC_variables_estudio.rds
 |   |-- README.md
 |   |-- data_centrada_regresion.rds
@@ -97,6 +96,6 @@ Estos documentos generan las salidas (gráficos y tablas) que se encuentran en:
 |-- reportes-facso-plantilla.tex
 `-- testnofig.tex
 
-11 directories, 52 files
+11 directories, 51 files
 ```
 <!--END_TREE-->
