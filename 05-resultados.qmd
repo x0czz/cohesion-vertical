@@ -132,12 +132,12 @@ En primer lugar, se observa un efecto generacional parcialmente consistente con 
 En segundo lugar, el comportamiento de las clases manuales y trabajadoras (EGP-V, VI y VII) quiebra la linealidad del descenso generacional, mostrando dinámicas heterogéneas. En la categoría V (Manual supervisors/Lower grade technicians) se aprecia un desplome drástico entre la generación Silent y los Boomers, seguido de una leve recuperación en las generaciones intermedias antes de volver a caer en la generación Z. Por otro lado, la clase VI (Skilled workers) exhibe un patrón en forma de "U": la cohesión disminuye desde la generación Silent hasta alcanzar su punto más bajo en la Generación X, para luego experimentar un repunte sistemático y estadísticamente visible en las generaciones más jóvenes (Y y Z). Una tendencia inversa o de curva invertida se observa en la clase VII (Unskilled workers/Farm labours), donde la generación Silent inicia con los niveles de cohesión más bajos (cercanos a 13 puntos), sube de forma sostenida hacia las generaciones Boomer, X e Y, y vuelve a contraerse con la llegada de la generación Z.
 
 ```{r, echo=FALSE}
-#| echo: false
 #| label: fig-bivariado2
-#| fig-cap: "Analisis bivariado"
-#| tbl-cap-location: top
-#| fig-cap="Gráficos del análisis Bivariado"
-#| fig-align='center', out.width="100%", message=FALSE, warning=FALSE}
+#| message: false
+#| warning: false
+#| fig-cap: "Gráficos del análisis Bivariado"
+#| fig-align: center
+#| out-width: "100%"
 
 library(png)
 library(grid)
@@ -149,7 +149,7 @@ path_graficos <- "procesamiento/output/graphs/"
 # Cargar los archivos PNG transformándolos en objetos gráficos
 g1 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_corrupcion.png")))
 g2 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_educacion.png")))
-g3 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_identificacion.png")))
+g3 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_meritocracia.png")))
 
 
 # Crear la grilla: g1 y g2 al lado, g3 abajo al centro
@@ -160,12 +160,13 @@ El análisis longitudinal revela una trayectoria temporal de la cohesión social
 Al desagregar los datos, las brechas se mantienen estables en el tiempo, sin que las crisis alteren el orden de los factores estructurales. Por un lado, la clase de servicios y la generación Silent se posicionan de manera persistente en la cúspide de la cohesión vertical, mientras que la clase trabajadora permanece en la base. La única divergencia relevante ocurre en la fase de recuperación post-pandemia (Olas 6 y 7), donde las cohortes más jóvenes (Y y Z) exhiben un repunte o pendiente de ascenso más pronunciado que la Generación X, sugiriendo una reactivación diferenciada.
 
 ```{r}
+#| label: fig-bivariado3
 #| echo: false
-#| label: tbl-bivariado2
-#| tbl-cap: "Cohesion social vertical por año y generación"
-#| tbl-cap-location: top
-#| fig.cap="Gráficos del análisis Bivariado"
-#| fig.align='center', out.width="100%", message=FALSE, warning=FALSE}
+#| message: false
+#| warning: false
+#| fig-cap: "Gráficos del análisis Bivariado"
+#| fig-align: center
+#| out-width: "100%"
 
 # Cargar los archivos PNG transformándolos en objetos gráficos
 g4 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_temporal.png")))

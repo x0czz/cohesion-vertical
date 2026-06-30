@@ -93,6 +93,8 @@ Los índices de participación organizacional (`c05_total`) y trato digno (`trat
 
 ```{r}
 #| label: variables-base
+
+# 1. Creamos las variables base y aplicamos las condiciones sobre 'data'
 data <- data %>%
   mutate(
     ola = factor(ola, levels = 1:7, labels = paste0("Ola ", 1:7)),
@@ -115,22 +117,13 @@ data <- data %>%
     ),
     c05_total = rowSums(pick(c05_01:c05_09), na.rm = TRUE),
     trato_digno = rowSums(pick(c35_01:c35_03), na.rm = TRUE)
-  )
-
-data_f <- data_f %>%
-  # 1. Tu código de recodificación y cálculo de sumas
-  mutate(
-    # ... (aquí van tus condiciones previas de m53_label si corresponden)
-    c05_total   = rowSums(pick(c05_01:c05_09), na.rm = TRUE),
-    trato_digno = rowSums(pick(c35_01:c35_03), na.rm = TRUE)
   ) %>%
   
-  # 2. Forward Fill aplicado únicamente a 'trato_digno'
+  # 2. Forward Fill aplicado únicamente a 'trato_digno' a nivel de individuo
   arrange(idencuesta, ola) %>% 
   group_by(idencuesta) %>% 
-  fill(trato_digno, .direction = "down") %>% 
+  tidyr::fill(trato_digno, .direction = "down") %>% 
   ungroup()
-
 ```
 
 ## Imputación de identificación indígena

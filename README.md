@@ -1,35 +1,27 @@
-# Plantilla de la evaluación final Ciencia Social Abierta 2026
+## Sobre este repositorio
 
+Este repositorio contiene el informe del trabajo final del curso de **Ciencia Social Abierta**, correspondiente a la Facultad de Ciencias Sociales (FACSO). El trabajo aborda la **confianza institucional**, analizada mediante **modelado multinivel**.
 
-## Estructura principal del repositorio
+Informe completo disponible en: https://x0czz.github.io/cohesion-vertical/
 
+### Bases de datos
 
-El repositorio organiza el contenido en capítulos base (`00–06`), apéndices, e includes para portadas y metadatos. La identidad visual se controla en `assets/styles.scss` y el diseño PDF en `reportes-facso-plantilla.tex`. La carpeta `refs/` aloja `apa.csl` y `referencias.bib`. Se sigue el [protocolo IPO](https://lisacoes.com/protocolos/a-ipo-rep/) con `input/` (datos), `procesamiento/` (scripts/notebooks) y `output/` (tablas/figuras listas).
+- `ELSOC_variables_estudio.rds`: base de datos original con las variables de estudio.
+- `data_f_regresion.rds`: base de datos tratada (variables procesadas para el análisis).
+- `data_centrada_regresion.rds`: base de datos centrada, usada en los modelos de regresión.
 
-La plantilla permite integrar tablas y gráficos que se actualizan al cambiar los datos. Las citas se gestionan con Pandoc usando claves de `refs/referencias.bib` (formato BibTeX/CSL JSON), con estilo APA por defecto (`refs/apa.csl`). Esto asegura consistencia entre texto, evidencias y bibliografía en ambas salidas (HTML y PDF).
+### Scripts de procesamiento
 
-El despliegue web se puede realizar mediante [**GitHub Pages**](https://www.youtube.com/watch?v=8IdBAysf-U4) desde `docs/`. 
+Los siguientes archivos `.qmd` dentro de `procesamiento/` contienen el código y la explicación del tratamiento de variables:
 
-## Flujo de trabajo sugerido
+- `Preparacion.qmd`: preparación y limpieza de las bases de datos.
+- `descriptivo_bivariado.qmd`: análisis descriptivo y bivariado de las variables.
+- `analisis.qmd`: análisis de regresión y resultados del modelo.
 
-1. Organizar datos brutos en `input/data-orig/` y documentarlos brevemente.
-2. Procesar la informacion dentro de `procesamiento/` usando scripts o notebooks; guardar productos limpios en `input/data-proc/` o `output/` segun corresponda.
-3. Referenciar tablas y graficos listos desde los capitulos usando rutas relativas (por ejemplo `output/tables/tabla-01.html`).
-4. Usar `freeze: auto` (configurado) para mantener resultados reproducibles y evitar re-ejecuciones innecesarias.
-5. Antes de liberar una version final, ejecutar `quarto render --to html pdf` para garantizar paridad entre formatos.
+Estos documentos generan las salidas (gráficos y tablas) que se encuentran en:
+- `output/graphs/` y `output/tables/` en la raíz del proyecto.
 
-## Elementos a considerar en la evaluación
-
-- Preregistro de hipótesis
-- Registro del proyecto en OSF
-- Elaboración de pre-print
-- Generación de GitHub Pages para la publicación de resultados
-
-# Análisis Longitudinal de la Cohesión Social
-
-Este proyecto analiza los datos de la encuesta ELSOC entre los años 2016 y 2023.
-
-## Estructura del Proyecto
+(Estas carpetas no muestran su contenido completo en el árbol de abajo porque los archivos `.html` están omitidos del listado automático.)
 
 <!--START_TREE-->
 ```
