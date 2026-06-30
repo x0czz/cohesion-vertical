@@ -43,7 +43,12 @@ Estos documentos generan las salidas (gráficos y tablas) que se encuentran en:
 |-- README.md
 |-- _metadata.yml
 |-- _quarto.yml
+|-- index.aux
+|-- index.log
+|-- index.pdf
 |-- index.qmd
+|-- index.tex
+|-- index.toc
 |-- input
 |   |-- ELSOC_subset.rds
 |   |-- ELSOC_variables_estudio.rds
@@ -54,7 +59,14 @@ Estos documentos generan las salidas (gráficos y tablas) que se encuentran en:
 |-- output
 |   |-- README.md
 |   |-- graphs
-|   |   `-- cohesion_clase_generacion.png
+|   |   |-- cohesion_clase_generacion.png
+|   |   |-- cohesion_corrupcion.png
+|   |   |-- cohesion_educacion.png
+|   |   |-- cohesion_meritocracia.png
+|   |   |-- cohesion_temporal.png
+|   |   |-- cohesion_temporal_clase.png
+|   |   |-- cohesion_temporal_generacion.png
+|   |   `-- distribucion_dv.png
 |   `-- tables
 |-- procesamiento
 |   |-- Preparacion.qmd
@@ -85,6 +97,6 @@ Estos documentos generan las salidas (gráficos y tablas) que se encuentran en:
 |-- reportes-facso-plantilla.tex
 `-- testnofig.tex
 
-11 directories, 40 files
+11 directories, 52 files
 ```
 <!--END_TREE-->
