@@ -90,7 +90,7 @@ htmltools::includeHTML("procesamiento/output/tables/tabla_descriptiva_ola7.html"
 
 ```
 
-A partir de los datos descriptivos analizados ($N = 11,537$), se observa una muestra caracterizada por tensiones institucionales agudas y una marcada polarización en las percepciones de la estructura social. La variable dependiente, cohesión social vertical, presenta una media de 16 puntos ($SD = 6$) dentro de un rango de $[0; 45]$, lo que sitúa la percepción general en el tercio inferior de la escala, evidenciando un diagnóstico predominantemente crítico o desgastado respecto a la confianza institucional y la legitimidad del orden social vertical. Esta evaluación se contextualiza en un entorno de profunda desafección, donde la percepción de corrupción alcanza niveles críticos: el 86% de la muestra se agrupa en los dos peldaños más altos de la escala (el 50% en la categoría máxima y el 36% en la contigua), lo que contrasta drásticamente con una identidad nacional fuertemente arraigada, donde el 90% de los individuos manifiesta una alta identificación con el país. En términos de su composición sociodemográfica y las variables centrales para las hipótesis, la muestra exhibe una media de edad de 50 años ($SD = 15$) con un rango de $[18; 84]$ años, lo cual se alinea con la distribución generacional, donde la cohorte del Baby Boom es la predominante con un 42%, seguida por la Generación X (23%) y la Generación Y o Millennials (21%), dejando en los márgenes a la generación Silent (8.0%) y a los más jóvenes de la Generación Z (6.6%). Por su parte, la estructura de clase medida a través del esquema EGP-7 muestra que el grupo mayoritario corresponde a los trabajadores manuales calificados de la categoría VI (26%), mientras que la clase de servicios en su conjunto (I y II) acumula un 33%, reflejando un mercado laboral con un peso sustancial de sectores asalariados tradicionales y profesionales, y con una presencia menor de trabajadores no calificados en la categoría VII (3.5%). Finalmente, las variables políticas y de trato muestran una autoidentificación ideológica que se ubica en una media de 7.2 puntos ($SD = 3.9$) dentro de un espectro de $[0.0; 12.0]$, denotando una leve inclinación hacia el centro-derecha o sectores conservadores según la codificación estándar, combinada con una preocupante asimetría en la variable de trato digno, cuya media de 4.7 ($SD = 5.3$) sobre un máximo de 15 indica que la gran mayoría de la población reporta niveles muy bajos de dignidad en sus interacciones cotidianas. Esta compleja realidad estructural y de opinión se distribuye temporalmente de manera estratégica para el análisis longitudinal, con una base inicial del 10% de los casos para las Olas 1 y 2, y una estabilización perfecta del 16% en cada una de las mediciones restantes (de la Ola 3 a la Ola 7), garantizando un volumen de datos homogéneo y robusto para capturar las variaciones temporales asociadas al periodo de crisis y pandemia contemplado en el modelo general.
+A partir de los datos descriptivos analizados, se observa una muestra caracterizada por tensiones institucionales agudas y una marcada polarización en las percepciones de la estructura social. La variable dependiente, cohesión social vertical, presenta una media de 16 puntos ($SD = 6$) dentro de un rango de $[0; 45]$, lo que sitúa la percepción general en el tercio inferior de la escala, evidenciando un diagnóstico predominantemente crítico o desgastado respecto a la confianza institucional y la legitimidad del orden social vertical. Esta evaluación se contextualiza en un entorno de profunda desafección, donde la percepción de corrupción alcanza niveles críticos: el 86% de la muestra se agrupa en los dos peldaños más altos de la escala (el 50% en la categoría máxima y el 36% en la contigua), lo que contrasta drásticamente con una identidad nacional fuertemente arraigada, donde el 90% de los individuos manifiesta una alta identificación con el país. En términos de su composición sociodemográfica y las variables centrales para las hipótesis, la muestra exhibe una media de edad de 50 años ($SD = 15$) con un rango de $[18; 84]$ años, lo cual se alinea con la distribución generacional, donde la cohorte del Baby Boom es la predominante con un 42%, seguida por la Generación X (23%) y la Generación Y o Millennials (21%), dejando en los márgenes a la generación Silent (8.0%) y a los más jóvenes de la Generación Z (6.6%). Por su parte, la estructura de clase medida a través del esquema EGP-7 muestra que el grupo mayoritario corresponde a los trabajadores manuales calificados de la categoría VI (26%), mientras que la clase de servicios en su conjunto (I y II) acumula un 33%, reflejando un mercado laboral con un peso sustancial de sectores asalariados tradicionales y profesionales, y con una presencia menor de trabajadores no calificados en la categoría VII (3.5%). Finalmente, las variables políticas y de trato muestran una autoidentificación ideológica que se ubica en una media de 7.2 puntos ($SD = 3.9$) dentro de un espectro de $[0.0; 12.0]$, denotando una leve inclinación hacia el centro-derecha o sectores conservadores según la codificación estándar, combinada con una preocupante asimetría en la variable de trato digno, cuya media de 4.7 ($SD = 5.3$) sobre un máximo de 15 indica que la gran mayoría de la población reporta niveles muy bajos de dignidad en sus interacciones cotidianas. Esta compleja realidad estructural y de opinión se distribuye temporalmente de manera estratégica para el análisis longitudinal, con una base inicial del 10% de los casos para las Olas 1 y 2, y una estabilización perfecta del 16% en cada una de las mediciones restantes (de la Ola 3 a la Ola 7), garantizando un volumen de datos homogéneo y robusto para capturar las variaciones temporales asociadas al periodo de crisis y pandemia contemplado en el modelo general.
 
 ### Analisis bivariado.
 
@@ -131,24 +131,55 @@ En primer lugar, se observa un efecto generacional parcialmente consistente con 
 
 En segundo lugar, el comportamiento de las clases manuales y trabajadoras (EGP-V, VI y VII) quiebra la linealidad del descenso generacional, mostrando dinámicas heterogéneas. En la categoría V (Manual supervisors/Lower grade technicians) se aprecia un desplome drástico entre la generación Silent y los Boomers, seguido de una leve recuperación en las generaciones intermedias antes de volver a caer en la generación Z. Por otro lado, la clase VI (Skilled workers) exhibe un patrón en forma de "U": la cohesión disminuye desde la generación Silent hasta alcanzar su punto más bajo en la Generación X, para luego experimentar un repunte sistemático y estadísticamente visible en las generaciones más jóvenes (Y y Z). Una tendencia inversa o de curva invertida se observa en la clase VII (Unskilled workers/Farm labours), donde la generación Silent inicia con los niveles de cohesión más bajos (cercanos a 13 puntos), sube de forma sostenida hacia las generaciones Boomer, X e Y, y vuelve a contraerse con la llegada de la generación Z.
 
-En tercer lugar, el análisis de los intervalos de confianza revela un problema de densidad de datos en los extremos generacionales dentro de ciertas clases. Las barras de error para la generación Silent en casi todos los paneles—y para la generación Z en categorías específicas como la clase VII o la categoría "NA"—son notablemente más amplias. Esto coincide con el reporte descriptivo previo, confirmando que al desagregar la muestra por celdas específicas (como Silent en la clase VII), el tamaño muestral (n) se reduce sustancialmente, lo que disminuye la precisión de la estimación bivariada e incrementa la incertidumbre en los márgenes de error.
+```{r, echo=FALSE}
+#| echo: false
+#| label: fig-bivariado2
+#| fig-cap: "Analisis bivariado"
+#| tbl-cap-location: top
+#| fig-cap="Gráficos del análisis Bivariado"
+#| fig-align='center', out.width="100%", message=FALSE, warning=FALSE}
+
+library(png)
+library(grid)
+library(patchwork)
+
+# Definir la ruta base relativa
+path_graficos <- "procesamiento/output/graphs/"
+
+# Cargar los archivos PNG transformándolos en objetos gráficos
+g1 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_corrupcion.png")))
+g2 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_educacion.png")))
+g3 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_identificacion.png")))
+
+
+# Crear la grilla: g1 y g2 al lado, g3 abajo al centro
+(wrap_elements(g1) + wrap_elements(g2)) / wrap_elements(g3)
+```
+El análisis longitudinal revela una trayectoria temporal de la cohesión social vertical altamente homogénea, marcada de forma dramática por el contexto nacional. Se observa un aumento sostenido entre las Olas 1 y 3, seguido de un quiebre abrupto en las Olas 4 y 5 que coincide exactamente con el periodo del estallido social y la pandemia, donde el indicador cae a su mínimo histórico. A partir de la Ola 6, el sistema muestra una recuperación acelerada, retornando a los niveles iniciales hacia la Ola 7.
+
+Al desagregar los datos, las brechas se mantienen estables en el tiempo, sin que las crisis alteren el orden de los factores estructurales. Por un lado, la clase de servicios y la generación Silent se posicionan de manera persistente en la cúspide de la cohesión vertical, mientras que la clase trabajadora permanece en la base. La única divergencia relevante ocurre en la fase de recuperación post-pandemia (Olas 6 y 7), donde las cohortes más jóvenes (Y y Z) exhiben un repunte o pendiente de ascenso más pronunciado que la Generación X, sugiriendo una reactivación diferenciada.
 
 ```{r}
-data_f %>%
-  ggplot(aes(x = Generacion, y = c05_total, fill = Generacion)) +
-  geom_violin(alpha = .6) +
-  geom_boxplot(width = .2, alpha = .8) +
-  scale_fill_manual(values = c("#0571B0","#92C5DE","#b3b3b3ff","#F4A582","#CA0020")) +
-  labs(x = NULL, y = "Cohesión social vertical",
-       caption = "Source: ELSOC 2016-2023") +
-  theme_ggdist() +
-  theme(legend.position = "none")
+#| echo: false
+#| label: tbl-bivariado2
+#| tbl-cap: "Cohesion social vertical por año y generación"
+#| tbl-cap-location: top
+#| fig.cap="Gráficos del análisis Bivariado"
+#| fig.align='center', out.width="100%", message=FALSE, warning=FALSE}
+
+# Cargar los archivos PNG transformándolos en objetos gráficos
+g4 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_temporal.png")))
+g5 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_temporal_clase.png")))
+g6 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_temporal_generacion.png")))
+
+
+# Crear la grilla: g4 y g5 al lado, g6 abajo al centro
+(wrap_elements(g4) + wrap_elements(g5)) / wrap_elements(g6)
+
+
 ```
-respecto a la tendencia central y la hipótesis H1, las cajas internas muestran un descenso progresivo en las medianas conforme nos desplazamos de las generaciones mayores a las más jóvenes. La generación Silent exhibe la mediana más alta (en torno a los 17 puntos), mientras que las generaciones Boomer, X, Y y Z muestran un estancamiento en sus medianas, estabilizándose de forma muy similar alrededor de los 15 puntos. Este comportamiento apoya parcialmente la idea de que las cohortes más jóvenes muestran un menor apego o evaluación de la cohesión vertical en comparación con la cohorte histórica de mayor edad, aunque la diferencia se mitiga sustancialmente entre los bloques de las cuatro generaciones sucesivas.
 
-En segundo lugar, el análisis de la densidad (forma del violín) demuestra una alta homogeneidad estructural. Todos los violines exhiben una forma de "diamante" o distribución unimodal simétrica, ensanchándose notoriamente en la franja de los 12 a los 20 puntos. Esto indica que independientemente de la generación a la que pertenezca el individuo, la gran mayoría de la población tiende a concentrar sus respuestas en valores moderados-bajos de cohesión social vertical. No se aprecian distribuciones bimodales (que sugerirían una polarización extrema de opiniones dentro de una misma generación), sino un consenso generalizado en torno al centro-inferior de la escala.
-
-Modelos de regresion.
+### Modelos de regresión multinivel.
 
 ```{r}
 #| echo: false

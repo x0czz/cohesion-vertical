@@ -1,11 +1,5 @@
 # Plantilla de la evaluación final Ciencia Social Abierta 2026
 
-## Requisitos previos
-
-- Quarto 1.5 o superior instalado en el sistema (https://quarto.org).
-- Motor LaTeX disponible para la salida PDF (TinyTeX, TeX Live o MiKTeX).
-- Git para clonar y versionar (opcional pero recomendado).
-- R con los paquetes necesarios si se ejecutan analisis embebidos en los capitulos.
 
 ## Estructura principal del repositorio
 
@@ -30,3 +24,9 @@ El despliegue web se puede realizar mediante [**GitHub Pages**](https://www.yout
 - Registro del proyecto en OSF
 - Elaboración de pre-print
 - Generación de GitHub Pages para la publicación de resultados
+
+# Análisis Longitudinal de la Cohesión Social
+
+Este proyecto analiza los datos de la encuesta ELSOC entre los años 2016 y 2023.
+
+## Estructura del Proyecto

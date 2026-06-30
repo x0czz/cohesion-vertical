@@ -426,7 +426,7 @@ ggsave(file.path(output_graphs_dir, "cohesion_corrupcion.png"),
 Se examina la relación entre la percepción de meritocracia y la cohesión vertical, tanto en su versión categórica como a través de la evolución temporal por nivel de meritocracia.
 
 ```{r}
-#| label: grafico-meritocracia
+#| label: grafico-identificacion
 resumen_c32 <- data_f %>%
   filter(!is.na(c32_cat)) %>%
   group_by(c32_cat) %>%
@@ -448,7 +448,7 @@ grafico_c32 <- resumen_c32 %>%
                 width = 0.2, color = "gray30") +
   geom_text(aes(label = paste0("n=", n)), vjust = -1.5, size = 3) +
   labs(
-    x = "Percepción de meritocracia",
+    x = "Identificación nacional",
     y = "Cohesión social vertical (media)"
   ) +
   theme_ggdist()

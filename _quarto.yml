@@ -8,10 +8,10 @@ project:
     - assets/favicon-2025-20251031.svg  # Asegura que el favicon versionado llegue a docs/
 
 book:
-  title: Título del trabajo
-  subtitle: Trabajo final
+  title: Analisis Longitudinal de la Cohesion Social Vertical a partir de ELSOC 2016-2023.
+  subtitle: Trabajo final CSA.
   output-file: reportes-facso-plantilla
-  repo-url: https://github.com/KAravena/reportesfacsobook_template  #URL del repositorio del libro (cambia segun tu repo)
+  repo-url: https://github.com/x0czz/cohesion-vertical  #URL del repositorio del libro (cambia segun tu repo)
   author:
     - name: Nicolás Outerbridge
       affiliation: Departamento de Sociologia, Universidad de Chile
@@ -46,8 +46,8 @@ book:
     # Para agregar un nuevo capitulo duplica un archivo .qmd y agregalo aqui:
     # ej: - 07-analisis-cualitativo.qmd
   appendices:
-    - apendices/A-encuestas.qmd
-    - apendices/B-tablas.qmd
+    - procesamiento/Preparacion.qmd
+    - procesamiento/descriptivo_bivariado.qmd
     # Guarda anexos extensos en apendices/ y listalos aqui.
 
 csl: refs/apa.csl                # Estilo de citas (cambia a otro .csl si lo prefieres)
