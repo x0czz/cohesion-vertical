@@ -3,7 +3,14 @@
 Este repositorio contiene el informe del trabajo final del curso de **Ciencia Social Abierta**, correspondiente a la Facultad de Ciencias Sociales (FACSO). El trabajo aborda la **confianza institucional**, analizada mediante **modelado multinivel**.
 
 Informe completo disponible en: https://x0czz.github.io/cohesion-vertical/
+
 Pre-registro disponible en : https://osf.io/6kw3f/overview
+
+Para reproducir la totalidad de las salidas presentadas en el documento final, basta con renderizar el proyecto completo. Los gráficos y las tablas incluidos son generados y exportados mediante los códigos adjuntos en procesamiento, e incorporados al reporte final mediante un llamado desde su respectiva ruta de guardado. De este modo, cualquier modificación realizada sobre los códigos de generación de archivos se reflejará automáticamente en el documento final al momento de renderizar nuevamente el proyecto, garantizando la consistencia entre el código y los resultados reportados.
+
+Los datos provienen de la base de datos ELSOC. La base de datos adjunta en este proyecto contiene únicamente las variables necesarias para el análisis dado el peso de la base de datos completa.
+
+La base de datos completa orignal se accesible mediante Harvar Dataverse: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/LD4BPH
 
 ### Bases de datos
 
