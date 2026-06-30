@@ -1,0 +1,3184 @@
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.6.30)  30 JUN 2026 17:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**index.tex
+(./index.tex
+LaTeX2e <2026-06-01>
+L3 programming layer <2026-06-18>
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrbook.cls
+Document Class: scrbook 2026/02/02 v3.49.2 KOMA-Script document class (book)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2026/02/02 v3.49.2 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2026/02/02 v3.49.2 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2026/02/02 v3.49.2 KOMA-Script package (file load hooks)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2026/02/02 v3.49.2 KOMA-Script package (using LaTeX hooks)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2026/02/02 v3.49.2 KOMA-Script package (logo)
+))) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2026-05-17 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
+)) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2026/02/02 v3.49.2 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip49
+\scr@dte@tocline@numbox=\box53
+)
+Package tocbasic Info: omitting babel extension for `toc'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `toc' on input line 143.
+Class scrbook Info: You've used standard option `oneside'.
+(scrbook)           This is correct!
+(scrbook)           Internally I'm using `twoside=false'.
+(scrbook)           If you'd like to set the option with \KOMAoptions,
+(scrbook)           you'd have to use `twoside=false' there
+(scrbook)           instead of `oneside', too.
+Class scrbook Info: File `scrsize11pt.clo' used instead of
+(scrbook)           file `scrsize11.clo' to setup font sizes on input line 2713.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2026/02/02 v3.49.2 KOMA-Script font size class option (11pt)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2026/02/02 v3.49.2 KOMA-Script package (type area)
+\ta@bcor=\skip50
+\ta@div=\count273
+Package typearea Info: You've used standard option `a4paper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=a4'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=a4' there
+(typearea)             instead of `a4paper', too.
+Package typearea Info: You've used standard option `oneside'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `twoside=false'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `twoside=false' there
+(typearea)             instead of `oneside', too.
+\ta@hblk=\skip51
+\ta@vblk=\skip52
+\ta@temp=\skip53
+\footheight=\skip54
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 10
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 597.50793pt
+(typearea)              \textwidth      = 418.25555pt
+(typearea)              DIV departure   = -6%
+(typearea)              \evensidemargin = 17.3562pt
+(typearea)              \oddsidemargin  = 17.3562pt
+(typearea)             \paperheight     = 845.04694pt
+(typearea)              \textheight     = 595.80026pt
+(typearea)              \topmargin      = -25.16531pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1810.
+)
+\c@part=\count274
+\c@chapter=\count275
+\c@section=\count276
+\c@subsection=\count277
+\c@subsubsection=\count278
+\c@paragraph=\count279
+\c@subparagraph=\count280
+\scr@dte@chapter@maxnumwidth=\skip55
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\chapter on input line 5945.
+\scr@dte@section@maxnumwidth=\skip56
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\section on input line 5956.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\section on input line 5956.
+\scr@dte@part@maxnumwidth=\skip57
+Class scrbook Info: using compatibility default `afterindent=true'
+(scrbook)           for `\part on input line 5965.
+\scr@dte@subsection@maxnumwidth=\skip58
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsection on input line 5975.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsection on input line 5975.
+\scr@dte@subsubsection@maxnumwidth=\skip59
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subsubsection on input line 5985.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subsubsection on input line 5985.
+\scr@dte@paragraph@maxnumwidth=\skip60
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\paragraph on input line 5996.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\paragraph on input line 5996.
+\scr@dte@subparagraph@maxnumwidth=\skip61
+Class scrbook Info: using compatibility default `runin=bysign'
+(scrbook)           for `\subparagraph on input line 6006.
+Class scrbook Info: using compatibility default `afterindent=bysign'
+(scrbook)           for `\subparagraph on input line 6006.
+\abovecaptionskip=\skip62
+\belowcaptionskip=\skip63
+\c@pti@nb@sid@b@x=\box54
+Package tocbasic Info: omitting babel extension for `lof'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lof' on input line 7242.
+\scr@dte@figure@maxnumwidth=\skip64
+\c@figure=\count281
+Package tocbasic Info: omitting babel extension for `lot'
+(tocbasic)             because of feature `nobabel' available
+(tocbasic)             for `lot' on input line 7255.
+\scr@dte@table@maxnumwidth=\skip65
+\c@table=\count282
+Class scrbook Info: Redefining `\numberline' on input line 7426.
+\bibindent=\dimen150
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2026-05-17 v3.0m Driver-dependent file (DPC,SPQR)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/xcolor/x11nam.def
+File: x11nam.def 2024/09/29 v3.02 Predefined colors according to Unix/X11 (UK)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+\Gm@cnth=\count283
+\Gm@cntv=\count284
+\c@Gm@tempcnt=\count285
+\Gm@bindingoffset=\dimen151
+\Gm@wd@mp=\dimen152
+\Gm@odd@mp=\dimen153
+\Gm@even@mp=\dimen154
+\Gm@layoutwidth=\dimen155
+\Gm@layoutheight=\dimen156
+\Gm@layouthoffset=\dimen157
+\Gm@layoutvoffset=\dimen158
+\Gm@dimlist=\toks18
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2026/05/19 v2.18d AMS math features
+\@mathmargin=\skip66
+For additional information on amsmath, use the `?' option.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen159
+)) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen160
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count286
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count287
+\leftroot@=\count288
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count289
+\DOTSCASE@=\count290
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box55
+\strutbox@=\box56
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen161
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count291
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count292
+\dotsspace@=\muskip17
+\c@parentequation=\count293
+\dspbrk@lvl=\count294
+\tag@help=\toks20
+\row@=\count295
+\column@=\count296
+\maxfields@=\count297
+\andhelp@=\toks21
+\eqnshift@=\dimen162
+\alignsep@=\dimen163
+\tagshift@=\dimen164
+\tagwidth@=\dimen165
+\totwidth@=\dimen166
+\lineht@=\dimen167
+\@envbody=\toks22
+\multlinegap=\skip67
+\multlinetaggap=\skip68
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2965.
+LaTeX Info: Redefining \] on input line 2966.
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-06-18 L3 programming layer (loader) 
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
+File: l3backend-xetex.def 2026-02-18 L3 backend support: XeTeX
+\g__graphics_track_int=\count298
+\g__pdfannot_backend_int=\count299
+\g__pdfannot_backend_link_int=\count300
+))
+Package: unicode-math 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-xetex.sty
+Package: unicode-math-xetex 2023/08/13 v0.8r Unicode maths in XeLaTeX and LuaLaTeX
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+\l__fontspec_script_int=\count301
+\l__fontspec_language_int=\count302
+\l__fontspec_strnum_int=\count303
+\l__fontspec_tmp_int=\count304
+\l__fontspec_tmpa_int=\count305
+\l__fontspec_tmpb_int=\count306
+\l__fontspec_tmpc_int=\count307
+\l__fontspec_em_int=\count308
+\l__fontspec_emdef_int=\count309
+\l__fontspec_strong_int=\count310
+\l__fontspec_strongdef_int=\count311
+\l__fontspec_tmpa_dim=\dimen168
+\l__fontspec_tmpb_dim=\dimen169
+\l__fontspec_tmpc_dim=\dimen170
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fontspec/fontspec.cfg))) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/fix-cm.sty
+Package: fix-cm 2020/11/24 v1.1t fixes to LaTeX
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TS1 on input line 47.
+LaTeX Encoding Info:    Redeclaring text command \capitalcedilla (encoding TS1) on input line 49.
+LaTeX Encoding Info:    Redeclaring text command \capitalogonek (encoding TS1) on input line 52.
+LaTeX Encoding Info:    Redeclaring text command \capitalgrave (encoding TS1) on input line 55.
+LaTeX Encoding Info:    Redeclaring text command \capitalacute (encoding TS1) on input line 56.
+LaTeX Encoding Info:    Redeclaring text command \capitalcircumflex (encoding TS1) on input line 57.
+LaTeX Encoding Info:    Redeclaring text command \capitaltilde (encoding TS1) on input line 58.
+LaTeX Encoding Info:    Redeclaring text command \capitaldieresis (encoding TS1) on input line 59.
+LaTeX Encoding Info:    Redeclaring text command \capitalhungarumlaut (encoding TS1) on input line 60.
+LaTeX Encoding Info:    Redeclaring text command \capitalring (encoding TS1) on input line 61.
+LaTeX Encoding Info:    Redeclaring text command \capitalcaron (encoding TS1) on input line 62.
+LaTeX Encoding Info:    Redeclaring text command \capitalbreve (encoding TS1) on input line 63.
+LaTeX Encoding Info:    Redeclaring text command \capitalmacron (encoding TS1) on input line 64.
+LaTeX Encoding Info:    Redeclaring text command \capitaldotaccent (encoding TS1) on input line 65.
+LaTeX Encoding Info:    Redeclaring text command \t (encoding TS1) on input line 66.
+LaTeX Encoding Info:    Redeclaring text command \capitaltie (encoding TS1) on input line 67.
+LaTeX Encoding Info:    Redeclaring text command \newtie (encoding TS1) on input line 68.
+LaTeX Encoding Info:    Redeclaring text command \capitalnewtie (encoding TS1) on input line 69.
+LaTeX Encoding Info:    Redeclaring text symbol \textcapitalcompwordmark (encoding TS1) on input line 70.
+LaTeX Encoding Info:    Redeclaring text symbol \textascendercompwordmark (encoding TS1) on input line 71.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightbase (encoding TS1) on input line 72.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotestraightdblbase (encoding TS1) on input line 73.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwelveudash (encoding TS1) on input line 74.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreequartersemdash (encoding TS1) on input line 75.
+LaTeX Encoding Info:    Redeclaring text symbol \textleftarrow (encoding TS1) on input line 76.
+LaTeX Encoding Info:    Redeclaring text symbol \textrightarrow (encoding TS1) on input line 77.
+LaTeX Encoding Info:    Redeclaring text symbol \textblank (encoding TS1) on input line 78.
+LaTeX Encoding Info:    Redeclaring text symbol \textdollar (encoding TS1) on input line 79.
+LaTeX Encoding Info:    Redeclaring text symbol \textquotesingle (encoding TS1) on input line 80.
+LaTeX Encoding Info:    Redeclaring text command \textasteriskcentered (encoding TS1) on input line 81.
+LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphen (encoding TS1) on input line 92.
+LaTeX Encoding Info:    Redeclaring text symbol \textfractionsolidus (encoding TS1) on input line 93.
+LaTeX Encoding Info:    Redeclaring text symbol \textzerooldstyle (encoding TS1) on input line 94.
+LaTeX Encoding Info:    Redeclaring text symbol \textoneoldstyle (encoding TS1) on input line 95.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwooldstyle (encoding TS1) on input line 96.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreeoldstyle (encoding TS1) on input line 97.
+LaTeX Encoding Info:    Redeclaring text symbol \textfouroldstyle (encoding TS1) on input line 98.
+LaTeX Encoding Info:    Redeclaring text symbol \textfiveoldstyle (encoding TS1) on input line 99.
+LaTeX Encoding Info:    Redeclaring text symbol \textsixoldstyle (encoding TS1) on input line 100.
+LaTeX Encoding Info:    Redeclaring text symbol \textsevenoldstyle (encoding TS1) on input line 101.
+LaTeX Encoding Info:    Redeclaring text symbol \texteightoldstyle (encoding TS1) on input line 102.
+LaTeX Encoding Info:    Redeclaring text symbol \textnineoldstyle (encoding TS1) on input line 103.
+LaTeX Encoding Info:    Redeclaring text symbol \textlangle (encoding TS1) on input line 104.
+LaTeX Encoding Info:    Redeclaring text symbol \textminus (encoding TS1) on input line 105.
+LaTeX Encoding Info:    Redeclaring text symbol \textrangle (encoding TS1) on input line 106.
+LaTeX Encoding Info:    Redeclaring text symbol \textmho (encoding TS1) on input line 107.
+LaTeX Encoding Info:    Redeclaring text symbol \textbigcircle (encoding TS1) on input line 108.
+LaTeX Encoding Info:    Redeclaring text command \textcircled (encoding TS1) on input line 109.
+LaTeX Encoding Info:    Redeclaring text symbol \textohm (encoding TS1) on input line 115.
+LaTeX Encoding Info:    Redeclaring text symbol \textlbrackdbl (encoding TS1) on input line 116.
+LaTeX Encoding Info:    Redeclaring text symbol \textrbrackdbl (encoding TS1) on input line 117.
+LaTeX Encoding Info:    Redeclaring text symbol \textuparrow (encoding TS1) on input line 118.
+LaTeX Encoding Info:    Redeclaring text symbol \textdownarrow (encoding TS1) on input line 119.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciigrave (encoding TS1) on input line 120.
+LaTeX Encoding Info:    Redeclaring text symbol \textborn (encoding TS1) on input line 121.
+LaTeX Encoding Info:    Redeclaring text symbol \textdivorced (encoding TS1) on input line 122.
+LaTeX Encoding Info:    Redeclaring text symbol \textdied (encoding TS1) on input line 123.
+LaTeX Encoding Info:    Redeclaring text symbol \textleaf (encoding TS1) on input line 124.
+LaTeX Encoding Info:    Redeclaring text symbol \textmarried (encoding TS1) on input line 125.
+LaTeX Encoding Info:    Redeclaring text symbol \textmusicalnote (encoding TS1) on input line 126.
+LaTeX Encoding Info:    Redeclaring text symbol \texttildelow (encoding TS1) on input line 127.
+LaTeX Encoding Info:    Redeclaring text symbol \textdblhyphenchar (encoding TS1) on input line 128.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciibreve (encoding TS1) on input line 129.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciicaron (encoding TS1) on input line 130.
+LaTeX Encoding Info:    Redeclaring text symbol \textacutedbl (encoding TS1) on input line 131.
+LaTeX Encoding Info:    Redeclaring text symbol \textgravedbl (encoding TS1) on input line 132.
+LaTeX Encoding Info:    Redeclaring text symbol \textdagger (encoding TS1) on input line 133.
+LaTeX Encoding Info:    Redeclaring text symbol \textdaggerdbl (encoding TS1) on input line 134.
+LaTeX Encoding Info:    Redeclaring text symbol \textbardbl (encoding TS1) on input line 135.
+LaTeX Encoding Info:    Redeclaring text symbol \textperthousand (encoding TS1) on input line 136.
+LaTeX Encoding Info:    Redeclaring text symbol \textbullet (encoding TS1) on input line 137.
+LaTeX Encoding Info:    Redeclaring text symbol \textcelsius (encoding TS1) on input line 138.
+LaTeX Encoding Info:    Redeclaring text symbol \textdollaroldstyle (encoding TS1) on input line 139.
+LaTeX Encoding Info:    Redeclaring text symbol \textcentoldstyle (encoding TS1) on input line 140.
+LaTeX Encoding Info:    Redeclaring text symbol \textflorin (encoding TS1) on input line 141.
+LaTeX Encoding Info:    Redeclaring text symbol \textcolonmonetary (encoding TS1) on input line 142.
+LaTeX Encoding Info:    Redeclaring text symbol \textwon (encoding TS1) on input line 143.
+LaTeX Encoding Info:    Redeclaring text symbol \textnaira (encoding TS1) on input line 144.
+LaTeX Encoding Info:    Redeclaring text symbol \textguarani (encoding TS1) on input line 145.
+LaTeX Encoding Info:    Redeclaring text symbol \textpeso (encoding TS1) on input line 146.
+LaTeX Encoding Info:    Redeclaring text symbol \textlira (encoding TS1) on input line 147.
+LaTeX Encoding Info:    Redeclaring text symbol \textrecipe (encoding TS1) on input line 148.
+LaTeX Encoding Info:    Redeclaring text symbol \textinterrobang (encoding TS1) on input line 149.
+LaTeX Encoding Info:    Redeclaring text symbol \textinterrobangdown (encoding TS1) on input line 150.
+LaTeX Encoding Info:    Redeclaring text symbol \textdong (encoding TS1) on input line 151.
+LaTeX Encoding Info:    Redeclaring text symbol \texttrademark (encoding TS1) on input line 152.
+LaTeX Encoding Info:    Redeclaring text symbol \textpertenthousand (encoding TS1) on input line 153.
+LaTeX Encoding Info:    Redeclaring text symbol \textpilcrow (encoding TS1) on input line 154.
+LaTeX Encoding Info:    Redeclaring text symbol \textbaht (encoding TS1) on input line 155.
+LaTeX Encoding Info:    Redeclaring text symbol \textnumero (encoding TS1) on input line 156.
+LaTeX Encoding Info:    Redeclaring text symbol \textdiscount (encoding TS1) on input line 157.
+LaTeX Encoding Info:    Redeclaring text symbol \textestimated (encoding TS1) on input line 158.
+LaTeX Encoding Info:    Redeclaring text symbol \textopenbullet (encoding TS1) on input line 159.
+LaTeX Encoding Info:    Redeclaring text symbol \textservicemark (encoding TS1) on input line 160.
+LaTeX Encoding Info:    Redeclaring text symbol \textlquill (encoding TS1) on input line 161.
+LaTeX Encoding Info:    Redeclaring text symbol \textrquill (encoding TS1) on input line 162.
+LaTeX Encoding Info:    Redeclaring text symbol \textcent (encoding TS1) on input line 163.
+LaTeX Encoding Info:    Redeclaring text symbol \textsterling (encoding TS1) on input line 164.
+LaTeX Encoding Info:    Redeclaring text symbol \textcurrency (encoding TS1) on input line 165.
+LaTeX Encoding Info:    Redeclaring text symbol \textyen (encoding TS1) on input line 166.
+LaTeX Encoding Info:    Redeclaring text symbol \textbrokenbar (encoding TS1) on input line 167.
+LaTeX Encoding Info:    Redeclaring text symbol \textsection (encoding TS1) on input line 168.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciidieresis (encoding TS1) on input line 169.
+LaTeX Encoding Info:    Redeclaring text symbol \textcopyright (encoding TS1) on input line 170.
+LaTeX Encoding Info:    Redeclaring text symbol \textordfeminine (encoding TS1) on input line 171.
+LaTeX Encoding Info:    Redeclaring text symbol \textcopyleft (encoding TS1) on input line 172.
+LaTeX Encoding Info:    Redeclaring text symbol \textlnot (encoding TS1) on input line 173.
+LaTeX Encoding Info:    Redeclaring text symbol \textcircledP (encoding TS1) on input line 174.
+LaTeX Encoding Info:    Redeclaring text symbol \textregistered (encoding TS1) on input line 175.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciimacron (encoding TS1) on input line 176.
+LaTeX Encoding Info:    Redeclaring text symbol \textdegree (encoding TS1) on input line 177.
+LaTeX Encoding Info:    Redeclaring text symbol \textpm (encoding TS1) on input line 178.
+LaTeX Encoding Info:    Redeclaring text symbol \texttwosuperior (encoding TS1) on input line 179.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreesuperior (encoding TS1) on input line 180.
+LaTeX Encoding Info:    Redeclaring text symbol \textasciiacute (encoding TS1) on input line 181.
+LaTeX Encoding Info:    Redeclaring text symbol \textmu (encoding TS1) on input line 182.
+LaTeX Encoding Info:    Redeclaring text symbol \textparagraph (encoding TS1) on input line 183.
+LaTeX Encoding Info:    Redeclaring text symbol \textperiodcentered (encoding TS1) on input line 184.
+LaTeX Encoding Info:    Redeclaring text symbol \textreferencemark (encoding TS1) on input line 185.
+LaTeX Encoding Info:    Redeclaring text symbol \textonesuperior (encoding TS1) on input line 186.
+LaTeX Encoding Info:    Redeclaring text symbol \textordmasculine (encoding TS1) on input line 187.
+LaTeX Encoding Info:    Redeclaring text symbol \textsurd (encoding TS1) on input line 188.
+LaTeX Encoding Info:    Redeclaring text symbol \textonequarter (encoding TS1) on input line 189.
+LaTeX Encoding Info:    Redeclaring text symbol \textonehalf (encoding TS1) on input line 190.
+LaTeX Encoding Info:    Redeclaring text symbol \textthreequarters (encoding TS1) on input line 191.
+LaTeX Encoding Info:    Redeclaring text symbol \texteuro (encoding TS1) on input line 192.
+LaTeX Encoding Info:    Redeclaring text symbol \texttimes (encoding TS1) on input line 193.
+LaTeX Encoding Info:    Redeclaring text symbol \textdiv (encoding TS1) on input line 194.
+))
+\g__um_fam_int=\count312
+\g__um_fonts_used_int=\count313
+\l__um_primecount_int=\count314
+\g__um_primekern_muskip=\muskip18
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math-table.tex))) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count315
+)
+\MT@toks=\toks24
+\MT@tempbox=\box57
+\MT@count=\count316
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks25
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen171
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count317
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype-xetex.def
+File: microtype-xetex.def 2026/03/01 v3.2d Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 443.
+LaTeX Info: Redefining \lslig on input line 451.
+\MT@outer@space=\skip69
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2026/04/16 4.6a verbatim text (tvz,hv)
+\FV@CodeLineNo=\count318
+\FV@InFile=\read2
+\FV@TabBox=\box58
+\c@FancyVerbLine=\count319
+\FV@StepNumber=\count320
+\FV@OutFile=\write3
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip70
+\fb@frw=\dimen172
+\fb@frh=\dimen173
+\FrameRule=\dimen174
+\FrameSep=\dimen175
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2026-01-28 v4.27 Multi-page Table package (DPC)
+\LTleft=\skip71
+\LTright=\skip72
+\LTpre=\skip73
+\LTpost=\skip74
+\LTchunksize=\count321
+\LTcapwidth=\dimen176
+\LT@head=\box59
+\LT@firsthead=\box60
+\LT@foot=\box61
+\LT@lastfoot=\box62
+\LT@gbox=\box63
+\LT@cols=\count322
+\LT@rows=\count323
+\c@LT@tables=\count324
+\c@LT@chunks=\count325
+\LT@p@ftn=\toks26
+)
+Class scrbook Info: longtable captions redefined on input line 111.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen177
+\lightrulewidth=\dimen178
+\cmidrulewidth=\dimen179
+\belowrulesep=\dimen180
+\belowbottomsep=\dimen181
+\aboverulesep=\dimen182
+\abovetopsep=\dimen183
+\cmidrulesep=\dimen184
+\cmidrulekern=\dimen185
+\defaultaddspace=\dimen186
+\@cmidla=\count326
+\@cmidlb=\count327
+\@aboverulesep=\dimen187
+\@belowrulesep=\dimen188
+\@thisruleclass=\count328
+\@lastruleclass=\count329
+\@thisrulewidth=\dimen189
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/array.sty
+Package: array 2026/02/24 v2.7b Tabular extension package (FMi)
+\col@sep=\dimen190
+\ar@mcellbox=\box64
+\extrarowheight=\dimen191
+\NC@list=\toks27
+\extratabsurround=\skip75
+\backup@length=\skip76
+\ar@cellbox=\box65
+)
+\c@none=\count330
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count331
+\calc@Bcount=\count332
+\calc@Adimen=\dimen192
+\calc@Bdimen=\dimen193
+\calc@Askip=\skip77
+\calc@Bskip=\skip78
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count333
+\calc@Cskip=\skip79
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
+Package: footnote 1997/01/28 1.13 Save footnotes around boxes
+\fn@notes=\box66
+\fn@width=\dimen194
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2026-05-17 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2026-05-17 v1.4h Standard LaTeX Graphics (DPC,SPQR)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+)
+\Gin@req@height=\dimen195
+\Gin@req@width=\dimen196
+)
+\pandoc@box=\box67
+\cslhangindent=\skip80
+\csllabelwidth=\skip81
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/babel.sty
+Package: babel 2026/06/14 v26.9 The multilingual framework for LuaLaTeX, pdfLaTeX and XeLaTeX
+\babel@savecnt=\count334
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input line 2084.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input line 2086.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input line 2088.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input line 2089.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) on input line 2090.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) on input line 2092.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) on input line 2117.
+\U@D=\dimen197
+\l@unhyphenated=\language7
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/xebabel.def)
+\bbl@readstream=\read3
+\bbl@dirlevel=\count335
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel/locale/es/babel-spanish.tex)
+Package babel Info: Importing font and identification data for 'spanish'
+(babel)             from babel-es.ini. Reported on input line 4380.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/babel-spanish/spanish.ldf
+Language: spanish.ldf 2021/05/27 v5.0q Spanish support from the babel system
+\es@quottoks=\toks28
+\es@quotdepth=\count336
+))
+LaTeX Encoding Info:    Redeclaring text command \guillemotleft (encoding OT1) on input line 176.
+LaTeX Encoding Info:    Redeclaring text command \guillemotright (encoding OT1) on input line 176.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
+\csq@reset=\count337
+\csq@gtype=\count338
+\csq@glevel=\count339
+\csq@qlevel=\count340
+\csq@maxlvl=\count341
+\csq@tshold=\count342
+\csq@ltx@everypar=\toks29
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2026-05-19 v5.2p csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes scale = 0.9577770965134752.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes scale = 0.9577770965134752.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes scale = 0.9577770965134752.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/B scale = 0.9349229043929835.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/B scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/B scale = 0.9349229043929835.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/B scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/I scale = 0.9976839606208792.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/I scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/I scale = 0.9976839606208792.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/I scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/BI scale = 0.9599083833004357.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/BI scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/BI scale = 0.9599083833004357.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/BI scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TeXGyreTermes(0)' created for font 'TeX
+(fontspec)             Gyre Termes' with options
+(fontspec)             [Scale=MatchLowercase,Ligatures=TeX,Scale=1].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1]"TeX Gyre
+(fontspec)             Termes/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->s*[1]"TeX
+(fontspec)             Gyre
+(fontspec)             Termes/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->s*[1]"TeX Gyre
+(fontspec)             Termes/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1]"TeX Gyre
+(fontspec)             Termes/B/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->s*[1]"TeX Gyre
+(fontspec)             Termes/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"TeX Gyre
+(fontspec)             Termes/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->s*[1]"TeX
+(fontspec)             Gyre
+(fontspec)             Termes/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1]"TeX Gyre
+(fontspec)             Termes/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/n' will be
+(Font)              scaled to size 10.95pt on input line 204.
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes scale = 1.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/B scale = 0.9761382975186125.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/B scale = 0.9761382975186125.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/I scale = 1.041666129053069.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/I scale = 1.041666129053069.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/BI scale = 1.002225243007709.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Termes/BI scale = 1.002225243007709.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TeXGyreTermes(1)' created for font 'TeX
+(fontspec)             Gyre Termes' with options [Scale=MatchLowercase].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->s*[1]"TeX Gyre
+(fontspec)             Termes/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->s*[1]"TeX
+(fontspec)             Gyre Termes/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9761382975186125]"TeX Gyre
+(fontspec)             Termes/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[0.9761382975186125]"TeX Gyre
+(fontspec)             Termes/B/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1.041666129053069]"TeX Gyre
+(fontspec)             Termes/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1.041666129053069]"TeX Gyre
+(fontspec)             Termes/I/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1.002225243007709]"TeX Gyre
+(fontspec)             Termes/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1.002225243007709]"TeX Gyre
+(fontspec)             Termes/BI/OT:script=latn;language=dflt;+smcp;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/TeXGyreTermes(1)/m/n on input line 204.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> TU/TeXGyreTermes(1)/m/it on input line 204.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> TU/TeXGyreTermes(1)/b/n on input line 204.
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8587783518999662.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8587783518999662.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8587783518999662.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/B scale = 0.833332903242455.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/B scale = 0.833332903242455.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/I scale = 0.8587783518999662.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/I scale = 0.8587783518999662.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/BI scale = 0.833332903242455.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/BI scale = 0.833332903242455.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TeXGyreHeros(0)' created for font 'TeX
+(fontspec)             Gyre Heros' with options
+(fontspec)             [Scale=MatchLowercase,Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.8587783518999662]"TeX Gyre
+(fontspec)             Heros/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[0.8587783518999662]"TeX Gyre
+(fontspec)             Heros/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.833332903242455]"TeX Gyre
+(fontspec)             Heros/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[0.833332903242455]"TeX Gyre
+(fontspec)             Heros/B/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.8587783518999662]"TeX Gyre
+(fontspec)             Heros/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[0.8587783518999662]"TeX Gyre
+(fontspec)             Heros/I/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.833332903242455]"TeX Gyre
+(fontspec)             Heros/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[0.833332903242455]"TeX Gyre
+(fontspec)             Heros/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-text;"
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8587783518999662.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8587783518999662.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros scale = 0.8587783518999662.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/B scale = 0.833332903242455.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/B scale = 0.833332903242455.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/I scale = 0.8587783518999662.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/I scale = 0.8587783518999662.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/BI scale = 0.833332903242455.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Heros/BI scale = 0.833332903242455.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TeXGyreHeros(1)' created for font 'TeX
+(fontspec)             Gyre Heros' with options [Scale=MatchLowercase].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[0.8587783518999662]"TeX Gyre
+(fontspec)             Heros/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[0.8587783518999662]"TeX Gyre
+(fontspec)             Heros/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.833332903242455]"TeX Gyre
+(fontspec)             Heros/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[0.833332903242455]"TeX Gyre
+(fontspec)             Heros/B/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[0.8587783518999662]"TeX Gyre
+(fontspec)             Heros/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[0.8587783518999662]"TeX Gyre
+(fontspec)             Heros/I/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[0.833332903242455]"TeX Gyre
+(fontspec)             Heros/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[0.833332903242455]"TeX Gyre
+(fontspec)             Heros/BI/OT:script=latn;language=dflt;+smcp;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> TU/TeXGyreHeros(1)/m/n on input line 209.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> TU/TeXGyreHeros(1)/b/n on input line 209.
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor scale = 1.079135031813078.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor scale = 1.079135031813078.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor scale = 1.079135031813078.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/B scale = 1.029748086734694.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/B scale = 1.029748086734694.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/I scale = 1.079135031813078.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/I scale = 1.079135031813078.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/BI scale = 1.029748086734694.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/BI scale = 1.029748086734694.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TeXGyreCursor(0)' created for font 'TeX
+(fontspec)             Gyre Cursor' with options
+(fontspec)             [Scale=MatchLowercase,WordSpace={1,0,0},HyphenChar=None,PunctuationSpace=WordSpace].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1.079135031813078]"TeX Gyre
+(fontspec)             Cursor/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1.079135031813078]"TeX Gyre
+(fontspec)             Cursor/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.029748086734694]"TeX Gyre
+(fontspec)             Cursor/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1.029748086734694]"TeX Gyre
+(fontspec)             Cursor/B/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1.079135031813078]"TeX Gyre
+(fontspec)             Cursor/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1.079135031813078]"TeX Gyre
+(fontspec)             Cursor/I/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1.029748086734694]"TeX Gyre
+(fontspec)             Cursor/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1.029748086734694]"TeX Gyre
+(fontspec)             Cursor/BI/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             and font adjustment code:
+(fontspec)             \fontdimen 2\font =1\fontdimen 2\font \fontdimen 3\font
+(fontspec)             =0\fontdimen 3\font \fontdimen 4\font =0\fontdimen
+(fontspec)             4\font \fontdimen 7\font =0\fontdimen 2\font
+(fontspec)             \tex_hyphenchar:D \font =-1\scan_stop: 
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor scale = 1.079135031813078.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor scale = 1.079135031813078.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor scale = 1.079135031813078.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/B scale = 1.029748086734694.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/B scale = 1.029748086734694.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/I scale = 1.079135031813078.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/I scale = 1.079135031813078.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/BI scale = 1.029748086734694.
+
+
+Package fontspec Info: 
+(fontspec)             TeX Gyre Cursor/BI scale = 1.029748086734694.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'TeXGyreCursor(1)' created for font 'TeX
+(fontspec)             Gyre Cursor' with options [Scale=MatchLowercase].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1.079135031813078]"TeX Gyre
+(fontspec)             Cursor/OT:script=latn;language=dflt;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->s*[1.079135031813078]"TeX Gyre
+(fontspec)             Cursor/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.029748086734694]"TeX Gyre
+(fontspec)             Cursor/B/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->s*[1.029748086734694]"TeX Gyre
+(fontspec)             Cursor/B/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->s*[1.079135031813078]"TeX Gyre
+(fontspec)             Cursor/I/OT:script=latn;language=dflt;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->s*[1.079135031813078]"TeX Gyre
+(fontspec)             Cursor/I/OT:script=latn;language=dflt;+smcp;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->s*[1.029748086734694]"TeX Gyre
+(fontspec)             Cursor/BI/OT:script=latn;language=dflt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->s*[1.029748086734694]"TeX Gyre
+(fontspec)             Cursor/BI/OT:script=latn;language=dflt;+smcp;"
+
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> TU/TeXGyreCursor(1)/m/n on input line 214.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> TU/TeXGyreCursor(1)/b/n on input line 214.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2025/02/06 v3.11 Customized lists
+\labelindent=\skip82
+\enit@outerparindent=\dimen198
+\enit@toks=\toks30
+\enit@inbox=\box68
+\enit@count@id=\count343
+\enitdp@description=\count344
+)
+Class scrbook Info: File `scrsize12pt.clo' used to setup font sizes on input line 224.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrsize12pt.clo
+File: scrsize12pt.clo 2026/02/02 v3.49.2 KOMA-Script font size class option (12pt)
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/n' will be
+(Font)              scaled to size 12.0pt on input line 101.
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 2023/07/02 v1.03 Indent first paragraph (DPC)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlayer-scrpage.sty
+Package: scrlayer-scrpage 2026/02/02 v3.49.2 KOMA-Script package (end user interface for scrlayer)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/koma-script/scrlayer.sty
+Package: scrlayer 2026/02/02 v3.49.2 KOMA-Script package (defining layers and page styles)
+Package scrlayer Info: patching LaTeX kernel macro \pagestyle on input line 2179.
+)
+Package scrlayer-scrpage Info: Makeing stand-alone element `pagehead' from
+(scrlayer-scrpage)             alias to `pageheadfoot' on input line 1106.
+)
+
+Package scrlayer-scrpage Warning: Command deprecated!
+(scrlayer-scrpage)                Usage of `\setheadtopline', `\setheadsepline',
+(scrlayer-scrpage)                `\setfootsepline', and `\setfootbotline'
+(scrlayer-scrpage)                became deprecated with scrlayer-scrpage.
+(scrlayer-scrpage)                You should use KOMA-Script options
+(scrlayer-scrpage)                `headsepline', `headtopline', `footsepline',
+(scrlayer-scrpage)                or `footbotline' with values
+(scrlayer-scrpage)                `<line thickness>:<line length>' to setup
+(scrlayer-scrpage)                the line length and thickness, and
+(scrlayer-scrpage)                `\setkomafont' or `\addtokomafont' to
+(scrlayer-scrpage)                setup the colour on input line 237.
+
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-06-17 v7.01r Hypertext links for LaTeX
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+)) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count345
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+)
+\@linkdim=\dimen199
+\Hy@linkcounter=\count346
+\Hy@pagecounter=\count347
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-06-17 v7.01r Hyperref: PDFDocEncoding definition (HO)
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count348
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-06-17 v7.01r Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Option `unicode' set `true' on input line 4070.
+Package hyperref Info: Hyper figures OFF on input line 4199.
+Package hyperref Info: Link nesting OFF on input line 4204.
+Package hyperref Info: Hyper index ON on input line 4207.
+Package hyperref Info: Plain pages OFF on input line 4214.
+Package hyperref Info: Backreferencing OFF on input line 4219.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4466.
+\c@Hy@tempcnt=\count349
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip19
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4805.
+\XeTeXLinkMargin=\dimen256
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
+))
+\Fld@menulength=\count350
+\Field@Width=\dimen257
+\Fld@charsize=\dimen258
+Package hyperref Info: Hyper figures OFF on input line 6091.
+Package hyperref Info: Link nesting OFF on input line 6096.
+Package hyperref Info: Hyper index ON on input line 6099.
+Package hyperref Info: backreferencing OFF on input line 6106.
+Package hyperref Info: Link coloring OFF on input line 6111.
+Package hyperref Info: Link coloring with OCG OFF on input line 6116.
+Package hyperref Info: PDF/A mode OFF on input line 6121.
+\Hy@abspage=\count351
+\c@Item=\count352
+\c@Hfootnote=\count353
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
+File: hxetex.def 2026-06-17 v7.01r Hyperref driver for XeTeX
+\pdfm@box=\box69
+\c@Hy@AnnotLevel=\count354
+\HyField@AnnotCount=\count355
+\Fld@listcount=\count356
+\c@bookmark@seq@number=\count357
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+)
+\Hy@SectionHShift=\skip83
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 255.
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\spacefactor' on input line 255.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@m' on input line 255.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\spacefactor' on input line 255.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@m' on input line 255.
+
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+Package tocbasic Info: Loading of class-dependent code for package caption3
+(tocbasic)             prevented on line 50.
+
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen259
+\captionmargin=\dimen260
+\caption@leftmargin=\dimen261
+\caption@rightmargin=\dimen262
+\caption@width=\dimen263
+\caption@indent=\dimen264
+\caption@parindent=\dimen265
+\caption@hangindent=\dimen266
+)
+\c@caption@flags=\count358
+\c@continuedfloat=\count359
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip84
+\multirow@cntb=\count360
+\multirow@dima=\skip85
+\bigstrutjot=\dimen267
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen268
+\WF@size=\dimen269
+\c@WF@wrappedlines=\count361
+\WF@box=\box70
+\WF@everypar=\toks31
+Package: wrapfig 2003/01/31  v 3.6
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count362
+\float@exts=\toks32
+\float@box=\box71
+\@float@everytoks=\toks33
+\@floatcapt=\box72
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
+new hooks used!!
+\minrowclearance=\skip86
+\rownum=\count363
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2025-06-23 v0.14 Display of landscape pages in PDF
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2025-06-23 v0.14 Display of landscape pages in PDF (HO)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+)) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box73
+\sift@deathcycles=\count364
+\@vwid@loff=\dimen270
+\@vwid@roff=\dimen271
+)
+==> First Aid for varwidth.sty applied!
+\c@taburow=\count365
+\tabu@nbcols=\count366
+\tabu@cnt=\count367
+\tabu@Xcol=\count368
+\tabu@alloc=\count369
+\tabu@nested=\count370
+\tabu@target=\dimen272
+\tabu@spreadtarget=\dimen273
+\tabu@naturalX=\dimen274
+\tabucolX=\dimen275
+\tabu@Xsum=\dimen276
+\extrarowdepth=\dimen277
+\abovetabulinesep=\dimen278
+\belowtabulinesep=\dimen279
+\tabustrutrule=\dimen280
+\tabu@thebody=\toks34
+\tabu@footnotes=\toks35
+\tabu@box=\box74
+\tabu@arstrutbox=\box75
+\tabu@hleads=\box76
+\tabu@vleads=\box77
+\tabu@cellskip=\skip87
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box78
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip88
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box79
+\UL@hyphenbox=\box80
+\UL@skip=\skip89
+\UL@hook=\toks36
+\UL@height=\dimen281
+\UL@pe=\count371
+\UL@pixel=\dimen282
+\ULC@box=\box81
+Package: ulem 2019/11/18
+\ULdepth=\dimen283
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen284
+\c@nlinenum=\count372
+\TeXr@lab=\toks37
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabularray/tabularray.sty
+Package: tabularray 2025-11-27 v2025C Typeset tabulars and arrays with LaTeX3
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/ninecolors/ninecolors.sty
+Package: ninecolors 2022-02-13 v2022D Select colors with proper color contrast
+)
+\g__tblr_nohyper_int=\count373
+\l__tblr_a_int=\count374
+\l__tblr_c_int=\count375
+\l__tblr_r_int=\count376
+\l__tblr_d_dim=\dimen285
+\l__tblr_h_dim=\dimen286
+\l__tblr_o_dim=\dimen287
+\l__tblr_p_dim=\dimen288
+\l__tblr_q_dim=\dimen289
+\l__tblr_r_dim=\dimen290
+\l__tblr_s_dim=\dimen291
+\l__tblr_t_dim=\dimen292
+\l__tblr_v_dim=\dimen293
+\l__tblr_w_dim=\dimen294
+\l__tblr_a_box=\box82
+\l__tblr_b_box=\box83
+\l__tblr_c_box=\box84
+\l__tblr_d_box=\box85
+\c@tblrcount=\count377
+\c@colnum=\count378
+\c@rowcount=\count379
+\c@colcount=\count380
+\abovesep=\dimen295
+\belowsep=\dimen296
+\leftsep=\dimen297
+\rightsep=\dimen298
+\gTblrLevelInt=\count381
+\g__tblr_data_row_key_count_int=\count382
+\g__tblr_data_column_key_count_int=\count383
+\g__tblr_data_cell_key_count_int=\count384
+\g__tblr_array_int=\count385
+\l__tblr_key_count_int=\count386
+\l__tblr_key_quotient_int=\count387
+\l__tblr_key_quotient_two_int=\count388
+\l__tblr_key_remainder_int=\count389
+\g__tblr_data_str_value_count_int=\count390
+\lTblrChildTotalInt=\count391
+\lTblrChildHtotalInt=\count392
+\lTblrChildVtotalInt=\count393
+\l__child_diff_h_int=\count394
+\l__child_diff_v_int=\count395
+\l__child_sign_h_int=\count396
+\l__child_sign_v_int=\count397
+\l__child_step_int=\count398
+\lTblrDefaultHruleWidthDim=\dimen299
+\lTblrDefaultVruleWidthDim=\dimen300
+\l__tblr_split_balance_int=\count399
+\l__tblr_strut_dp_dim=\dimen301
+\l__tblr_strut_ht_dim=\dimen302
+\g__tblr_cell_wd_dim=\dimen303
+\g__tblr_cell_ht_dim=\dimen304
+\g__tblr_cell_head_dim=\dimen305
+\g__tblr_cell_foot_dim=\dimen306
+\l__tblr_measured_cell_box=\box86
+\g__tblr_last_box=\box87
+\l__tblr_temp_box=\box88
+\l__tblr_column_target_dim=\dimen307
+\l__tblr_hfuzz_dim=\dimen308
+\l__tblr_caption_box=\box89
+\l__tblr_caption_left_box=\box90
+\lTblrRowHeadInt=\count400
+\lTblrRowFootInt=\count401
+\l__tblr_row_head_box=\box91
+\l__tblr_row_foot_box=\box92
+\l__tblr_row_head_foot_dim=\dimen309
+\lTblrTableWidthDim=\dimen310
+\l__tblr_table_firsthead_box=\box93
+\l__tblr_table_middlehead_box=\box94
+\l__tblr_table_lasthead_box=\box95
+\l__tblr_table_firstfoot_box=\box96
+\l__tblr_table_middlefoot_box=\box97
+\l__tblr_table_lastfoot_box=\box98
+\l__tblr_remain_height_dim=\dimen311
+\l__tblr_next_rows_dim=\dimen312
+\l__tblr_page_overfill_dim=\dimen313
+\l__tblr_long_from_int=\count402
+\l__tblr_long_to_int=\count403
+\l__tblr_curr_i_int=\count404
+\l__tblr_prev_i_int=\count405
+\lTblrTablePageInt=\count406
+\l__tblr_table_head_box=\box99
+\l__tblr_table_foot_box=\box100
+\l__tblr_table_head_foot_dim=\dimen314
+\l__tblr_table_head_body_foot_dim=\dimen315
+\l__tblr_table_box=\box101
+\lTblrRowFirstInt=\count407
+\lTblrRowLastInt=\count408
+\l__tblr_cover_box_a_dim=\dimen316
+\l__tblr_cover_box_b_dim=\dimen317
+\l__tblr_table_hlines_box=\box102
+\l__tblr_hline_box=\box103
+\l__tblr_row_box=\box104
+\l__tblr_col_o_wd_dim=\dimen318
+\l__tblr_col_b_wd_dim=\dimen319
+\l__tblr_hline_leftskip_dim=\dimen320
+\l__tblr_hline_rightskip_dim=\dimen321
+\l__tblr_row_ht_dim=\dimen322
+\l__tblr_row_dp_dim=\dimen323
+\l__tblr_row_abovesep_dim=\dimen324
+\l__tblr_row_belowsep_dim=\dimen325
+\l__tblr_row_vlines_box=\box105
+\l__tblr_vline_box=\box106
+\l__tblr_cell_box=\box107
+\l__tblr_row_upper_dim=\dimen326
+\l__tblr_row_lower_dim=\dimen327
+\l__tblr_row_vpace_dim=\dimen328
+\l__tblr_vline_aboveskip_dim=\dimen329
+\l__tblr_vline_belowskip_dim=\dimen330
+\lTblrCellRowSpanInt=\count409
+\lTblrCellColSpanInt=\count410
+\l__tblr_cell_wd_dim=\dimen331
+\l__tblr_cell_ht_dim=\dimen332
+\lTblrCellAboveBorderWidthDim=\dimen333
+\lTblrCellBelowBorderWidthDim=\dimen334
+\lTblrCellLeftBorderWidthDim=\dimen335
+\lTblrCellRightBorderWidthDim=\dimen336
+\l__tblr_diag_box=\box108
+\l__tblr_cell_inner_wd_dim=\dimen337
+\l__tblr_cell_inner_dp_dim=\dimen338
+\l__tblr_cell_hanchor_dim=\dimen339
+\l__tblr_last_cell_table_ht_dim=\dimen340
+\l__tblr_last_cell_table_dp_dim=\dimen341
+\l__tblr_last_vline_wd_dim=\dimen342
+\l__tblr_tikz_node_box=\box109
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2026-05-17 v2.16e rotated objects in LaTeX
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count411
+\rotFPtop=\skip90
+\rotFPbot=\skip91
+\rot@float@box=\box110
+\rot@mess@toks=\toks38
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2026-05-15 v3.5.5 A comprehensive (SI) units package
+\l__siunitx_number_uncert_offset_int=\count412
+\l__siunitx_number_exponent_fixed_int=\count413
+\l__siunitx_number_min_decimal_int=\count414
+\l__siunitx_number_min_integer_int=\count415
+\l__siunitx_number_round_precision_int=\count416
+\l__siunitx_number_lower_threshold_int=\count417
+\l__siunitx_number_upper_threshold_int=\count418
+\l__siunitx_number_group_first_int=\count419
+\l__siunitx_number_group_size_int=\count420
+\l__siunitx_number_group_min_int=\count421
+\l__siunitx_number_group_minimum_int=\count422
+\l__siunitx_compound_count_int=\count423
+\l__siunitx_table_tmp_box=\box111
+\l__siunitx_table_tmp_dim=\dimen343
+\l__siunitx_table_column_width_dim=\dimen344
+\l__siunitx_table_integer_box=\box112
+\l__siunitx_table_decimal_box=\box113
+\l__siunitx_table_uncert_box=\box114
+\l__siunitx_table_before_box=\box115
+\l__siunitx_table_after_box=\box116
+\l__siunitx_table_before_dim=\dimen345
+\l__siunitx_table_carry_dim=\dimen346
+\l__siunitx_unit_tmp_int=\count424
+\l__siunitx_unit_position_int=\count425
+\l__siunitx_unit_total_int=\count426
+\l__siunitx_sexagesimal_tmp_dim=\dimen347
+\l__siunitx_sexagesimal_marker_box=\box117
+\l__siunitx_sexagesimal_unit_box=\box118
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/anyfontsize/anyfontsize.sty
+Invalid UTF-8 byte or sequence at line 3 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 3 replaced by U+FFFD.
+Package: anyfontsize 2007/11/22 anyfontsize.sty by pts
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2026-05-21 v1.32 PDF bookmarks (HO)
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-xetex.def
+File: bkm-xetex.def 2026-05-21 v1.32 bookmark driver for xetex (HO)
+\BKM@id=\count427
+))
+\@float@every@codelisting=\toks39
+\c@codelisting=\count428
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
+Package caption Info: New subtype `subfigure' on input line 238.
+\c@subfigure=\count429
+Package caption Info: New subtype `subtable' on input line 238.
+\c@subtable=\count430
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 445.
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'spanish'.
+No file index.aux.
+\openout1 = `index.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 459.
+LaTeX Font Info:    ... okay on input line 459.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 459.
+LaTeX Font Info:    ... okay on input line 459.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 459.
+LaTeX Font Info:    ... okay on input line 459.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 459.
+LaTeX Font Info:    ... okay on input line 459.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 459.
+LaTeX Font Info:    ... okay on input line 459.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 459.
+LaTeX Font Info:    ... okay on input line 459.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 459.
+LaTeX Font Info:    ... okay on input line 459.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 459.
+LaTeX Font Info:    ... okay on input line 459.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 459.
+LaTeX Font Info:    ... okay on input line 459.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 459.
+LaTeX Font Info:    ... okay on input line 459.
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=702.78308pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-38.53812pt
+* \headheight=17.0pt
+* \headsep=20.40001pt
+* \topskip=11.0pt
+* \footskip=47.6pt
+* \marginparwidth=59.7508pt
+* \marginparsep=12.8401pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(0)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->s*[1.044079857679383]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.044079857679383]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
+(Font)              scaled to size 12.52899pt on input line 459.
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(1)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf}].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->s*[1.044079857679383]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<7.2-10.2>s*[1.044079857679383]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-7.2>s*[1.044079857679383]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.044079857679383]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 12.52899pt on input line 459.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 459.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 459.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 459.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 459.
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044184265665151.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044184265665151.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044184265665151.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044184265665151.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044184265665151.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(2)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=1.0001,FontAdjustment={\fontdimen
+(fontspec)             8\font =8.48213pt\relax \fontdimen 9\font
+(fontspec)             =4.93642pt\relax \fontdimen 10\font =5.56287pt\relax
+(fontspec)             \fontdimen 11\font =8.5949pt\relax \fontdimen 12\font
+(fontspec)             =4.32251pt\relax \fontdimen 13\font =4.54802pt\relax
+(fontspec)             \fontdimen 14\font =4.54802pt\relax \fontdimen 15\font
+(fontspec)             =3.62088pt\relax \fontdimen 16\font =3.09467pt\relax
+(fontspec)             \fontdimen 17\font =3.09467pt\relax \fontdimen 18\font
+(fontspec)             =3.13225pt\relax \fontdimen 19\font =2.5058pt\relax
+(fontspec)             \fontdimen 22\font =3.13225pt\relax \fontdimen 20\font
+(fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->s*[1.044184265665151]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<7.2-10.2>s*[1.044184265665151]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-7.2>s*[1.044184265665151]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.044184265665151]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 459.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 459.
+LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 459.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 459.
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.043975449693615.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.043975449693615.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.043975449693615.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.043975449693615.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.044079857679383.
+
+
+Package fontspec Info: 
+(fontspec)             latinmodern-math scale = 1.043975449693615.
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'latinmodern-math.otf(3)' created for font
+(fontspec)             'latinmodern-math.otf' with options
+(fontspec)             [Scale=MatchLowercase,BoldItalicFont={},ItalicFont={},SmallCapsFont={},Script=Math,SizeFeatures={{Size=10.2-},{Size=7.2-10.2,Font=latinmodern-math.otf,Style=MathScript},{Size=-7.2,Font=latinmodern-math.otf,Style=MathScriptScript}},BoldFont={latinmodern-math.otf},ScaleAgain=0.9999,FontAdjustment={\fontdimen
+(fontspec)             8\font =0.50116pt\relax \fontdimen 9\font
+(fontspec)             =2.5058pt\relax \fontdimen 10\font =2.09235pt\relax
+(fontspec)             \fontdimen 11\font =1.39072pt\relax \fontdimen 12\font
+(fontspec)             =7.5174pt\relax \fontdimen 13\font =0pt\relax }].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <10.2->s*[1.043975449693615]"[latinmodern-math.otf]/OT:script=math;language=dflt;"<7.2-10.2>s*[1.043975449693615]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=0;"<-7.2>s*[1.043975449693615]"[latinmodern-math.otf]/OT:script=math;language=dflt;+ssty=1;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[1.043975449693615]"[latinmodern-math.otf]/OT:script=math;language=dflt;"
+
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 459.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 459.
+LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 459.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 459.
+Package microtype Info: Patching varwidth to enable character protrusion.
+\MT@vwid@leftmargin=\dimen348
+\MT@vwid@rightmargin=\dimen349
+LaTeX Info: Redefining \microtypecontext on input line 459.
+Package microtype Info: Applying patch `item' on input line 459.
+Package microtype Info: Applying patch `toc' on input line 459.
+Package microtype Info: Applying patch `eqnum' on input line 459.
+Package microtype Info: Applying patch `footnote' on input line 459.
+Package microtype Info: Applying patch `verbatim' on input line 459.
+LaTeX Info: Redefining \microtypesetup on input line 459.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using protrusion set `basicmath'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `TeXGyreTermes' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Info: Redefining \. on input line 459.
+LaTeX Info: Redefining \% on input line 459.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 459.
+
+Package scrlayer-scrpage Warning: Very small head height detected!
+(scrlayer-scrpage)                Using scrlayer-scrpage the head height
+(scrlayer-scrpage)                should be at least \baselineskip, which is
+(scrlayer-scrpage)                21.75pt currently.
+(scrlayer-scrpage)                But head height is currently 17.0pt only.
+(scrlayer-scrpage)                You may use
+(scrlayer-scrpage)                geometry option `head=21.75pt'
+(scrlayer-scrpage)                or load package `scrlayer-scrpage' with
+(scrlayer-scrpage)                option `singlespacing=true'
+(scrlayer-scrpage)                to avoid this warning.
+
+Package hyperref Info: Link coloring ON on input line 459.
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: rotating package is loaded.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package babel Info: Main language set to 'spanish'.
+(./includes/cover-config.tex)
+File: assets/cover.png Graphic file (type bmp)
+<assets/cover.png>
+LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/m/n' will be
+(Font)              scaled to size 10.30536pt on input line 507.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `TeXGyreHeros' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/b/n' will be
+(Font)              scaled to size 9.99994pt on input line 507.
+LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/b/n' will be
+(Font)              scaled to size 19.99988pt on input line 507.
+LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/b/n' will be
+(Font)              scaled to size 11.99991pt on input line 509.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/n' will be
+(Font)              scaled to size 17.28pt on input line 522.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/b/n' will be
+(Font)              scaled to size 17.28pt on input line 522.
+[1
+
+
+
+
+]
+LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/b/n' will be
+(Font)              scaled to size 20.7332pt on input line 554.
+Package tocbasic Info: character protrusion at toc deactivated on input line 554.
+No file index.toc.
+\tf@toc=\write4
+\openout4 = `index.toc'.
+
+\facso@entrycount=\count431
+\facso@entrycount=\count432
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/sl' in size <12> not available
+(Font)              Font shape `TU/TeXGyreTermes(0)/m/it' tried instead on input line 560.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/it' will be
+(Font)              scaled to size 12.0pt on input line 560.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 560.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.77028pt on input line 560.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 6.2645pt on input line 560.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 560.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 12.53027pt on input line 560.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.77118pt on input line 560.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 6.26514pt on input line 560.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 12.52771pt on input line 560.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.76938pt on input line 560.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 6.26385pt on input line 560.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 560.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 560.
+(c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (c:/Users/InBOT/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+LaTeX Info: Redefining \. on input line 560.
+LaTeX Info: Redefining \% on input line 560.
+Package babel Info: 'spanish' activates 'spanish' shorthands.
+(babel)             Reported on input line 560.
+
+Package scrlayer-scrpage Warning: \headheight to low.
+(scrlayer-scrpage)                At least 21.74998pt needed,
+(scrlayer-scrpage)                but only 17.0pt found.
+(scrlayer-scrpage)                I'll enlarge \headheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., setting geometry's option
+(scrlayer-scrpage)                `head=21.74998pt'.
+(scrlayer-scrpage)                I'll also decrease \topmargin on input line 560.
+
+
+Overfull \vbox (4.74998pt too high) has occurred while \output is active []
+
+
+Package scrlayer-scrpage Warning: \footheight to low.
+(scrlayer-scrpage)                At least 21.74998pt needed,
+(scrlayer-scrpage)                but only 17.0pt found.
+(scrlayer-scrpage)                I'll enlarge \footheight, for further
+(scrlayer-scrpage)                processing, but you should do this yourself,
+(scrlayer-scrpage)                e.g., using
+(scrlayer-scrpage)                  \setlength{\footheight}{21.74998pt}
+(scrlayer-scrpage)                in your preamble.
+(scrlayer-scrpage)                I'll also increase \footskip on input line 560.
+
+[1
+
+
+
+]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/b/n' will be
+(Font)              scaled to size 10.95pt on input line 567.
+LaTeX Info: Redefining \. on input line 571.
+LaTeX Info: Redefining \% on input line 571.
+[1
+
+
+
+]
+chapter 1.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/b/n' will be
+(Font)              scaled to size 12.0pt on input line 578.
+
+LaTeX Warning: Citation `ref-han_trust_2021' on page 2 undefined on input line 578.
+
+
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 2 undefined on input line 584.
+
+
+LaTeX Warning: Citation `ref-chan_charting_2006' on page 2 undefined on input line 592.
+
+
+LaTeX Warning: Citation `ref-_essentials_2017' on page 2 undefined on input line 594.
+
+
+LaTeX Warning: Citation `ref-kim_social_2021' on page 2 undefined on input line 598.
+
+
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 2 undefined on input line 600.
+
+
+LaTeX Warning: Citation `ref-molina_repensando_2022' on page 2 undefined on input line 606.
+
+
+LaTeX Warning: Citation `ref-kim_social_2021' on page 2 undefined on input line 610.
+
+
+LaTeX Warning: Citation `ref-diazsarmiento_entendiendo_2017' on page 2 undefined on input line 622.
+
+
+LaTeX Warning: Citation `ref-_confianza_2024' on page 2 undefined on input line 623.
+
+
+LaTeX Warning: Citation `ref-_essentials_2017' on page 2 undefined on input line 629.
+
+
+LaTeX Warning: Citation `ref-_essentials_2017' on page 2 undefined on input line 635.
+
+
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 2 undefined on input line 636.
+
+
+LaTeX Warning: Citation `ref-araujo_igualdad_2013' on page 2 undefined on input line 642.
+
+LaTeX Info: Redefining \. on input line 644.
+LaTeX Info: Redefining \% on input line 644.
+[2
+
+
+]
+
+LaTeX Warning: Citation `ref-enders_centering_2007' on page 3 undefined on input line 652.
+
+LaTeX Info: Redefining \. on input line 678.
+LaTeX Info: Redefining \% on input line 678.
+[3]
+LaTeX Info: Redefining \. on input line 682.
+LaTeX Info: Redefining \% on input line 682.
+[4]
+chapter 2.
+
+LaTeX Warning: Citation `ref-han_trust_2021' on page 5 undefined on input line 704.
+
+
+LaTeX Warning: Citation `ref-_confianza_2024' on page 5 undefined on input line 706.
+
+
+LaTeX Warning: Citation `ref-chan_charting_2006' on page 5 undefined on input line 709.
+
+
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 5 undefined on input line 711.
+
+
+LaTeX Warning: Citation `ref-_essentials_2017' on page 5 undefined on input line 712.
+
+
+LaTeX Warning: Citation `ref-kim_social_2021' on page 5 undefined on input line 719.
+
+
+LaTeX Warning: Citation `ref-_cohesion_2022' on page 5 undefined on input line 725.
+
+
+LaTeX Warning: Citation `ref-_essentials_2017' on page 5 undefined on input line 726.
+
+LaTeX Info: Redefining \. on input line 728.
+LaTeX Info: Redefining \% on input line 728.
+[5
+
+
+]
+
+LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 737.
+
+
+LaTeX Warning: Citation `ref-_cohesion_2022' on page 6 undefined on input line 741.
+
+
+LaTeX Warning: Citation `ref-han_trust_2021' on page 6 undefined on input line 746.
+
+
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 6 undefined on input line 748.
+
+
+LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 756.
+
+
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 6 undefined on input line 760.
+
+
+LaTeX Warning: Citation `ref-kim_social_2021' on page 6 undefined on input line 763.
+
+
+LaTeX Warning: Citation `ref-molina_repensando_2022' on page 6 undefined on input line 769.
+
+
+LaTeX Warning: Citation `ref-diazsarmiento_entendiendo_2017' on page 6 undefined on input line 776.
+
+
+LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 777.
+
+
+LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 785.
+
+LaTeX Info: Redefining \. on input line 789.
+LaTeX Info: Redefining \% on input line 789.
+[6]
+chapter 3.
+LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/b/n' will be
+(Font)              scaled to size 14.3999pt on input line 792.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/n' will be
+(Font)              scaled to size 8.4pt on input line 800.
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 800.
+LaTeX Info: Redefining \. on input line 831.
+LaTeX Info: Redefining \% on input line 831.
+[7
+
+
+]
+LaTeX Info: Redefining \. on input line 865.
+LaTeX Info: Redefining \% on input line 865.
+[8]
+chapter 4.
+
+LaTeX Warning: Citation `ref-silveira_mixedeffects_2023' on page 9 undefined on input line 871.
+
+
+LaTeX Warning: Citation `ref-silveira_mixedeffects_2023' on page 9 undefined on input line 900.
+
+LaTeX Info: Redefining \. on input line 909.
+LaTeX Info: Redefining \% on input line 909.
+[9
+
+
+]
+LaTeX Info: Redefining \. on input line 954.
+LaTeX Info: Redefining \% on input line 954.
+[10]
+LaTeX Info: Redefining \. on input line 1013.
+LaTeX Info: Redefining \% on input line 1013.
+[11]
+LaTeX Info: Redefining \. on input line 1051.
+LaTeX Info: Redefining \% on input line 1051.
+[12]
+LaTeX Info: Redefining \. on input line 1054.
+LaTeX Info: Redefining \% on input line 1054.
+[13]
+chapter 5.
+LaTeX Info: Redefining \. on input line 1112.
+LaTeX Info: Redefining \% on input line 1112.
+[14
+
+
+]
+File: 05-resultados_files/figure-pdf/fig-bivariado-1.pdf Graphic file (type pdf)
+<use 05-resultados_files/figure-pdf/fig-bivariado-1.pdf>
+
+LaTeX Warning: Reference `fig-bivariado' on page 15 undefined on input line 1128.
+
+LaTeX Info: Redefining \. on input line 1149.
+LaTeX Info: Redefining \% on input line 1149.
+[15]
+File: 05-resultados_files/figure-pdf/fig-bivariado2-1.pdf Graphic file (type pdf)
+<use 05-resultados_files/figure-pdf/fig-bivariado2-1.pdf>
+LaTeX Info: Redefining \. on input line 1196.
+LaTeX Info: Redefining \% on input line 1196.
+[16]
+File: 05-resultados_files/figure-pdf/fig-bivariado3-1.pdf Graphic file (type pdf)
+<use 05-resultados_files/figure-pdf/fig-bivariado3-1.pdf>
+
+Overfull \hbox (91.28387pt too wide) in alignment at lines 1225--1233
+ [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (357.6119pt too wide) in alignment at lines 1233--1330
+ [] [] [] [] [] [] [] 
+ []
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.2 on input line 1330.
+
+LaTeX Info: Redefining \. on input line 1330.
+LaTeX Info: Redefining \% on input line 1330.
+[17]
+LaTeX Info: Redefining \. on input line 1330.
+LaTeX Info: Redefining \% on input line 1330.
+[18]
+LaTeX Info: Redefining \. on input line 1433.
+LaTeX Info: Redefining \% on input line 1433.
+[19]
+LaTeX Info: Redefining \. on input line 1433.
+LaTeX Info: Redefining \% on input line 1433.
+[20]
+LaTeX Info: Redefining \. on input line 1433.
+LaTeX Info: Redefining \% on input line 1433.
+[21]
+LaTeX Info: Redefining \. on input line 1436.
+LaTeX Info: Redefining \% on input line 1436.
+[22]
+chapter 6.
+
+LaTeX Warning: Citation `ref-enders_centering_2007' on page 23 undefined on input line 1446.
+
+
+LaTeX Warning: Citation `ref-_confianza_2024' on page 23 undefined on input line 1451.
+
+
+LaTeX Warning: Citation `ref-_essentials_2017' on page 23 undefined on input line 1460.
+
+
+LaTeX Warning: Citation `ref-_essentials_2017' on page 23 undefined on input line 1467.
+
+
+LaTeX Warning: Citation `ref-_confianza_2024' on page 23 undefined on input line 1475.
+
+LaTeX Info: Redefining \. on input line 1480.
+LaTeX Info: Redefining \% on input line 1480.
+[23
+
+
+]
+
+LaTeX Warning: Citation `ref-kim_social_2021' on page 24 undefined on input line 1487.
+
+
+LaTeX Warning: Citation `ref-molina_repensando_2022' on page 24 undefined on input line 1491.
+
+
+LaTeX Warning: Citation `ref-_cohesion_2022' on page 24 undefined on input line 1499.
+
+
+LaTeX Warning: Citation `ref-_cohesion_2022' on page 24 undefined on input line 1510.
+
+
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 24 undefined on input line 1524.
+
+LaTeX Info: Redefining \. on input line 1534.
+LaTeX Info: Redefining \% on input line 1534.
+[24]
+LaTeX Info: Redefining \. on input line 1537.
+LaTeX Info: Redefining \% on input line 1537.
+[25]
+chapter 7.
+LaTeX Info: Redefining \. on input line 1539.
+LaTeX Info: Redefining \% on input line 1539.
+[26
+
+
+]
+chapter A.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1548--1549
+
+ []
+
+LaTeX Info: Redefining \. on input line 1550.
+LaTeX Info: Redefining \% on input line 1550.
+[27
+
+
+
+
+]
+chapter B.
+LaTeX Info: Redefining \. on input line 1559.
+LaTeX Info: Redefining \% on input line 1559.
+[28
+
+
+]
+chapter C.
+LaTeX Font Info:    Font shape `TU/TeXGyreCursor(0)/m/n' will be
+(Font)              scaled to size 12.94958pt on input line 1562.
+LaTeX Info: Redefining \. on input line 1575.
+LaTeX Info: Redefining \% on input line 1575.
+[29
+
+
+]
+chapter D.
+LaTeX Info: Redefining \. on input line 1613.
+LaTeX Info: Redefining \% on input line 1613.
+[30
+
+
+]
+LaTeX Font Info:    Font shape `TU/TeXGyreCursor(0)/b/n' will be
+(Font)              scaled to size 12.35706pt on input line 1628.
+LaTeX Info: Redefining \. on input line 1637.
+LaTeX Info: Redefining \% on input line 1637.
+[31]
+chapter E.
+
+Overfull \hbox (3.16292pt too wide) in paragraph at lines 1650--1656
+[]\TU/TeXGyreTermes(0)/m/n/12 Los índices de participación organizacional (\TU/TeXGyreCursor(0)/m/n/12 c05_total\TU/TeXGyreTermes(0)/m/n/12 ) y trato digno (\TU/TeXGyreCursor(0)/m/n/12 trato_digno\TU/TeXGyreTermes(0)/m/n/12 )
+ []
+
+
+Underfull \vbox (badness 2469) detected at line 1690
+ []
+
+LaTeX Info: Redefining \. on input line 1690.
+LaTeX Info: Redefining \% on input line 1690.
+[32
+
+
+]
+LaTeX Info: Redefining \. on input line 1714.
+LaTeX Info: Redefining \% on input line 1714.
+[33]
+LaTeX Info: Redefining \. on input line 1716.
+LaTeX Info: Redefining \% on input line 1716.
+[34]
+chapter F.
+LaTeX Info: Redefining \. on input line 1749.
+LaTeX Info: Redefining \% on input line 1749.
+[35
+
+
+]
+LaTeX Info: Redefining \. on input line 1751.
+LaTeX Info: Redefining \% on input line 1751.
+[36]
+chapter G.
+
+Underfull \vbox (badness 2818) detected at line 1851
+ []
+
+LaTeX Info: Redefining \. on input line 1851.
+LaTeX Info: Redefining \% on input line 1851.
+[37
+
+
+]
+Underfull \vbox (badness 10000) detected at line 1851
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1851
+ []
+
+LaTeX Info: Redefining \. on input line 1851.
+LaTeX Info: Redefining \% on input line 1851.
+[38]
+Underfull \vbox (badness 10000) detected at line 1851
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 1851
+ []
+
+LaTeX Info: Redefining \. on input line 1851.
+LaTeX Info: Redefining \% on input line 1851.
+[39]
+LaTeX Info: Redefining \. on input line 1897.
+LaTeX Info: Redefining \% on input line 1897.
+[40]
+LaTeX Info: Redefining \. on input line 1933.
+LaTeX Info: Redefining \% on input line 1933.
+[41]
+chapter H.
+LaTeX Info: Redefining \. on input line 1971.
+LaTeX Info: Redefining \% on input line 1971.
+[42
+
+
+]
+LaTeX Info: Redefining \. on input line 1973.
+LaTeX Info: Redefining \% on input line 1973.
+[43]
+chapter I.
+
+Underfull \vbox (badness 10000) detected at line 2002
+ []
+
+LaTeX Info: Redefining \. on input line 2002.
+LaTeX Info: Redefining \% on input line 2002.
+[44
+
+
+]
+LaTeX Info: Redefining \. on input line 2042.
+LaTeX Info: Redefining \% on input line 2042.
+[45]
+chapter J.
+
+Underfull \vbox (badness 1024) detected at line 2079
+ []
+
+LaTeX Info: Redefining \. on input line 2079.
+LaTeX Info: Redefining \% on input line 2079.
+[46
+
+
+]
+LaTeX Info: Redefining \. on input line 2095.
+LaTeX Info: Redefining \% on input line 2095.
+[47]
+chapter K.
+LaTeX Info: Redefining \. on input line 2145.
+LaTeX Info: Redefining \% on input line 2145.
+[48
+
+
+]
+Overfull \hbox (39.4301pt too wide) in paragraph at lines 2145--2145
+[]  \TU/TeXGyreCursor(0)/m/n/12 var         n_missing n_excluded_only_by_var pct_excluded_of_total[] 
+ []
+
+
+Underfull \vbox (badness 2903) detected at line 2172
+ []
+
+LaTeX Info: Redefining \. on input line 2172.
+LaTeX Info: Redefining \% on input line 2172.
+[49]
+LaTeX Info: Redefining \. on input line 2191.
+LaTeX Info: Redefining \% on input line 2191.
+[50]
+chapter L.
+LaTeX Info: Redefining \. on input line 2269.
+LaTeX Info: Redefining \% on input line 2269.
+[51
+
+
+]
+Underfull \vbox (badness 10000) detected at line 2269
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2269
+ []
+
+LaTeX Info: Redefining \. on input line 2269.
+LaTeX Info: Redefining \% on input line 2269.
+[52]
+Overfull \hbox (140.43687pt too wide) in paragraph at lines 2285--2285
+[]   \TU/TeXGyreCursor(0)/m/n/12 idencuesta ola   c05_total c05_total_within c05_total_between c05_total_grand[] 
+ []
+
+
+Overfull \hbox (36.84042pt too wide) in paragraph at lines 2285--2285
+[]        \TU/TeXGyreCursor(0)/m/n/12 <dbl> <fct>     <dbl>            <dbl>             <dbl>           <dbl>[] 
+ []
+
+
+Overfull \hbox (0.58159pt too wide) in paragraph at lines 2285--2285
+[] \TU/TeXGyreCursor(0)/m/n/12 3    1101011 Ola 3        12            0.571              11.4           -
+ []
+
+
+Overfull \hbox (26.48079pt too wide) in paragraph at lines 2285--2285
+[] \TU/TeXGyreCursor(0)/m/n/12 6    1101011 Ola 6        18            6.57               11.4            1.86[] 
+ []
+
+
+Overfull \hbox (29.07071pt too wide) in paragraph at lines 2285--2285
+[]\TU/TeXGyreCursor(0)/m/n/12 10    1101012 Ola 3        26           10.9                15.1            9.86[] 
+ []
+
+LaTeX Info: Redefining \. on input line 2287.
+LaTeX Info: Redefining \% on input line 2287.
+[53]
+chapter M.
+
+Underfull \vbox (badness 1052) detected at line 2324
+ []
+
+LaTeX Info: Redefining \. on input line 2324.
+LaTeX Info: Redefining \% on input line 2324.
+[54
+
+
+]
+LaTeX Info: Redefining \. on input line 2330.
+LaTeX Info: Redefining \% on input line 2330.
+[55]
+chapter N.
+LaTeX Info: Redefining \. on input line 2358.
+LaTeX Info: Redefining \% on input line 2358.
+[56
+
+
+]
+chapter \~N.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2363--2364
+
+ []
+
+
+Overfull \vbox (0.70049pt too high) detected at line 2455
+ []
+
+LaTeX Info: Redefining \. on input line 2455.
+LaTeX Info: Redefining \% on input line 2455.
+[57
+
+
+]
+Underfull \vbox (badness 10000) detected at line 2455
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2455
+ []
+
+LaTeX Info: Redefining \. on input line 2455.
+LaTeX Info: Redefining \% on input line 2455.
+[58]
+Underfull \vbox (badness 10000) detected at line 2455
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2455
+ []
+
+LaTeX Info: Redefining \. on input line 2455.
+LaTeX Info: Redefining \% on input line 2455.
+[59]
+LaTeX Info: Redefining \. on input line 2457.
+LaTeX Info: Redefining \% on input line 2457.
+[60]
+chapter O.
+LaTeX Info: Redefining \. on input line 2466.
+LaTeX Info: Redefining \% on input line 2466.
+[61
+
+
+]
+chapter P.
+LaTeX Info: Redefining \. on input line 2488.
+LaTeX Info: Redefining \% on input line 2488.
+[62
+
+
+]
+chapter Q.
+
+Overfull \hbox (10.94125pt too wide) in paragraph at lines 2520--2520
+[]   \TU/TeXGyreCursor(0)/m/n/12 0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15[] 
+ []
+
+
+Overfull \hbox (73.09914pt too wide) in paragraph at lines 2520--2520
+[]\TU/TeXGyreCursor(0)/m/n/12 5951    2   10  179   69  181  308  398  489 1139  645  592  658  352  189  375[] 
+ []
+
+LaTeX Info: Redefining \. on input line 2520.
+LaTeX Info: Redefining \% on input line 2520.
+[63
+
+
+]
+Underfull \vbox (badness 10000) detected at line 2579
+ []
+
+LaTeX Info: Redefining \. on input line 2579.
+LaTeX Info: Redefining \% on input line 2579.
+[64]
+Overfull \vbox (1.79427pt too high) detected at line 2660
+ []
+
+LaTeX Info: Redefining \. on input line 2660.
+LaTeX Info: Redefining \% on input line 2660.
+[65]
+Underfull \vbox (badness 10000) detected at line 2703
+ []
+
+
+Overfull \vbox (2.25386pt too high) detected at line 2703
+ []
+
+LaTeX Info: Redefining \. on input line 2703.
+LaTeX Info: Redefining \% on input line 2703.
+[66]
+Underfull \vbox (badness 10000) detected at line 2703
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 2703
+ []
+
+LaTeX Info: Redefining \. on input line 2703.
+LaTeX Info: Redefining \% on input line 2703.
+[67]
+LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/it' will be
+(Font)              scaled to size 8.4pt on input line 2709.
+
+Underfull \hbox (badness 10000) in paragraph at lines 2733--2734
+
+ []
+
+LaTeX Info: Redefining \. on input line 2737.
+LaTeX Info: Redefining \% on input line 2737.
+[68]
+chapter R.
+
+Overfull \hbox (65.32936pt too wide) in paragraph at lines 2765--2765
+[]      \TU/TeXGyreCursor(0)/m/n/12 Sin estudios   Educación Básica Educación Superior           Posgrado[] 
+ []
+
+LaTeX Info: Redefining \. on input line 2767.
+LaTeX Info: Redefining \% on input line 2767.
+[69
+
+
+]
+chapter S.
+
+Underfull \vbox (badness 10000) detected at line 2809
+ []
+
+LaTeX Info: Redefining \. on input line 2809.
+LaTeX Info: Redefining \% on input line 2809.
+[70
+
+
+]
+File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-clase-generacion-1.pdf Graphic file (type pdf)
+<use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-clase-generacion-1.pdf>
+LaTeX Info: Redefining \. on input line 2831.
+LaTeX Info: Redefining \% on input line 2831.
+[71]
+Underfull \vbox (badness 10000) detected at line 2867
+ []
+
+LaTeX Info: Redefining \. on input line 2867.
+LaTeX Info: Redefining \% on input line 2867.
+[72]
+File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-1.pdf Graphic file (type pdf)
+<use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-1.pdf>
+
+Underfull \vbox (badness 2418) detected at line 2919
+ []
+
+LaTeX Info: Redefining \. on input line 2919.
+LaTeX Info: Redefining \% on input line 2919.
+[73]
+File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-educacion-1.pdf Graphic file (type pdf)
+<use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-educacion-1.pdf>
+LaTeX Info: Redefining \. on input line 2923.
+LaTeX Info: Redefining \% on input line 2923.
+[74]
+LaTeX Info: Redefining \. on input line 2973.
+LaTeX Info: Redefining \% on input line 2973.
+[75]
+File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-corrupcion-1.pdf Graphic file (type pdf)
+<use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-corrupcion-1.pdf>
+LaTeX Info: Redefining \. on input line 2977.
+LaTeX Info: Redefining \% on input line 2977.
+[76]
+LaTeX Info: Redefining \. on input line 3027.
+LaTeX Info: Redefining \% on input line 3027.
+[77]
+File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-identificacion-1.pdf Graphic file (type pdf)
+<use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-identificacion-1.pdf>
+LaTeX Info: Redefining \. on input line 3031.
+LaTeX Info: Redefining \% on input line 3031.
+[78]
+LaTeX Info: Redefining \. on input line 3084.
+LaTeX Info: Redefining \% on input line 3084.
+[79]
+File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-generacion-1.pdf Graphic file (type pdf)
+<use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-generacion-1.pdf>
+LaTeX Info: Redefining \. on input line 3088.
+LaTeX Info: Redefining \% on input line 3088.
+[80]
+LaTeX Info: Redefining \. on input line 3140.
+LaTeX Info: Redefining \% on input line 3140.
+[81]
+File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-clase-1.pdf Graphic file (type pdf)
+<use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-clase-1.pdf>
+LaTeX Info: Redefining \. on input line 3144.
+LaTeX Info: Redefining \% on input line 3144.
+[82]
+LaTeX Info: Redefining \. on input line 3178.
+LaTeX Info: Redefining \% on input line 3178.
+[83]
+File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-distribucion-dv-1.pdf Graphic file (type pdf)
+<use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-distribucion-dv-1.pdf>
+LaTeX Info: Redefining \. on input line 3189.
+LaTeX Info: Redefining \% on input line 3189.
+[84]
+chapter T.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3193--3194
+
+ []
+
+
+Overfull \vbox (0.70049pt too high) detected at line 3285
+ []
+
+LaTeX Info: Redefining \. on input line 3285.
+LaTeX Info: Redefining \% on input line 3285.
+[85
+
+
+]
+Underfull \vbox (badness 10000) detected at line 3285
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 3285
+ []
+
+LaTeX Info: Redefining \. on input line 3285.
+LaTeX Info: Redefining \% on input line 3285.
+[86]
+Underfull \vbox (badness 10000) detected at line 3285
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 3285
+ []
+
+LaTeX Info: Redefining \. on input line 3285.
+LaTeX Info: Redefining \% on input line 3285.
+[87]
+LaTeX Info: Redefining \. on input line 3287.
+LaTeX Info: Redefining \% on input line 3287.
+[88]
+chapter U.
+LaTeX Info: Redefining \. on input line 3302.
+LaTeX Info: Redefining \% on input line 3302.
+[89
+
+
+]
+chapter V.
+LaTeX Info: Redefining \. on input line 3325.
+LaTeX Info: Redefining \% on input line 3325.
+[90
+
+
+]
+chapter W.
+LaTeX Info: Redefining \. on input line 3360.
+LaTeX Info: Redefining \% on input line 3360.
+[91
+
+
+]
+LaTeX Info: Redefining \. on input line 3383.
+LaTeX Info: Redefining \% on input line 3383.
+[92]
+chapter X.
+
+Overfull \hbox (42.02007pt too wide) in paragraph at lines 3430--3430
+[]  \TU/TeXGyreCursor(0)/m/n/12 raw_alpha std.alpha G6(smc) average_r S/N    ase mean   sd median_r[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3430.
+LaTeX Info: Redefining \% on input line 3430.
+[93
+
+
+]
+Overfull \hbox (42.02007pt too wide) in paragraph at lines 3430--3430
+[]       \TU/TeXGyreCursor(0)/m/n/12 raw_alpha std.alpha G6(smc) average_r S/N alpha se var.r med.r[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3432.
+LaTeX Info: Redefining \% on input line 3432.
+[94]
+chapter Y.
+LaTeX Info: Redefining \. on input line 3474.
+LaTeX Info: Redefining \% on input line 3474.
+[95
+
+
+]
+Overfull \hbox (39.43011pt too wide) in paragraph at lines 3519--3519
+[]\TU/TeXGyreCursor(0)/m/n/12 Linear mixed model fit by REML. t-tests use Satterthwaite[]s method [[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3519.
+LaTeX Info: Redefining \% on input line 3519.
+[96]
+LaTeX Info: Redefining \. on input line 3555.
+LaTeX Info: Redefining \% on input line 3555.
+[97]
+Overfull \hbox (39.43011pt too wide) in paragraph at lines 3602--3602
+[]\TU/TeXGyreCursor(0)/m/n/12 Linear mixed model fit by REML. t-tests use Satterthwaite[]s method [[] 
+ []
+
+
+Overfull \hbox (75.6889pt too wide) in paragraph at lines 3602--3602
+[]\TU/TeXGyreCursor(0)/m/n/12 Formula: c05_total ~ c38_within + m0_edad_within + trato_digno_within +[] 
+ []
+
+
+Overfull \hbox (5.76123pt too wide) in paragraph at lines 3602--3602
+[]\TU/TeXGyreCursor(0)/m/n/12 (Intercept)          17.91454    0.68170 1306.92084  26.279  < 2e-
+ []
+
+
+Overfull \hbox (49.78983pt too wide) in paragraph at lines 3602--3602
+[]\TU/TeXGyreCursor(0)/m/n/12 m0_edad_within        0.07160    0.02759 6714.74232   2.596 0.009462 **[] 
+ []
+
+
+Overfull \hbox (21.3007pt too wide) in paragraph at lines 3602--3602
+[]\TU/TeXGyreCursor(0)/m/n/12 trato_digno_within    0.16695    0.01607 6694.49090  10.390  < 2e-
+ []
+
+
+Overfull \hbox (3.17133pt too wide) in paragraph at lines 3602--3602
+[]\TU/TeXGyreCursor(0)/m/n/12 c32_within            0.67356    0.10020 6712.24743   6.722 1.94e-
+ []
+
+LaTeX Info: Redefining \. on input line 3602.
+LaTeX Info: Redefining \% on input line 3602.
+[98]
+Overfull \hbox (67.91933pt too wide) in paragraph at lines 3602--3602
+[]            \TU/TeXGyreCursor(0)/m/n/12 (Intr) c38_wt m0_dd_ trt_d_ c15_wt c32_wt Gnrcnb GnrcnX GnrcnY[] 
+ []
+
+
+Overfull \hbox (29.07047pt too wide) in paragraph at lines 3602--3602
+[]\TU/TeXGyreCursor(0)/m/n/12 GeneracionY -0.951 -0.002  0.006  0.003  0.001  0.000  0.920  0.907[] 
+ []
+
+
+Overfull \hbox (78.2789pt too wide) in paragraph at lines 3602--3602
+[]\TU/TeXGyreCursor(0)/m/n/12 GeneracionZ -0.865 -0.001  0.007  0.004  0.000  0.001  0.837  0.826  0.823[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3625.
+LaTeX Info: Redefining \% on input line 3625.
+[99]
+Overfull \hbox (39.43011pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 Linear mixed model fit by REML. t-tests use Satterthwaite[]s method [[] 
+ []
+
+
+Overfull \hbox (109.35785pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 c05_total ~ Generacion + egp4 + sexo + nedu + c38_between + m0_edad_between +[] 
+ []
+
+
+Overfull \hbox (57.55948pt too wide) in paragraph at lines 3693--3693
+[]    \TU/TeXGyreCursor(0)/m/n/12 trato_digno_between + c15_between + c32_between + (1 | idencuesta)[] 
+ []
+
+
+Overfull \hbox (23.89072pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 (Intercept)                       22.85846    2.31757 1678.13589   9.863[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3693.
+LaTeX Info: Redefining \% on input line 3693.
+[100]
+Overfull \hbox (34.25027pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 egp4Intermediate class (III+IV)   -0.58484    0.20258 5144.94466  -
+ []
+
+
+Overfull \hbox (26.48053pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 egp4Working class (V+VI+VII)      -0.93001    0.21333 4085.49098  -
+ []
+
+
+Overfull \hbox (42.02013pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 neduEducación Básica               0.96775    0.99689 5209.28213   0.971[] 
+ []
+
+
+Overfull \hbox (47.19994pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 neduEducación Superior             2.22082    1.01307 5138.59187   2.192[] 
+ []
+
+
+Overfull \hbox (23.89073pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 neduPosgrado                       3.78210    1.14220 5234.19866   3.311[] 
+ []
+
+
+Overfull \hbox (31.66046pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 m0_edad_between                    0.01469    0.02282 1355.67724   0.644[] 
+ []
+
+
+Overfull \hbox (3.17131pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 trato_digno_between               -0.30911    0.03007 1673.33013 -
+ []
+
+
+Overfull \hbox (21.30081pt too wide) in paragraph at lines 3693--3693
+[]\TU/TeXGyreCursor(0)/m/n/12 c32_between                        1.22132    0.19988 1455.10459   6.110[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3693.
+LaTeX Info: Redefining \% on input line 3693.
+[101]
+LaTeX Info: Redefining \. on input line 3727.
+LaTeX Info: Redefining \% on input line 3727.
+[102]
+Overfull \hbox (39.43011pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 Linear mixed model fit by REML. t-tests use Satterthwaite[]s method [[] 
+ []
+
+
+Overfull \hbox (88.63849pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 c05_total ~ c38_within + c38_between + m0_edad_within + m0_edad_between +[] 
+ []
+
+
+Overfull \hbox (83.45865pt too wide) in paragraph at lines 3810--3810
+[]    \TU/TeXGyreCursor(0)/m/n/12 trato_digno_within + trato_digno_between + c15_within + c15_between +[] 
+ []
+
+
+Overfull \hbox (26.48064pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 (Intercept)                       23.19534    2.24435 1691.38645  10.335[] 
+ []
+
+
+Overfull \hbox (29.07056pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 m0_edad_within                     0.02996    0.04487 6776.19455   0.668[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3810.
+LaTeX Info: Redefining \% on input line 3810.
+[103]
+Overfull \hbox (31.66046pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 m0_edad_between                    0.01239    0.02242 1349.07867   0.553[] 
+ []
+
+
+Overfull \hbox (5.76125pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 trato_digno_within                -0.06234    0.02062 6707.42538  -
+ []
+
+
+Overfull \hbox (8.35115pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 trato_digno_between               -0.17354    0.03049 1864.15306  -
+ []
+
+
+Overfull \hbox (18.7109pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 c32_within                         0.34086    0.08319 6692.83837   4.097[] 
+ []
+
+
+Overfull \hbox (21.30081pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 c32_between                        1.15955    0.19528 1423.01754   5.938[] 
+ []
+
+
+Overfull \hbox (34.25027pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 egp4Intermediate class (III+IV)   -0.41910    0.17783 6272.46202  -
+ []
+
+
+Overfull \hbox (26.48053pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 egp4Working class (V+VI+VII)      -0.81194    0.19045 5045.76586  -
+ []
+
+
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 olaOla 2                           1.40949    0.29225 6670.48881   4.823[] 
+ []
+
+
+Overfull \hbox (13.5311pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 olaOla 3                           3.46335    0.22295 6726.08095  15.534[] 
+ []
+
+
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 olaOla 6                           0.05322    0.38290 6790.11050   0.139[] 
+ []
+
+
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 olaOla 7                           2.24169    0.41808 6741.10640   5.362[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3810.
+LaTeX Info: Redefining \% on input line 3810.
+[104]
+Overfull \hbox (42.02013pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 neduEducación Básica               0.65887    0.87295 6452.53289   0.755[] 
+ []
+
+
+Overfull \hbox (47.19994pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 neduEducación Superior             1.65782    0.88813 6366.28699   1.867[] 
+ []
+
+
+Overfull \hbox (23.89073pt too wide) in paragraph at lines 3810--3810
+[]\TU/TeXGyreCursor(0)/m/n/12 neduPosgrado                       2.90875    1.00060 6427.27175   2.907[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3810.
+LaTeX Info: Redefining \% on input line 3810.
+[105]
+Overfull \hbox (39.43011pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 Linear mixed model fit by REML. t-tests use Satterthwaite[]s method [[] 
+ []
+
+
+Overfull \hbox (88.63849pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 c05_total ~ c38_within + c38_between + m0_edad_within + m0_edad_between +[] 
+ []
+
+
+Overfull \hbox (83.45865pt too wide) in paragraph at lines 3929--3929
+[]    \TU/TeXGyreCursor(0)/m/n/12 trato_digno_within + trato_digno_between + c15_within + c15_between +[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3929.
+LaTeX Info: Redefining \% on input line 3929.
+[106]
+Overfull \hbox (26.48064pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 (Intercept)                       23.01684    2.24388 1704.72349  10.258[] 
+ []
+
+
+Overfull \hbox (31.66046pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 m0_edad_between                    0.01410    0.02240 1347.57366   0.630[] 
+ []
+
+
+Overfull \hbox (5.76125pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 trato_digno_within                -0.05480    0.02054 6702.88804  -
+ []
+
+
+Overfull \hbox (8.35115pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 trato_digno_between               -0.19894    0.03186 2107.90889  -
+ []
+
+LaTeX Info: Redefining \. on input line 3929.
+LaTeX Info: Redefining \% on input line 3929.
+[107]
+Overfull \hbox (18.7109pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 c32_within                         0.33986    0.08271 6634.05149   4.109[] 
+ []
+
+
+Overfull \hbox (21.30081pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 c32_between                        1.16194    0.19509 1420.36970   5.956[] 
+ []
+
+
+Overfull \hbox (34.25027pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 egp4Intermediate class (III+IV)   -0.42644    0.18091 5748.15661  -
+ []
+
+
+Overfull \hbox (26.48053pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 egp4Working class (V+VI+VII)      -0.86418    0.19350 4648.18171  -
+ []
+
+
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 olaOla 2                           1.52612    0.29228 6607.07888   5.221[] 
+ []
+
+
+Overfull \hbox (13.5311pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 olaOla 3                           3.53919    0.25682 3938.93198  13.781[] 
+ []
+
+
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 olaOla 6                           0.51575    0.54143 1402.88000   0.953[] 
+ []
+
+
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 olaOla 7                           2.64249    0.59110 1406.91545   4.470[] 
+ []
+
+
+Overfull \hbox (42.02013pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 neduEducación Básica               0.70673    0.86069 6255.41871   0.821[] 
+ []
+
+
+Overfull \hbox (47.19994pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 neduEducación Superior             1.69843    0.87596 6191.11725   1.939[] 
+ []
+
+
+Overfull \hbox (23.89073pt too wide) in paragraph at lines 3929--3929
+[]\TU/TeXGyreCursor(0)/m/n/12 neduPosgrado                       2.96935    0.99103 6317.82652   2.996[] 
+ []
+
+LaTeX Info: Redefining \. on input line 3929.
+LaTeX Info: Redefining \% on input line 3929.
+[108]
+LaTeX Info: Redefining \. on input line 3942.
+LaTeX Info: Redefining \% on input line 3942.
+[109]
+LaTeX Info: Redefining \. on input line 3954.
+LaTeX Info: Redefining \% on input line 3954.
+[110]
+chapter Z.
+LaTeX Info: Redefining \. on input line 4006.
+LaTeX Info: Redefining \% on input line 4006.
+[111
+
+
+]
+Overfull \hbox (1476.83409pt too wide) in paragraph at lines 4024--4024
+[]\TU/TeXGyreCursor(0)/m/n/12 test5_base_edad: c05_total ~ c38_within + c38_between + m0_edad_within + m0_edad_between + trato_digno_within + trato_digno_between + c15_within + c15_between + c32_within + c32_between + egp4 + Generacion + ola + sexo + nedu + (1 + m0_edad_within | idencuesta)[] 
+ []
+
+
+Overfull \hbox (1619.27951pt too wide) in paragraph at lines 4024--4024
+[]\TU/TeXGyreCursor(0)/m/n/12 test5_solo_corrupcion: c05_total ~ c38_within + c38_between + m0_edad_within + m0_edad_between + trato_digno_within + trato_digno_between + c15_within + c15_between + c32_within + c32_between + egp4 + Generacion + ola + sexo + nedu + (1 + m0_edad_within + c38_within | idencuesta)[] 
+ []
+
+
+Overfull \hbox (1603.74002pt too wide) in paragraph at lines 4024--4024
+[]\TU/TeXGyreCursor(0)/m/n/12 test5_solo_politica: c05_total ~ c38_within + c38_between + m0_edad_within + m0_edad_between + trato_digno_within + trato_digno_between + c15_within + c15_between + c32_within + c32_between + egp4 + Generacion + ola + sexo + nedu + (1 + m0_edad_within + c15_within | idencuesta)[] 
+ []
+
+LaTeX Info: Redefining \. on input line 4024.
+LaTeX Info: Redefining \% on input line 4024.
+[112]
+Overfull \hbox (93.8184pt too wide) in paragraph at lines 4024--4024
+[]\TU/TeXGyreCursor(0)/m/n/12 test5_solo_corrupcion   34 47917 48154 -23924     47849 17.599  3  0.0005319[] 
+ []
+
+
+Overfull \hbox (5.76122pt too wide) in paragraph at lines 4024--4024
+[]\TU/TeXGyreCursor(0)/m/n/12 test5_solo_politica     34 47932 48170 -23932     47864  0.000  0[] 
+ []
+
+LaTeX Info: Redefining \. on input line 4026.
+LaTeX Info: Redefining \% on input line 4026.
+[113]
+chapter \GenericError {               }{LaTeX Error: Counter too large}{See the LaTeX manual or LaTeX Companion for explanation.}{You've lost some text.  Try typing  <return>  to proceed.\MessageBreak If that doesn't work, type  X <return>  to quit.}.
+
+! LaTeX Error: Counter too large.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4027 between}
+               \label{exploraciuxf3n-de-interacciones-within-between}
+You've lost some text.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+ 
+Here is how much of TeX's memory you used:
+ 35808 strings out of 469766
+ 773011 string characters out of 5465189
+ 1552697 words of memory out of 5000000
+ 64313 multiletter control sequences out of 15000+600000
+ 632804 words of font info for 119 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 108i,20n,116p,11227b,1337s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on index.pdf (115 pages).

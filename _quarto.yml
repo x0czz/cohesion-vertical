@@ -48,6 +48,7 @@ book:
   appendices:
     - procesamiento/Preparacion.qmd
     - procesamiento/descriptivo_bivariado.qmd
+    - procesamiento/analisis.qmd
     # Guarda anexos extensos en apendices/ y listalos aqui.
 
 csl: refs/apa.csl                # Estilo de citas (cambia a otro .csl si lo prefieres)

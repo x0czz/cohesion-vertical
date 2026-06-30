@@ -164,50 +164,72 @@ st(datos_limpios,
    title = "Estadísticos descriptivos (Casos completos - Ola 7)")
 ```
 
-
+Alternativa adicional: 
 ```{r}
 library(dplyr)
 library(modelsummary)
 
-# 1. Preparar los datos filtrando la Ola 7 e incluyendo TODAS las variables del modelo
-datos_limpios <- data_f %>% 
-  filter(ola == "Ola 7") %>% 
-  # Incluimos también sexo y nedu que se usan en tus modelos de Nivel 2
-  select(c05_total, c38, m0_edad, egp4, c15, c32_01_ord, Generacion, sexo, nedu) %>% 
-  mutate(
-    c38        = as.numeric(haven::zap_labels(c38)),
-    c15        = as.numeric(haven::zap_labels(c15)),
-    c32_01_ord = as.numeric(haven::zap_labels(c32_01_ord)),
-    egp4       = as.factor(egp4),
-    sexo       = as.factor(sexo),
-    nedu       = as.factor(nedu)
-  ) %>% 
-  drop_na()
+ids_7olas <- data_centrada %>%
+  count(idencuesta) %>%
+  filter(n == 7) %>%
+  pull(idencuesta)
 
-# 2. Renombrar explicitando cuáles actúan como Nivel 1 (tiempo) y Nivel 2 (individual/agregado)
-datos_filtrados_etiquetados <- datos_limpios %>% 
-  dplyr::rename(
-    # Variables que en el modelo tienen efectos de Nivel 1 (Variables del tiempo / Within / Grand)
-    `Cohesión social vertical (N1 - Y)` = c05_total,
-    `Percepción de corrupción (N1)`    = c38,
-    `Edad (N1)`                        = m0_edad,
-    `Autoidentificación política (N1)`  = c15,
-    `Orgullo de ser chileno (N1)`      = c32_01_ord,
-    
-    # Variables de Nivel 2 (Sociodemográficas fijas / Características del individuo)
-    `Clase social (N2 - EGP-4)`        = egp4,
-    `Generación (N2)`                  = Generacion,
-    `Sexo (N2)`                        = sexo,
-    `Nivel educacional (N2)`           = nedu
+length(ids_7olas)  # debería darte 1837
+
+# ============================================================
+# 2. Filtrar el panel completo a SOLO esos individuos
+#    (se conservan sus 7 filas, no se aplica complete.cases)
+# ============================================================
+data_7olas <- data_centrada %>%
+  filter(idencuesta %in% ids_7olas)
+
+nrow(data_7olas)                       # debería ser 1837 * 7 = 12859
+n_distinct(data_7olas$idencuesta)      # debería ser 1837
+
+# ============================================================
+# 3. Construir la tabla descriptiva sobre este subconjunto
+# ============================================================
+datos_modelo <- data_7olas %>%
+  select(
+    c05_total,
+    c38, c38_between,
+    m0_edad, m0_edad_between,
+    trato_digno, trato_digno_between,
+    c15, c15_between,
+    c32_num, c32_between,
+    egp4, Generacion, ola, sexo, nedu
+  ) %>%
+  mutate(
+    egp4 = as.factor(egp4),
+    sexo = as.factor(sexo),
+    nedu = as.factor(nedu)
   )
 
-# 3. Generar la tabla de balance/descriptivos para la Ola 7
+datos_modelo_etiquetados <- datos_modelo %>%
+  dplyr::rename(
+    `Cohesión social vertical (N1 - Y)`             = c05_total,
+    `Percepción de corrupción (N1)`                 = c38,
+    `Percepción de corrupción (N2 - Promedio)`      = c38_between,
+    `Edad (N1)`                                     = m0_edad,
+    `Edad (N2 - Promedio)`                          = m0_edad_between,
+    `Trato digno (N1)`                              = trato_digno,
+    `Trato digno (N2 - Promedio)`                   = trato_digno_between,
+    `Autoidentificación política (N1)`              = c15,
+    `Autoidentificación política (N2 - Promedio)`   = c15_between,
+    `Orgullo de ser chileno (N1)`                   = c32_num,
+    `Orgullo de ser chileno (N2 - Promedio)`        = c32_between,
+    `Clase social (N2 - EGP-4)`                     = egp4,
+    `Generación (N2)`                               = Generacion,
+    `Ola (N1)`                                      = ola,
+    `Sexo (N2)`                                     = sexo,
+    `Nivel educacional (N2)`                        = nedu
+  )
+
 datasummary_balance(
-  ~ 1, 
-  data = datos_filtrados_etiquetados, 
+  ~ 1,
+  data = datos_modelo_etiquetados,
   dinm = FALSE,
-  # Esta línea une tu carpeta "output/tables" con el nombre del archivo:
-  output = file.path(output_tables_dir, "tabla_descriptiva_ola7.html") 
+  output = file.path(output_tables_dir, "tabla_descriptiva_7olas.html")
 )
 ```
 
@@ -337,7 +359,12 @@ grafico_temporal <- resumen_ola %>%
     x = "Ola de medición",
     y = "Cohesión social vertical (media)"
   ) +
-  theme_ggdist()
+  theme_ggdist(base_size = 16) +
+  theme(
+    axis.title = element_text(size = 16),
+    axis.text  = element_text(size = 14),
+    plot.title = element_text(size = 18)
+  )
 
 grafico_temporal
 
@@ -375,7 +402,12 @@ grafico_nedu <- resumen_nedu %>%
     x = "Nivel educativo",
     y = "Cohesión social vertical (media)"
   ) +
-  theme_ggdist()
+  theme_ggdist(base_size = 14) +
+  theme(
+    axis.title = element_text(size = 14),
+    axis.text  = element_text(size = 12),
+    plot.title = element_text(size = 18)
+  )
 
 grafico_nedu
 
@@ -413,7 +445,13 @@ grafico_c38 <- resumen_c38 %>%
     x = "Percepción de corrupción",
     y = "Cohesión social vertical (media)"
   ) +
-  theme_ggdist()
+  theme_ggdist(base_size = 16) +                                     # <- aumenta esto para ejes/etiquetas
+  theme(
+    axis.title = element_text(size = 16),
+    axis.text  = element_text(size = 14),
+    plot.title = element_text(size = 18)
+  )
+
 
 grafico_c38
 
@@ -451,7 +489,13 @@ grafico_c32 <- resumen_c32 %>%
     x = "Identificación nacional",
     y = "Cohesión social vertical (media)"
   ) +
-  theme_ggdist()
+  theme_ggdist(base_size = 16) +                                     # <- aumenta esto para ejes/etiquetas
+  theme(
+    axis.title = element_text(size = 16),
+    axis.text  = element_text(size = 14),
+    plot.title = element_text(size = 18)
+  )
+
 
 grafico_c32
 
@@ -492,7 +536,12 @@ grafico_ola_gen <- resumen_ola_gen %>%
     color = "Generación",
     fill  = "Generación"
   ) +
-  theme_ggdist() +
+  theme_ggdist(base_size = 16) + 
+  theme(
+    axis.title = element_text(size = 16),
+    axis.text  = element_text(size = 14),
+    plot.title = element_text(size = 18)
+  ) +
   theme(legend.position = "bottom")
 
 grafico_ola_gen
@@ -533,7 +582,13 @@ grafico_ola_clase <- resumen_ola_clase %>%
     color = "Clase social",
     fill  = "Clase social"
   ) +
-  theme_ggdist() +
+  theme_ggdist(base_size = 16
+  ) +                                     # <- aumenta esto para ejes/etiquetas
+  theme(
+    axis.title = element_text(size = 16),
+    axis.text  = element_text(size = 14),
+    plot.title = element_text(size = 18)
+  ) +
   theme(legend.position = "bottom")
 
 grafico_ola_clase

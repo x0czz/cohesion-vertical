@@ -15,12 +15,14 @@ En resumen, la aplicación de modelos multinivel para datos longitudinales mejor
 
 Por otra parte, las variables continuas se centraran segun la media especifica del grupo o individuo en este caso. (within-person centering) y el promedio sera incluido simultaneamente en el modelo como predictor. Al controlar por el promedio histórico de cada individuo, se logra aislar por completo el efecto de las fluctuaciones anuales (within-person) de la variación entre individuos (between-person), lo que permite una interpretación más precisa de los efectos de las variables independientes sobre la variable dependiente.
 
-Tambien se estimaran modelos con efectos aleatorios de manera exploratoria para evluar si existen diferencias entre lo efecto para cada grupo. La totalidad de los modelos pueden encontrarse en los anexos.
+Tambien se estimaran modelos con efectos aleatorios de manera exploratoria para evluar si existen diferencias entre lo efecto para cada grupo. La totalidad de los modelos pueden encontrarse en los anexos adjuntos en el repositorio.
 
 ### Datos.
 
 Los datos utilizados en este estudio provienen del Estudio Longitudinal Social de Chile (ELSOC), una encuesta de tipo panel desarrollada por el Centro de Estudios de Conflicto y Cohesión Social (COES) desde el año 2016. Al tratarse de un instrumento de naturaleza longitudinal, ELSOC entrevista anualmente a los mismos sujetos; aproximadamente 3,000 personas por ola, lo que permite un análisis preciso de los cambios en las trayectorias individuales y las dinámicas de transformación social en Chile.
 La encuesta emplea un muestreo probabilístico, estratificado (por tamaño de ciudades), por conglomerados y multietápico, lo que garantiza que la unidad básica de observación sean los individuos seleccionados aleatoriamente dentro de los hogares. La población objetivo comprende a hombres y mujeres de 18 a 75 años, alcanzando una representatividad del 77% de la población total del país y del 93% de la población urbana, con un error muestral estimado del 2%. El cuestionario se estructura en siete módulos temáticos, incluyendo territorio, redes y actitudes sociales, ciudadanía y democracia, y desigualdad y legitimidad, lo cual permite capturar las múltiples dimensiones de la cohesión social. Esta base de datos es única en el país y resulta idónea para este estudio, ya que permite aplicar modelos de análisis que consideran la variabilidad intraindividual a lo largo del tiempo.
+
+La muestra utilizada en este estudio se compone de 1,176 individuos que participaron en todas las olas del panel, desde 2016 hasta 2023 y que ademas cuentan con información completa en las variables de interés. La selección de este subconjunto garantiza la consistencia y la validez de la comparacion entre modelos mediante Criterio de Informacion Baiesiano (BIC).
 
 ### Protocolo de trabajo reproductible
 
