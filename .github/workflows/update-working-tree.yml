@@ -21,8 +21,8 @@ jobs:
 
     - name: Inyectar en el README
       run: |
-        sed -i '//,//{//!d}' README.md
-        sed -i '//r tree.txt' README.md
+        sed -i '/<!--START_TREE-->/,/<!--END_TREE-->/{/<!--START_TREE-->/!{/<!--END_TREE-->/!d}}' README.md
+        sed -i '/<!--START_TREE-->/r tree.txt' README.md
 
     - name: Auto-commit y Push
       run: |
