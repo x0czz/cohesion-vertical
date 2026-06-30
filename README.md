@@ -38,70 +38,9 @@ Este proyecto analiza los datos de la encuesta ELSOC entre los años 2016 y 2023
 |-- 02-antecedentes.qmd
 |-- 03-hipotesis.qmd
 |-- 04-metodos.qmd
-|-- 04-resultados_files
-|   |-- figure-html
-|   |   `-- grafico-ejemplo-1.png
-|   `-- figure-pdf
-|       `-- grafico-ejemplo-1.pdf
 |-- 05-resultados.qmd
-|-- 05-resultados_files
-|   |-- execute-results
-|   |   |-- html.json
-|   |   `-- tex.json
-|   |-- figure-html
-|   |   |-- fig-bivariado-1.png
-|   |   |-- unnamed-chunk-2-1.png
-|   |   |-- unnamed-chunk-2-2.png
-|   |   `-- unnamed-chunk-3-1.png
-|   `-- figure-pdf
-|       |-- fig-bivariado-1.pdf
-|       `-- unnamed-chunk-2-1.pdf
 |-- 06-conclusiones.qmd
-|-- README.html
 |-- README.md
-|-- README_files
-|   `-- libs
-|       |-- bootstrap
-|       |   |-- bootstrap-efbb37e9afcc02144ebbc7afd12a776f.min.css
-|       |   |-- bootstrap-icons.css
-|       |   |-- bootstrap-icons.woff
-|       |   `-- bootstrap.min.js
-|       |-- clipboard
-|       |   `-- clipboard.min.js
-|       `-- quarto-html
-|           |-- anchor.min.js
-|           |-- popper.min.js
-|           |-- quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css
-|           |-- quarto.js
-|           |-- tabsets
-|           |   `-- tabsets.js
-|           |-- tippy.css
-|           `-- tippy.umd.min.js
-|-- _freeze
-|   |-- 03-metodologia
-|   |   `-- execute-results
-|   |       |-- html.json
-|   |       `-- tex.json
-|   |-- 04-resultados
-|   |   |-- execute-results
-|   |   |   |-- html.json
-|   |   |   `-- tex.json
-|   |   |-- figure-html
-|   |   |   `-- grafico-ejemplo-1.png
-|   |   `-- figure-pdf
-|   |       `-- grafico-ejemplo-1.pdf
-|   `-- 05-resultados
-|       |-- execute-results
-|       |   |-- html.json
-|       |   `-- tex.json
-|       |-- figure-html
-|       |   |-- fig-bivariado-1.png
-|       |   |-- unnamed-chunk-2-1.png
-|       |   |-- unnamed-chunk-2-2.png
-|       |   `-- unnamed-chunk-3-1.png
-|       `-- figure-pdf
-|           |-- fig-bivariado-1.pdf
-|           `-- unnamed-chunk-2-1.pdf
 |-- _metadata.yml
 |-- _quarto.yml
 |-- apendices
@@ -116,19 +55,12 @@ Este proyecto analiza los datos de la encuesta ELSOC entre los años 2016 y 2023
 |   `-- styles.scss
 |-- includes
 |   |-- backmatter.tex
-|   |-- citefix.html
-|   |-- code-toggle.html
 |   |-- cover-config.tex
-|   |-- justify.html
-|   |-- logo-link.html
 |   |-- pdf-config-scrbook.yml
 |   |-- preamble.tex
 |   |-- reference.docx
-|   |-- renumber.html
 |   |-- reportes-facso-plantilla.tex
-|   |-- title-html.html
-|   |-- title-pdf.tex
-|   `-- toc-enhance.html
+|   `-- title-pdf.tex
 |-- index.qmd
 |-- input
 |   |-- ELSOC_subset.rds
@@ -142,88 +74,11 @@ Este proyecto analiza los datos de la encuesta ELSOC entre los años 2016 y 2023
 |   |-- graphs
 |   |   `-- cohesion_clase_generacion.png
 |   `-- tables
-|       |-- tabla_comparacion.html
-|       |-- tabla_comparacion_cent.html
-|       |-- tabla_descriptiva_ola7.html
-|       |-- tabla_descriptivos.html
-|       |-- tabla_modelos.html
-|       `-- tabla_test.html
 |-- procesamiento
-|   |-- Preparacion.html
 |   |-- Preparacion.qmd
-|   |-- Preparacion_files
-|   |   `-- libs
-|   |       |-- bootstrap
-|   |       |   |-- bootstrap-03bd07e4458e7f118467a4d2741871ca.min.css
-|   |       |   |-- bootstrap-icons.css
-|   |       |   |-- bootstrap-icons.woff
-|   |       |   `-- bootstrap.min.js
-|   |       |-- clipboard
-|   |       |   `-- clipboard.min.js
-|   |       `-- quarto-html
-|   |           |-- anchor.min.js
-|   |           |-- popper.min.js
-|   |           |-- quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css
-|   |           |-- quarto.js
-|   |           |-- tabsets
-|   |           |   `-- tabsets.js
-|   |           |-- tippy.css
-|   |           `-- tippy.umd.min.js
 |   |-- README.md
-|   |-- analisis.html
 |   |-- analisis.qmd
-|   |-- analisis_files
-|   |   `-- libs
-|   |       |-- bootstrap
-|   |       |   |-- bootstrap-03bd07e4458e7f118467a4d2741871ca.min.css
-|   |       |   |-- bootstrap-icons.css
-|   |       |   |-- bootstrap-icons.woff
-|   |       |   `-- bootstrap.min.js
-|   |       |-- clipboard
-|   |       |   `-- clipboard.min.js
-|   |       `-- quarto-html
-|   |           |-- anchor.min.js
-|   |           |-- popper.min.js
-|   |           |-- quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css
-|   |           |-- quarto.js
-|   |           |-- tabsets
-|   |           |   `-- tabsets.js
-|   |           |-- tippy.css
-|   |           `-- tippy.umd.min.js
-|   |-- descriptivo_bivariado.html
 |   |-- descriptivo_bivariado.qmd
-|   |-- descriptivo_bivariado_files
-|   |   |-- figure-html
-|   |   |   |-- grafico-clase-generacion-1.png
-|   |   |   |-- grafico-corrupcion-1.png
-|   |   |   |-- grafico-distribucion-dv-1.png
-|   |   |   |-- grafico-educacion-1.png
-|   |   |   |-- grafico-identificacion-1.png
-|   |   |   |-- grafico-meritocracia-1.png
-|   |   |   |-- grafico-temporal-1.png
-|   |   |   |-- grafico-temporal-clase-1.png
-|   |   |   `-- grafico-temporal-generacion-1.png
-|   |   `-- libs
-|   |       |-- bootstrap
-|   |       |   |-- bootstrap-03bd07e4458e7f118467a4d2741871ca.min.css
-|   |       |   |-- bootstrap-icons.css
-|   |       |   |-- bootstrap-icons.woff
-|   |       |   `-- bootstrap.min.js
-|   |       |-- clipboard
-|   |       |   `-- clipboard.min.js
-|   |       |-- kePrint-0.0.1
-|   |       |   `-- kePrint.js
-|   |       |-- lightable-0.0.1
-|   |       |   `-- lightable.css
-|   |       `-- quarto-html
-|   |           |-- anchor.min.js
-|   |           |-- popper.min.js
-|   |           |-- quarto-syntax-highlighting-46f66b053e56abd73bb6e954d61a315b.css
-|   |           |-- quarto.js
-|   |           |-- tabsets
-|   |           |   `-- tabsets.js
-|   |           |-- tippy.css
-|   |           `-- tippy.umd.min.js
 |   |-- index.qmd
 |   |-- input
 |   |   |-- data_centrada_regresion.rds
@@ -240,20 +95,14 @@ Este proyecto analiza los datos de la encuesta ELSOC entre los años 2016 y 2023
 |       |   |-- cohesion_temporal_generacion.png
 |       |   `-- distribucion_dv.png
 |       `-- tables
-|           |-- tabla_comparacion.html
-|           |-- tabla_descriptiva_ola7.html
-|           |-- tabla_descriptivos.html
-|           `-- tabla_modelos.html
 |-- references.qmd
 |-- refs
 |   |-- Cohesion social.bib
 |   |-- apa.csl
 |   `-- referencias.bib
 |-- reportes-facso-plantilla.tex
-|-- search.json
-|-- testnofig.tex
-`-- tree.txt
+`-- testnofig.tex
 
-59 directories, 161 files
+14 directories, 55 files
 ```
 <!--END_TREE-->
