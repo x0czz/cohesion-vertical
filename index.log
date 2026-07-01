@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.6.30)  1 JUL 2026 01:53
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.6.30)  1 JUL 2026 02:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2211,6 +2211,9 @@ LaTeX Info: Redefining \% on input line 1416.
 LaTeX Info: Redefining \. on input line 1416.
 LaTeX Info: Redefining \% on input line 1416.
 [20]
+
+LaTeX Warning: Citation `ref-enders_centering_2007' on page 21 undefined on input line 1425.
+
 LaTeX Info: Redefining \. on input line 1507.
 LaTeX Info: Redefining \% on input line 1507.
 [21]
