@@ -14,12 +14,11 @@ c_{05_{ti}} = \gamma_{00}
 \end{aligned}
 $$
 Donde $u_{0i} \sim \mathcal{N}(0, \tau_{00})$ representa la heterogeneidad no observada entre individuos (efecto aleatorio del intercepto a Nivel 2) y $\varepsilon_{ti} \sim \mathcal{N}(0, \sigma^2)$ corresponde 
-al error residual estocástico intraclasificado a lo largo del tiempo (Nivel 1). Para aislar los efectos 
-within de los coeficientes de Nivel 1, las variables con variación temporal ($c38_{ti}$, $\text{edad}_{ti}$, 
-$\text{trato}_{ti}$, $c15_{ti}$, $c32_{ti}$) serán centradas, ya sea a la gran media muestral 
-(\textit{grand-mean centering}, GMC) o a la media específica de cada individuo 
-(\textit{person-mean centering}, CWC), según corresponda. Los términos $x_{i}$ representan 
-el promedio histórico de cada individuo y capturan la variación entre personas o contextual(efecto between o contextual), segun el tipo de centrado,
+al error residual a lo largo del tiempo (Nivel 1). Para aislar los efectos 
+within (intra-individuo) de los coeficientes de Nivel 1, las variables con variación temporal ($c38_{ti}$, $\text{edad}_{ti}$, 
+$\text{trato}_{ti}$, $c15_{ti}$, $c32_{ti}$) serán centradas, a la media específica de cada individuo 
+(\textit{person-mean centering}, CWC). Los términos $x_{i}$ representan 
+el promedio histórico de cada individuo y capturan la variación entre personas (efecto between),
 permitiendo descomponer de forma limpia ambos niveles de variación en el modelo.
 ---
 ### Hipótesis de Investigación
