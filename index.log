@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.6.30)  30 JUN 2026 23:51
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.6.30)  30 JUN 2026 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1991,8 +1991,8 @@ Package scrlayer-scrpage Warning: \footheight to low.
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/b/n' will be
 (Font)              scaled to size 10.95pt on input line 567.
-LaTeX Info: Redefining \. on input line 571.
-LaTeX Info: Redefining \% on input line 571.
+LaTeX Info: Redefining \. on input line 600.
+LaTeX Info: Redefining \% on input line 600.
 [1
 
 
@@ -2000,284 +2000,284 @@ LaTeX Info: Redefining \% on input line 571.
 ]
 chapter 1.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/b/n' will be
-(Font)              scaled to size 12.0pt on input line 582.
+(Font)              scaled to size 12.0pt on input line 611.
 
-LaTeX Warning: Citation `ref-han_trust_2021' on page 2 undefined on input line 582.
-
-
-LaTeX Warning: Citation `ref-_confianza_2024' on page 2 undefined on input line 584.
+LaTeX Warning: Citation `ref-han_trust_2021' on page 2 undefined on input line 611.
 
 
-LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 2 undefined on input line 589.
+LaTeX Warning: Citation `ref-_confianza_2024' on page 2 undefined on input line 613.
 
 
-LaTeX Warning: Citation `ref-chan_charting_2006' on page 2 undefined on input line 605.
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 2 undefined on input line 618.
 
 
-LaTeX Warning: Citation `ref-_essentials_2017' on page 2 undefined on input line 606.
+LaTeX Warning: Citation `ref-chan_charting_2006' on page 2 undefined on input line 634.
 
 
-LaTeX Warning: Citation `ref-kim_social_2021' on page 2 undefined on input line 610.
+LaTeX Warning: Citation `ref-_essentials_2017' on page 2 undefined on input line 635.
 
 
-LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 2 undefined on input line 612.
+LaTeX Warning: Citation `ref-kim_social_2021' on page 2 undefined on input line 639.
 
 
-LaTeX Warning: Citation `ref-molina_repensando_2022' on page 2 undefined on input line 618.
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 2 undefined on input line 641.
 
 
-LaTeX Warning: Citation `ref-kim_social_2021' on page 2 undefined on input line 621.
+LaTeX Warning: Citation `ref-molina_repensando_2022' on page 2 undefined on input line 647.
 
 
-LaTeX Warning: Citation `ref-diazsarmiento_entendiendo_2017' on page 2 undefined on input line 633.
+LaTeX Warning: Citation `ref-kim_social_2021' on page 2 undefined on input line 650.
 
 
-LaTeX Warning: Citation `ref-_confianza_2024' on page 2 undefined on input line 634.
+LaTeX Warning: Citation `ref-diazsarmiento_entendiendo_2017' on page 2 undefined on input line 662.
 
 
-LaTeX Warning: Citation `ref-_confianza_2024' on page 2 undefined on input line 639.
+LaTeX Warning: Citation `ref-_confianza_2024' on page 2 undefined on input line 663.
 
 
-LaTeX Warning: Citation `ref-_essentials_2017' on page 2 undefined on input line 641.
+LaTeX Warning: Citation `ref-_confianza_2024' on page 2 undefined on input line 668.
 
 
-LaTeX Warning: Citation `ref-araujo_igualdad_2013' on page 2 undefined on input line 650.
+LaTeX Warning: Citation `ref-_essentials_2017' on page 2 undefined on input line 670.
 
-LaTeX Info: Redefining \. on input line 651.
-LaTeX Info: Redefining \% on input line 651.
+
+LaTeX Warning: Citation `ref-araujo_igualdad_2013' on page 2 undefined on input line 679.
+
+LaTeX Info: Redefining \. on input line 680.
+LaTeX Info: Redefining \% on input line 680.
 [2
 
 
 ]
 
-LaTeX Warning: Citation `ref-enders_centering_2007' on page 3 undefined on input line 668.
+LaTeX Warning: Citation `ref-enders_centering_2007' on page 3 undefined on input line 697.
 
-LaTeX Info: Redefining \. on input line 709.
-LaTeX Info: Redefining \% on input line 709.
+LaTeX Info: Redefining \. on input line 738.
+LaTeX Info: Redefining \% on input line 738.
 [3]
-LaTeX Info: Redefining \. on input line 712.
-LaTeX Info: Redefining \% on input line 712.
+LaTeX Info: Redefining \. on input line 741.
+LaTeX Info: Redefining \% on input line 741.
 [4]
 chapter 2.
 
-LaTeX Warning: Citation `ref-han_trust_2021' on page 5 undefined on input line 735.
+LaTeX Warning: Citation `ref-han_trust_2021' on page 5 undefined on input line 764.
 
 
-LaTeX Warning: Citation `ref-_confianza_2024' on page 5 undefined on input line 737.
+LaTeX Warning: Citation `ref-_confianza_2024' on page 5 undefined on input line 766.
 
 
-LaTeX Warning: Citation `ref-chan_charting_2006' on page 5 undefined on input line 740.
+LaTeX Warning: Citation `ref-chan_charting_2006' on page 5 undefined on input line 769.
 
 
-LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 5 undefined on input line 742.
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 5 undefined on input line 771.
 
 
-LaTeX Warning: Citation `ref-_essentials_2017' on page 5 undefined on input line 743.
+LaTeX Warning: Citation `ref-_essentials_2017' on page 5 undefined on input line 772.
 
 
-LaTeX Warning: Citation `ref-kim_social_2021' on page 5 undefined on input line 750.
+LaTeX Warning: Citation `ref-kim_social_2021' on page 5 undefined on input line 779.
 
 
-LaTeX Warning: Citation `ref-_cohesion_2022' on page 5 undefined on input line 756.
+LaTeX Warning: Citation `ref-_cohesion_2022' on page 5 undefined on input line 785.
 
 
-LaTeX Warning: Citation `ref-_essentials_2017' on page 5 undefined on input line 757.
+LaTeX Warning: Citation `ref-_essentials_2017' on page 5 undefined on input line 786.
 
-LaTeX Info: Redefining \. on input line 759.
-LaTeX Info: Redefining \% on input line 759.
+LaTeX Info: Redefining \. on input line 788.
+LaTeX Info: Redefining \% on input line 788.
 [5
 
 
 ]
 
-LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 768.
+LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 797.
 
 
-LaTeX Warning: Citation `ref-_cohesion_2022' on page 6 undefined on input line 774.
+LaTeX Warning: Citation `ref-_cohesion_2022' on page 6 undefined on input line 803.
 
 
-LaTeX Warning: Citation `ref-han_trust_2021' on page 6 undefined on input line 779.
+LaTeX Warning: Citation `ref-han_trust_2021' on page 6 undefined on input line 808.
 
 
-LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 6 undefined on input line 781.
-
-
-LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 789.
-
-
-LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 6 undefined on input line 793.
-
-
-LaTeX Warning: Citation `ref-kim_social_2021' on page 6 undefined on input line 796.
-
-
-LaTeX Warning: Citation `ref-molina_repensando_2022' on page 6 undefined on input line 802.
-
-
-LaTeX Warning: Citation `ref-diazsarmiento_entendiendo_2017' on page 6 undefined on input line 809.
-
-
-LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 810.
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 6 undefined on input line 810.
 
 
 LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 818.
 
-LaTeX Info: Redefining \. on input line 822.
-LaTeX Info: Redefining \% on input line 822.
+
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 6 undefined on input line 822.
+
+
+LaTeX Warning: Citation `ref-kim_social_2021' on page 6 undefined on input line 825.
+
+
+LaTeX Warning: Citation `ref-molina_repensando_2022' on page 6 undefined on input line 831.
+
+
+LaTeX Warning: Citation `ref-diazsarmiento_entendiendo_2017' on page 6 undefined on input line 838.
+
+
+LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 839.
+
+
+LaTeX Warning: Citation `ref-_confianza_2024' on page 6 undefined on input line 847.
+
+LaTeX Info: Redefining \. on input line 851.
+LaTeX Info: Redefining \% on input line 851.
 [6]
 chapter 3.
 LaTeX Font Info:    Font shape `TU/TeXGyreHeros(0)/b/n' will be
-(Font)              scaled to size 14.3999pt on input line 825.
+(Font)              scaled to size 14.3999pt on input line 854.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 833.
+(Font)              scaled to size 8.4pt on input line 862.
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 833.
-LaTeX Info: Redefining \. on input line 862.
-LaTeX Info: Redefining \% on input line 862.
+(Font)              scaled to size 6.0pt on input line 862.
+LaTeX Info: Redefining \. on input line 891.
+LaTeX Info: Redefining \% on input line 891.
 [7
 
 
 ]
-LaTeX Info: Redefining \. on input line 896.
-LaTeX Info: Redefining \% on input line 896.
+LaTeX Info: Redefining \. on input line 925.
+LaTeX Info: Redefining \% on input line 925.
 [8]
 chapter 4.
 
-LaTeX Warning: Citation `ref-silveira_mixedeffects_2023' on page 9 undefined on input line 902.
-
-
 LaTeX Warning: Citation `ref-silveira_mixedeffects_2023' on page 9 undefined on input line 931.
 
-LaTeX Info: Redefining \. on input line 940.
-LaTeX Info: Redefining \% on input line 940.
+
+LaTeX Warning: Citation `ref-silveira_mixedeffects_2023' on page 9 undefined on input line 960.
+
+LaTeX Info: Redefining \. on input line 969.
+LaTeX Info: Redefining \% on input line 969.
 [9
 
 
 ]
-LaTeX Info: Redefining \. on input line 985.
-LaTeX Info: Redefining \% on input line 985.
+LaTeX Info: Redefining \. on input line 1014.
+LaTeX Info: Redefining \% on input line 1014.
 [10]
-LaTeX Info: Redefining \. on input line 1046.
-LaTeX Info: Redefining \% on input line 1046.
+LaTeX Info: Redefining \. on input line 1075.
+LaTeX Info: Redefining \% on input line 1075.
 [11]
-LaTeX Info: Redefining \. on input line 1087.
-LaTeX Info: Redefining \% on input line 1087.
+LaTeX Info: Redefining \. on input line 1116.
+LaTeX Info: Redefining \% on input line 1116.
 [12]
-LaTeX Info: Redefining \. on input line 1090.
-LaTeX Info: Redefining \% on input line 1090.
+LaTeX Info: Redefining \. on input line 1119.
+LaTeX Info: Redefining \% on input line 1119.
 [13]
 chapter 5.
-LaTeX Info: Redefining \. on input line 1148.
-LaTeX Info: Redefining \% on input line 1148.
+LaTeX Info: Redefining \. on input line 1177.
+LaTeX Info: Redefining \% on input line 1177.
 [14
 
 
 ]
 File: 05-resultados_files/figure-pdf/fig-1-1.pdf Graphic file (type pdf)
 <use 05-resultados_files/figure-pdf/fig-1-1.pdf>
-LaTeX Info: Redefining \. on input line 1184.
-LaTeX Info: Redefining \% on input line 1184.
+LaTeX Info: Redefining \. on input line 1213.
+LaTeX Info: Redefining \% on input line 1213.
 [15]
 File: 05-resultados_files/figure-pdf/bivariado2-1.pdf Graphic file (type pdf)
 <use 05-resultados_files/figure-pdf/bivariado2-1.pdf>
-LaTeX Info: Redefining \. on input line 1210.
-LaTeX Info: Redefining \% on input line 1210.
-[16]
 LaTeX Info: Redefining \. on input line 1239.
 LaTeX Info: Redefining \% on input line 1239.
+[16]
+LaTeX Info: Redefining \. on input line 1268.
+LaTeX Info: Redefining \% on input line 1268.
 [17]
 File: 05-resultados_files/figure-pdf/bivariado3-1.pdf Graphic file (type pdf)
 <use 05-resultados_files/figure-pdf/bivariado3-1.pdf>
 
-Overfull \hbox (91.28387pt too wide) in alignment at lines 1282--1290
+Overfull \hbox (91.28387pt too wide) in alignment at lines 1311--1319
  [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (357.6119pt too wide) in alignment at lines 1290--1387
+Overfull \hbox (357.6119pt too wide) in alignment at lines 1319--1416
  [] [] [] [] [] [] [] 
  []
 
-LaTeX Info: Redefining \. on input line 1387.
-LaTeX Info: Redefining \% on input line 1387.
+LaTeX Info: Redefining \. on input line 1416.
+LaTeX Info: Redefining \% on input line 1416.
 [18]
 
 Package longtable Warning: Column widths have changed
-(longtable)                in table 5.2 on input line 1387.
+(longtable)                in table 5.2 on input line 1416.
 
-LaTeX Info: Redefining \. on input line 1387.
-LaTeX Info: Redefining \% on input line 1387.
+LaTeX Info: Redefining \. on input line 1416.
+LaTeX Info: Redefining \% on input line 1416.
 [19]
-LaTeX Info: Redefining \. on input line 1387.
-LaTeX Info: Redefining \% on input line 1387.
+LaTeX Info: Redefining \. on input line 1416.
+LaTeX Info: Redefining \% on input line 1416.
 [20]
-LaTeX Info: Redefining \. on input line 1483.
-LaTeX Info: Redefining \% on input line 1483.
+LaTeX Info: Redefining \. on input line 1512.
+LaTeX Info: Redefining \% on input line 1512.
 [21]
-LaTeX Info: Redefining \. on input line 1483.
-LaTeX Info: Redefining \% on input line 1483.
+LaTeX Info: Redefining \. on input line 1512.
+LaTeX Info: Redefining \% on input line 1512.
 [22]
-LaTeX Info: Redefining \. on input line 1494.
-LaTeX Info: Redefining \% on input line 1494.
+LaTeX Info: Redefining \. on input line 1523.
+LaTeX Info: Redefining \% on input line 1523.
 [23]
 chapter 6.
 
-LaTeX Warning: Citation `ref-enders_centering_2007' on page 24 undefined on input line 1504.
+LaTeX Warning: Citation `ref-enders_centering_2007' on page 24 undefined on input line 1533.
 
 
-LaTeX Warning: Citation `ref-_confianza_2024' on page 24 undefined on input line 1509.
+LaTeX Warning: Citation `ref-_confianza_2024' on page 24 undefined on input line 1538.
 
 
-LaTeX Warning: Citation `ref-_essentials_2017' on page 24 undefined on input line 1518.
+LaTeX Warning: Citation `ref-_essentials_2017' on page 24 undefined on input line 1547.
 
 
-LaTeX Warning: Citation `ref-_essentials_2017' on page 24 undefined on input line 1525.
+LaTeX Warning: Citation `ref-_essentials_2017' on page 24 undefined on input line 1554.
 
 
-LaTeX Warning: Citation `ref-_confianza_2024' on page 24 undefined on input line 1533.
+LaTeX Warning: Citation `ref-_confianza_2024' on page 24 undefined on input line 1562.
 
-LaTeX Info: Redefining \. on input line 1538.
-LaTeX Info: Redefining \% on input line 1538.
+LaTeX Info: Redefining \. on input line 1567.
+LaTeX Info: Redefining \% on input line 1567.
 [24
 
 
 ]
 
-LaTeX Warning: Citation `ref-kim_social_2021' on page 25 undefined on input line 1545.
+LaTeX Warning: Citation `ref-kim_social_2021' on page 25 undefined on input line 1574.
 
 
-LaTeX Warning: Citation `ref-molina_repensando_2022' on page 25 undefined on input line 1549.
+LaTeX Warning: Citation `ref-molina_repensando_2022' on page 25 undefined on input line 1578.
 
 
-LaTeX Warning: Citation `ref-_cohesion_2022' on page 25 undefined on input line 1557.
+LaTeX Warning: Citation `ref-_cohesion_2022' on page 25 undefined on input line 1586.
 
 
-LaTeX Warning: Citation `ref-_cohesion_2022' on page 25 undefined on input line 1568.
+LaTeX Warning: Citation `ref-_cohesion_2022' on page 25 undefined on input line 1597.
 
 
-LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 25 undefined on input line 1582.
+LaTeX Warning: Citation `ref-ministeriodedesarrollosocialyfamilia_informe_2020' on page 25 undefined on input line 1611.
 
-LaTeX Info: Redefining \. on input line 1592.
-LaTeX Info: Redefining \% on input line 1592.
+LaTeX Info: Redefining \. on input line 1621.
+LaTeX Info: Redefining \% on input line 1621.
 [25]
-LaTeX Info: Redefining \. on input line 1595.
-LaTeX Info: Redefining \% on input line 1595.
+LaTeX Info: Redefining \. on input line 1624.
+LaTeX Info: Redefining \% on input line 1624.
 [26]
 chapter 7.
-LaTeX Info: Redefining \. on input line 1597.
-LaTeX Info: Redefining \% on input line 1597.
+LaTeX Info: Redefining \. on input line 1626.
+LaTeX Info: Redefining \% on input line 1626.
 [27
 
 
 ]
 chapter A.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1606--1607
+Underfull \hbox (badness 10000) in paragraph at lines 1635--1636
 
  []
 
-LaTeX Info: Redefining \. on input line 1608.
-LaTeX Info: Redefining \% on input line 1608.
+LaTeX Info: Redefining \. on input line 1637.
+LaTeX Info: Redefining \% on input line 1637.
 [28
 
 
@@ -2285,879 +2285,879 @@ LaTeX Info: Redefining \% on input line 1608.
 
 ]
 chapter B.
-LaTeX Info: Redefining \. on input line 1617.
-LaTeX Info: Redefining \% on input line 1617.
+LaTeX Info: Redefining \. on input line 1646.
+LaTeX Info: Redefining \% on input line 1646.
 [29
 
 
 ]
 chapter C.
 LaTeX Font Info:    Font shape `TU/TeXGyreCursor(0)/m/n' will be
-(Font)              scaled to size 12.94958pt on input line 1620.
-LaTeX Info: Redefining \. on input line 1633.
-LaTeX Info: Redefining \% on input line 1633.
+(Font)              scaled to size 12.94958pt on input line 1649.
+LaTeX Info: Redefining \. on input line 1662.
+LaTeX Info: Redefining \% on input line 1662.
 [30
 
 
 ]
 chapter D.
-LaTeX Info: Redefining \. on input line 1671.
-LaTeX Info: Redefining \% on input line 1671.
+LaTeX Info: Redefining \. on input line 1700.
+LaTeX Info: Redefining \% on input line 1700.
 [31
 
 
 ]
 LaTeX Font Info:    Font shape `TU/TeXGyreCursor(0)/b/n' will be
-(Font)              scaled to size 12.35706pt on input line 1686.
-LaTeX Info: Redefining \. on input line 1695.
-LaTeX Info: Redefining \% on input line 1695.
+(Font)              scaled to size 12.35706pt on input line 1715.
+LaTeX Info: Redefining \. on input line 1724.
+LaTeX Info: Redefining \% on input line 1724.
 [32]
 chapter E.
 
-Overfull \hbox (3.16292pt too wide) in paragraph at lines 1708--1714
+Overfull \hbox (3.16292pt too wide) in paragraph at lines 1737--1743
 []\TU/TeXGyreTermes(0)/m/n/12 Los índices de participación organizacional (\TU/TeXGyreCursor(0)/m/n/12 c05_total\TU/TeXGyreTermes(0)/m/n/12 ) y trato digno (\TU/TeXGyreCursor(0)/m/n/12 trato_digno\TU/TeXGyreTermes(0)/m/n/12 )
  []
 
 
-Underfull \vbox (badness 2469) detected at line 1748
+Underfull \vbox (badness 2469) detected at line 1777
  []
 
-LaTeX Info: Redefining \. on input line 1748.
-LaTeX Info: Redefining \% on input line 1748.
+LaTeX Info: Redefining \. on input line 1777.
+LaTeX Info: Redefining \% on input line 1777.
 [33
 
 
 ]
-LaTeX Info: Redefining \. on input line 1772.
-LaTeX Info: Redefining \% on input line 1772.
+LaTeX Info: Redefining \. on input line 1801.
+LaTeX Info: Redefining \% on input line 1801.
 [34]
-LaTeX Info: Redefining \. on input line 1774.
-LaTeX Info: Redefining \% on input line 1774.
+LaTeX Info: Redefining \. on input line 1803.
+LaTeX Info: Redefining \% on input line 1803.
 [35]
 chapter F.
-LaTeX Info: Redefining \. on input line 1807.
-LaTeX Info: Redefining \% on input line 1807.
+LaTeX Info: Redefining \. on input line 1836.
+LaTeX Info: Redefining \% on input line 1836.
 [36
 
 
 ]
-LaTeX Info: Redefining \. on input line 1809.
-LaTeX Info: Redefining \% on input line 1809.
+LaTeX Info: Redefining \. on input line 1838.
+LaTeX Info: Redefining \% on input line 1838.
 [37]
 chapter G.
 
-Underfull \vbox (badness 2818) detected at line 1909
+Underfull \vbox (badness 2818) detected at line 1938
  []
 
-LaTeX Info: Redefining \. on input line 1909.
-LaTeX Info: Redefining \% on input line 1909.
+LaTeX Info: Redefining \. on input line 1938.
+LaTeX Info: Redefining \% on input line 1938.
 [38
 
 
 ]
-Underfull \vbox (badness 10000) detected at line 1909
+Underfull \vbox (badness 10000) detected at line 1938
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1909
+Underfull \vbox (badness 10000) detected at line 1938
  []
 
-LaTeX Info: Redefining \. on input line 1909.
-LaTeX Info: Redefining \% on input line 1909.
+LaTeX Info: Redefining \. on input line 1938.
+LaTeX Info: Redefining \% on input line 1938.
 [39]
-Underfull \vbox (badness 10000) detected at line 1909
+Underfull \vbox (badness 10000) detected at line 1938
  []
 
 
-Underfull \vbox (badness 10000) detected at line 1909
+Underfull \vbox (badness 10000) detected at line 1938
  []
 
-LaTeX Info: Redefining \. on input line 1909.
-LaTeX Info: Redefining \% on input line 1909.
+LaTeX Info: Redefining \. on input line 1938.
+LaTeX Info: Redefining \% on input line 1938.
 [40]
-LaTeX Info: Redefining \. on input line 1955.
-LaTeX Info: Redefining \% on input line 1955.
+LaTeX Info: Redefining \. on input line 1984.
+LaTeX Info: Redefining \% on input line 1984.
 [41]
-LaTeX Info: Redefining \. on input line 1991.
-LaTeX Info: Redefining \% on input line 1991.
+LaTeX Info: Redefining \. on input line 2020.
+LaTeX Info: Redefining \% on input line 2020.
 [42]
 chapter H.
-LaTeX Info: Redefining \. on input line 2029.
-LaTeX Info: Redefining \% on input line 2029.
+LaTeX Info: Redefining \. on input line 2058.
+LaTeX Info: Redefining \% on input line 2058.
 [43
 
 
 ]
-LaTeX Info: Redefining \. on input line 2031.
-LaTeX Info: Redefining \% on input line 2031.
+LaTeX Info: Redefining \. on input line 2060.
+LaTeX Info: Redefining \% on input line 2060.
 [44]
 chapter I.
 
-Underfull \vbox (badness 10000) detected at line 2060
+Underfull \vbox (badness 10000) detected at line 2089
  []
 
-LaTeX Info: Redefining \. on input line 2060.
-LaTeX Info: Redefining \% on input line 2060.
+LaTeX Info: Redefining \. on input line 2089.
+LaTeX Info: Redefining \% on input line 2089.
 [45
 
 
 ]
-LaTeX Info: Redefining \. on input line 2100.
-LaTeX Info: Redefining \% on input line 2100.
+LaTeX Info: Redefining \. on input line 2129.
+LaTeX Info: Redefining \% on input line 2129.
 [46]
 chapter J.
 
-Underfull \vbox (badness 1024) detected at line 2137
+Underfull \vbox (badness 1024) detected at line 2166
  []
 
-LaTeX Info: Redefining \. on input line 2137.
-LaTeX Info: Redefining \% on input line 2137.
+LaTeX Info: Redefining \. on input line 2166.
+LaTeX Info: Redefining \% on input line 2166.
 [47
 
 
 ]
-LaTeX Info: Redefining \. on input line 2153.
-LaTeX Info: Redefining \% on input line 2153.
+LaTeX Info: Redefining \. on input line 2182.
+LaTeX Info: Redefining \% on input line 2182.
 [48]
 chapter K.
-LaTeX Info: Redefining \. on input line 2203.
-LaTeX Info: Redefining \% on input line 2203.
+LaTeX Info: Redefining \. on input line 2232.
+LaTeX Info: Redefining \% on input line 2232.
 [49
 
 
 ]
-Overfull \hbox (39.4301pt too wide) in paragraph at lines 2203--2203
+Overfull \hbox (39.4301pt too wide) in paragraph at lines 2232--2232
 []  \TU/TeXGyreCursor(0)/m/n/12 var         n_missing n_excluded_only_by_var pct_excluded_of_total[] 
  []
 
 
-Underfull \vbox (badness 2903) detected at line 2230
+Underfull \vbox (badness 2903) detected at line 2259
  []
 
-LaTeX Info: Redefining \. on input line 2230.
-LaTeX Info: Redefining \% on input line 2230.
+LaTeX Info: Redefining \. on input line 2259.
+LaTeX Info: Redefining \% on input line 2259.
 [50]
-LaTeX Info: Redefining \. on input line 2249.
-LaTeX Info: Redefining \% on input line 2249.
+LaTeX Info: Redefining \. on input line 2278.
+LaTeX Info: Redefining \% on input line 2278.
 [51]
 chapter L.
-LaTeX Info: Redefining \. on input line 2327.
-LaTeX Info: Redefining \% on input line 2327.
+LaTeX Info: Redefining \. on input line 2356.
+LaTeX Info: Redefining \% on input line 2356.
 [52
 
 
 ]
-Underfull \vbox (badness 10000) detected at line 2327
+Underfull \vbox (badness 10000) detected at line 2356
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2327
+Underfull \vbox (badness 10000) detected at line 2356
  []
 
-LaTeX Info: Redefining \. on input line 2327.
-LaTeX Info: Redefining \% on input line 2327.
+LaTeX Info: Redefining \. on input line 2356.
+LaTeX Info: Redefining \% on input line 2356.
 [53]
-Overfull \hbox (140.43687pt too wide) in paragraph at lines 2343--2343
+Overfull \hbox (140.43687pt too wide) in paragraph at lines 2372--2372
 []   \TU/TeXGyreCursor(0)/m/n/12 idencuesta ola   c05_total c05_total_within c05_total_between c05_total_grand[] 
  []
 
 
-Overfull \hbox (36.84042pt too wide) in paragraph at lines 2343--2343
+Overfull \hbox (36.84042pt too wide) in paragraph at lines 2372--2372
 []        \TU/TeXGyreCursor(0)/m/n/12 <dbl> <fct>     <dbl>            <dbl>             <dbl>           <dbl>[] 
  []
 
 
-Overfull \hbox (0.58159pt too wide) in paragraph at lines 2343--2343
+Overfull \hbox (0.58159pt too wide) in paragraph at lines 2372--2372
 [] \TU/TeXGyreCursor(0)/m/n/12 3    1101011 Ola 3        12            0.571              11.4           -
  []
 
 
-Overfull \hbox (26.48079pt too wide) in paragraph at lines 2343--2343
+Overfull \hbox (26.48079pt too wide) in paragraph at lines 2372--2372
 [] \TU/TeXGyreCursor(0)/m/n/12 6    1101011 Ola 6        18            6.57               11.4            1.86[] 
  []
 
 
-Overfull \hbox (29.07071pt too wide) in paragraph at lines 2343--2343
+Overfull \hbox (29.07071pt too wide) in paragraph at lines 2372--2372
 []\TU/TeXGyreCursor(0)/m/n/12 10    1101012 Ola 3        26           10.9                15.1            9.86[] 
  []
 
-LaTeX Info: Redefining \. on input line 2345.
-LaTeX Info: Redefining \% on input line 2345.
+LaTeX Info: Redefining \. on input line 2374.
+LaTeX Info: Redefining \% on input line 2374.
 [54]
 chapter M.
 
-Underfull \vbox (badness 1052) detected at line 2382
+Underfull \vbox (badness 1052) detected at line 2411
  []
 
-LaTeX Info: Redefining \. on input line 2382.
-LaTeX Info: Redefining \% on input line 2382.
+LaTeX Info: Redefining \. on input line 2411.
+LaTeX Info: Redefining \% on input line 2411.
 [55
 
 
 ]
-LaTeX Info: Redefining \. on input line 2388.
-LaTeX Info: Redefining \% on input line 2388.
+LaTeX Info: Redefining \. on input line 2417.
+LaTeX Info: Redefining \% on input line 2417.
 [56]
 chapter N.
-LaTeX Info: Redefining \. on input line 2416.
-LaTeX Info: Redefining \% on input line 2416.
+LaTeX Info: Redefining \. on input line 2445.
+LaTeX Info: Redefining \% on input line 2445.
 [57
 
 
 ]
 chapter \~N.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2421--2422
+Underfull \hbox (badness 10000) in paragraph at lines 2450--2451
 
  []
 
 
-Overfull \vbox (0.70049pt too high) detected at line 2513
+Overfull \vbox (0.70049pt too high) detected at line 2542
  []
 
-LaTeX Info: Redefining \. on input line 2513.
-LaTeX Info: Redefining \% on input line 2513.
+LaTeX Info: Redefining \. on input line 2542.
+LaTeX Info: Redefining \% on input line 2542.
 [58
 
 
 ]
-Underfull \vbox (badness 10000) detected at line 2513
+Underfull \vbox (badness 10000) detected at line 2542
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2513
+Underfull \vbox (badness 10000) detected at line 2542
  []
 
-LaTeX Info: Redefining \. on input line 2513.
-LaTeX Info: Redefining \% on input line 2513.
+LaTeX Info: Redefining \. on input line 2542.
+LaTeX Info: Redefining \% on input line 2542.
 [59]
-Underfull \vbox (badness 10000) detected at line 2513
+Underfull \vbox (badness 10000) detected at line 2542
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2513
+Underfull \vbox (badness 10000) detected at line 2542
  []
 
-LaTeX Info: Redefining \. on input line 2513.
-LaTeX Info: Redefining \% on input line 2513.
+LaTeX Info: Redefining \. on input line 2542.
+LaTeX Info: Redefining \% on input line 2542.
 [60]
-LaTeX Info: Redefining \. on input line 2515.
-LaTeX Info: Redefining \% on input line 2515.
+LaTeX Info: Redefining \. on input line 2544.
+LaTeX Info: Redefining \% on input line 2544.
 [61]
 chapter O.
-LaTeX Info: Redefining \. on input line 2524.
-LaTeX Info: Redefining \% on input line 2524.
+LaTeX Info: Redefining \. on input line 2553.
+LaTeX Info: Redefining \% on input line 2553.
 [62
 
 
 ]
 chapter P.
-LaTeX Info: Redefining \. on input line 2546.
-LaTeX Info: Redefining \% on input line 2546.
+LaTeX Info: Redefining \. on input line 2575.
+LaTeX Info: Redefining \% on input line 2575.
 [63
 
 
 ]
 chapter Q.
 
-Overfull \hbox (10.94125pt too wide) in paragraph at lines 2578--2578
+Overfull \hbox (10.94125pt too wide) in paragraph at lines 2607--2607
 []   \TU/TeXGyreCursor(0)/m/n/12 0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15[] 
  []
 
 
-Overfull \hbox (73.09914pt too wide) in paragraph at lines 2578--2578
+Overfull \hbox (73.09914pt too wide) in paragraph at lines 2607--2607
 []\TU/TeXGyreCursor(0)/m/n/12 5951    2   10  179   69  181  308  398  489 1139  645  592  658  352  189  375[] 
  []
 
-LaTeX Info: Redefining \. on input line 2578.
-LaTeX Info: Redefining \% on input line 2578.
+LaTeX Info: Redefining \. on input line 2607.
+LaTeX Info: Redefining \% on input line 2607.
 [64
 
 
 ]
-Underfull \vbox (badness 10000) detected at line 2637
+Underfull \vbox (badness 10000) detected at line 2666
  []
 
-LaTeX Info: Redefining \. on input line 2637.
-LaTeX Info: Redefining \% on input line 2637.
+LaTeX Info: Redefining \. on input line 2666.
+LaTeX Info: Redefining \% on input line 2666.
 [65]
-Overfull \vbox (1.79427pt too high) detected at line 2718
+Overfull \vbox (1.79427pt too high) detected at line 2747
  []
 
-LaTeX Info: Redefining \. on input line 2718.
-LaTeX Info: Redefining \% on input line 2718.
+LaTeX Info: Redefining \. on input line 2747.
+LaTeX Info: Redefining \% on input line 2747.
 [66]
-Underfull \vbox (badness 10000) detected at line 2761
+Underfull \vbox (badness 10000) detected at line 2790
  []
 
 
-Overfull \vbox (2.25386pt too high) detected at line 2761
+Overfull \vbox (2.25386pt too high) detected at line 2790
  []
 
-LaTeX Info: Redefining \. on input line 2761.
-LaTeX Info: Redefining \% on input line 2761.
+LaTeX Info: Redefining \. on input line 2790.
+LaTeX Info: Redefining \% on input line 2790.
 [67]
-Underfull \vbox (badness 10000) detected at line 2761
+Underfull \vbox (badness 10000) detected at line 2790
  []
 
 
-Underfull \vbox (badness 10000) detected at line 2761
+Underfull \vbox (badness 10000) detected at line 2790
  []
 
-LaTeX Info: Redefining \. on input line 2761.
-LaTeX Info: Redefining \% on input line 2761.
+LaTeX Info: Redefining \. on input line 2790.
+LaTeX Info: Redefining \% on input line 2790.
 [68]
 LaTeX Font Info:    Font shape `TU/TeXGyreTermes(0)/m/it' will be
-(Font)              scaled to size 8.4pt on input line 2767.
+(Font)              scaled to size 8.4pt on input line 2796.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2791--2792
+Underfull \hbox (badness 10000) in paragraph at lines 2820--2821
 
  []
 
-LaTeX Info: Redefining \. on input line 2795.
-LaTeX Info: Redefining \% on input line 2795.
+LaTeX Info: Redefining \. on input line 2824.
+LaTeX Info: Redefining \% on input line 2824.
 [69]
 chapter R.
 
-Overfull \hbox (65.32936pt too wide) in paragraph at lines 2823--2823
+Overfull \hbox (65.32936pt too wide) in paragraph at lines 2852--2852
 []      \TU/TeXGyreCursor(0)/m/n/12 Sin estudios   Educación Básica Educación Superior           Posgrado[] 
  []
 
-LaTeX Info: Redefining \. on input line 2825.
-LaTeX Info: Redefining \% on input line 2825.
+LaTeX Info: Redefining \. on input line 2854.
+LaTeX Info: Redefining \% on input line 2854.
 [70
 
 
 ]
 chapter S.
 
-Underfull \vbox (badness 10000) detected at line 2867
+Underfull \vbox (badness 10000) detected at line 2896
  []
 
-LaTeX Info: Redefining \. on input line 2867.
-LaTeX Info: Redefining \% on input line 2867.
+LaTeX Info: Redefining \. on input line 2896.
+LaTeX Info: Redefining \% on input line 2896.
 [71
 
 
 ]
 File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-clase-generacion-1.pdf Graphic file (type pdf)
 <use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-clase-generacion-1.pdf>
-LaTeX Info: Redefining \. on input line 2889.
-LaTeX Info: Redefining \% on input line 2889.
+LaTeX Info: Redefining \. on input line 2918.
+LaTeX Info: Redefining \% on input line 2918.
 [72]
-Underfull \vbox (badness 10000) detected at line 2925
+Underfull \vbox (badness 10000) detected at line 2954
  []
 
-LaTeX Info: Redefining \. on input line 2925.
-LaTeX Info: Redefining \% on input line 2925.
+LaTeX Info: Redefining \. on input line 2954.
+LaTeX Info: Redefining \% on input line 2954.
 [73]
 File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-1.pdf Graphic file (type pdf)
 <use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-1.pdf>
 
-Underfull \vbox (badness 2418) detected at line 2977
+Underfull \vbox (badness 2418) detected at line 3006
  []
 
-LaTeX Info: Redefining \. on input line 2977.
-LaTeX Info: Redefining \% on input line 2977.
+LaTeX Info: Redefining \. on input line 3006.
+LaTeX Info: Redefining \% on input line 3006.
 [74]
 File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-educacion-1.pdf Graphic file (type pdf)
 <use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-educacion-1.pdf>
-LaTeX Info: Redefining \. on input line 2981.
-LaTeX Info: Redefining \% on input line 2981.
+LaTeX Info: Redefining \. on input line 3010.
+LaTeX Info: Redefining \% on input line 3010.
 [75]
-LaTeX Info: Redefining \. on input line 3031.
-LaTeX Info: Redefining \% on input line 3031.
+LaTeX Info: Redefining \. on input line 3060.
+LaTeX Info: Redefining \% on input line 3060.
 [76]
 File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-corrupcion-1.pdf Graphic file (type pdf)
 <use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-corrupcion-1.pdf>
-LaTeX Info: Redefining \. on input line 3035.
-LaTeX Info: Redefining \% on input line 3035.
+LaTeX Info: Redefining \. on input line 3064.
+LaTeX Info: Redefining \% on input line 3064.
 [77]
-LaTeX Info: Redefining \. on input line 3085.
-LaTeX Info: Redefining \% on input line 3085.
+LaTeX Info: Redefining \. on input line 3114.
+LaTeX Info: Redefining \% on input line 3114.
 [78]
 File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-identificacion-1.pdf Graphic file (type pdf)
 <use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-identificacion-1.pdf>
-LaTeX Info: Redefining \. on input line 3089.
-LaTeX Info: Redefining \% on input line 3089.
+LaTeX Info: Redefining \. on input line 3118.
+LaTeX Info: Redefining \% on input line 3118.
 [79]
-LaTeX Info: Redefining \. on input line 3142.
-LaTeX Info: Redefining \% on input line 3142.
+LaTeX Info: Redefining \. on input line 3171.
+LaTeX Info: Redefining \% on input line 3171.
 [80]
 File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-generacion-1.pdf Graphic file (type pdf)
 <use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-generacion-1.pdf>
-LaTeX Info: Redefining \. on input line 3146.
-LaTeX Info: Redefining \% on input line 3146.
+LaTeX Info: Redefining \. on input line 3175.
+LaTeX Info: Redefining \% on input line 3175.
 [81]
-LaTeX Info: Redefining \. on input line 3198.
-LaTeX Info: Redefining \% on input line 3198.
+LaTeX Info: Redefining \. on input line 3227.
+LaTeX Info: Redefining \% on input line 3227.
 [82]
 File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-clase-1.pdf Graphic file (type pdf)
 <use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-temporal-clase-1.pdf>
-LaTeX Info: Redefining \. on input line 3202.
-LaTeX Info: Redefining \% on input line 3202.
+LaTeX Info: Redefining \. on input line 3231.
+LaTeX Info: Redefining \% on input line 3231.
 [83]
-LaTeX Info: Redefining \. on input line 3236.
-LaTeX Info: Redefining \% on input line 3236.
+LaTeX Info: Redefining \. on input line 3265.
+LaTeX Info: Redefining \% on input line 3265.
 [84]
 File: procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-distribucion-dv-1.pdf Graphic file (type pdf)
 <use procesamiento/descriptivo_bivariado_files/figure-pdf/grafico-distribucion-dv-1.pdf>
-LaTeX Info: Redefining \. on input line 3247.
-LaTeX Info: Redefining \% on input line 3247.
+LaTeX Info: Redefining \. on input line 3276.
+LaTeX Info: Redefining \% on input line 3276.
 [85]
 chapter T.
 
-Underfull \hbox (badness 10000) in paragraph at lines 3251--3252
+Underfull \hbox (badness 10000) in paragraph at lines 3280--3281
 
  []
 
 
-Overfull \vbox (0.70049pt too high) detected at line 3343
+Overfull \vbox (0.70049pt too high) detected at line 3372
  []
 
-LaTeX Info: Redefining \. on input line 3343.
-LaTeX Info: Redefining \% on input line 3343.
+LaTeX Info: Redefining \. on input line 3372.
+LaTeX Info: Redefining \% on input line 3372.
 [86
 
 
 ]
-Underfull \vbox (badness 10000) detected at line 3343
+Underfull \vbox (badness 10000) detected at line 3372
  []
 
 
-Underfull \vbox (badness 10000) detected at line 3343
+Underfull \vbox (badness 10000) detected at line 3372
  []
 
-LaTeX Info: Redefining \. on input line 3343.
-LaTeX Info: Redefining \% on input line 3343.
+LaTeX Info: Redefining \. on input line 3372.
+LaTeX Info: Redefining \% on input line 3372.
 [87]
-Underfull \vbox (badness 10000) detected at line 3343
+Underfull \vbox (badness 10000) detected at line 3372
  []
 
 
-Underfull \vbox (badness 10000) detected at line 3343
+Underfull \vbox (badness 10000) detected at line 3372
  []
 
-LaTeX Info: Redefining \. on input line 3343.
-LaTeX Info: Redefining \% on input line 3343.
+LaTeX Info: Redefining \. on input line 3372.
+LaTeX Info: Redefining \% on input line 3372.
 [88]
-LaTeX Info: Redefining \. on input line 3345.
-LaTeX Info: Redefining \% on input line 3345.
+LaTeX Info: Redefining \. on input line 3374.
+LaTeX Info: Redefining \% on input line 3374.
 [89]
 chapter U.
-LaTeX Info: Redefining \. on input line 3360.
-LaTeX Info: Redefining \% on input line 3360.
+LaTeX Info: Redefining \. on input line 3389.
+LaTeX Info: Redefining \% on input line 3389.
 [90
 
 
 ]
 chapter V.
-LaTeX Info: Redefining \. on input line 3383.
-LaTeX Info: Redefining \% on input line 3383.
+LaTeX Info: Redefining \. on input line 3412.
+LaTeX Info: Redefining \% on input line 3412.
 [91
 
 
 ]
 chapter W.
-LaTeX Info: Redefining \. on input line 3418.
-LaTeX Info: Redefining \% on input line 3418.
+LaTeX Info: Redefining \. on input line 3447.
+LaTeX Info: Redefining \% on input line 3447.
 [92
 
 
 ]
-LaTeX Info: Redefining \. on input line 3441.
-LaTeX Info: Redefining \% on input line 3441.
+LaTeX Info: Redefining \. on input line 3470.
+LaTeX Info: Redefining \% on input line 3470.
 [93]
 chapter X.
 
-Overfull \hbox (42.02007pt too wide) in paragraph at lines 3488--3488
+Overfull \hbox (42.02007pt too wide) in paragraph at lines 3517--3517
 []  \TU/TeXGyreCursor(0)/m/n/12 raw_alpha std.alpha G6(smc) average_r S/N    ase mean   sd median_r[] 
  []
 
-LaTeX Info: Redefining \. on input line 3488.
-LaTeX Info: Redefining \% on input line 3488.
+LaTeX Info: Redefining \. on input line 3517.
+LaTeX Info: Redefining \% on input line 3517.
 [94
 
 
 ]
-Overfull \hbox (42.02007pt too wide) in paragraph at lines 3488--3488
+Overfull \hbox (42.02007pt too wide) in paragraph at lines 3517--3517
 []       \TU/TeXGyreCursor(0)/m/n/12 raw_alpha std.alpha G6(smc) average_r S/N alpha se var.r med.r[] 
  []
 
-LaTeX Info: Redefining \. on input line 3490.
-LaTeX Info: Redefining \% on input line 3490.
+LaTeX Info: Redefining \. on input line 3519.
+LaTeX Info: Redefining \% on input line 3519.
 [95]
 chapter Y.
-LaTeX Info: Redefining \. on input line 3532.
-LaTeX Info: Redefining \% on input line 3532.
+LaTeX Info: Redefining \. on input line 3561.
+LaTeX Info: Redefining \% on input line 3561.
 [96
 
 
 ]
-Overfull \hbox (39.43011pt too wide) in paragraph at lines 3577--3577
+Overfull \hbox (39.43011pt too wide) in paragraph at lines 3606--3606
 []\TU/TeXGyreCursor(0)/m/n/12 Linear mixed model fit by REML. t-tests use Satterthwaite[]s method [[] 
  []
 
-LaTeX Info: Redefining \. on input line 3577.
-LaTeX Info: Redefining \% on input line 3577.
+LaTeX Info: Redefining \. on input line 3606.
+LaTeX Info: Redefining \% on input line 3606.
 [97]
-LaTeX Info: Redefining \. on input line 3613.
-LaTeX Info: Redefining \% on input line 3613.
+LaTeX Info: Redefining \. on input line 3642.
+LaTeX Info: Redefining \% on input line 3642.
 [98]
-Overfull \hbox (39.43011pt too wide) in paragraph at lines 3660--3660
+Overfull \hbox (39.43011pt too wide) in paragraph at lines 3689--3689
 []\TU/TeXGyreCursor(0)/m/n/12 Linear mixed model fit by REML. t-tests use Satterthwaite[]s method [[] 
  []
 
 
-Overfull \hbox (75.6889pt too wide) in paragraph at lines 3660--3660
+Overfull \hbox (75.6889pt too wide) in paragraph at lines 3689--3689
 []\TU/TeXGyreCursor(0)/m/n/12 Formula: c05_total ~ c38_within + m0_edad_within + trato_digno_within +[] 
  []
 
 
-Overfull \hbox (5.76123pt too wide) in paragraph at lines 3660--3660
+Overfull \hbox (5.76123pt too wide) in paragraph at lines 3689--3689
 []\TU/TeXGyreCursor(0)/m/n/12 (Intercept)          17.91454    0.68170 1306.92084  26.279  < 2e-
  []
 
 
-Overfull \hbox (49.78983pt too wide) in paragraph at lines 3660--3660
+Overfull \hbox (49.78983pt too wide) in paragraph at lines 3689--3689
 []\TU/TeXGyreCursor(0)/m/n/12 m0_edad_within        0.07160    0.02759 6714.74232   2.596 0.009462 **[] 
  []
 
 
-Overfull \hbox (21.3007pt too wide) in paragraph at lines 3660--3660
+Overfull \hbox (21.3007pt too wide) in paragraph at lines 3689--3689
 []\TU/TeXGyreCursor(0)/m/n/12 trato_digno_within    0.16695    0.01607 6694.49090  10.390  < 2e-
  []
 
 
-Overfull \hbox (3.17133pt too wide) in paragraph at lines 3660--3660
+Overfull \hbox (3.17133pt too wide) in paragraph at lines 3689--3689
 []\TU/TeXGyreCursor(0)/m/n/12 c32_within            0.67356    0.10020 6712.24743   6.722 1.94e-
  []
 
-LaTeX Info: Redefining \. on input line 3660.
-LaTeX Info: Redefining \% on input line 3660.
+LaTeX Info: Redefining \. on input line 3689.
+LaTeX Info: Redefining \% on input line 3689.
 [99]
-Overfull \hbox (67.91933pt too wide) in paragraph at lines 3660--3660
+Overfull \hbox (67.91933pt too wide) in paragraph at lines 3689--3689
 []            \TU/TeXGyreCursor(0)/m/n/12 (Intr) c38_wt m0_dd_ trt_d_ c15_wt c32_wt Gnrcnb GnrcnX GnrcnY[] 
  []
 
 
-Overfull \hbox (29.07047pt too wide) in paragraph at lines 3660--3660
+Overfull \hbox (29.07047pt too wide) in paragraph at lines 3689--3689
 []\TU/TeXGyreCursor(0)/m/n/12 GeneracionY -0.951 -0.002  0.006  0.003  0.001  0.000  0.920  0.907[] 
  []
 
 
-Overfull \hbox (78.2789pt too wide) in paragraph at lines 3660--3660
+Overfull \hbox (78.2789pt too wide) in paragraph at lines 3689--3689
 []\TU/TeXGyreCursor(0)/m/n/12 GeneracionZ -0.865 -0.001  0.007  0.004  0.000  0.001  0.837  0.826  0.823[] 
  []
 
-LaTeX Info: Redefining \. on input line 3683.
-LaTeX Info: Redefining \% on input line 3683.
+LaTeX Info: Redefining \. on input line 3712.
+LaTeX Info: Redefining \% on input line 3712.
 [100]
-Overfull \hbox (39.43011pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (39.43011pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 Linear mixed model fit by REML. t-tests use Satterthwaite[]s method [[] 
  []
 
 
-Overfull \hbox (109.35785pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (109.35785pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 c05_total ~ Generacion + egp4 + sexo + nedu + c38_between + m0_edad_between +[] 
  []
 
 
-Overfull \hbox (57.55948pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (57.55948pt too wide) in paragraph at lines 3780--3780
 []    \TU/TeXGyreCursor(0)/m/n/12 trato_digno_between + c15_between + c32_between + (1 | idencuesta)[] 
  []
 
 
-Overfull \hbox (23.89072pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (23.89072pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 (Intercept)                       22.85846    2.31757 1678.13589   9.863[] 
  []
 
-LaTeX Info: Redefining \. on input line 3751.
-LaTeX Info: Redefining \% on input line 3751.
+LaTeX Info: Redefining \. on input line 3780.
+LaTeX Info: Redefining \% on input line 3780.
 [101]
-Overfull \hbox (34.25027pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (34.25027pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 egp4Intermediate class (III+IV)   -0.58484    0.20258 5144.94466  -
  []
 
 
-Overfull \hbox (26.48053pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (26.48053pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 egp4Working class (V+VI+VII)      -0.93001    0.21333 4085.49098  -
  []
 
 
-Overfull \hbox (42.02013pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (42.02013pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 neduEducación Básica               0.96775    0.99689 5209.28213   0.971[] 
  []
 
 
-Overfull \hbox (47.19994pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (47.19994pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 neduEducación Superior             2.22082    1.01307 5138.59187   2.192[] 
  []
 
 
-Overfull \hbox (23.89073pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (23.89073pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 neduPosgrado                       3.78210    1.14220 5234.19866   3.311[] 
  []
 
 
-Overfull \hbox (31.66046pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (31.66046pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 m0_edad_between                    0.01469    0.02282 1355.67724   0.644[] 
  []
 
 
-Overfull \hbox (3.17131pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (3.17131pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 trato_digno_between               -0.30911    0.03007 1673.33013 -
  []
 
 
-Overfull \hbox (21.30081pt too wide) in paragraph at lines 3751--3751
+Overfull \hbox (21.30081pt too wide) in paragraph at lines 3780--3780
 []\TU/TeXGyreCursor(0)/m/n/12 c32_between                        1.22132    0.19988 1455.10459   6.110[] 
  []
 
-LaTeX Info: Redefining \. on input line 3751.
-LaTeX Info: Redefining \% on input line 3751.
+LaTeX Info: Redefining \. on input line 3780.
+LaTeX Info: Redefining \% on input line 3780.
 [102]
-LaTeX Info: Redefining \. on input line 3785.
-LaTeX Info: Redefining \% on input line 3785.
+LaTeX Info: Redefining \. on input line 3814.
+LaTeX Info: Redefining \% on input line 3814.
 [103]
-Overfull \hbox (39.43011pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (39.43011pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 Linear mixed model fit by REML. t-tests use Satterthwaite[]s method [[] 
  []
 
 
-Overfull \hbox (88.63849pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (88.63849pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 c05_total ~ c38_within + c38_between + m0_edad_within + m0_edad_between +[] 
  []
 
 
-Overfull \hbox (83.45865pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (83.45865pt too wide) in paragraph at lines 3897--3897
 []    \TU/TeXGyreCursor(0)/m/n/12 trato_digno_within + trato_digno_between + c15_within + c15_between +[] 
  []
 
 
-Overfull \hbox (26.48064pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (26.48064pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 (Intercept)                       23.19534    2.24435 1691.38645  10.335[] 
  []
 
 
-Overfull \hbox (29.07056pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (29.07056pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 m0_edad_within                     0.02996    0.04487 6776.19455   0.668[] 
  []
 
-LaTeX Info: Redefining \. on input line 3868.
-LaTeX Info: Redefining \% on input line 3868.
+LaTeX Info: Redefining \. on input line 3897.
+LaTeX Info: Redefining \% on input line 3897.
 [104]
-Overfull \hbox (31.66046pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (31.66046pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 m0_edad_between                    0.01239    0.02242 1349.07867   0.553[] 
  []
 
 
-Overfull \hbox (5.76125pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (5.76125pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 trato_digno_within                -0.06234    0.02062 6707.42538  -
  []
 
 
-Overfull \hbox (8.35115pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (8.35115pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 trato_digno_between               -0.17354    0.03049 1864.15306  -
  []
 
 
-Overfull \hbox (18.7109pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (18.7109pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 c32_within                         0.34086    0.08319 6692.83837   4.097[] 
  []
 
 
-Overfull \hbox (21.30081pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (21.30081pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 c32_between                        1.15955    0.19528 1423.01754   5.938[] 
  []
 
 
-Overfull \hbox (34.25027pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (34.25027pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 egp4Intermediate class (III+IV)   -0.41910    0.17783 6272.46202  -
  []
 
 
-Overfull \hbox (26.48053pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (26.48053pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 egp4Working class (V+VI+VII)      -0.81194    0.19045 5045.76586  -
  []
 
 
-Overfull \hbox (10.94118pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 olaOla 2                           1.40949    0.29225 6670.48881   4.823[] 
  []
 
 
-Overfull \hbox (13.5311pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (13.5311pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 olaOla 3                           3.46335    0.22295 6726.08095  15.534[] 
  []
 
 
-Overfull \hbox (10.94118pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 olaOla 6                           0.05322    0.38290 6790.11050   0.139[] 
  []
 
 
-Overfull \hbox (10.94118pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 olaOla 7                           2.24169    0.41808 6741.10640   5.362[] 
  []
 
-LaTeX Info: Redefining \. on input line 3868.
-LaTeX Info: Redefining \% on input line 3868.
+LaTeX Info: Redefining \. on input line 3897.
+LaTeX Info: Redefining \% on input line 3897.
 [105]
-Overfull \hbox (42.02013pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (42.02013pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 neduEducación Básica               0.65887    0.87295 6452.53289   0.755[] 
  []
 
 
-Overfull \hbox (47.19994pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (47.19994pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 neduEducación Superior             1.65782    0.88813 6366.28699   1.867[] 
  []
 
 
-Overfull \hbox (23.89073pt too wide) in paragraph at lines 3868--3868
+Overfull \hbox (23.89073pt too wide) in paragraph at lines 3897--3897
 []\TU/TeXGyreCursor(0)/m/n/12 neduPosgrado                       2.90875    1.00060 6427.27175   2.907[] 
  []
 
-LaTeX Info: Redefining \. on input line 3868.
-LaTeX Info: Redefining \% on input line 3868.
+LaTeX Info: Redefining \. on input line 3897.
+LaTeX Info: Redefining \% on input line 3897.
 [106]
-Overfull \hbox (39.43011pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (39.43011pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 Linear mixed model fit by REML. t-tests use Satterthwaite[]s method [[] 
  []
 
 
-Overfull \hbox (88.63849pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (88.63849pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 c05_total ~ c38_within + c38_between + m0_edad_within + m0_edad_between +[] 
  []
 
 
-Overfull \hbox (83.45865pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (83.45865pt too wide) in paragraph at lines 4016--4016
 []    \TU/TeXGyreCursor(0)/m/n/12 trato_digno_within + trato_digno_between + c15_within + c15_between +[] 
  []
 
-LaTeX Info: Redefining \. on input line 3987.
-LaTeX Info: Redefining \% on input line 3987.
+LaTeX Info: Redefining \. on input line 4016.
+LaTeX Info: Redefining \% on input line 4016.
 [107]
-Overfull \hbox (26.48064pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (26.48064pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 (Intercept)                       23.01684    2.24388 1704.72349  10.258[] 
  []
 
 
-Overfull \hbox (31.66046pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (31.66046pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 m0_edad_between                    0.01410    0.02240 1347.57366   0.630[] 
  []
 
 
-Overfull \hbox (5.76125pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (5.76125pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 trato_digno_within                -0.05480    0.02054 6702.88804  -
  []
 
 
-Overfull \hbox (8.35115pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (8.35115pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 trato_digno_between               -0.19894    0.03186 2107.90889  -
  []
 
-LaTeX Info: Redefining \. on input line 3987.
-LaTeX Info: Redefining \% on input line 3987.
+LaTeX Info: Redefining \. on input line 4016.
+LaTeX Info: Redefining \% on input line 4016.
 [108]
-Overfull \hbox (18.7109pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (18.7109pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 c32_within                         0.33986    0.08271 6634.05149   4.109[] 
  []
 
 
-Overfull \hbox (21.30081pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (21.30081pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 c32_between                        1.16194    0.19509 1420.36970   5.956[] 
  []
 
 
-Overfull \hbox (34.25027pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (34.25027pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 egp4Intermediate class (III+IV)   -0.42644    0.18091 5748.15661  -
  []
 
 
-Overfull \hbox (26.48053pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (26.48053pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 egp4Working class (V+VI+VII)      -0.86418    0.19350 4648.18171  -
  []
 
 
-Overfull \hbox (10.94118pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 olaOla 2                           1.52612    0.29228 6607.07888   5.221[] 
  []
 
 
-Overfull \hbox (13.5311pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (13.5311pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 olaOla 3                           3.53919    0.25682 3938.93198  13.781[] 
  []
 
 
-Overfull \hbox (10.94118pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 olaOla 6                           0.51575    0.54143 1402.88000   0.953[] 
  []
 
 
-Overfull \hbox (10.94118pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (10.94118pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 olaOla 7                           2.64249    0.59110 1406.91545   4.470[] 
  []
 
 
-Overfull \hbox (42.02013pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (42.02013pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 neduEducación Básica               0.70673    0.86069 6255.41871   0.821[] 
  []
 
 
-Overfull \hbox (47.19994pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (47.19994pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 neduEducación Superior             1.69843    0.87596 6191.11725   1.939[] 
  []
 
 
-Overfull \hbox (23.89073pt too wide) in paragraph at lines 3987--3987
+Overfull \hbox (23.89073pt too wide) in paragraph at lines 4016--4016
 []\TU/TeXGyreCursor(0)/m/n/12 neduPosgrado                       2.96935    0.99103 6317.82652   2.996[] 
  []
 
-LaTeX Info: Redefining \. on input line 3987.
-LaTeX Info: Redefining \% on input line 3987.
+LaTeX Info: Redefining \. on input line 4016.
+LaTeX Info: Redefining \% on input line 4016.
 [109]
-LaTeX Info: Redefining \. on input line 4000.
-LaTeX Info: Redefining \% on input line 4000.
+LaTeX Info: Redefining \. on input line 4029.
+LaTeX Info: Redefining \% on input line 4029.
 [110]
-LaTeX Info: Redefining \. on input line 4012.
-LaTeX Info: Redefining \% on input line 4012.
+LaTeX Info: Redefining \. on input line 4041.
+LaTeX Info: Redefining \% on input line 4041.
 [111]
 chapter Z.
-LaTeX Info: Redefining \. on input line 4064.
-LaTeX Info: Redefining \% on input line 4064.
+LaTeX Info: Redefining \. on input line 4093.
+LaTeX Info: Redefining \% on input line 4093.
 [112
 
 
 ]
-Overfull \hbox (1476.83409pt too wide) in paragraph at lines 4082--4082
+Overfull \hbox (1476.83409pt too wide) in paragraph at lines 4111--4111
 []\TU/TeXGyreCursor(0)/m/n/12 test5_base_edad: c05_total ~ c38_within + c38_between + m0_edad_within + m0_edad_between + trato_digno_within + trato_digno_between + c15_within + c15_between + c32_within + c32_between + egp4 + Generacion + ola + sexo + nedu + (1 + m0_edad_within | idencuesta)[] 
  []
 
 
-Overfull \hbox (1619.27951pt too wide) in paragraph at lines 4082--4082
+Overfull \hbox (1619.27951pt too wide) in paragraph at lines 4111--4111
 []\TU/TeXGyreCursor(0)/m/n/12 test5_solo_corrupcion: c05_total ~ c38_within + c38_between + m0_edad_within + m0_edad_between + trato_digno_within + trato_digno_between + c15_within + c15_between + c32_within + c32_between + egp4 + Generacion + ola + sexo + nedu + (1 + m0_edad_within + c38_within | idencuesta)[] 
  []
 
 
-Overfull \hbox (1603.74002pt too wide) in paragraph at lines 4082--4082
+Overfull \hbox (1603.74002pt too wide) in paragraph at lines 4111--4111
 []\TU/TeXGyreCursor(0)/m/n/12 test5_solo_politica: c05_total ~ c38_within + c38_between + m0_edad_within + m0_edad_between + trato_digno_within + trato_digno_between + c15_within + c15_between + c32_within + c32_between + egp4 + Generacion + ola + sexo + nedu + (1 + m0_edad_within + c15_within | idencuesta)[] 
  []
 
-LaTeX Info: Redefining \. on input line 4082.
-LaTeX Info: Redefining \% on input line 4082.
+LaTeX Info: Redefining \. on input line 4111.
+LaTeX Info: Redefining \% on input line 4111.
 [113]
-Overfull \hbox (93.8184pt too wide) in paragraph at lines 4082--4082
+Overfull \hbox (93.8184pt too wide) in paragraph at lines 4111--4111
 []\TU/TeXGyreCursor(0)/m/n/12 test5_solo_corrupcion   34 47917 48154 -23924     47849 17.599  3  0.0005319[] 
  []
 
 
-Overfull \hbox (5.76122pt too wide) in paragraph at lines 4082--4082
+Overfull \hbox (5.76122pt too wide) in paragraph at lines 4111--4111
 []\TU/TeXGyreCursor(0)/m/n/12 test5_solo_politica     34 47932 48170 -23932     47864  0.000  0[] 
  []
 
-LaTeX Info: Redefining \. on input line 4084.
-LaTeX Info: Redefining \% on input line 4084.
+LaTeX Info: Redefining \. on input line 4113.
+LaTeX Info: Redefining \% on input line 4113.
 [114]
 chapter \GenericError {               }{LaTeX Error: Counter too large}{See the LaTeX manual or LaTeX Companion for explanation.}{You've lost some text.  Try typing  <return>  to proceed.\MessageBreak If that doesn't work, type  X <return>  to quit.}.
 
@@ -3167,7 +3167,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4085 between}
+l.4114 between}
                \label{exploraciuxf3n-de-interacciones-within-between}
 You've lost some text.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
