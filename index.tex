@@ -994,35 +994,36 @@ preparación del documento, visualización, exploración de los análisis y
 salidas de los modelos. En términos generales, el flujo de trabajo
 consistió en los siguientes pasos:
 
-Tratamiento de valores perdidos: Los códigos de no respuesta propios del
-instrumento (−999, −888, −777 y −666) fueron recodificados como valores
-perdidos del sistema (NA). La variable de confianza institucional (c38),
-disponible solo desde olas posteriores, fue imputada hacia atrás
-(backward fill) para recuperar observaciones en las Olas 1 y 2.
+\textbf{Tratamiento de valores perdidos}: Los códigos de no respuesta
+propios del instrumento (−999, −888, −777 y −666) fueron recodificados
+como valores perdidos del sistema (NA). La variable de confianza
+institucional (c38), disponible solo desde olas posteriores, fue
+imputada hacia atrás (backward fill) para recuperar observaciones en las
+Olas 1 y 2.
 
-Variables dependientes e independientes: El sentido de pertenencia,
-medido a partir de la variable c32\_01, fue tratado tanto de forma
-ordinal de cinco categorías (c32\_01\_ord) como continua para explorar
-diferentes posibles relaciones. La cohesión social vertical se construyó
-como la suma de nueve ítems ordinales (c05\_01 a c05\_09), dando lugar a
-un índice sumativo (c05\_total). El trato digno (trato\_digno) se
-construyó análogamente como la suma de tres ítems (c35\_01 a c35\_03).
-Ambos índices reportaron un nivel de consistencia interna adecuado
-mediante el alfa de Cronbach (\(\alpha_{\text{cohesión}} = 0.91\);
-\(\alpha_{\text{trato}} = 0.75\)). La percepción de corrupción se midió
-a partir de la variable c15, que evalúa la percepción en el país en una
-escala de 1 a 10 (donde valores más altos indican mayor percepción de
-corrupción).
+\textbf{Variables dependientes e independientes}: El sentido de
+pertenencia, medido a partir de la variable c32\_01, fue tratado tanto
+de forma ordinal de cinco categorías (c32\_01\_ord) como continua para
+explorar diferentes posibles relaciones. La cohesión social vertical se
+construyó como la suma de nueve ítems ordinales (c05\_01 a c05\_09),
+dando lugar a un índice sumativo (c05\_total). El trato digno
+(trato\_digno) se construyó análogamente como la suma de tres ítems
+(c35\_01 a c35\_03). Ambos índices reportaron un nivel de consistencia
+interna adecuado mediante el alfa de Cronbach
+(\(\alpha_{\text{cohesión}} = 0.91\); \(\alpha_{\text{trato}} = 0.75\)).
+La percepción de corrupción se midió a partir de la variable c15, que
+evalúa la percepción en el país en una escala de 1 a 10 (donde valores
+más altos indican mayor percepción de corrupción).
 
-Clase social: Se construyó siguiendo el esquema EGP de siete clases
-(Erikson-Goldthorpe-Portocarrero, egp7) mediante el paquete DIGCLASS, el
-cual requiere como insumos el código ocupacional en ISCO-88, la
-situación de empleo y el número de subordinados. Dado que ELSOC registró
-los códigos ocupacionales en distintas clasificaciones según la ola;
-ISCO-88 en la Ola 1 (ciuo88\_m03) e ISCO-08 en las Olas 3, 5 y 7
-(ciuo08\_m03), estos últimos fueron convertidos a ISCO-88 mediante la
-función isco08\_to\_isco88. Como la ocupación no se midió en todas las
-olas, los códigos ocupacionales, la relación de empleo (m07) y la
+\textbf{Clase social}: Se construyó siguiendo el esquema EGP de siete
+clases (Erikson-Goldthorpe-Portocarrero, egp7) mediante el paquete
+DIGCLASS, el cual requiere como insumos el código ocupacional en
+ISCO-88, la situación de empleo y el número de subordinados. Dado que
+ELSOC registró los códigos ocupacionales en distintas clasificaciones
+según la ola; ISCO-88 en la Ola 1 (ciuo88\_m03) e ISCO-08 en las Olas 3,
+5 y 7 (ciuo08\_m03), estos últimos fueron convertidos a ISCO-88 mediante
+la función isco08\_to\_isco88. Como la ocupación no se midió en todas
+las olas, los códigos ocupacionales, la relación de empleo (m07) y la
 condición de supervisor (m06) fueron propagados dentro de cada individuo
 primero hacia adelante y luego hacia atrás (fill down-up), bajo el
 supuesto de que la posición ocupacional es un atributo relativamente
@@ -1043,19 +1044,20 @@ esquema EGP convencional debido a la ausencia de un código ocupacional
 válido. Esta última categoría residual se construyó a partir de la
 variable de situación laboral actual (m02).
 
-Variables sociodemográficas: El sexo (m0\_sexo) fue recodificado como
-variable dicotómica (1 = Hombre, 2 = Mujer). El nivel educativo (m01)
-fue agrupado en cuatro categorías ordinales: sin estudios, educación
-básica (categorías 2--5), educación superior técnica o universitaria
-(categorías 6--9) y posgrado (categoría 10). La generación de
-pertenencia se derivó del año de nacimiento estimado a partir de la edad
-máxima registrada en el panel, clasificando a los individuos en las
-cohortes Silent (1930--1948), Baby Boom (1949--1968), Generación X
-(1969--1980), Millennial/Y (1981--1993) y Generación Z (1994--2010).
+\textbf{Variables sociodemográficas}: El sexo (m0\_sexo) fue
+recodificado como variable dicotómica (1 = Hombre, 2 = Mujer). El nivel
+educativo (m01) fue agrupado en cuatro categorías ordinales: sin
+estudios, educación básica (categorías 2--5), educación superior técnica
+o universitaria (categorías 6--9) y posgrado (categoría 10). La
+generación de pertenencia se derivó del año de nacimiento estimado a
+partir de la edad máxima registrada en el panel, clasificando a los
+individuos en las cohortes Silent (1930--1948), Baby Boom (1949--1968),
+Generación X (1969--1980), Millennial/Y (1981--1993) y Generación Z
+(1994--2010).
 
-Centrado de variables: Para los modelos multinivel se construyeron dos
-versiones de cada variable continua (c05\_total, c38, m0\_edad,
-trato\_digno, c15): una centrada en la media del individuo
+\textbf{Centrado de variables}: Para los modelos multinivel se
+construyeron dos versiones de cada variable continua (c05\_total, c38,
+m0\_edad, trato\_digno, c15): una centrada en la media del individuo
 (within-person centering) y otra centrada en la gran media muestral
 (grand-mean centering). Las variables que capturan características
 relativamente estables del individuo ---confianza institucional, trato
@@ -1065,9 +1067,9 @@ efectos entre individuos (between-person effects). La edad se centró en
 la media del individuo (within-person centering), capturando el efecto
 del envejecimiento a lo largo del panel.
 
-Especificación y ajuste de los modelos: La especificación de los modelos
-lineales mixtos (LMM) fue estimada con el paquete lme4. La variable
-dependiente en todos los modelos fue el índice de confianza
+\textbf{Especificación y ajuste de los modelos}: La especificación de
+los modelos lineales mixtos (LMM) fue estimada con el paquete lme4. La
+variable dependiente en todos los modelos fue el índice de confianza
 institucional (c05\_total).Se exploraron también efectos aleatorios para
 las variables con varianza intra-individual. Estas exploraciones
 específicas se encuentran detalladas en el archivo de análisis
@@ -1148,25 +1150,24 @@ contemplado en el modelo general.
 
 \begin{figure}
 
-\caption{\label{fig-bivariado}Figura 1. Cohesión social vertical por
-clase social y generación}
+\caption{\label{fig-1}Cohesión social vertical por clase social y
+generación}
 
 \centering{
 
-\pandocbounded{\includegraphics[keepaspectratio]{05-resultados_files/figure-pdf/fig-bivariado-1.pdf}}
+\pandocbounded{\includegraphics[keepaspectratio]{05-resultados_files/figure-pdf/fig-1-1.pdf}}
 
 }
 
 \end{figure}%
 
-La Figura~\ref{fig-bivariado} presenta un análisis bivariado que examina
-la media de la cohesión social vertical (eje Y) a través de cinco
-cohortes generacionales (Generation: Silent, Boom, X, Y, Z, en el eje
-X), segmentado o facetado por las distintas categorías del esquema de
-clase social EGP-7. Las barras verticales alrededor de cada punto
-representan los intervalos de confianza al 95\%, lo que permite evaluar
-la precisión de las estimaciones y la significancia visual de las
-diferencias.
+La figura presenta un análisis bivariado que examina la media de la
+cohesión social vertical (eje Y) a través de cinco cohortes
+generacionales (Generation: Silent, Boom, X, Y, Z, en el eje X),
+segmentado o facetado por las distintas categorías del esquema de clase
+social EGP-7. Las barras verticales alrededor de cada punto representan
+los intervalos de confianza al 95\%, lo que permite evaluar la precisión
+de las estimaciones y la significancia visual de las diferencias.
 
 En primer lugar, se observa un efecto generacional parcialmente
 consistente con la hipótesis H1, caracterizado por una tendencia
@@ -1197,13 +1198,50 @@ donde la generación Silent inicia con los niveles de cohesión más bajos
 (cercanos a 13 puntos), sube de forma sostenida hacia las generaciones
 Boomer, X e Y, y vuelve a contraerse con la llegada de la generación Z.
 
-\begin{figure}
+\begin{figure}[H]
 
-\caption{\label{fig-bivariado2}Gráficos del análisis Bivariado}
+\caption{Gráficos del análisis Bivariado}
 
-\centering{
+{\centering \includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{05-resultados_files/figure-pdf/bivariado2-1.pdf}
 
-\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{05-resultados_files/figure-pdf/fig-bivariado2-1.pdf}
+}
+
+\end{figure}%
+
+Aquellos individuos que perciben niveles bajos de corrupción reportan la
+media más alta en el índice de cohesión social vertical, rozando los 18
+puntos. Esta evaluación disminuye de manera progresiva a medida que la
+percepción transita hacia niveles intermedios, alcanzando su punto más
+deficiente en la categoría de alta corrupción, donde el indicador de
+cohesión se contrae fuertemente hasta situarse justo en el límite de los
+15 puntos.
+
+En cuanto al nivel educativo, se observa una tendencia lineal
+marcadamente ascendente que vincula el capital humano con la legitimidad
+del sistema. Los niveles más bajos de cohesión social vertical se
+concentran en el grupo de personas sin estudios, el cual se ubica por
+debajo de los 15 puntos de media. A partir de ese umbral, la valoración
+del lazo vertical experimenta un incremento constante y sucesivo al
+pasar por la educación básica y la educación superior, alcanzando su
+punto máximo e indiscutible en la población con estudios de posgrado,
+cuya media se posiciona en la cúspide de la escala al rozar los 20
+puntos.
+
+Finalmente, el comportamiento de la identificación nacional devela una
+relación directa y positiva con el orden institucional. Las personas que
+manifiestan un sentido de identidad nacional bajo presentan un deterioro
+evidente en su cohesión vertical, registrando puntuaciones por debajo de
+los 15 puntos. En contraposición, a medida que el arraigo y el sentido
+de pertenencia con el país se fortalecen hacia niveles intermedios y
+altos, la media de la cohesión social vertical experimenta un aumento
+sostenido, logrando superar con claridad la barrera de los 17 puntos en
+la categoría más alta.
+
+\begin{figure}[H]
+
+\caption{Gráficos del análisis Bivariado}
+
+{\centering \includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{05-resultados_files/figure-pdf/bivariado3-1.pdf}
 
 }
 
@@ -1226,22 +1264,7 @@ la clase trabajadora permanece en la base. La única divergencia
 relevante ocurre en la fase de recuperación post-pandemia (Olas 6 y 7),
 donde las cohortes más jóvenes (Y y Z) exhiben un repunte o pendiente de
 ascenso más pronunciado que la Generación X, sugiriendo una reactivación
-diferenciada.
-
-\begin{figure}
-
-\caption{\label{fig-bivariado3}Gráficos del análisis Bivariado}
-
-\centering{
-
-\includegraphics[width=1\linewidth,height=\textheight,keepaspectratio]{05-resultados_files/figure-pdf/fig-bivariado3-1.pdf}
-
-}
-
-\end{figure}%
-
-\subsection{Modelos de regresión
-multinivel.}\label{modelos-de-regresiuxf3n-multinivel.}
+diferenciada. \#\#\# Modelos de regresión multinivel.
 
 {
 

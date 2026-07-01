@@ -95,8 +95,8 @@ A partir de los datos descriptivos analizados, se observa una muestra caracteriz
 ### análisis bivariado.
 
 ```{r, echo=FALSE}
-#| label: fig-bivariado
-#| fig-cap: "Figura 1. Cohesión social vertical por clase social y generación"
+#| label: fig-1
+#| fig-cap: "Cohesión social vertical por clase social y generación"
 resumen_clase_gen <- data_f %>%
   # Filtramos para eliminar filas donde egp7 o Generacion sean NA
   filter(!is.na(egp7), !is.na(Generacion)) %>% 
@@ -125,14 +125,14 @@ resumen_clase_gen %>%
   theme(strip.text = element_text(size = 8))
 ```
 
-La @fig-bivariado presenta un análisis bivariado que examina la media de la cohesión social vertical (eje Y) a través de cinco cohortes generacionales (Generation: Silent, Boom, X, Y, Z, en el eje X), segmentado o facetado por las distintas categorías del esquema de clase social EGP-7. Las barras verticales alrededor de cada punto representan los intervalos de confianza al 95%, lo que permite evaluar la precisión de las estimaciones y la significancia visual de las diferencias.
+La figura presenta un análisis bivariado que examina la media de la cohesión social vertical (eje Y) a través de cinco cohortes generacionales (Generation: Silent, Boom, X, Y, Z, en el eje X), segmentado o facetado por las distintas categorías del esquema de clase social EGP-7. Las barras verticales alrededor de cada punto representan los intervalos de confianza al 95%, lo que permite evaluar la precisión de las estimaciones y la significancia visual de las diferencias.
 
 En primer lugar, se observa un efecto generacional parcialmente consistente con la hipótesis H1, caracterizado por una tendencia descendente de la cohesión social vertical a medida que las cohortes son más jóvenes (de Silent hacia Z). Este patrón de "caída" generacional es especialmente pronunciado y nítido en las clases socioeconómicas más altas, como Service Class I y Service Class II, así como en las ocupaciones de rutina no manuales (Routine non-manual y Routine non-manual IIIa), donde los miembros de la generación Silent reportan niveles de cohesión significativamente más altos (superando los 20 puntos en las clases de servicios) en comparación con las generaciones sucesivas, las cuales tienden a estancarse o seguir descendiendo sutilmente en torno a los 15-17 puntos.
 
 En segundo lugar, el comportamiento de las clases manuales y trabajadoras (EGP-V, VI y VII) quiebra la linealidad del descenso generacional, mostrando dinámicas heterogéneas. En la categoría V (Manual supervisors/Lower grade technicians) se aprecia un desplome drástico entre la generación Silent y los Boomers, seguido de una leve recuperación en las generaciones intermedias antes de volver a caer en la generación Z. Por otro lado, la clase VI (Skilled workers) exhibe un patrón en forma de "U": la cohesión disminuye desde la generación Silent hasta alcanzar su punto más bajo en la Generación X, para luego experimentar un repunte sistemático y estadísticamente visible en las generaciones más jóvenes (Y y Z). Una tendencia inversa o de curva invertida se observa en la clase VII (Unskilled workers/Farm labours), donde la generación Silent inicia con los niveles de cohesión más bajos (cercanos a 13 puntos), sube de forma sostenida hacia las generaciones Boomer, X e Y, y vuelve a contraerse con la llegada de la generación Z.
 
 ```{r, echo=FALSE}
-#| label: fig-bivariado2
+#| label: bivariado2
 #| message: false
 #| warning: false
 #| fig-cap: "Gráficos del análisis Bivariado"
@@ -155,12 +155,14 @@ g3 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_meritocracia.png")))
 # Crear la grilla: g1 y g2 al lado, g3 abajo al centro
 (wrap_elements(g1) + wrap_elements(g2)) / wrap_elements(g3)
 ```
-El análisis longitudinal revela una trayectoria temporal de la cohesión social vertical altamente homogénea, marcada de forma dramática por el contexto nacional. Se observa un aumento sostenido entre las Olas 1 y 3, seguido de un quiebre abrupto en las Olas 4 y 5 que coincide exactamente con el periodo del estallido social y la pandemia, donde el indicador cae a su mínimo histórico. A partir de la Ola 6, el sistema muestra una recuperación acelerada, retornando a los niveles iniciales hacia la Ola 7.
+Aquellos individuos que perciben niveles bajos de corrupción reportan la media más alta en el índice de cohesión social vertical, rozando los 18 puntos. Esta evaluación disminuye de manera progresiva a medida que la percepción transita hacia niveles intermedios, alcanzando su punto más deficiente en la categoría de alta corrupción, donde el indicador de cohesión se contrae fuertemente hasta situarse justo en el límite de los 15 puntos.
 
-Al desagregar los datos, las brechas se mantienen estables en el tiempo, sin que las crisis alteren el orden de los factores estructurales. Por un lado, la clase de servicios y la generación Silent se posicionan de manera persistente en la cúspide de la cohesión vertical, mientras que la clase trabajadora permanece en la base. La única divergencia relevante ocurre en la fase de recuperación post-pandemia (Olas 6 y 7), donde las cohortes más jóvenes (Y y Z) exhiben un repunte o pendiente de ascenso más pronunciado que la Generación X, sugiriendo una reactivación diferenciada.
+En cuanto al nivel educativo, se observa una tendencia lineal marcadamente ascendente que vincula el capital humano con la legitimidad del sistema. Los niveles más bajos de cohesión social vertical se concentran en el grupo de personas sin estudios, el cual se ubica por debajo de los 15 puntos de media. A partir de ese umbral, la valoración del lazo vertical experimenta un incremento constante y sucesivo al pasar por la educación básica y la educación superior, alcanzando su punto máximo e indiscutible en la población con estudios de posgrado, cuya media se posiciona en la cúspide de la escala al rozar los 20 puntos.
+
+Finalmente, el comportamiento de la identificación nacional devela una relación directa y positiva con el orden institucional. Las personas que manifiestan un sentido de identidad nacional bajo presentan un deterioro evidente en su cohesión vertical, registrando puntuaciones por debajo de los 15 puntos. En contraposición, a medida que el arraigo y el sentido de pertenencia con el país se fortalecen hacia niveles intermedios y altos, la media de la cohesión social vertical experimenta un aumento sostenido, logrando superar con claridad la barrera de los 17 puntos en la categoría más alta.
 
 ```{r}
-#| label: fig-bivariado3
+#| label: bivariado3
 #| echo: false
 #| message: false
 #| warning: false
@@ -179,7 +181,9 @@ g6 <- rasterGrob(readPNG(paste0(path_graficos, "cohesion_temporal_generacion.png
 
 
 ```
+El análisis longitudinal revela una trayectoria temporal de la cohesión social vertical altamente homogénea, marcada de forma dramática por el contexto nacional. Se observa un aumento sostenido entre las Olas 1 y 3, seguido de un quiebre abrupto en las Olas 4 y 5 que coincide exactamente con el periodo del estallido social y la pandemia, donde el indicador cae a su mínimo histórico. A partir de la Ola 6, el sistema muestra una recuperación acelerada, retornando a los niveles iniciales hacia la Ola 7.
 
+Al desagregar los datos, las brechas se mantienen estables en el tiempo, sin que las crisis alteren el orden de los factores estructurales. Por un lado, la clase de servicios y la generación Silent se posicionan de manera persistente en la cúspide de la cohesión vertical, mientras que la clase trabajadora permanece en la base. La única divergencia relevante ocurre en la fase de recuperación post-pandemia (Olas 6 y 7), donde las cohortes más jóvenes (Y y Z) exhiben un repunte o pendiente de ascenso más pronunciado que la Generación X, sugiriendo una reactivación diferenciada.
 ### Modelos de regresión multinivel.
 
 ```{r}
